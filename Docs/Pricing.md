@@ -2,19 +2,45 @@
 
 ## Page Hero Section
 
-* **Eyebrow:** Pricing
-* **Title:** No upfront fees on managed plans.
-* **Description:** Get your restaurant website and digital platform without a large upfront investment. Choose a managed monthly plan, save more with yearly billing, or own your system with a one-time implementation.
-* **Primary CTA:** Start Your Project (Link: `/contact`)
-* **Secondary CTA:** View Services (Link: `/services`)
+### Eyebrow
+
+Pricing
+
+### Title
+
+**Choose the Restaurant System That Fits Your Business.**
+
+### Description
+
+Start with the essential digital tools your restaurant needs today and upgrade as your operations grow. Every package is designed to connect your restaurant's website, ordering, operations, customers, and business data.
+
+### Primary CTA
+
+**Start Your Project**
+
+Link: `/contact`
+
+### Secondary CTA
+
+**View Services**
+
+Link: `/services`
 
 ---
 
 # Founding Restaurant Offer
 
-* **Tagline:** Founding Restaurant Pricing — First 20 Only
-* **Availability:** 12 spots left (8/20 claimed)
-* **Highlight:** Lifetime Price Lock
+### Tagline
+
+**Founding Restaurant Pricing — First 20 Only**
+
+### Availability
+
+**12 spots left — 8/20 claimed**
+
+### Highlight
+
+**Lifetime Price Lock**
 
 ### Offer Copy
 
@@ -28,328 +54,195 @@ Once the first 20 restaurants are filled, new restaurants will be charged the st
 
 ## Website
 
-A complete restaurant website and digital ordering experience.
+A complete restaurant website with digital menu, ordering, reservations, and customer-facing features.
 
 ## Website + Mobile App
 
-A complete website plus a branded customer mobile app for iOS and Android.
+A complete restaurant website plus a branded customer mobile application for iOS and Android.
 
 Use a segmented toggle:
 
-```text id="e0ckp6"
+```text
 [ Website ]    [ Website + Mobile App ]
 ```
 
-Changing the selection updates the package prices.
+Changing the selection updates the package pricing.
 
 ---
 
 # Billing Options
 
-### Monthly
+## Monthly
 
 Pay monthly with maximum flexibility.
 
-### Yearly
+## Yearly
 
-Pay annually and receive an additional 10% saving compared with the founding monthly price.
+Pay annually and receive an additional saving compared with monthly billing.
 
-### One-Time
+## One-Time
 
-Pay once for the agreed implementation and own the deployed solution.
-
----
-
-# Important Pricing Rule
-
-The **Founding Restaurant Price** applies permanently to the first 20 eligible restaurants.
-
-The price remains locked **for as long as the customer's managed subscription remains active**.
-
-If a customer cancels their managed subscription and later returns, the founding price lock may no longer apply and current pricing may be used.
-
-Annual pricing is also locked at the founding annual rate while the annual subscription remains active.
+Available for customers who want an upfront implementation and ownership model.
 
 ---
 
 # Pricing Packages
 
-## 1. Launch Package
+## 1. SILVER
 
-* **Badge:** Get Online
-* **Target:** Restaurants that need a professional website, digital menu, direct ordering, and essential digital tools.
-* **Timeline:** 2–4 Days
+### Badge
 
----
+**Start & Sell**
 
-## Website — Launch
+### Target
 
-### Monthly
+Restaurants that need a professional online presence, direct ordering, reservations, and essential restaurant management tools.
 
-**PKR 3,999/mo**
+### Price
 
-~~PKR 5,000/mo~~
+**PKR 2,999/month**
 
-**FOUNDING PRICE · LOCKED FOR LIFE**
+### Main Card Features
 
-### Yearly
-
-**PKR 43,200/year**
-
-~~PKR 60,000/year~~
-
-**≈ PKR 3,600/month**
-
-**SAVE PKR 4,788/YEAR**
-
-**FOUNDING PRICE · LOCKED FOR LIFE**
-
-### One-Time
-
-**PKR 120,000**
-
-**ONE-TIME OWNERSHIP**
-
----
-
-## Website + Mobile App — Launch
-
-### Monthly
-
-**PKR 7,999/mo**
-
-~~PKR 10,000/mo~~
-
-**FOUNDING PRICE · LOCKED FOR LIFE**
-
-### Yearly
-
-**PKR 86,400/year**
-
-~~PKR 120,000/year~~
-
-**≈ PKR 7,200/month**
-
-**SAVE PKR 9,588/YEAR**
-
-**FOUNDING PRICE · LOCKED FOR LIFE**
-
-### One-Time
-
-**PKR 240,000**
-
-**ONE-TIME OWNERSHIP**
-
----
-
-## Launch Summary
-
-Get your restaurant online with a professional website, digital menu, direct ordering, reservations, and essential customer features.
-
-### Core Inclusions
-
-* Restaurant Website
-* Interactive Menu
 * Online Ordering
 * Reservation System
 * WhatsApp Integration
-* Google Maps & Reviews
+* Google Maps
 * Basic Admin Panel
 * Single Branch
-* Local SEO Setup
-* Performance Optimization
-* Hosting & Deployment
-* Ongoing Support on Managed Plans
+* Delivery & Takeaway
+* Reports & Analytics
 
-### Website + App Adds
+### CTA
 
-* Branded Customer App
-* Customer Account
-* Mobile Ordering
-* Order History
-* Order Status
-* Push Notifications
-* App Deployment Support
+**Get Started**
+
+### Package Description
+
+Get your restaurant online with the essential tools to accept direct orders, manage reservations, handle takeaway and delivery orders, and monitor your restaurant from a basic admin panel.
 
 ---
 
-# 2. Growth Package — Recommended
+# 2. GOLDEN
 
-* **Badge:** Grow & Automate
-* **Target:** Restaurants ready to increase direct orders and manage more of their restaurant operations digitally.
-* **Timeline:** 4–7 Days
+### Badge
 
----
+**Run Your Restaurant**
 
-## Website — Growth
+### Target
 
-### Monthly
+Restaurants ready to move beyond basic online ordering and manage their daily restaurant operations from one connected system.
 
-**PKR 7,999/mo**
+### Price
 
-~~PKR 10,000/mo~~
+**PKR 5,999/month**
 
-**FOUNDING PRICE · LOCKED FOR LIFE**
+### Main Card Features
 
-### Yearly
-
-**PKR 86,400/year**
-
-~~PKR 120,000/year~~
-
-**≈ PKR 7,200/month**
-
-**SAVE PKR 9,588/YEAR**
-
-**FOUNDING PRICE · LOCKED FOR LIFE**
-
-### One-Time
-
-**PKR 240,000**
-
-**ONE-TIME OWNERSHIP**
-
----
-
-## Website + Mobile App — Growth
-
-### Monthly
-
-**PKR 14,999/mo**
-
-~~PKR 18,000/mo~~
-
-**FOUNDING PRICE · LOCKED FOR LIFE**
-
-### Yearly
-
-**PKR 161,988/year**
-
-~~PKR 180,000/year~~
-
-**≈ PKR 13,499/month**
-
-**SAVE PKR 17,?**
-
-**FOUNDING PRICE · LOCKED FOR LIFE**
-
-### One-Time
-
-**Starting from PKR 450,000**
-
-**ONE-TIME OWNERSHIP**
-
-> Note: Annual pricing for Website + Mobile App should be finalized against the exact monthly rate and any applicable promotional discount before publishing. Do not display inconsistent discount calculations.
-
----
-
-## Growth Summary
-
-Turn your digital presence into a connected restaurant platform for ordering, POS, kitchen operations, customer management, delivery, and growth.
-
-### Core Inclusions
-
-* Everything in Launch
-* Restaurant Management Dashboard
+* Everything in Silver
 * POS
-* Kitchen Display System
+* KDS
 * Dine-In & Table Management
-* Takeaway Management
-* Delivery Management
-* QR Table Ordering
-* AI Restaurant Chatbot
-* WhatsApp Ordering
+* QR Menu & Self-Ordering
+* Inventory & Supply Management
 * Customer CRM
-* Analytics & Tracking
-* Promotions & Offers
-* Up to 5 Branches
-* Advanced Local SEO
-* Hosting & Deployment
-* Ongoing Support on Managed Plans
-
-### Website + App Adds
-
-* Branded Customer App
-* Customer Login
-* Online Ordering
-* Order History
-* Order Status
-* Push Notifications
-* Reservation Access
-* Loyalty Features where applicable
-* App-to-platform integration
-* App deployment support
-
----
-
-# 3. Custom Package
-
-* **Badge:** Built Around Your Restaurant
-* **Target:** Established restaurants, restaurant groups, franchises, and businesses requiring advanced operations, automation, integrations, and custom mobile experiences.
-* **Timeline:** 1–2+ Weeks
-
----
-
-## Website
-
-**Custom Quote**
-
-## Website + Mobile App
-
-**Custom Quote**
-
-### Summary
-
-Build a complete restaurant operating platform around your exact workflows, branches, integrations, automation, and business requirements.
-
-### Core Inclusions
-
-* Everything in Growth
-* Advanced Restaurant Management System
-* Multi-Branch Management
-* Advanced POS
-* Advanced KDS
-* Advanced Delivery Operations
-* Inventory & Ingredient Management
-* Supplier & Purchasing Management
-* Advanced Customer CRM
-* Loyalty & Rewards
 * Advanced Analytics
-* AI Business Insights
-* Advanced AI Restaurant Assistant
-* Custom Automation
-* Payment Gateway Integration
-* Deep POS Integrations
-* Custom API Integrations
-* Advanced Promotions
-* Custom Reports
-* Custom Business Workflows
+* Reviews
+* Up to 3 Branches
+
+### CTA
+
+**Choose Golden**
+
+### Package Description
+
+Turn your digital presence into a connected restaurant operating system with POS, kitchen management, dine-in operations, inventory, customer management, and multi-branch support.
+
+### Recommended Badge
+
+**Recommended for Growing Restaurants**
 
 ---
 
-# Website + Mobile App
+# 3. DIAMOND
 
-The Website + Mobile App option includes:
+### Badge
 
-* Branded iOS & Android customer app
-* Customer accounts
-* Mobile ordering
-* Order history
-* Order status
-* Push notifications
-* Reservations
-* Loyalty
-* Delivery features where applicable
-* Payment integration where applicable
-* Custom app workflows
-* API integration
-* App deployment assistance
+**Automate & Scale**
 
-Final pricing depends on the app scope and integrations.
+### Target
+
+Growing restaurant businesses that want advanced automation, customer retention, marketing, financial management, and complete business control.
+
+### Price
+
+**PKR 9,999/month**
+
+### Main Card Features
+
+* Everything in Golden
+* AI Assistant
+* Payment Integration
+* Promotions & Offers
+* Marketing & Campaigns
+* Loyalty & Rewards
+* Up to 6 Branches
+* HR & Staff
+* Finance & P&L
+* Website Builder
+
+### CTA
+
+**Choose Diamond**
+
+### Package Description
+
+Get the complete restaurant ecosystem with AI, payments, marketing, loyalty, staff management, financial tools, website management, and support for up to six branches.
 
 ---
 
-# Detailed Breakdown — Launch Modal
+# PACKAGE COMPARISON
+
+| Feature                    | Silver |  Golden | Diamond |
+| -------------------------- | -----: | ------: | ------: |
+| Restaurant Website         |      ✓ |       ✓ |       ✓ |
+| Online Ordering            |      ✓ |       ✓ |       ✓ |
+| Reservations               |      ✓ |       ✓ |       ✓ |
+| WhatsApp Integration       |      ✓ |       ✓ |       ✓ |
+| Google Maps                |      ✓ |       ✓ |       ✓ |
+| Basic Admin Panel          |      ✓ |       ✓ |       ✓ |
+| Order Management           |      ✓ |       ✓ |       ✓ |
+| Delivery & Takeaway        |      ✓ |       ✓ |       ✓ |
+| Reports & Analytics        |      ✓ |       ✓ |       ✓ |
+| POS                        |      — |       ✓ |       ✓ |
+| KDS                        |      — |       ✓ |       ✓ |
+| Dine-In & Table Management |      — |       ✓ |       ✓ |
+| QR Menu & Self-Ordering    |      — |       ✓ |       ✓ |
+| Inventory & Supply         |      — |       ✓ |       ✓ |
+| Customer CRM               |      — |       ✓ |       ✓ |
+| Advanced Analytics         |      — |       ✓ |       ✓ |
+| Reviews                    |      — |       ✓ |       ✓ |
+| Branches                   |      1 | Up to 3 | Up to 6 |
+| AI Assistant               |      — |       — |       ✓ |
+| Payment Integration        |      — |       — |       ✓ |
+| Promotions & Offers        |      — |       — |       ✓ |
+| Marketing & Campaigns      |      — |       — |       ✓ |
+| Loyalty & Rewards          |      — |       — |       ✓ |
+| HR & Staff                 |      — |       — |       ✓ |
+| Finance & P&L              |      — |       — |       ✓ |
+| Website Builder            |      — |       — |       ✓ |
+
+---
+
+# DETAILED MODAL — SILVER
+
+## Silver
+
+### **PKR 2,999/month**
+
+**Essential digital tools for restaurants getting online and accepting direct orders.**
+
+---
 
 ## Website
 
@@ -361,7 +254,12 @@ Final pricing depends on the app scope and integrations.
 * Gallery
 * Reservation
 * Contact
-* Cart & Order pages
+* Cart
+* Checkout
+* Restaurant information
+* Opening hours
+
+---
 
 ## Menu
 
@@ -370,33 +268,128 @@ Final pricing depends on the app scope and integrations.
 * Prices
 * Descriptions
 * Basic availability
+* Product information
+* Menu organization
 
-## Ordering
+---
+
+## Online Ordering
 
 * Online ordering
 * Cart
 * Checkout
-* Delivery or takeaway selection
+* Delivery ordering
+* Takeaway ordering
+* Customer information
+* Order confirmation
+* Basic order status
+
+---
+
+## Delivery & Takeaway
+
+* Delivery order management
+* Takeaway order management
+* Customer delivery information
+* Delivery address
+* Pickup information
+* Order status
+* Delivery/takeaway filtering
+
+### Important
+
+Silver provides **basic delivery and takeaway order management**.
+
+Advanced rider/fleet management belongs to a higher/custom implementation.
+
+---
 
 ## Reservations
 
 * Reservation form
 * Guest information
-* Date & time selection
+* Date and time selection
+* Party size
+* Reservation management
+* Reservation status
+* Basic reservation overview
 
-## Admin
+---
 
+## Admin Panel
+
+### Basic Restaurant Management
+
+* Dashboard
 * Menu management
 * Price updates
 * Offers
-* Basic order viewing
-* Website content updates
+* Website content
+* Order management
+* Reservation management
+* Basic customer/order information
 
-## Integrations
+### Order Management
 
-* WhatsApp
-* Google Maps
-* Google Reviews
+Admin can:
+
+* View incoming orders
+* Search orders
+* Filter orders
+* View order details
+* View customer information
+* View order type
+* View order source
+* Update order status
+* Monitor delivery/takeaway orders
+* View payment status
+
+### Order Types
+
+* Delivery
+* Takeaway
+* Online orders
+
+---
+
+## WhatsApp Integration
+
+* WhatsApp contact
+* WhatsApp ordering link
+* Customer communication entry point
+* Order redirection where configured
+
+Advanced automated WhatsApp Business/API workflows may require additional third-party services or a higher-tier implementation.
+
+---
+
+## Google Maps
+
+* Restaurant location
+* Google Maps integration
+* Address display
+* Directions
+
+---
+
+## Reports & Analytics
+
+### Basic Analytics
+
+* Revenue
+* Orders
+* Average order value
+* Order trends
+* Basic order-source information
+
+### Basic Reports
+
+* Sales report
+* Order report
+* Product sales
+* Basic payment report
+
+---
 
 ## SEO & Performance
 
@@ -404,103 +397,297 @@ Final pricing depends on the app scope and integrations.
 * Image optimization
 * Technical SEO setup
 * Restaurant structured data
+* Basic local SEO setup
 * Performance optimization
+
+---
 
 ## Deployment
 
-* Hosting setup
+* Hosting
 * SSL
 * Domain connection
 * Production deployment
 * Single-branch configuration
 
-## Support
+### Domain
 
-* 30 days post-launch support on one-time plans
-* Ongoing support while subscribed on managed plans
+The restaurant owns and pays for its domain.
+
+MhStudio handles:
+
+* DNS configuration
+* Domain connection
+* SSL
+* Hosting
+* Deployment
 
 ---
 
-# Detailed Breakdown — Growth Modal
+## Support
+
+### Managed Plan
+
+**Ongoing technical support while subscribed.**
+
+Includes:
+
+* Technical assistance
+* Bug fixes
+* Routine platform maintenance
+* Website/content configuration assistance
+* Hosting/deployment support
+
+Third-party provider fees remain separate where applicable.
+
+---
+
+# DETAILED MODAL — GOLDEN
+
+## Golden
+
+### **PKR 5,999/month**
+
+**A connected restaurant operating system for restaurants ready to manage daily operations digitally.**
+
+---
+
+## Includes Everything in Silver
+
+Plus:
+
+---
 
 ## Restaurant Operations
 
-* Centralized restaurant dashboard
+* Restaurant management dashboard
+* Centralized order management
 * POS
+* KDS
+* Dine-in management
+* Takeaway management
+* Delivery management
+* Table management
+* QR ordering
+* Order status management
+
+---
+
+## POS
+
 * Dine-in orders
 * Takeaway orders
 * Delivery orders
+* Product catalog
+* Categories
+* Modifiers
+* Add-ons
+* Cart
+* Discounts
+* Hold/resume orders
+* KOT
+* Bill generation
+* Payment status
+* Customer information
+
+---
+
+## Kitchen Display System
+
+* New orders
+* Preparing orders
+* Ready orders
+* Completed orders
+* Kitchen tickets
+* Order details
+* Modifiers
+* Special instructions
+* Kitchen timing
+* Order priority
+
+### Connected Workflow
+
+**POS → KDS → Kitchen → Ready → Service/Dispatch**
+
+---
+
+## Dine-In & Table Management
+
+* Floor plan
 * Table management
-* Kitchen Display System
-* Order status management
-
-## Online Ordering
-
-* Delivery ordering
-* Takeaway ordering
-* Cart & checkout
-* Product modifiers
-* Order tracking
-* WhatsApp ordering
-
-## Dine-In
-
-* Table management
-* Table-specific QR ordering
+* Table status
 * Open table orders
-* Guest management
-* Basic bill management
+* Waiter assignment
+* Additional orders
+* Table transfer
+* Table merging
+* Bill management
+* Dine-in order tracking
 
-## AI Assistant
+### Table States
 
-* Restaurant chatbot
-* Menu questions
-* Ingredient questions
-* Opening hours
-* Location assistance
-* Reservation assistance
-* Basic ordering guidance
+* Available
+* Reserved
+* Occupied
+* Ordering
+* Payment
+* Cleaning
 
-## Customer Management
+---
+
+## QR Menu & Self-Ordering
+
+* Digital QR menu
+* Table-specific QR codes
+* Automatic table identification
+* Product browsing
+* Product customization
+* Modifiers
+* Add-ons
+* Cart
+* Dine-in ordering
+* Additional orders
+* QR order management
+
+### Workflow
+
+**Scan → Browse → Customize → Order → KDS → Serve**
+
+---
+
+## Inventory & Supply
+
+### Inventory
+
+* Ingredient stock
+* Stock levels
+* Low-stock alerts
+* Stock movements
+* Branch inventory
+
+### Recipes
+
+* Recipe mapping
+* Ingredient usage
+* Product-to-ingredient relationship
+
+### Suppliers
+
+* Supplier profiles
+* Supplier products
+* Purchase history
+
+### Purchasing
+
+* Purchase orders
+* Receiving
+* Stock updates
+
+### Waste
+
+* Waste records
+* Waste reasons
+* Quantity
+* Cost
+
+---
+
+## Customer CRM
 
 * Customer profiles
+* Contact information
 * Order history
-* Customer activity
+* Total spending
+* Average order value
+* Favorite products
+* Last order
 * Repeat customer tracking
-* Basic segmentation
+* Basic customer segmentation
 
-## Analytics
+---
+
+## Reviews
+
+* Customer reviews
+* Ratings
+* Review history
+* Review management
+* Review response workflow
+
+---
+
+## Advanced Analytics
+
+### Sales
 
 * Revenue
 * Orders
-* Average order value
-* Product performance
-* Order sources
-* Branch performance
-* Customer insights
+* AOV
+* Growth
+* Sales trends
 
-## Marketing
+### Products
 
-* Promotions
-* Discount codes
-* Offers
-* Customer re-engagement
+* Best sellers
+* Product revenue
+* Quantity sold
+* Category performance
 
-## Branches
+### Customers
 
-* Up to 5 branches
-* Branch-level menus
+* New customers
+* Repeat customers
+* Customer activity
+* Customer value
+
+### Channels
+
+* Website
+* POS
+* QR
+* WhatsApp
+* Other configured sources
+
+### Branches
+
+* Branch revenue
 * Branch orders
-* Branch analytics
+* Branch performance
+
+---
+
+## Branch Management
+
+### Up to 3 Branches
+
+Manage:
+
 * Branch information
+* Branch menus
+* Branch orders
+* Branch tables
+* Branch inventory
+* Branch staff
+* Branch analytics
+
+Admin can switch between:
+
+**All Branches → Branch 1 → Branch 2 → Branch 3**
+
+---
 
 ## SEO & Performance
+
+Includes everything in Silver plus:
 
 * Advanced local SEO
 * Restaurant schema
 * Google visibility setup
-* Image/code optimization
+* Image optimization
+* Code optimization
 * Performance optimization
+
+---
 
 ## Deployment & Support
 
@@ -509,133 +696,489 @@ Final pricing depends on the app scope and integrations.
 * Deployment
 * Monitoring
 * Technical maintenance
+* Bug fixes
 * Ongoing support while subscribed
 
 ---
 
-# Detailed Breakdown — Custom Modal
+# DETAILED MODAL — DIAMOND
 
-## Advanced Operations
+## Diamond
 
-* Advanced POS
-* Advanced order workflows
-* Advanced KDS
-* Advanced dine-in operations
-* Advanced delivery
-* Rider workflows
-* Multi-location operations
+### **PKR 9,999/month**
 
-## Multi-Branch
-
-* Multiple branches
-* Centralized management
-* Branch controls
-* Centralized menus
-* Branch analytics
-* Shared operational data
-
-## Inventory
-
-* Ingredient tracking
-* Recipe management
-* Stock levels
-* Reorder points
-* Supplier management
-* Purchasing
-* Wastage
-* Inventory reports
-
-## Customer Management
-
-* Advanced customer profiles
-* Order history
-* Customer segmentation
-* Loyalty
-* Rewards
-* Retention workflows
-* Customer insights
-
-## AI & Automation
-
-* Advanced AI assistant
-* AI ordering workflows
-* AI business insights
-* Automated customer workflows
-* Custom business automation
-* Custom AI logic
-
-## Payments & Integrations
-
-* JazzCash
-* Easypaisa
-* Card/payment gateways
-* Supported POS integrations
-* Custom APIs
-* Third-party services
-
-## Analytics
-
-* Advanced revenue analytics
-* Product performance
-* Customer analytics
-* Branch analytics
-* Order-source analytics
-* Conversion tracking
-* Custom reporting
-
-## Promotions
-
-* Advanced offers
-* Campaigns
-* Coupon rules
-* Branch-specific promotions
-* Customer-targeted promotions
-
-## Mobile App
-
-* Custom iOS & Android application
-* Advanced ordering
-* Customer accounts
-* Loyalty
-* Push notifications
-* Reservations
-* Delivery features
-* Payments
-* Custom workflows
-* Advanced API integration
-
-## Custom Development
-
-* Custom workflows
-* Custom dashboards
-* Custom modules
-* Custom integrations
-* Custom app functionality
-
-## Performance & Deployment
-
-* Advanced performance optimization
-* Production infrastructure
-* Hosting
-* Deployment
-* Monitoring
-* Security configuration
-
-## Support
-
-* Custom support arrangement based on scope and managed plan
+**The complete restaurant management, automation, customer growth, and business-control platform.**
 
 ---
 
-# Domain Ownership & Hosting
+## Includes Everything in Golden
 
-## Your Domain, Your Ownership
+Plus:
+
+---
+
+## AI Restaurant Assistant
+
+AI can assist with:
+
+* Restaurant FAQs
+* Menu questions
+* Opening hours
+* Location questions
+* Reservation assistance
+* Basic ordering guidance
+* Customer assistance
+* Restaurant information
+
+### Management AI
+
+Where configured, AI can also help surface:
+
+* Sales insights
+* Product trends
+* Customer insights
+* Operational alerts
+* Business summaries
+
+---
+
+## Payment Integration
+
+Connect supported payment providers and gateways.
+
+Capabilities can include:
+
+* Online payments
+* Payment confirmation
+* Payment status
+* Transaction reference
+* Payment reconciliation support
+
+### Payment Providers
+
+Specific providers depend on technical availability and restaurant requirements.
+
+Third-party payment processing fees are separate.
+
+---
+
+## Promotions & Offers
+
+Create:
+
+* Product offers
+* Discounts
+* Coupons
+* Combo deals
+* Buy-one-get-one offers
+* Time-based offers
+* Branch-specific offers
+* Customer-targeted offers
+
+---
+
+## Marketing & Campaigns
+
+### Campaign Management
+
+* Create campaigns
+* Select audience
+* Create offer
+* Select channel
+* Schedule campaign
+* Launch campaign
+* Track campaign results
+
+### Target Customers
+
+* All customers
+* New customers
+* Repeat customers
+* VIP customers
+* Inactive customers
+* Product-specific customers
+* Branch-specific customers
+
+### Marketing Analytics
+
+* Campaign orders
+* Campaign revenue
+* Conversion
+* Customer response
+* Campaign performance
+
+---
+
+## Loyalty & Rewards
+
+* Loyalty points
+* Rewards
+* Reward thresholds
+* Customer tiers
+* Birthday rewards
+* Referral rewards
+* Loyalty history
+* Reward redemption
+
+### Example
+
+**PKR 100 spent → 10 points**
+
+Customer orders:
+
+**Order → Points → Reward → Repeat Order**
+
+---
+
+## Multi-Branch Management
+
+### Up to 6 Branches
+
+Manage:
+
+* Branch information
+* Branch menus
+* Branch pricing
+* Branch orders
+* Branch tables
+* Branch inventory
+* Branch staff
+* Branch delivery
+* Branch analytics
+
+### Centralized View
+
+Owner can see:
+
+**All Branches**
+
+and then drill into individual branches.
+
+---
+
+## HR & Staff
+
+### Staff Management
+
+* Staff profiles
+* Employee ID
+* Contact information
+* Role
+* Branch
+* Status
+* Joining date
+
+### Roles
+
+* Owner
+* Manager
+* Host
+* Waiter
+* Cashier
+* Kitchen
+* Dispatcher
+* Inventory Manager
+* Marketing
+* Accountant
+
+### Permissions
+
+Use granular permissions such as:
+
+* View orders
+* Edit orders
+* Cancel orders
+* Refund orders
+* View finance
+* Manage inventory
+* Manage staff
+* Manage marketing
+
+### Staff Activity
+
+Track important actions:
+
+> Ali changed Order #1058.
+
+> Manager updated product price.
+
+> Cashier processed refund.
+
+---
+
+## Finance
+
+### Revenue
+
+Track:
+
+* Sales
+* Dine-in
+* Takeaway
+* Delivery
+* Website
+* POS
+* QR
+* Branches
+
+### Payments
+
+* Cash
+* Card
+* Online
+* Other configured payment methods
+
+### Refunds
+
+* Order
+* Amount
+* Reason
+* Date
+* Authorized user
+
+### Discounts
+
+Track:
+
+* Discount amount
+* Order
+* Campaign
+* Staff member
+
+### Expenses
+
+Track:
+
+* Rent
+* Salaries
+* Utilities
+* Marketing
+* Delivery costs
+* Maintenance
+* Other expenses
+
+---
+
+# P&L — PROFIT & LOSS
+
+### Purpose
+
+Give owners a financial view of the restaurant's profitability.
+
+### Revenue
+
+Example:
+
+**PKR 2,000,000**
+
+### COGS
+
+Example:
+
+**PKR 650,000**
+
+### Gross Profit
+
+**PKR 1,350,000**
+
+### Operating Expenses
+
+* Rent
+* Salaries
+* Utilities
+* Marketing
+* Delivery
+* Other operating expenses
+
+### P&L Metrics
+
+* Revenue
+* COGS
+* Gross profit
+* Gross margin
+* Operating expenses
+* Operating profit
+* Net profit where supported
+* Profit margin
+
+If the platform is not intended to replace formal accounting software, clearly label P&L figures as operational/management reporting rather than audited accounting records.
+
+---
+
+# Website Builder
+
+### Purpose
+
+Allow the restaurant owner to manage the restaurant website without requiring a developer for routine content changes.
+
+### Manage
+
+* Homepage
+* Hero section
+* Featured products
+* Menu
+* Offers
+* About
+* Gallery
+* Contact
+* Opening hours
+* Announcements
+
+### Branding
+
+* Logo
+* Brand colors
+* Typography
+* Buttons
+* Images
+
+### Publishing Workflow
+
+**Edit → Preview → Publish**
+
+---
+
+# Website SEO
+
+Diamond can provide expanded website management capabilities:
+
+* Page titles
+* Meta descriptions
+* URL slugs
+* Social sharing images
+* Local business information
+* Structured content
+* Local SEO configuration
+
+Advanced technical SEO remains controlled at the platform/developer level where appropriate.
+
+---
+
+# Integrations
+
+Diamond includes access to supported integrations based on the selected implementation.
+
+Possible integration categories:
+
+* Payment gateways
+* WhatsApp Business/API
+* Maps
+* Delivery providers
+* POS integrations
+* Accounting systems
+* Analytics
+* Printers
+* KDS
+* External APIs
+* Webhooks
+
+Third-party provider fees are separate.
+
+---
+
+# Advanced Analytics
+
+Diamond combines operational, customer, marketing, and financial data.
+
+### Sales
+
+* Revenue
+* Orders
+* AOV
+* Growth
+
+### Operations
+
+* Kitchen performance
+* Delivery performance
+* Table utilization
+* Order completion
+
+### Customers
+
+* Customer value
+* Retention
+* Repeat orders
+* Segments
+
+### Marketing
+
+* Campaign performance
+* Conversion
+* Revenue generated
+
+### Branches
+
+* Revenue
+* Orders
+* AOV
+* Performance comparison
+
+### Finance
+
+* Revenue
+* COGS
+* Gross profit
+* Expenses
+* Profitability
+
+---
+
+# Deployment & Support
+
+### Managed Platform
+
+* Hosting
+* SSL
+* Deployment
+* Monitoring
+* Backups where applicable
+* Security updates
+* Technical maintenance
+* Bug fixes
+* Platform management
+* Menu/content configuration
+* Technical support
+
+### Support
+
+**Ongoing support while the Diamond subscription remains active.**
+
+---
+
+# WEBSITE + MOBILE APP OPTION
+
+The Website + Mobile App option can be selected through the platform toggle.
+
+The mobile app can include, depending on package:
+
+* Branded iOS & Android application
+* Customer accounts
+* Mobile ordering
+* Order history
+* Order status
+* Push notifications
+* Reservations
+* Loyalty
+* Delivery features
+* Payment integration
+* App-to-platform integration
+
+### Important
+
+The exact mobile application scope, deployment requirements, and third-party app-store fees should be specified separately.
+
+---
+
+# DOMAIN OWNERSHIP
+
+## Your Domain. Your Ownership.
 
 The restaurant owns its domain.
 
-The domain registration is paid for by the restaurant and remains under the restaurant's ownership/account.
+The restaurant pays for domain registration and keeps the domain under its own account.
 
-MhStudio will handle:
+MhStudio handles:
 
 * Domain selection assistance
 * DNS configuration
@@ -645,25 +1188,21 @@ MhStudio will handle:
 * Deployment
 * Technical configuration
 
-### Important
-
-**The domain itself is not included as a permanently free asset from MhStudio.**
-
-This keeps ownership of the restaurant's brand and domain with the restaurant.
+The domain itself is not a permanently free asset provided by MhStudio.
 
 ---
 
-# Managed Platform
+# MANAGED PLATFORM
 
-The monthly and yearly plans are managed-service plans.
+Monthly and yearly plans are managed-service plans.
 
-Depending on the package, they can include:
+Depending on the package, managed services can include:
 
 * Website hosting
 * Platform hosting
 * Deployment
 * SSL
-* Backups
+* Backups where applicable
 * Monitoring
 * Security updates
 * Technical maintenance
@@ -677,33 +1216,9 @@ The exact inclusions depend on the selected package.
 
 ---
 
-# One-Time Ownership
+# THIRD-PARTY COSTS
 
-The one-time option is for customers who prefer an upfront implementation.
-
-The one-time price covers the agreed project scope.
-
-After launch:
-
-* Hosting is separate
-* Domain is separate
-* Third-party services are separate
-* Ongoing maintenance is optional
-* New features are quoted separately
-
-### Support
-
-Launch includes 30 days.
-
-Growth includes 45 days.
-
-After the included support period, additional support or maintenance can be purchased separately.
-
----
-
-# Third-Party Costs
-
-Some services are billed by external providers and are not included in the MhStudio platform fee.
+Some services may have separate charges from external providers.
 
 These may include:
 
@@ -715,19 +1230,20 @@ These may include:
 * Maps/API usage
 * App Store developer fees
 * Google Play developer fees
+* Delivery provider fees
 * Other third-party services
 
-Applicable third-party charges will be communicated before activation.
+Applicable third-party charges should be communicated before activation.
 
 ---
 
-# Founding Restaurant Price Lock
+# FOUNDING RESTAURANT PRICE LOCK
 
 ## First 20 Restaurants Only
 
 The first 20 eligible restaurants receive **Founding Restaurant Pricing**.
 
-### Founding Price Benefits
+### Benefits
 
 * Lifetime monthly price lock
 * Lifetime annual price lock
@@ -739,47 +1255,282 @@ The first 20 eligible restaurants receive **Founding Restaurant Pricing**.
 
 The founding price remains valid **while the managed subscription remains active**.
 
-If the subscription is cancelled and later restarted, the restaurant may be moved to the then-current standard pricing.
+If the restaurant cancels its subscription and later returns, the restaurant may be moved to the then-current standard pricing.
 
 ---
 
-# Annual Plan
+# ANNUAL BILLING
 
-The annual plan is designed for customers who want the lowest effective managed price.
+Annual billing can provide an additional discount compared with monthly billing.
 
-Annual customers receive an additional **10% saving compared with the founding monthly price**, while retaining their founding price lock for as long as the annual subscription remains active.
+The annual price should be calculated from the final monthly founding price and the agreed annual discount before publishing.
 
-The annual payment is made upfront for 12 months.
+### Example Calculation
+
+Silver:
+
+**PKR 2,999 × 12 = PKR 35,988**
+
+With approximately 10% annual saving:
+
+**≈ PKR 32,389/year**
+
+Golden:
+
+**PKR 5,999 × 12 = PKR 71,988**
+
+With approximately 10% annual saving:
+
+**≈ PKR 64,789/year**
+
+Diamond:
+
+**PKR 9,999 × 12 = PKR 119,988**
+
+With approximately 10% annual saving:
+
+**≈ PKR 107,989/year**
+
+For the actual website, use clean rounded prices rather than displaying awkward amounts such as PKR 32,389 unless you specifically want mathematically exact pricing.
 
 ---
 
-# Custom Enterprise Package
+# ONE-TIME OPTION
 
-## Need a Custom Solution?
+The one-time ownership option can remain available separately.
 
-For restaurants requiring advanced multi-location operations, franchise management, complex POS integrations, custom mobile applications, enterprise automation, inventory workflows, or a tailored restaurant operating system, we build around your exact requirements.
+However, **do not show one-time pricing as if it is equivalent to the monthly Silver/Golden/Diamond subscription.**
 
-**CTA:** Discuss Custom Enterprise Package
+One-time implementation should be quoted based on scope.
 
-**Link:** `/contact`
+After launch:
+
+* Hosting is separate
+* Domain is separate
+* Third-party services are separate
+* Ongoing maintenance is optional
+* New features are quoted separately
 
 ---
 
-# Pricing Disclaimer
+# PACKAGE POSITIONING
 
-All prices shown are reference prices for the listed scope.
+## SILVER
 
-Final pricing may vary based on:
+### **Get Online & Start Taking Orders**
 
-* Number of branches
-* Number of users
-* Custom workflows
-* Integrations
-* Third-party services
-* Payment requirements
-* Mobile app features
-* Advanced automation
-* Hardware requirements
-* Custom development
+For restaurants that need:
 
-A final scope and fixed quotation will be provided before development begins.
+**Website + Ordering + Reservations + Basic Management**
+
+Think:
+
+> "I need my restaurant online and want customers to order directly."
+
+---
+
+## GOLDEN
+
+### **Run Your Restaurant**
+
+For restaurants that need:
+
+**POS + KDS + Tables + QR + Inventory + CRM + Multi-Branch**
+
+Think:
+
+> "I want one system to actually run my restaurant operations."
+
+---
+
+## DIAMOND
+
+### **Automate, Grow & Control Everything**
+
+For restaurants that need:
+
+**AI + Payments + Marketing + Loyalty + HR + Finance + Website Management + Multi-Branch**
+
+Think:
+
+> "I want a complete digital system for running and growing my restaurant."
+
+---
+
+# CARD DESIGN
+
+## Silver Card
+
+Badge:
+
+**Start & Sell**
+
+Price:
+
+**PKR 2,999/mo**
+
+Short description:
+
+> Everything you need to get online, accept direct orders, manage reservations, and handle essential restaurant operations.
+
+Feature preview:
+
+* Online Ordering
+* Reservations
+* WhatsApp
+* Basic Admin
+* Delivery & Takeaway
+* Reports & Analytics
+* Single Branch
+
+CTA:
+
+**Get Started**
+
+---
+
+## Golden Card
+
+Badge:
+
+**Recommended**
+
+Title:
+
+**Golden**
+
+Price:
+
+**PKR 5,999/mo**
+
+Short description:
+
+> A connected restaurant operating system for POS, kitchen, dine-in, inventory, customers, and multiple branches.
+
+Feature preview:
+
+* Everything in Silver
+* POS & KDS
+* Dine-In & Tables
+* QR Menu
+* Inventory & Supply
+* Customer CRM
+* Advanced Analytics
+* Up to 3 Branches
+
+CTA:
+
+**Choose Golden**
+
+---
+
+## Diamond Card
+
+Badge:
+
+**Complete Restaurant System**
+
+Title:
+
+**Diamond**
+
+Price:
+
+**PKR 9,999/mo**
+
+Short description:
+
+> Advanced restaurant management with AI, payments, marketing, loyalty, finance, staff management, and up to six branches.
+
+Feature preview:
+
+* Everything in Golden
+* AI Assistant
+* Payment Integration
+* Marketing & Campaigns
+* Loyalty
+* HR & Staff
+* Finance & P&L
+* Website Builder
+* Up to 6 Branches
+
+CTA:
+
+**Choose Diamond**
+
+---
+
+# FINAL CTA
+
+### Heading
+
+**Ready to Build Your Restaurant's Digital System?**
+
+### Copy
+
+Start with the tools your restaurant needs today and expand as your business grows.
+
+**Silver → Golden → Diamond**
+
+One connected ecosystem for your restaurant.
+
+### Primary CTA
+
+**Start Your Project**
+
+### Secondary CTA
+
+**Book a Free Demo**
+
+---
+
+# IMPORTANT PRODUCT STRUCTURE
+
+The package hierarchy should remain extremely clear:
+
+```text
+SILVER
+│
+├── Website
+├── Online Ordering
+├── Reservations
+├── WhatsApp
+├── Google Maps
+├── Basic Admin
+├── Orders
+├── Delivery & Takeaway
+├── Reports & Analytics
+└── 1 Branch
+
+        ↓
+
+GOLDEN
+│
+├── Everything in Silver
+├── POS
+├── KDS
+├── Dine-In & Tables
+├── QR Menu
+├── Inventory & Supply
+├── Customer CRM
+├── Advanced Analytics
+├── Reviews
+└── Up to 3 Branches
+
+        ↓
+
+DIAMOND
+│
+├── Everything in Golden
+├── AI Assistant
+├── Payment Integration
+├── Promotions & Offers
+├── Marketing & Campaigns
+├── Loyalty
+├── HR & Staff
+├── Finance & P&L
+├── Website Builder
+└── Up to 6 Branches
+```
+
+The **feature progression should be obvious in the pricing cards**. Don't overload Silver with advanced restaurant-operations features, because that destroys the reason for upgrading to Golden. Likewise, Diamond should be positioned around **automation, growth, financial control, and scale**, rather than simply adding another collection of operational features.

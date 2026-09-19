@@ -142,8 +142,10 @@ export function ContactForm() {
               disabled={isSubmitting}
             >
               <option value="">Select package range</option>
-              <option value="Launch ($499+)">Launch ($499+)</option>
-              <option value="Growth ($1,199+)">Growth ($1,199+)</option>
+              <option value="Silver (PKR 2,999/mo)">Silver (PKR 2,999/mo)</option>
+              <option value="Golden (PKR 5,999/mo)">Golden (PKR 5,999/mo)</option>
+              <option value="Diamond (PKR 9,999/mo)">Diamond (PKR 9,999/mo)</option>
+              <option value="Custom Enterprise">Custom Enterprise</option>
               </select>
           </label>
         </div>

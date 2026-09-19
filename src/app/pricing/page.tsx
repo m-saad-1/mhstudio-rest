@@ -18,7 +18,7 @@ export default function PricingPage() {
         primaryCta={{ label: "Start Your Project", href: "/contact" }}
         secondaryCta={{ label: "View Services", href: "/services" }}
       />
-      <section className="section-space">
+      <section className="pb-20 pt-4 sm:pb-24 sm:pt-6 lg:pb-32 lg:pt-8">
         <PricingGrid />
         
         {/* Custom Enterprise Package Section */}

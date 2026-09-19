@@ -486,214 +486,205 @@ export const leftFaqs = [
 
 export const pricingPackages = [
   {
-    name: "Launch",
-    timeline: "2–4 Days",
+    name: "Silver",
+    timeline: "",
     platforms: {
       website: {
-        price: "PKR 3,999",
+        price: "PKR 2,999",
         priceSuffix: "/mo",
-        originalPrice: "PKR 5,000",
+        originalPrice: "",
         pricingOptions: {
-          monthly: { price: "PKR 3,999", suffix: "/mo", originalPrice: "PKR 5,000", lockedForLife: true },
-          yearly: { price: "PKR 43,200", suffix: "/year", originalPrice: "PKR 60,000", monthlyEquivalent: "≈ PKR 3,600/month", note: "SAVE PKR 4,788/YEAR", lockedForLife: true },
-          onetime: { price: "PKR 120,000", suffix: "", oneTimeOwnership: true }
+          monthly: { price: "PKR 2,999", suffix: "/mo" },
+          yearly: { price: "PKR 32,389", suffix: "/year", monthlyEquivalent: "≈ PKR 2,699/month", note: "SAVE ≈ 10%" },
+          onetime: { price: "Quoted by scope", suffix: "", oneTimeOwnership: true }
         },
-        summary: "Get your restaurant online with a professional website, digital menu, direct ordering, reservations, and essential customer features.",
+        summary: "Everything you need to get online, accept direct orders, manage reservations, and handle essential restaurant operations.",
         includes: [
           "Restaurant Website",
-          "Interactive Menu",
           "Online Ordering",
-          "Reservation System",
+          "Reservations",
           "WhatsApp Integration",
-          "Google Maps & Reviews",
+          "Google Maps",
           "Basic Admin Panel",
-          "Single Branch",
-          "Local SEO Setup",
-          "Performance Optimization",
-          "Hosting & Deployment",
-          "Ongoing Support on Managed Plans"
+          "Order Management",
+          "Delivery & Takeaway",
+          "Reports & Analytics",
+          "1 Branch"
         ],
         modalDetails: [
           {
             category: "Website",
-            features: ["Custom restaurant website", "Home", "Menu", "Offers", "About", "Gallery", "Reservation", "Contact", "Cart & Order pages"]
+            features: ["Custom restaurant website", "Home", "Menu", "Offers", "About", "Gallery", "Reservation", "Contact", "Cart", "Checkout", "Restaurant information", "Opening hours"]
           },
           {
             category: "Menu",
-            features: ["Categories", "Food images", "Prices", "Descriptions", "Basic availability"]
+            features: ["Categories", "Food images", "Prices", "Descriptions", "Basic availability", "Product information", "Menu organization"]
           },
           {
-            category: "Ordering",
-            features: ["Online ordering", "Cart", "Checkout", "Delivery or takeaway selection"]
+            category: "Online Ordering",
+            features: ["Online ordering", "Cart", "Checkout", "Delivery ordering", "Takeaway ordering", "Customer information", "Order confirmation", "Basic order status"]
+          },
+          {
+            category: "Delivery & Takeaway",
+            features: ["Delivery order management", "Takeaway order management", "Customer delivery information", "Delivery address", "Pickup information", "Order status", "Delivery/takeaway filtering"]
           },
           {
             category: "Reservations",
-            features: ["Reservation form", "Guest information", "Date & time selection"]
+            features: ["Reservation form", "Guest information", "Date and time selection", "Party size", "Reservation management", "Reservation status", "Basic reservation overview"]
           },
           {
-            category: "Admin",
-            features: ["Menu management", "Price updates", "Offers", "Basic order viewing", "Website content updates"]
+            category: "Admin Panel",
+            features: ["Dashboard", "Menu management", "Price updates", "Offers", "Website content", "Order management", "Reservation management", "Basic customer/order information"]
           },
           {
-            category: "Integrations",
-            features: ["WhatsApp", "Google Maps", "Google Reviews"]
+            category: "Reports & Analytics",
+            features: ["Revenue", "Orders", "Average order value", "Order trends", "Basic order-source information", "Sales report", "Product sales", "Basic payment report"]
           },
           {
             category: "SEO & Performance",
-            features: ["Mobile-first design", "Image optimization", "Technical SEO setup", "Restaurant structured data", "Performance optimization"]
+            features: ["Mobile-first design", "Image optimization", "Technical SEO setup", "Restaurant structured data", "Basic local SEO setup", "Performance optimization"]
           },
           {
             category: "Deployment",
-            features: ["Hosting setup", "SSL", "Domain connection", "Production deployment", "Single-branch configuration"]
+            features: ["Hosting", "SSL", "Domain connection", "Production deployment", "Single-branch configuration"]
           },
           {
             category: "Support",
-            features: ["30 days post-launch support on one-time plans", "Ongoing support while subscribed on managed plans"]
+            features: ["Ongoing technical support while subscribed"]
           }
         ]
       },
       website_app: {
-        price: "PKR 7,999",
+        price: "PKR 4,999",
         priceSuffix: "/mo",
-        originalPrice: "PKR 10,000",
+        originalPrice: "",
         pricingOptions: {
-          monthly: { price: "PKR 7,999", suffix: "/mo", originalPrice: "PKR 10,000", lockedForLife: true },
-          yearly: { price: "PKR 86,400", suffix: "/year", originalPrice: "PKR 120,000", monthlyEquivalent: "≈ PKR 7,200/month", note: "SAVE PKR 9,588/YEAR", lockedForLife: true },
-          onetime: { price: "PKR 240,000", suffix: "", oneTimeOwnership: true }
+          monthly: { price: "PKR 4,999", suffix: "/mo" },
+          yearly: { price: "PKR 53,989", suffix: "/year", monthlyEquivalent: "≈ PKR 4,499/month", note: "SAVE ≈ 10%" },
+          onetime: { price: "Quoted by scope", suffix: "", oneTimeOwnership: true }
         },
-        summary: "Get your restaurant online with a professional website, digital menu, direct ordering, reservations, and essential customer features.",
+        summary: "Everything you need to get online, accept direct orders, manage reservations, and handle essential restaurant operations, plus a mobile app.",
         includes: [
           "Restaurant Website",
-          "Interactive Menu",
           "Online Ordering",
-          "Reservation System",
+          "Reservations",
           "WhatsApp Integration",
-          "Google Maps & Reviews",
+          "Google Maps",
           "Basic Admin Panel",
-          "Single Branch",
-          "Local SEO Setup",
-          "Performance Optimization",
-          "Hosting & Deployment",
-          "Branded Customer App",
-          "Customer Account",
-          "Mobile Ordering",
-          "Order History",
-          "Order Status",
-          "Push Notifications",
-          "App Deployment Support",
-          "Ongoing Support on Managed Plans"
+          "Order Management",
+          "Delivery & Takeaway",
+          "Reports & Analytics",
+          "1 Branch",
+          "Branded iOS & Android application",
+          "Customer accounts",
+          "Mobile ordering",
+          "Order history",
+          "Push notifications"
         ],
         modalDetails: [
           {
             category: "Website",
-            features: ["Custom restaurant website", "Home", "Menu", "Offers", "About", "Gallery", "Reservation", "Contact", "Cart & Order pages"]
+            features: ["Custom restaurant website", "Home", "Menu", "Offers", "About", "Gallery", "Reservation", "Contact", "Cart", "Checkout", "Restaurant information", "Opening hours"]
           },
           {
             category: "Menu",
-            features: ["Categories", "Food images", "Prices", "Descriptions", "Basic availability"]
+            features: ["Categories", "Food images", "Prices", "Descriptions", "Basic availability", "Product information", "Menu organization"]
           },
           {
-            category: "Ordering",
-            features: ["Online ordering", "Cart", "Checkout", "Delivery or takeaway selection"]
+            category: "Online Ordering",
+            features: ["Online ordering", "Cart", "Checkout", "Delivery ordering", "Takeaway ordering", "Customer information", "Order confirmation", "Basic order status"]
+          },
+          {
+            category: "Delivery & Takeaway",
+            features: ["Delivery order management", "Takeaway order management", "Customer delivery information", "Delivery address", "Pickup information", "Order status", "Delivery/takeaway filtering"]
           },
           {
             category: "Reservations",
-            features: ["Reservation form", "Guest information", "Date & time selection"]
+            features: ["Reservation form", "Guest information", "Date and time selection", "Party size", "Reservation management", "Reservation status", "Basic reservation overview"]
           },
           {
-            category: "Admin",
-            features: ["Menu management", "Price updates", "Offers", "Basic order viewing", "Website content updates"]
+            category: "Admin Panel",
+            features: ["Dashboard", "Menu management", "Price updates", "Offers", "Website content", "Order management", "Reservation management", "Basic customer/order information"]
           },
           {
-            category: "Integrations",
-            features: ["WhatsApp", "Google Maps", "Google Reviews"]
-          },
-          {
-            category: "Mobile App — Website + App",
-            features: ["Branded customer app", "Menu", "Online ordering", "Customer account", "Order history", "Order status", "Push notifications", "API connection to restaurant platform", "Deployment assistance"]
+            category: "Reports & Analytics",
+            features: ["Revenue", "Orders", "Average order value", "Order trends", "Basic order-source information", "Sales report", "Product sales", "Basic payment report"]
           },
           {
             category: "SEO & Performance",
-            features: ["Mobile-first design", "Image optimization", "Technical SEO setup", "Restaurant structured data", "Performance optimization"]
+            features: ["Mobile-first design", "Image optimization", "Technical SEO setup", "Restaurant structured data", "Basic local SEO setup", "Performance optimization"]
           },
           {
             category: "Deployment",
-            features: ["Hosting setup", "SSL", "Domain connection", "Production deployment", "Single-branch configuration"]
+            features: ["Hosting", "SSL", "Domain connection", "Production deployment", "Single-branch configuration"]
           },
           {
             category: "Support",
-            features: ["30 days post-launch support on one-time plans", "Ongoing support while subscribed on managed plans"]
+            features: ["Ongoing technical support while subscribed"]
+          },
+          {
+            category: "Mobile App",
+            features: ["Branded iOS & Android customer app", "Online ordering", "Order history", "Push notifications", "App deployment assistance"]
           }
         ]
       }
     }
   },
   {
-    name: "Growth",
+    name: "Golden",
     featured: true,
-    timeline: "4–7 Days",
+    timeline: "",
     platforms: {
       website: {
-        price: "PKR 7,999",
+        price: "PKR 5,999",
         priceSuffix: "/mo",
-        originalPrice: "PKR 10,000",
+        originalPrice: "",
         pricingOptions: {
-          monthly: { price: "PKR 7,999", suffix: "/mo", originalPrice: "PKR 10,000", lockedForLife: true },
-          yearly: { price: "PKR 86,400", suffix: "/year", originalPrice: "PKR 120,000", monthlyEquivalent: "≈ PKR 7,200/month", note: "SAVE PKR 9,588/YEAR", lockedForLife: true },
-          onetime: { price: "PKR 240,000", suffix: "", oneTimeOwnership: true }
+          monthly: { price: "PKR 5,999", suffix: "/mo" },
+          yearly: { price: "PKR 64,789", suffix: "/year", monthlyEquivalent: "≈ PKR 5,399/month", note: "SAVE ≈ 10%" },
+          onetime: { price: "Quoted by scope", suffix: "", oneTimeOwnership: true }
         },
-        summary: "Turn your digital presence into a connected restaurant platform for ordering, POS, kitchen operations, customer management, delivery, and growth.",
+        summary: "A connected restaurant operating system for POS, kitchen, dine-in, inventory, customers, and multiple branches.",
         includes: [
-          "Everything in Launch, plus:",
-          "Restaurant Management Dashboard",
+          "Everything in Silver",
           "POS",
-          "Kitchen Display System",
+          "KDS",
           "Dine-In & Table Management",
-          "Takeaway Management",
-          "Delivery Management",
-          "QR Table Ordering",
-          "AI Restaurant Chatbot",
-          "WhatsApp Ordering",
+          "QR Menu & Self-Ordering",
+          "Inventory & Supply",
           "Customer CRM",
-          "Analytics & Tracking",
-          "Promotions & Offers",
-          "Up to 5 Branches",
-          "Advanced Local SEO",
-          "Hosting & Deployment",
-          "Ongoing Support on Managed Plans"
+          "Advanced Analytics",
+          "Reviews",
+          "Up to 3 Branches"
         ],
         modalDetails: [
           {
             category: "Restaurant Operations",
-            features: ["Centralized restaurant dashboard", "POS", "Dine-in orders", "Takeaway orders", "Delivery orders", "Table management", "Kitchen Display System", "Order status management"]
+            features: ["Restaurant management dashboard", "Centralized order management", "POS", "KDS", "Dine-in management", "Takeaway management", "Delivery management", "Table management", "QR ordering", "Order status management"]
           },
           {
-            category: "Online Ordering",
-            features: ["Delivery ordering", "Takeaway ordering", "Cart & checkout", "Product modifiers", "Order tracking", "WhatsApp ordering"]
+            category: "POS & KDS",
+            features: ["Dine-in, Takeaway & Delivery POS", "Product catalog & Categories", "Modifiers & Add-ons", "Hold/resume orders", "KOT & Bill generation", "Kitchen tickets & Order details", "Kitchen timing & Order priority"]
           },
           {
-            category: "Dine-In",
-            features: ["Table management", "Table-specific QR ordering", "Open table orders", "Guest management", "Basic bill management"]
+            category: "Dine-In & QR Menu",
+            features: ["Floor plan & Table management", "Table status", "Waiter assignment", "Table transfer/merging", "Digital QR menu", "Table-specific QR codes", "Customer self-ordering"]
           },
           {
-            category: "AI Assistant",
-            features: ["Restaurant chatbot", "Menu questions", "Ingredient questions", "Opening hours", "Location assistance", "Reservation assistance", "Basic ordering guidance"]
+            category: "Inventory & Supply",
+            features: ["Ingredient stock & levels", "Low-stock alerts", "Recipe mapping", "Supplier profiles", "Purchase orders", "Receiving", "Waste records"]
           },
           {
             category: "Customer Management",
-            features: ["Customer profiles", "Order history", "Customer activity", "Repeat customer tracking", "Basic segmentation"]
+            features: ["Customer profiles", "Order history", "Total spending", "Average order value", "Favorite products", "Repeat customer tracking", "Basic customer segmentation", "Reviews management"]
           },
           {
-            category: "Analytics",
-            features: ["Revenue", "Orders", "Average order value", "Product performance", "Order sources", "Branch performance", "Customer insights"]
+            category: "Advanced Analytics",
+            features: ["Revenue & Orders", "Sales trends", "Best sellers & Product revenue", "New vs Repeat customers", "Customer value", "Channel performance", "Branch performance"]
           },
           {
-            category: "Marketing",
-            features: ["Promotions", "Discount codes", "Offers", "Customer re-engagement"]
-          },
-          {
-            category: "Branches",
-            features: ["Up to 5 branches", "Branch-level menus", "Branch orders", "Branch analytics", "Branch information"]
+            category: "Branch Management",
+            features: ["Up to 3 Branches", "Branch information", "Branch menus & orders", "Branch tables & inventory", "Branch analytics"]
           },
           {
             category: "SEO & Performance",
@@ -701,85 +692,65 @@ export const pricingPackages = [
           },
           {
             category: "Deployment & Support",
-            features: ["Hosting", "SSL", "Deployment", "Monitoring", "Technical maintenance", "Ongoing support while subscribed"]
+            features: ["Hosting", "SSL", "Deployment", "Monitoring", "Technical maintenance", "Bug fixes", "Ongoing support while subscribed"]
           }
         ]
       },
       website_app: {
-        price: "PKR 14,999",
+        price: "PKR 9,999",
         priceSuffix: "/mo",
-        originalPrice: "PKR 18,000",
+        originalPrice: "",
         pricingOptions: {
-          monthly: { price: "PKR 14,999", suffix: "/mo", originalPrice: "PKR 18,000", lockedForLife: true },
-          yearly: { price: "PKR 161,988", suffix: "/year", originalPrice: "PKR 180,000", monthlyEquivalent: "≈ PKR 13,499/month", note: "SAVE PKR 18,000/YEAR", lockedForLife: true },
-          onetime: { price: "Starting from PKR 450,000", suffix: "", oneTimeOwnership: true }
+          monthly: { price: "PKR 9,999", suffix: "/mo" },
+          yearly: { price: "PKR 107,989", suffix: "/year", monthlyEquivalent: "≈ PKR 8,999/month", note: "SAVE ≈ 10%" },
+          onetime: { price: "Quoted by scope", suffix: "", oneTimeOwnership: true }
         },
-        summary: "Turn your digital presence into a connected restaurant platform for ordering, POS, kitchen operations, customer management, delivery, and growth.",
+        summary: "A connected restaurant operating system for POS, kitchen, dine-in, inventory, customers, and multiple branches, plus a mobile app.",
         includes: [
-          "Everything in Launch, plus:",
-          "Restaurant Management Dashboard",
+          "Everything in Silver",
           "POS",
-          "Kitchen Display System",
+          "KDS",
           "Dine-In & Table Management",
-          "Takeaway Management",
-          "Delivery Management",
-          "QR Table Ordering",
-          "AI Restaurant Chatbot",
-          "WhatsApp Ordering",
+          "QR Menu & Self-Ordering",
+          "Inventory & Supply",
           "Customer CRM",
-          "Analytics & Tracking",
-          "Promotions & Offers",
-          "Up to 5 Branches",
-          "Advanced Local SEO",
-          "Hosting & Deployment",
-          "Branded Customer App",
-          "Customer Login",
-          "Online Ordering",
-          "Order History",
-          "Order Status",
-          "Push Notifications",
-          "Reservation Access",
-          "Loyalty Features where applicable",
-          "App-to-platform integration",
-          "App deployment support",
-          "Ongoing Support on Managed Plans"
+          "Advanced Analytics",
+          "Reviews",
+          "Up to 3 Branches",
+          "Branded iOS & Android application",
+          "Customer accounts",
+          "Mobile ordering",
+          "Order history",
+          "Push notifications"
         ],
         modalDetails: [
           {
             category: "Restaurant Operations",
-            features: ["Centralized restaurant dashboard", "POS", "Dine-in orders", "Takeaway orders", "Delivery orders", "Table management", "Kitchen Display System", "Order status management"]
+            features: ["Restaurant management dashboard", "Centralized order management", "POS", "KDS", "Dine-in management", "Takeaway management", "Delivery management", "Table management", "QR ordering", "Order status management"]
           },
           {
-            category: "Online Ordering",
-            features: ["Delivery ordering", "Takeaway ordering", "Cart & checkout", "Product modifiers", "Order tracking", "WhatsApp ordering"]
+            category: "POS & KDS",
+            features: ["Dine-in, Takeaway & Delivery POS", "Product catalog & Categories", "Modifiers & Add-ons", "Hold/resume orders", "KOT & Bill generation", "Kitchen tickets & Order details", "Kitchen timing & Order priority"]
           },
           {
-            category: "Dine-In",
-            features: ["Table management", "Table-specific QR ordering", "Open table orders", "Guest management", "Basic bill management"]
+            category: "Dine-In & QR Menu",
+            features: ["Floor plan & Table management", "Table status", "Waiter assignment", "Table transfer/merging", "Digital QR menu", "Table-specific QR codes", "Customer self-ordering"]
           },
           {
-            category: "AI Assistant",
-            features: ["Restaurant chatbot", "Menu questions", "Ingredient questions", "Opening hours", "Location assistance", "Reservation assistance", "Basic ordering guidance"]
+            category: "Inventory & Supply",
+            features: ["Ingredient stock & levels", "Low-stock alerts", "Recipe mapping", "Supplier profiles", "Purchase orders", "Receiving", "Waste records"]
           },
           {
             category: "Customer Management",
-            features: ["Customer profiles", "Order history", "Customer activity", "Repeat customer tracking", "Basic segmentation"]
+            features: ["Customer profiles", "Order history", "Total spending", "Average order value", "Favorite products", "Repeat customer tracking", "Basic customer segmentation", "Reviews management"]
           },
           {
-            category: "Analytics",
-            features: ["Revenue", "Orders", "Average order value", "Product performance", "Order sources", "Branch performance", "Customer insights"]
+            category: "Advanced Analytics",
+            features: ["Revenue & Orders", "Sales trends", "Best sellers & Product revenue", "New vs Repeat customers", "Customer value", "Channel performance", "Branch performance"]
           },
           {
-            category: "Marketing",
-            features: ["Promotions", "Discount codes", "Offers", "Customer re-engagement"]
-          },
-          {
-            category: "Branches",
-            features: ["Up to 5 branches", "Branch-level menus", "Branch orders", "Branch analytics", "Branch information"]
-          },
-          {
-            category: "Mobile App — Website + App",
-            features: ["Branded iOS & Android customer app", "Customer accounts", "Online ordering", "Order history", "Order status", "Push notifications", "Reservation access", "Loyalty access where applicable", "API integration", "Deployment assistance"]
+            category: "Branch Management",
+            features: ["Up to 3 Branches", "Branch information", "Branch menus & orders", "Branch tables & inventory", "Branch analytics"]
           },
           {
             category: "SEO & Performance",
@@ -787,13 +758,157 @@ export const pricingPackages = [
           },
           {
             category: "Deployment & Support",
-            features: ["Hosting", "SSL", "Deployment", "Monitoring", "Technical maintenance", "Ongoing support while subscribed"]
+            features: ["Hosting", "SSL", "Deployment", "Monitoring", "Technical maintenance", "Bug fixes", "Ongoing support while subscribed"]
+          },
+          {
+            category: "Mobile App",
+            features: ["Branded iOS & Android customer app", "Online ordering", "Order history", "Push notifications", "App deployment assistance"]
+          }
+        ]
+      }
+    }
+  },
+  {
+    name: "Diamond",
+    timeline: "",
+    platforms: {
+      website: {
+        price: "PKR 9,999",
+        priceSuffix: "/mo",
+        originalPrice: "",
+        pricingOptions: {
+          monthly: { price: "PKR 9,999", suffix: "/mo" },
+          yearly: { price: "PKR 107,989", suffix: "/year", monthlyEquivalent: "≈ PKR 8,999/month", note: "SAVE ≈ 10%" },
+          onetime: { price: "Quoted by scope", suffix: "", oneTimeOwnership: true }
+        },
+        summary: "Advanced restaurant management with AI, payments, marketing, loyalty, finance, staff management, and up to six branches.",
+        includes: [
+          "Everything in Golden",
+          "AI Assistant",
+          "Payment Integration",
+          "Promotions & Offers",
+          "Marketing & Campaigns",
+          "Loyalty & Rewards",
+          "HR & Staff",
+          "Finance & P&L",
+          "Website Builder",
+          "Up to 6 Branches"
+        ],
+        modalDetails: [
+          {
+            category: "AI Restaurant Assistant",
+            features: ["Restaurant FAQs", "Menu questions", "Opening hours", "Location & Reservation assistance", "Basic ordering guidance", "Sales & Customer insights", "Operational alerts"]
+          },
+          {
+            category: "Marketing & Loyalty",
+            features: ["Promotions & Offers", "Discount codes & Combo deals", "Campaign management", "Target customer segments", "Marketing analytics", "Loyalty points & Rewards", "Customer tiers", "Referral rewards"]
+          },
+          {
+            category: "HR & Staff",
+            features: ["Staff profiles & Contact information", "Roles (Manager, Waiter, Kitchen, etc.)", "Granular permissions", "Staff activity tracking"]
+          },
+          {
+            category: "Finance & P&L",
+            features: ["Revenue tracking by channel", "Payment tracking (Cash, Card, Online)", "Refunds & Discounts", "Expense tracking", "COGS", "Gross & Operating profit", "Profit margin"]
+          },
+          {
+            category: "Website Builder",
+            features: ["Manage Homepage, Menu, Offers, About", "Brand colors & Typography", "Publishing workflow", "Website SEO (Page titles, Meta descriptions, URLs)"]
+          },
+          {
+            category: "Integrations & Payments",
+            features: ["Payment gateway connections", "Online payments", "WhatsApp Business/API", "Maps & Delivery providers", "External APIs"]
+          },
+          {
+            category: "Branch Management",
+            features: ["Up to 6 Branches", "Centralized View", "Branch-specific pricing", "Branch orders, tables, inventory", "Branch delivery & analytics"]
+          },
+          {
+            category: "Advanced Analytics",
+            features: ["Operational performance", "Kitchen & Delivery performance", "Customer retention & value", "Marketing campaign conversion", "Financial profitability"]
+          },
+          {
+            category: "Deployment & Support",
+            features: ["Managed platform hosting", "SSL & Deployment", "Monitoring & Security updates", "Technical maintenance & Bug fixes", "Platform management support", "Ongoing support while subscribed"]
+          }
+        ]
+      },
+      website_app: {
+        price: "PKR 15,999",
+        priceSuffix: "/mo",
+        originalPrice: "",
+        pricingOptions: {
+          monthly: { price: "PKR 15,999", suffix: "/mo" },
+          yearly: { price: "PKR 172,789", suffix: "/year", monthlyEquivalent: "≈ PKR 14,399/month", note: "SAVE ≈ 10%" },
+          onetime: { price: "Quoted by scope", suffix: "", oneTimeOwnership: true }
+        },
+        summary: "Advanced restaurant management with AI, payments, marketing, loyalty, finance, staff management, and up to six branches, plus a mobile app.",
+        includes: [
+          "Everything in Golden",
+          "AI Assistant",
+          "Payment Integration",
+          "Promotions & Offers",
+          "Marketing & Campaigns",
+          "Loyalty & Rewards",
+          "HR & Staff",
+          "Finance & P&L",
+          "Website Builder",
+          "Up to 6 Branches",
+          "Branded iOS & Android application",
+          "Customer accounts",
+          "Mobile ordering",
+          "Order history",
+          "Push notifications",
+          "Payment integration",
+          "Loyalty"
+        ],
+        modalDetails: [
+          {
+            category: "AI Restaurant Assistant",
+            features: ["Restaurant FAQs", "Menu questions", "Opening hours", "Location & Reservation assistance", "Basic ordering guidance", "Sales & Customer insights", "Operational alerts"]
+          },
+          {
+            category: "Marketing & Loyalty",
+            features: ["Promotions & Offers", "Discount codes & Combo deals", "Campaign management", "Target customer segments", "Marketing analytics", "Loyalty points & Rewards", "Customer tiers", "Referral rewards"]
+          },
+          {
+            category: "HR & Staff",
+            features: ["Staff profiles & Contact information", "Roles (Manager, Waiter, Kitchen, etc.)", "Granular permissions", "Staff activity tracking"]
+          },
+          {
+            category: "Finance & P&L",
+            features: ["Revenue tracking by channel", "Payment tracking (Cash, Card, Online)", "Refunds & Discounts", "Expense tracking", "COGS", "Gross & Operating profit", "Profit margin"]
+          },
+          {
+            category: "Website Builder",
+            features: ["Manage Homepage, Menu, Offers, About", "Brand colors & Typography", "Publishing workflow", "Website SEO (Page titles, Meta descriptions, URLs)"]
+          },
+          {
+            category: "Integrations & Payments",
+            features: ["Payment gateway connections", "Online payments", "WhatsApp Business/API", "Maps & Delivery providers", "External APIs"]
+          },
+          {
+            category: "Branch Management",
+            features: ["Up to 6 Branches", "Centralized View", "Branch-specific pricing", "Branch orders, tables, inventory", "Branch delivery & analytics"]
+          },
+          {
+            category: "Advanced Analytics",
+            features: ["Operational performance", "Kitchen & Delivery performance", "Customer retention & value", "Marketing campaign conversion", "Financial profitability"]
+          },
+          {
+            category: "Deployment & Support",
+            features: ["Managed platform hosting", "SSL & Deployment", "Monitoring & Security updates", "Technical maintenance & Bug fixes", "Platform management support", "Ongoing support while subscribed"]
+          },
+          {
+            category: "Mobile App",
+            features: ["Branded iOS & Android customer app", "Customer accounts", "Mobile ordering", "Order history", "Order status", "Push notifications", "Reservations", "Loyalty", "Payment integration", "App deployment assistance"]
           }
         ]
       }
     }
   }
 ];
+
 export const contactFaqs = [
   {
     question: "What happens after I request a demo or consultation?",

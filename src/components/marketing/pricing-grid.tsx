@@ -15,24 +15,11 @@ export function PricingGrid() {
   return (
     <>
       {/* Promotional Banner */}
+      {/* 
       <div className="flex justify-center mb-8">
-        <div className="flex flex-col gap-3 rounded-xl border border-amber-500/20 bg-amber-500/5 px-6 py-5 w-full max-w-md relative overflow-hidden">
-          {/* Subtle background glow */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[150%] h-[50px] bg-amber-500/10 blur-2xl rounded-full pointer-events-none" />
-          
-          <div className="flex items-center justify-between relative z-10 gap-2">
-            <span className="text-amber-400 font-semibold text-[15px] leading-tight">Founding Restaurant Pricing — First 20 Only</span>
-            <span className="text-amber-200 text-[10px] font-bold bg-amber-500/10 px-2 py-1 rounded-full border border-amber-500/20 tracking-wider uppercase whitespace-nowrap">Lifetime Price Lock</span>
-          </div>
-          <div className="h-2 w-full bg-black/40 rounded-full overflow-hidden relative z-10 border border-white/5 flex mt-1">
-            <div className="h-full bg-amber-500 w-[70%] rounded-full shadow-[0_0_10px_rgba(245,158,11,0.5)]"></div>
-          </div>
-          <div className="flex justify-between relative z-10 mt-1 items-center">
-            <span className="text-xs text-amber-200/80 font-medium">6 spots left</span>
-            <span className="text-[10px] text-foreground-muted uppercase tracking-wider font-semibold">14/20 claimed</span>
-          </div>
-        </div>
+        ... scarcity card content ...
       </div>
+      */}
 
       <div className="flex justify-center mb-6">
         <div className="inline-flex rounded-full border border-white/10 bg-white/[0.02] p-1">
@@ -154,10 +141,7 @@ export function PricingGrid() {
                   );
                 })}
               </div>
-              <div className="mt-6 rounded-none border border-white/8 bg-white/[0.03] p-4">
-                <p className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-200">Timeline</p>
-                <p className="mt-2 text-sm text-foreground-body">{pkg.timeline}</p>
-              </div>
+
               <button
                 onClick={() => setSelectedPkg(pkg)}
                 className="button-primary mt-6 flex w-full items-center justify-center px-6 text-sm"
