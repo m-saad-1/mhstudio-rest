@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import deviceShowcase from "../../../public/images/Device-showcase.avif";

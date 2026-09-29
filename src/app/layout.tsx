@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import "./globals.css";
@@ -84,15 +84,7 @@ export default function RootLayout({
           <SiteFooter />
         </div>
       </body>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-G1NMQYD8EJ" strategy="lazyOnload" />
-      <Script id="google-analytics" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-G1NMQYD8EJ');
-        `}
-      </Script>
+      <GoogleAnalytics gaId="G-G1NMQYD8EJ" />
       <Analytics />
     </html>
   );
