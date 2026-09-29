@@ -89,7 +89,7 @@ export function SiteHeader() {
       <div
         className={`fixed inset-0 z-[100] lg:hidden ${menuOpen ? "pointer-events-auto" : "pointer-events-none"}`}
         aria-hidden={!menuOpen}
-        inert={!menuOpen ? true : undefined}
+        {...(!menuOpen && { inert: "true" })}
       >
         {/* Backdrop */}
         <div 

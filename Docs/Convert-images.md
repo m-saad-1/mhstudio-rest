@@ -1,1 +1,0 @@
-Convert **all website images to AVIF format**, but process them **strictly one by one** to prevent excessive CPU/RAM usage. The system becomes unstable when multiple images are processed simultaneously, so **do not batch-convert, parallelize, or mass-process images**.

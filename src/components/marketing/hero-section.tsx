@@ -1,19 +1,14 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import deviceShowcase from "../../../public/images/Device-showcase.avif";
 import SearchCheck from "lucide-react/dist/esm/icons/search-check";
-import ShieldCheck from "lucide-react/dist/esm/icons/shield-check";
 import Bot from "lucide-react/dist/esm/icons/bot";
 import Sparkles from "lucide-react/dist/esm/icons/sparkles";
 import Zap from "lucide-react/dist/esm/icons/zap";
-import Loader2 from "lucide-react/dist/esm/icons/loader-2";
 import ShoppingBag from "lucide-react/dist/esm/icons/shopping-bag";
 import Calculator from "lucide-react/dist/esm/icons/calculator";
-import { siteConfig } from "@/data/site-content";
 
 const trustItems = [
   { label: "Online Ordering", icon: ShoppingBag },
