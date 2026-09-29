@@ -1,219 +1,135 @@
-# Prompt: Fix Lighthouse Performance, Accessibility, SEO & Agentic Browsing Issues for mhstudios.online (Next.js)
+# Prompt: Fix Lighthouse Performance Issues on mhstudios.online
 
-You are working on a Next.js site (`mhstudios.online`) that uses `next/image` (`data-nimg` attributes visible in DOM), Tailwind-style utility classes, and Google Tag Manager. Two Lighthouse audits were run:
-
-- **Mobile (Moto G Power, Slow 4G):** Performance 74, Accessibility 96, Best Practices 100, SEO 92, Agentic Browsing 1/2
-- **Desktop (Custom throttling):** Performance 97, Accessibility 100, Best Practices 100, SEO 92, Agentic Browsing 2/2
-
-Implement every fix below, in the priority order given. Do not skip any item — apply all of them across the codebase, not just to the first matching instance.
+Paste this whole file into your coding agent (Claude Code, Cursor, etc.) at the root of the website repo.
 
 ---
 
-## Priority 1 — LCP image not discoverable/prioritized (Mobile Performance 74 → target 90+)
+## Role
 
-**Problem:** The hero "device showcase" image is the LCP element (4.5s LCP on mobile). Lighthouse's LCP Request Discovery insight shows it is not using `fetchpriority="high"` and is not preloaded/discoverable immediately in the initial HTML, even though it is technically not lazy-loaded.
+You are a senior Next.js performance engineer. Fix the Lighthouse issues listed below for **https://www.mhstudios.online** without changing the visual design, content, or SEO/accessibility behavior.
 
-**Fix:**
-- Find the `<Image>` component rendering the "Device showcase featuring MhStudio website mockups on laptop, tablet, and phone" image.
-- Add the `priority` prop (Next.js `<Image priority />`) so Next.js automatically:
-  - Removes `loading="lazy"`
-  - Adds `fetchpriority="high"`
-  - Emits a `<link rel="preload">` for it in `<head>`
-- Only apply `priority` to this single above-the-fold hero image. Do NOT add `priority` to any other image (chatbot interface, work portfolio previews, etc.) — over-prioritizing defeats the purpose and can hurt LCP for competing requests.
+## Context (from the Lighthouse report)
 
-```jsx
-<Image
-  src="/_next/static/media/device_showcase.avif"
-  alt="Device showcase featuring MhStudio website mockups on laptop, tablet, and phone"
-  width={2048}
-  height={855}
-  priority
-  fetchPriority="high"
-  sizes="(max-width: 640px) 96vw, (max-width: 1024px) 92vw, 1100px"
-/>
-```
+- Test profile: Lighthouse 13.5, **Moto G Power emulation, Slow 4G, initial page load**.
+- Stack signals: Next.js (`/_next/image`, `data-nimg`, hashed chunks), Tailwind-style classes, Google Analytics via gtag (`G-G1NMQYD8EJ`).
+- Category scores: Accessibility 100, Best Practices 100, SEO 100, **Agentic Browsing 75**.
+- The Performance gauge shows 100 but the metrics do not match it. Treat the metrics below as the truth:
 
----
+| Metric | Current | Target |
+|---|---|---|
+| FCP | 1.1 s | ≤ 1.0 s |
+| **LCP** | **6.1 s** | **≤ 2.5 s (aim ≤ 2.0 s)** |
+| TBT | 60 ms | ≤ 50 ms |
+| CLS | 0 | 0 (do not regress) |
+| **Speed Index** | **4.4 s** | **≤ 3.4 s** |
 
-## Priority 2 — Oversized/unresponsive images (53–84 KiB wasted, both mobile & desktop)
+- **LCP element:** the hero image `Device-showcase.*.avif` ("Device showcase featuring MhStudio website mockups…"), `width=1616 height=973`, `fetchpriority="high"`, `sizes="(max-width: 768px) 100vw, (max-width: 1024px) 900px, 1200px"`, displayed with `max-h-[clamp(15rem,50vw,40rem)] object-contain`.
+- **LCP breakdown:** TTFB 0 ms, resource load delay 140 ms, resource load duration 370 ms, **element render delay 2,560 ms**. The image is downloaded quickly but painted very late. This is the main problem.
 
-**Problem:** Multiple images are served far larger than their rendered display size because the `sizes` attribute doesn't match actual rendered container widths.
+## Ground rules
 
-| Image | Served | Rendered | Wasted |
-|---|---|---|---|
-| `chatbot.avif` (AI Receptionist Interface) — mobile | 750×1118 | 312×465 | 31.8 KiB |
-| `device_showcase` — mobile | full | 380×159 | 21.2 KiB |
-| `chatbot.avif` — desktop | 750×1118 | 400×597 | 27.5 KiB |
-| `device_showcase` — desktop | 1200×501 | 920×384 | 21.3 KiB |
-| `thecheesecakefactory-new.avif` — desktop | 614×384 | 398×239 | 18.1 KiB |
-| `momofuku-new.avif` — desktop | 614×384 | 398×239 | 17.1 KiB |
-
-**Fix:**
-1. For each `<Image>` above, correct the `sizes` prop to reflect the actual rendered container width instead of generic values like `100vw` or `50vw`. Example for the chatbot image:
-   ```jsx
-   <Image
-     src="/images/chatbot.avif"
-     alt="AI Receptionist Interface"
-     fill
-     sizes="(max-width: 1024px) 45vw, 400px"
-   />
-   ```
-2. For the three-column work portfolio grid (Cheesecake Factory, Momofuku, and similar cards), set:
-   ```jsx
-   sizes="(max-width: 1024px) 100vw, 33vw"
-   ```
-   only if the column genuinely spans that width at each breakpoint — otherwise tighten further to the true rendered width (e.g. `398px` on desktop).
-3. Update `next.config.js` to add finer-grained `deviceSizes`/`imageSizes` steps so Next.js doesn't have to jump to the next largest bucket (e.g. straight to 750px when 400–420px would suffice):
-   ```js
-   // next.config.js
-   module.exports = {
-     images: {
-       deviceSizes: [320, 420, 640, 768, 1024, 1200, 1920],
-       imageSizes: [16, 32, 48, 64, 96, 128, 256, 384, 400],
-     },
-   };
-   ```
-4. Keep serving AVIF (already in use) — do not regress format.
+1. First check the Next.js version, router type (App/Pages), and `next.config.*`, then apply only what that version supports.
+2. Make one small commit per task below, in the order given.
+3. Do not remove analytics, only defer it. Do not change copy, layout, or colors.
+4. Never fake or hard-code metrics. Report real before/after numbers.
+5. Do not lower Accessibility, SEO, or Best Practices below 100.
 
 ---
 
-## Priority 3 — Mobile menu accessibility & Agentic Browsing failure (Accessibility 96 → 100, Agentic Browsing 1/2 → 2/2)
+## Task 1: Fix the 2,560 ms LCP render delay (highest priority)
 
-**Problem:** When the mobile nav menu is closed, its container has `aria-hidden="true"`, but it still contains focusable elements: the "Close menu" button and links (`Work`, `Services`, `Process`, `About`, `Pricing`, `Contact`, `Get Free Demo`, `Book Free Consultation`). This breaks the accessibility tree ("Accessibility tree is not well-formed" — the same root cause fails the Agentic Browsing category on mobile) and traps assistive-tech/keyboard focus inside a hidden panel.
+The image arrives at ~510 ms but is not painted until much later. Find out why and fix it.
 
-**Fix — use the native `inert` attribute so hidden state, tab order, and AT exposure are handled together in one place:**
-```jsx
-<div
-  className="fixed inset-0 z-[100] lg:hidden pointer-events-none"
-  aria-hidden={!menuOpen}
-  {...(!menuOpen ? { inert: '' } : {})}
->
-  <button type="button" aria-label="Close menu" onClick={closeMenu}>
-    Close menu
-  </button>
+Investigate, in this order:
 
-  <a href="/work">Work</a>
-  <a href="/services">Services</a>
-  <a href="/process">Process</a>
-  <a href="/about">About</a>
-  <a href="/pricing">Pricing</a>
-  <a href="/contact">Contact</a>
-  <a href="/demo">Get Free Demo</a>
-  <a href="/consultation">Book Free Consultation</a>
-</div>
-```
-If React's typing doesn't accept `inert` directly, cast it or use a plain DOM attribute spread (`{...{inert: !menuOpen ? '' : undefined}}`), or fall back to manually setting `tabIndex={menuOpen ? 0 : -1}` on every focusable child AND keeping `aria-hidden` in sync — but `inert` is strongly preferred since it fixes both audits at once and prevents future regressions if new interactive children are added to the menu.
+1. **Hidden-until-hydrated hero.** Search the hero section and its parents for: `opacity-0`, `initial={{ opacity: 0 }}` (framer-motion), `invisible`, `hidden`, AOS/GSAP/`animate-*` entrance classes, `useEffect` + `mounted` state gates, `dynamic(..., { ssr: false })`, or `Suspense` fallbacks around the hero. Chrome does not count an element as LCP until it is actually visible, so any of these delays LCP until JS runs.
+2. **Main-thread blocking before first paint:** large client components at the top of the tree, heavy work in `useLayoutEffect`, or big hydration cost.
+3. **Render-blocking CSS and fonts** (see Task 3).
 
-Also ensure `pointer-events-none` is only applied when the menu is closed, and removed when open, so the menu remains clickable/tappable when visible.
+Fix:
 
----
+- Make the hero image visible in the server-rendered HTML with **no opacity/visibility entrance animation on the LCP element or its ancestors**. If an entrance animation is required, animate only `transform` on a different element, or start at full opacity.
+- Remove `mounted`/client-only gating from the hero. Render it as a Server Component where possible.
+- Keep `priority` (or `preload` on Next 16+) and `fetchPriority="high"` on this one image only. Ensure no other image on the page is `priority`.
+- Do not lazy-load the hero image.
 
-## Priority 4 — SEO: non-descriptive "Learn More" links (SEO 92 → 100, both mobile & desktop)
+**Done when:** the LCP breakdown shows render delay under ~300 ms.
 
-**Problem:** Six links pointing to `/services` all use the identical, non-descriptive text "Learn More." This fails Lighthouse's descriptive-link-text audit and hurts both SEO and screen-reader users navigating by link list.
+## Task 2: Improve image delivery (est. savings 276 KiB)
 
-**Fix:** Give each service card's link unique, descriptive accessible text tied to that specific service. Apply to all six instances — find every service card component and update it, e.g.:
-```jsx
-<a href="/services">
-  Learn more about {service.name}
-</a>
-```
-or, if the visible "Learn More" text must stay short for design reasons, add a visually-hidden descriptive suffix instead of changing the visible label:
-```jsx
-<a href="/services">
-  Learn More
-  <span className="sr-only"> about {service.name}</span>
-</a>
-```
-Do this for every one of the six service cards (e.g. AI Receptionist, and the other five services listed on the page) — not just one.
+1. The image is constrained by `max-h-[clamp(15rem,50vw,40rem)]` with `object-contain`, so its real rendered width is smaller than `sizes` claims (at ~412 px viewport the height cap is ~240 px, so rendered width is ~400 px, not 100vw). Measure the actual rendered width at 360, 412, 768, 1024, and 1440 px and rewrite `sizes` to match, for example a calc based on the height cap × aspect ratio (1616/973 ≈ 1.66).
+2. Set `quality` to about 60–70 for this AVIF and compare visually. Keep AVIF as the first format in `images.formats` (`['image/avif', 'image/webp']`).
+3. Trim `images.deviceSizes` / `images.imageSizes` in `next.config.*` so Next does not pick an oversized candidate for mobile.
+4. Check that the source file is not larger than needed (max useful width ≈ 1600 px). Re-export the source if it has excess metadata or padding around the mockups.
+5. Keep explicit `width`/`height` so CLS stays 0.
 
----
+**Done when:** the hero image transferred on the mobile profile is roughly 60–90 KiB or less, and the "Improve image delivery" insight is cleared or much smaller.
 
-## Priority 5 — Render-blocking CSS (160–286ms delay, both mobile & desktop)
+## Task 3: Remove render-blocking CSS (est. savings 380 ms)
 
-**Problem:** `984e98118de1fa3c.css` (13.2 KiB) blocks initial render and is the deepest node in the critical request chain (max critical path latency 286ms on desktop).
+Blocking file: `/_next/static/css/81b85a833dfa3ece.css` (16.2 KiB, ~190 ms on Slow 4G).
 
-**Fix:**
-1. Extract and inline critical above-the-fold CSS directly in `<head>` (many CSS-in-JS/Tailwind setups support critical CSS extraction plugins — evaluate `beasties`/`critters` or Next.js's built-in optimizeCss experimental flag).
-2. Defer non-critical CSS loading.
-3. Audit the Tailwind `content` config to ensure unused utility classes are actually purged from the production build — verify the file's real size is fully justified by classes actually used.
+- If Next.js ≥ 15, enable `experimental: { inlineCss: true }` in `next.config.*` so critical CSS is inlined and the request leaves the critical path. Verify it works with the installed version and does not break styling.
+- If that is not available, reduce the stylesheet: confirm Tailwind `content` globs are tight, remove unused global CSS and unused component-library styles, and avoid importing CSS in multiple layouts.
+- Load fonts with `next/font` (`display: 'swap'`, subset only needed weights). No external font `<link>` tags.
 
----
+**Done when:** "Render-blocking requests" no longer lists the CSS file, or its savings drop to near zero.
 
-## Priority 6 — Legacy JavaScript / unnecessary polyfills (12 KiB wasted, both mobile & desktop)
+## Task 4: Defer Google Tag Manager / gtag (172.5 KiB, ~73.5 KiB unused)
 
-**Problem:** `794-c9f1c83907e70838.js` includes polyfills/transforms for features all modern (Baseline) browsers already support: `Array.prototype.at`, `Array.prototype.flat`, `Array.prototype.flatMap`, `Object.fromEntries`, `Object.hasOwn`, `String.prototype.trimEnd`, `String.prototype.trimStart`.
+- Replace any manual gtag `<script>` with `GoogleAnalytics` from `@next/third-parties/google` (`gaId="G-G1NMQYD8EJ"`) in the root layout, or use `next/script`.
+- Go one step further: load the script on **idle or first user interaction** (`requestIdleCallback` with a timeout fallback, or on first `pointerdown`/`scroll`/`keydown`) instead of during the initial load. Keep `strategy="lazyOnload"` at minimum.
+- Keep the existing `preconnect` to `googletagmanager.com` only if the script still loads early. If it is deferred to interaction, remove the preconnect.
+- Confirm pageviews still register in GA4 Realtime.
 
-**Fix:**
-1. Add or correct a `browserslist` entry in `package.json`:
-   ```json
-   {
-     "browserslist": [
-       "defaults",
-       "not IE 11",
-       "maintained node versions"
-     ]
-   }
-   ```
-2. Check for any `.babelrc`/custom Babel config forcing older targets or including `core-js` — remove/adjust if present, since Next.js's SWC compiler should already target modern output when `browserslist` is set correctly.
-3. Audit dependencies for ones that ship their own polyfills regardless of target (common with older UI kits) and replace/update them if found.
-4. Rebuild and re-run Lighthouse to confirm the "Legacy JavaScript" insight (Est savings ~12 KiB) is resolved.
+## Task 5: Cut first-party unused/legacy JavaScript
+
+Files flagged: `chunks/794-c9f1c83907e70838.js` (58.9 KiB, 23.4 KiB unused; 11.7 KiB legacy polyfills) and `chunks/4bd1b696-*.js` (62.5 KiB, 21.5 KiB unused).
+
+1. **Legacy JS:** the chunk ships polyfills for `Array.prototype.at`, `flat`, `flatMap`, `Object.fromEntries`, `Object.hasOwn`, `String.prototype.trimStart`, `trimEnd`. Add a modern `browserslist` to `package.json`, for example `["chrome >= 111", "edge >= 111", "firefox >= 111", "safari >= 16.4"]`. Then run a bundle analysis (`@next/bundle-analyzer`) to find which dependency contributes the polyfills. If a third-party package bundles its own, upgrade it or replace it.
+2. **Unused JS:** in the bundle analyzer, find the largest client-side dependencies on the home page. Then:
+   - Convert components that do not need interactivity from Client to Server Components (remove unnecessary `"use client"`).
+   - Lazy-load below-the-fold sections with `next/dynamic` (keep SSR on unless the component truly cannot render on the server).
+   - If framer-motion is used, switch to `LazyMotion` with `domAnimation` and `m.*` components, or replace simple animations with CSS.
+   - Import icon/util libraries by named path, not whole packages.
+3. Do not touch `4bd1b696-*.js` directly if it is the React/Next runtime. Just make sure page-specific code is not inflating it.
+
+**Done when:** first-party JS transfer on the home page drops noticeably (target: at least 30–40 KiB less), "Legacy JavaScript" is cleared, and TBT stays ≤ 60 ms.
+
+## Task 6: Remove the forced reflow (37 ms)
+
+Search client code for layout reads that run right after DOM/style writes: `offsetWidth`, `offsetHeight`, `clientWidth`, `getBoundingClientRect()`, `scrollHeight`, `getComputedStyle()`, especially inside `useEffect`/`useLayoutEffect`, scroll handlers, carousel/marquee/masonry code, and animation libraries.
+
+Fix by batching reads before writes, using `ResizeObserver` or `IntersectionObserver` instead of measuring in effects, and wrapping unavoidable reads in `requestAnimationFrame`. If the source is a third-party library, lazy-load that component.
+
+## Task 7: Agentic Browsing score (75 → as high as possible)
+
+The report does not show which Agentic Browsing audits failed, so do not guess.
+
+1. Run Lighthouse 13.x against the production URL with JSON output (`npx lighthouse https://www.mhstudios.online --output=json --output=html --output-path=./lh-before`).
+2. In the JSON, find the Agentic Browsing category, list every audit that is not passing, and show me that list.
+3. Fix each failing audit that can be fixed in code (typically semantic HTML, clear accessible names/labels on interactive elements, stable and descriptive links/buttons, structured data, machine-readable metadata). For any audit that needs a product decision from me, list it and ask instead of inventing an implementation.
 
 ---
 
-## Priority 7 — Unused JavaScript (115 KiB, primarily desktop-detailed)
+## Verification (required before you finish)
 
-**Problem:**
-- Google Tag Manager (`gtag/js?id=G-G1NMQYD8EJ`): 159.5 KiB loaded, 67.2 KiB unused.
-- First-party chunks `4bd1b696-215e5051988c3dde.js` (62.6 KiB) and `794-c9f1c83907e70838.js` (59.0 KiB): ~47.5 KiB combined unused.
+1. `next build` and confirm no errors or new warnings. Run `next start` locally for a sanity check.
+2. Run Lighthouse **3 times** on the deployed or production-like build (mobile, default Slow 4G throttling) and report the **median** for FCP, LCP, TBT, CLS, Speed Index, and all category scores.
+3. Confirm the visual result is unchanged at 360, 412, 768, and 1440 px widths, and that GA4 still records a pageview.
+4. Provide a before/after table:
 
-**Fix:**
-1. **GTM:** Load it lazily instead of eagerly on first paint:
-   ```jsx
-   import Script from 'next/script';
+| Metric | Before | After |
+|---|---|---|
+| FCP | 1.1 s | |
+| LCP | 6.1 s | |
+| TBT | 60 ms | |
+| CLS | 0 | |
+| Speed Index | 4.4 s | |
+| Agentic Browsing | 75 | |
 
-   <Script
-     src="https://www.googletagmanager.com/gtag/js?id=G-G1NMQYD8EJ"
-     strategy="lazyOnload"
-   />
-   ```
-   Consider gating it further behind user interaction or consent-management-triggered load if a cookie/consent banner exists.
-2. **First-party chunks:** Identify what's inside `4bd1b696-...js` and `794-...js` using `next build` bundle analysis (`@next/bundle-analyzer`). For any component/library only needed on specific routes or after interaction (modals, animation libraries, chart libraries, etc.), convert to dynamic import:
-   ```jsx
-   import dynamic from 'next/dynamic';
-   const HeavyComponent = dynamic(() => import('./HeavyComponent'), { ssr: false });
-   ```
-3. Check for barrel-file imports (`import { X } from 'some-large-library'`) that pull in the entire library — switch to direct submodule imports where the library supports it.
+## Output format
 
----
-
-## Priority 8 — Long main-thread tasks, forced reflow, non-composited animation
-
-**Problem:**
-- 3–4 long main-thread tasks detected (mobile has 4, desktop has 3).
-- A forced reflow totaling 93ms on desktop, source unattributed.
-- 1 non-composited animated element found on both runs.
-
-**Fix:**
-1. **Long tasks:** Profile with Chrome DevTools Performance panel to find the exact culprit (commonly large hydration payloads or synchronous work inside `useEffect`/`useLayoutEffect` on mount). Split heavy client components using `next/dynamic(() => import(...), { ssr: false })` and consider deferring non-critical hydration.
-2. **Forced reflow:** Audit any code (including third-party animation/scroll libraries) that reads layout geometry (`offsetWidth`, `offsetHeight`, `getBoundingClientRect()`) immediately after a DOM/style mutation. Batch all reads before all writes ("read-then-write" pattern), or replace manual measurement with `ResizeObserver`/`IntersectionObserver`.
-3. **Non-composited animation:** Find the animated element and ensure it only animates compositor-friendly properties — `transform` and `opacity` — instead of properties like `top`, `left`, `width`, or `height`, which force layout/paint on every frame.
-
----
-
-## Verification checklist
-
-After implementing all fixes above, re-run Lighthouse for both Mobile and Desktop and confirm:
-
-- [ ] Mobile Performance ≥ 90 (from 74)
-- [ ] Desktop Performance stays ≥ 97 or improves
-- [ ] Mobile Accessibility = 100 (from 96)
-- [ ] Desktop Accessibility stays 100
-- [ ] Best Practices stays 100 (both)
-- [ ] SEO = 100 on both (from 92) — verify all 6 `/services` links now have unique descriptive text
-- [ ] Agentic Browsing = 2/2 on both (from 1/2 on mobile) — verify "Accessibility tree is not well-formed" no longer appears
-- [ ] LCP Request Discovery insight no longer flags the hero image
-- [ ] Improve Image Delivery insight shows near-zero estimated savings
-- [ ] Legacy JavaScript insight no longer lists polyfills for `Array.prototype.at`/`flat`/`flatMap`, `Object.fromEntries`, `Object.hasOwn`, `String.prototype.trimStart`/`trimEnd`
-- [ ] Reduce Unused JavaScript savings drop meaningfully from 115 KiB
-- [ ] No forced reflow or non-composited animation warnings remain
+- Start with a one-paragraph root-cause summary of why the LCP render delay was 2,560 ms.
+- Then list each task as: **what changed → files touched → measured effect**.
+- End with anything you could not fix and why.

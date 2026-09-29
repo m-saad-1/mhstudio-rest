@@ -24,43 +24,9 @@ const trustItems = [
 ];
 
 export function HeroSection() {
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-    // Fallback if image fails to load or loads too fast
-    const timer = setTimeout(() => setImageLoaded(true), 1500);
-    return () => clearTimeout(timer);
-  }, []);
-
-  const isReady = mounted && imageLoaded;
-
   return (
     <div className="relative min-h-0 sm:min-h-[calc(100svh-96px)]">
-      {/* Global Loader - Covers Header & Hero */}
-      <div 
-        className={`fixed inset-0 z-[100] flex items-center justify-center bg-background transition-opacity duration-500 ${
-          isReady ? "opacity-0 pointer-events-none" : "opacity-100"
-        }`}
-      >
-        <div className="relative h-[2px] w-48 overflow-hidden rounded-none bg-white/10">
-          <div 
-            className="absolute inset-y-0 left-0 w-1/2 rounded-none bg-amber-500" 
-            style={{ animation: "progress-indeterminate 1.5s infinite ease-in-out" }}
-          />
-        </div>
-        <style dangerouslySetInnerHTML={{__html: `
-          @keyframes progress-indeterminate {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(200%); }
-          }
-        `}} />
-      </div>
-
-      <section className={`relative isolate overflow-hidden px-4 pt-4 pb-0 sm:px-6 sm:pt-6 sm:pb-0 lg:px-10 lg:pt-8 lg:pb-0 transition-opacity duration-700 ease-out ${
-        isReady ? "opacity-100" : "opacity-0"
-      }`}>
+      <section className="relative isolate overflow-hidden px-4 pt-4 pb-0 sm:px-6 sm:pt-6 sm:pb-0 lg:px-10 lg:pt-8 lg:pb-0">
         <div className="pointer-events-none absolute bottom-0 left-1/2 -z-10 h-[35rem] w-[min(100vw,70rem)] -translate-x-1/2 bg-[radial-gradient(ellipse_at_bottom,_rgba(245,158,11,1)_0%,_rgba(245,158,11,0.6)_30%,_rgba(245,158,11,0.25)_50%,_transparent_70%)] blur-[130px] sm:h-[40rem] sm:w-[min(100vw,80rem)]" />
 
       <div className="mx-auto flex min-h-0 w-full max-w-[1200px] flex-col items-center justify-start pt-4 gap-4 text-center sm:min-h-[calc(100svh-96px)] sm:pt-[clamp(3rem,8vh,6rem)] sm:gap-5 lg:gap-6">
@@ -120,7 +86,6 @@ export function HeroSection() {
             placeholder="blur"
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 900px, 1200px"
             className="relative mx-auto h-auto w-full max-h-[clamp(15rem,50vw,40rem)] object-contain drop-shadow-[0_30px_90px_rgba(0,0,0,0.72)]"
-            onLoad={() => setImageLoaded(true)}
           />
         </div>
       </div>

@@ -46,7 +46,7 @@ export function SiteHeader() {
             ].join(" ")}
           >
             <Link href="/" className="justify-self-start px-6 flex items-center">
-              <Image src="/mh_logo.png" alt="MhStudio Logo" width={48} height={48} className="h-10 w-auto sm:h-12" />
+              <Image src="/mh_logo.png" alt="MhStudio Logo" width={48} height={48} className="h-10 w-auto sm:h-12" priority />
             </Link>
 
             <nav className="hidden items-center gap-8 lg:flex lg:justify-self-center" aria-label="Primary">
@@ -108,7 +108,7 @@ export function SiteHeader() {
               onClick={() => setMenuOpen(false)}
               className="flex items-center transition-transform active:scale-95"
             >
-              <Image src="/mh_logo.png" alt="MhStudio Logo" width={48} height={48} className="h-10 w-auto sm:h-12 drop-shadow-lg" />
+              <Image src="/mh_logo.png" alt="MhStudio Logo" width={48} height={48} className="h-10 w-auto sm:h-12 drop-shadow-lg" priority />
             </Link>
             <button
               type="button"
