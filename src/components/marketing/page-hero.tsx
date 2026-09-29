@@ -18,7 +18,7 @@ export function PageHero({
   return (
     <section className="content-shell pt-16 pb-6 sm:pt-24 sm:pb-8 lg:pt-32 lg:pb-10">
       <div className="surface-card relative overflow-hidden p-8 sm:p-10 lg:p-14">
-        <div className="absolute right-0 top-0 h-56 w-56 rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.2)_0%,_transparent_70%)] blur-[120px]" />
+        <div className="absolute right-0 top-0 h-56 w-56 rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.2)_0%,_transparent_70%)]" />
         <div className="relative flex max-w-[700px] flex-col gap-6">
           <span className="eyebrow w-fit">{eyebrow}</span>
           <div className="space-y-4">

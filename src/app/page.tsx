@@ -83,7 +83,7 @@ export default function Home() {
           {/* Left Side: Image */}
           <Reveal delayMs={0} className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none flex justify-center lg:h-full">
             {/* Decorative Glow */}
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.22)_0%,transparent_70%)] blur-[50px]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.22)_0%,transparent_70%)]" />
             <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-full z-10 perspective-1000">
               <Image
                 src="/images/chatbot.avif"
@@ -180,7 +180,7 @@ export default function Home() {
           {/* Right Side: Images */}
           <Reveal delayMs={100} className="relative mx-auto w-full max-w-lg lg:mx-0 lg:max-w-none h-[500px] lg:h-[700px] flex items-center justify-center">
             {/* Decorative Glow */}
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.15)_0%,transparent_70%)] blur-[60px]" />
+            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.15)_0%,transparent_70%)]" />
             
             {/* Dashboard 1 - Back/Top */}
             <div className="absolute right-0 top-[10%] w-[85%] aspect-[16/10] z-10 hover:z-30 transition-all duration-500 ease-out hover:-translate-y-4 hover:scale-105 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 rounded-xl overflow-hidden bg-zinc-950">
@@ -324,7 +324,7 @@ export default function Home() {
       <Reveal as="section" className="section-space">
         <div className="content-shell">
           <div className="surface-card relative overflow-hidden px-8 py-12 sm:px-10 sm:py-14 lg:px-14">
-            <div className="absolute right-0 top-0 h-64 w-64 rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.18)_0%,_transparent_72%)] blur-[140px]" />
+            <div className="absolute right-0 top-0 h-64 w-64 rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.18)_0%,_transparent_72%)]" />
             <div className="relative grid gap-8 lg:grid-cols-[1.4fr_0.9fr] lg:items-center">
               <div className="space-y-5">
                 <span className="eyebrow">Interactive Demo</span>

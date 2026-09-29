@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Analytics } from "@vercel/analytics/next";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import { AnalyticsWrapper } from "@/components/layout/analytics-wrapper";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import "./globals.css";
@@ -65,8 +64,8 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning className="min-h-full bg-background text-foreground">
         <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-          <div className="absolute left-[-10rem] top-[-8rem] h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.18)_0%,_rgba(245,158,11,0.02)_58%,_transparent_80%)] blur-[120px]" />
-          <div className="absolute bottom-[-10rem] right-[-8rem] h-[30rem] w-[30rem] rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.14)_0%,_rgba(245,158,11,0.02)_58%,_transparent_80%)] blur-[160px]" />
+          <div className="absolute left-[-10rem] top-[-8rem] h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.18)_0%,_rgba(245,158,11,0.02)_58%,_transparent_80%)]" />
+          <div className="absolute bottom-[-10rem] right-[-8rem] h-[30rem] w-[30rem] rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.14)_0%,_rgba(245,158,11,0.02)_58%,_transparent_80%)]" />
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:72px_72px] opacity-[0.04]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.05),transparent_40%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent_30%,rgba(255,255,255,0.01))]" />
         </div>
@@ -84,8 +83,7 @@ export default function RootLayout({
           <SiteFooter />
         </div>
       </body>
-      <GoogleAnalytics gaId="G-G1NMQYD8EJ" />
-      <Analytics />
+      <AnalyticsWrapper />
     </html>
   );
 }
