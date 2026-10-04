@@ -270,23 +270,9 @@ export default function Home() {
           />
           <div className="logo-marquee" aria-label="Client brands">
             <div className="logo-marquee-track">
-              {[...[
-                ["/images/bonfire-pizza.avif", "Bonfire Pizza"],
-                ["/images/chomp-chomp-restaurant.avif", "Chomp Chomp"],
-                ["/images/cs-fire-burgers.avif", "CS Fire Burgers"],
-                ["/images/hambrg-fastfoods.avif", "Hamburg Fast Foods"],
-                ["/images/Savorfinedining.avif", "Savor Fine Dining"],
-                ["/images/voila-cafe.avif", "Voila Cafe"],
-              ], ...[
-                ["/images/bonfire-pizza.avif", "Bonfire Pizza"],
-                ["/images/chomp-chomp-restaurant.avif", "Chomp Chomp"],
-                ["/images/cs-fire-burgers.avif", "CS Fire Burgers"],
-                ["/images/hambrg-fastfoods.avif", "Hamburg Fast Foods"],
-                ["/images/Savorfinedining.avif", "Savor Fine Dining"],
-                ["/images/voila-cafe.avif", "Voila Cafe"],
-              ]].map(([src, name], index) => (
-                <span key={`${name}-${index}`} className="logo-marquee-item">
-                  <Image src={src} alt={name} width={150} height={64} className="h-10 w-auto max-w-[150px] object-contain grayscale transition-[filter] hover:grayscale-0" />
+              {[...Array.from({ length: 30 }, (_, index) => `/images/client-logo-${String(index + 1).padStart(2, "0")}.avif`), ...Array.from({ length: 30 }, (_, index) => `/images/client-logo-${String(index + 1).padStart(2, "0")}.avif`)].map((src, index) => (
+                <span key={`${src}-${index}`} className="logo-marquee-item">
+                  <Image src={src} alt={`Client logo ${index % 30 + 1}`} width={220} height={110} className="h-20 w-auto max-w-[220px] object-contain grayscale transition-[filter] hover:grayscale-0" sizes="220px" />
                 </span>
               ))}
             </div>

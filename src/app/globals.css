@@ -219,7 +219,7 @@ p {
 
 .logo-marquee-item {
   display: inline-flex;
-  min-width: 180px;
+  min-width: 270px;
   align-items: center;
   justify-content: center;
   border-right: 1px solid var(--border-soft);
@@ -227,7 +227,7 @@ p {
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.08em;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2.75rem;
   text-transform: uppercase;
   white-space: nowrap;
 }
