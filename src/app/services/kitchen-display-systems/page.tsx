@@ -70,7 +70,7 @@ export default function KitchenDisplaySystemsPage() {
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">
             <div className="relative aspect-video w-full rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden flex items-center justify-center">
                <Zoom>
-                 <Image src="/images/KDStab.avif" alt="Kitchen Display System" fill className="object-cover" />
+                 <Image src="/images/modern-kitchen-display-system-showcase.avif" alt="Kitchen Display System" fill className="object-cover" />
                </Zoom>
             </div>
           </Reveal>
@@ -394,4 +394,3 @@ export default function KitchenDisplaySystemsPage() {
     </>
   );
 }
-

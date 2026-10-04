@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Inter } from "next/font/google";
 import { AnalyticsWrapper } from "@/components/layout/analytics-wrapper";
 import { SiteFooter } from "@/components/layout/site-footer";
@@ -64,7 +65,6 @@ export default function RootLayout({
       </head>
       <body suppressHydrationWarning className="min-h-full bg-background text-foreground">
         <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-          <div className="absolute left-[-10rem] top-[-8rem] h-[28rem] w-[28rem] rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.18)_0%,_rgba(245,158,11,0.02)_58%,_transparent_80%)]" />
           <div className="absolute bottom-[-10rem] right-[-8rem] h-[30rem] w-[30rem] rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.14)_0%,_rgba(245,158,11,0.02)_58%,_transparent_80%)]" />
           <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.04)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.04)_1px,transparent_1px)] bg-[size:72px_72px] opacity-[0.04]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.05),transparent_40%),linear-gradient(180deg,rgba(255,255,255,0.02),transparent_30%,rgba(255,255,255,0.01))]" />
@@ -81,6 +81,15 @@ export default function RootLayout({
             {children}
           </main>
           <SiteFooter />
+          <a
+            href="https://wa.me/923275946947"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Chat with us on WhatsApp"
+            className="fixed bottom-5 right-5 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] p-2 shadow-[0_8px_24px_rgba(0,0,0,0.35)] transition-transform duration-300 hover:scale-110 sm:bottom-7 sm:right-7"
+          >
+            <Image src="/images/whatsapp.avif" alt="" width={40} height={40} className="h-10 w-10 object-contain" />
+          </a>
         </div>
       </body>
       <AnalyticsWrapper />

@@ -65,9 +65,13 @@ export default function OnlineOrderingSystemsPage() {
           </Reveal>
         </div>
 
-        {/* Hero Visual: Browser + Mobile */}
+        {/* Hero Visual */}
         <div className="content-shell relative z-10">
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl">
+              <Image src="/images/online-ordering.avif" alt="Online ordering system" fill className="object-cover object-top" priority sizes="(max-width: 1024px) 100vw, 1024px" />
+            </div>
+            <div className="hidden">
             <div className="relative w-full rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden flex flex-col sm:flex-row min-h-[500px]">
                {/* Browser UI */}
                <div className="flex-1 border-b sm:border-b-0 sm:border-r border-zinc-800 flex flex-col overflow-hidden relative">
@@ -154,6 +158,7 @@ export default function OnlineOrderingSystemsPage() {
                <span className="text-amber-500">ORDER</span>
                <ArrowRight className="w-4 h-4 text-amber-500" />
                <span>RESTAURANT</span>
+            </div>
             </div>
           </Reveal>
         </div>
@@ -469,4 +474,3 @@ export default function OnlineOrderingSystemsPage() {
     </>
   );
 }
-

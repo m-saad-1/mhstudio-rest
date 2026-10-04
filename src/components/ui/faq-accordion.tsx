@@ -13,10 +13,10 @@ type FaqAccordionProps = {
 };
 
 export const FaqAccordion = memo(function FaqAccordion({ items }: FaqAccordionProps) {
-  const [openIndex, setOpenIndex] = useState(0);
+  const [openIndex, setOpenIndex] = useState(-1);
 
   return (
-    <div className="grid gap-4">
+    <div className="grid gap-4 md:grid-cols-2">
       {items.map((item, index) => {
         const isOpen = index === openIndex;
 

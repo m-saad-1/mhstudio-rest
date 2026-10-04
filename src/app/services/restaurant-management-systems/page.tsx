@@ -77,7 +77,7 @@ export default function RestaurantManagementSystemsPage() {
                </div>
                <div className="flex-1 flex items-center justify-center relative overflow-hidden">
                   <Zoom>
-                    <Image src="/images/Dashboard.avif" alt="RMS Dashboard" fill className="object-cover object-top" />
+                    <Image src="/images/restaurant-management-dashboard-workspace.avif" alt="RMS Dashboard" fill className="object-cover object-top" />
                   </Zoom>
                </div>
             </div>

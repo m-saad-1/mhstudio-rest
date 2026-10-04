@@ -70,7 +70,7 @@ export default function PointOfSaleSystemsPage() {
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">
              <div className="relative aspect-[16/11] w-full rounded-xl border border-zinc-800 bg-zinc-900 shadow-2xl overflow-hidden flex items-center justify-center">
                 <Zoom>
-                  <Image src="/images/POStab.avif" alt="POS Interface" fill className="object-cover object-left" />
+                  <Image src="/images/restaurant-pos.avif" alt="POS Interface" fill className="object-cover object-left" />
                 </Zoom>
              </div>
           </Reveal>
@@ -366,4 +366,3 @@ export default function PointOfSaleSystemsPage() {
     </>
   );
 }
-

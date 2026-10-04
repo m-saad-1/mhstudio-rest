@@ -1,10 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import type { StaticImageData } from "next/image";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
 import Check from "lucide-react/dist/esm/icons/check";
-import dynamic from "next/dynamic";
+import onlineOrderingImage from "../../public/images/online-ordering.avif";
+import posImage from "../../public/images/restaurant-pos.avif";
+import qrMenuImage from "../../public/images/qr-menu.avif";
 
-import { AnimatedCounter, FaqAccordion } from "@/components/heavy-client-components";
+import { FaqAccordion } from "@/components/heavy-client-components";
 import { HeroSection } from "@/components/marketing/hero-section";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -12,13 +15,9 @@ import { getIcon } from "@/components/ui/icon-map";
 import {
   faqs,
   leftFaqs,
-  industryShowcaseItems,
   serviceCards, mainServices,
-  technologyGroups,
   websiteFeatures,
 } from "@/data/site-content";
-
-const blurData = "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTYnIGhlaWdodD0nMTAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzE2JyBoZWlnaHQ9JzEwJyBmaWxsPScjMTExMTEzJy8+PHJlY3QgY29yPScyJyB4PScxJyB5PScxJyB3aWR0aD0nMTQnIGhlaWdodD0nOCcgZmlsbD0nI0Y1OUUwQicgb3BhY2l0eT0nMC4xNScvPjwvc3ZnPg==";
 
 export default function Home() {
   const homeServiceTitles = [
@@ -27,50 +26,62 @@ export default function Home() {
     "Point of Sale (POS) Systems",
     "Online Ordering Systems",
     "Kitchen Display Systems (KDS)",
-    "Dine-In & Table Management"
+    "Dine-In & Table Management",
+    "QR Menu & Self-Ordering"
   ];
 
   const homeServiceCards = homeServiceTitles
     .map(title => mainServices.find(service => service.title === title) || serviceCards.find(service => service.title === title))
     .filter((service): service is Exclude<typeof service, undefined> => !!service);
 
+  const serviceImages: Record<string, { src: string | StaticImageData; alt: string }> = {
+    "Restaurant Websites & Mobile Applications": { src: "/images/WebAndApp.avif", alt: "Restaurant website and mobile app showcase" },
+    "Restaurant Management Systems (RMS)": { src: "/images/restaurant-management-dashboard-workspace.avif", alt: "Restaurant management dashboard" },
+    "Point of Sale (POS) Systems": { src: posImage, alt: "Restaurant point of sale dashboard" },
+    "Online Ordering Systems": { src: onlineOrderingImage, alt: "Online restaurant ordering experience" },
+    "Kitchen Display Systems (KDS)": { src: "/images/modern-kitchen-display-system-showcase.avif", alt: "Kitchen display system" },
+    "Delivery & Fleet Management": { src: "/images/multi-device-restaurant-management-mockup.avif", alt: "Delivery and fleet management tools" },
+    "Dine-In & Table Management": { src: "/images/modern-restaurant-table-management-dashboard.avif", alt: "Restaurant table management dashboard" },
+    "QR Menu & Self-Ordering": { src: qrMenuImage, alt: "QR menu and self-ordering menu" },
+  };
+
   return (
     <>
       <HeroSection />
 
-      <Reveal as="section" className="section-space section-divider">
+      <div className="home-sections flex flex-col">
+      <Reveal as="section" className="home-services-section section-space section-divider">
         <div className="content-shell space-y-10">
           <SectionHeading
             eyebrow="Services Snapshot"
             title="High-Performance Digital & Web Solutions"
-            description="High-performance digital solutions tailored to elevate your brand."
           />
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {homeServiceCards.map((service, index) => {
-              const Icon = getIcon(service.icon);
-              const isWide = service.title.length > 20;
-              const columnSpan = isWide ? "md:col-span-2" : "";
+              const image = serviceImages[service.title];
 
               return (
                 <Reveal
                   key={service.title}
                   delayMs={index * 70}
-                  className={`surface-card group flex h-full flex-col justify-between p-6 transition-transform duration-300 hover:-translate-y-1.5 ${columnSpan}`}
+                  className="surface-card group flex h-full min-w-0 flex-col justify-between overflow-hidden transition-transform duration-300 hover:-translate-y-1.5"
                 >
-                  <div className="space-y-5">
-                    <span className="inline-flex rounded-none border border-amber-400/15 bg-amber-400/10 p-3 text-accent transition-transform duration-300 group-hover:rotate-6">
-                      <Icon className="h-6 w-6" strokeWidth={2} />
-                    </span>
+                  <div className="relative aspect-[16/9] overflow-hidden border-b border-white/8">
+                    <Image src={image.src} alt={image.alt} fill sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                  </div>
+                  <div className="flex flex-1 flex-col justify-between p-4">
+                  <div className="space-y-3">
                     <div className="space-y-3">
-                      <h3 className="text-2xl font-semibold text-foreground">{service.title}</h3>
-                      <p className="text-sm leading-[1.7] text-foreground-body sm:text-base">{service.description}</p>
+                      <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
+                      <p className="line-clamp-2 text-sm leading-[1.5] text-foreground-body">{service.description}</p>
                     </div>
                   </div>
-                  <Link href={"href" in service && service.href ? service.href : "/services"} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-foreground">
+                  <Link href={"href" in service && service.href ? service.href : "/services"} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-foreground">
                     Learn More
                     <span className="sr-only"> about {service.title}</span>
                     <ArrowRight className="h-4 w-4 text-accent transition-transform duration-300 group-hover:translate-x-1" />
                   </Link>
+                  </div>
                 </Reveal>
               );
             })}
@@ -78,7 +89,7 @@ export default function Home() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="section-space section-divider">
+      <Reveal as="section" className="home-ai-section section-space section-divider">
         <div className="content-shell grid gap-12 lg:grid-cols-[1.1fr_1fr] lg:items-stretch">
           {/* Left Side: Image */}
           <Reveal delayMs={0} className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none flex justify-center lg:h-full">
@@ -142,7 +153,7 @@ export default function Home() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="section-space section-divider">
+      <Reveal as="section" className="home-panel-section section-space section-divider">
         <div className="content-shell grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
           {/* Left Side: Content */}
           <Reveal delayMs={0} className="space-y-8">
@@ -178,30 +189,23 @@ export default function Home() {
           </Reveal>
 
           {/* Right Side: Images */}
-          <Reveal delayMs={100} className="relative mx-auto w-full max-w-lg lg:mx-0 lg:max-w-none h-[500px] lg:h-[700px] flex items-center justify-center">
-            {/* Decorative Glow */}
+          <Reveal delayMs={100} className="relative mx-auto flex w-full max-w-lg flex-col gap-6 lg:mx-0 lg:max-w-none">
             <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.15)_0%,transparent_70%)]" />
-            
-            {/* Dashboard 1 - Back/Top */}
-            <div className="absolute right-0 top-[10%] w-[85%] aspect-[16/10] z-10 hover:z-30 transition-all duration-500 ease-out hover:-translate-y-4 hover:scale-105 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 rounded-xl overflow-hidden bg-zinc-950">
+            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-white/10 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
               <Image
                 src="/images/Dashboard-1.avif"
-                alt="Restaurant Management Dashboard 1"
+                alt="Restaurant management dashboard overview"
                 fill
-                className="object-cover object-left-top"
+                className="object-cover object-left-top p-2"
                 sizes="(max-width: 1024px) 90vw, 50vw"
               />
-              {/* Subtle overlay to create depth when not hovered */}
-              <div className="absolute inset-0 bg-black/20 hover:bg-transparent transition-colors duration-500" />
             </div>
-
-            {/* Dashboard 2 - Front/Bottom */}
-            <div className="absolute left-0 bottom-[10%] w-[85%] aspect-[16/10] z-20 hover:z-30 transition-all duration-500 ease-out hover:-translate-y-4 hover:scale-105 shadow-[0_30px_60px_rgba(0,0,0,0.6)] border border-white/10 rounded-xl overflow-hidden bg-zinc-950">
+            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-white/10 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
               <Image
                 src="/images/Dashboard-2.avif"
-                alt="Restaurant Management Dashboard 2"
+                alt="Restaurant order management dashboard"
                 fill
-                className="object-cover object-left-top"
+                className="object-cover object-left-top p-2"
                 sizes="(max-width: 1024px) 90vw, 50vw"
               />
             </div>
@@ -209,14 +213,13 @@ export default function Home() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="section-space section-divider">
+      <Reveal as="section" className="home-capabilities-section section-space section-divider">
         <div className="content-shell space-y-10">
           <SectionHeading
             eyebrow="Digital Capabilities"
             title="Everything Your Restaurant Needs to Operate & Grow"
-            description="powerful capabilities designed to simplify your workflow and drive growth."
           />
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {websiteFeatures.map((feature, index) => {
               const Icon = getIcon(feature.icon);
 
@@ -224,13 +227,13 @@ export default function Home() {
                 <Reveal
                   key={feature.title}
                   delayMs={index * 35}
-                  className={`surface-card p-5 ${index % 5 === 0 ? "xl:col-span-2" : ""}`}
+                  className="surface-card flex min-h-[220px] flex-col p-5"
                 >
-                  <span className="inline-flex rounded-[18px] border border-amber-400/15 bg-amber-400/10 p-3 text-accent">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-amber-400/20 bg-amber-400/10 p-0 text-accent">
                     <Icon className="h-5 w-5" strokeWidth={2} />
                   </span>
                   <h3 className="mt-5 text-xl font-semibold text-foreground">{feature.title}</h3>
-                  <p className="mt-3 text-sm leading-[1.7] text-foreground-body sm:text-base">{feature.description}</p>
+                  <p className="mt-2 line-clamp-3 text-xs leading-[1.6] text-foreground-body sm:text-sm">{feature.description}</p>
                 </Reveal>
               );
             })}
@@ -238,13 +241,117 @@ export default function Home() {
         </div>
       </Reveal>
 
-      {/* 
-      <Reveal as="section" className="section-space section-divider">
+      <Reveal as="section" className="home-flow-section section-space section-divider overflow-hidden">
+        <div className="content-shell space-y-10">
+          <SectionHeading
+            eyebrow="Online Ordering To Delivery"
+            title="One connected flow from checkout to doorstep."
+            align="center"
+          />
+          <div className="surface-card overflow-hidden p-4 sm:p-8">
+            <Image
+              src="/images/from-order-to-doorstep-flow.avif"
+              alt="Restaurant order to doorstep delivery flow"
+              width={1200}
+              height={700}
+              className="mx-auto max-h-[520px] w-full object-contain"
+              sizes="(max-width: 768px) 100vw, 1100px"
+            />
+          </div>
+        </div>
+      </Reveal>
+
+      <Reveal as="section" className="home-logos-section section-space section-divider overflow-hidden">
+        <div className="content-shell space-y-10">
+          <SectionHeading
+            eyebrow="Trusted By Growing Brands"
+            title="Built for ambitious hospitality teams."
+            align="center"
+          />
+          <div className="logo-marquee" aria-label="Client brands">
+            <div className="logo-marquee-track">
+              {[...[
+                ["/images/bonfire-pizza.avif", "Bonfire Pizza"],
+                ["/images/chomp-chomp-restaurant.avif", "Chomp Chomp"],
+                ["/images/cs-fire-burgers.avif", "CS Fire Burgers"],
+                ["/images/hambrg-fastfoods.avif", "Hamburg Fast Foods"],
+                ["/images/Savorfinedining.avif", "Savor Fine Dining"],
+                ["/images/voila-cafe.avif", "Voila Cafe"],
+              ], ...[
+                ["/images/bonfire-pizza.avif", "Bonfire Pizza"],
+                ["/images/chomp-chomp-restaurant.avif", "Chomp Chomp"],
+                ["/images/cs-fire-burgers.avif", "CS Fire Burgers"],
+                ["/images/hambrg-fastfoods.avif", "Hamburg Fast Foods"],
+                ["/images/Savorfinedining.avif", "Savor Fine Dining"],
+                ["/images/voila-cafe.avif", "Voila Cafe"],
+              ]].map(([src, name], index) => (
+                <span key={`${name}-${index}`} className="logo-marquee-item">
+                  <Image src={src} alt={name} width={150} height={64} className="h-10 w-auto max-w-[150px] object-contain grayscale transition-[filter] hover:grayscale-0" />
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </Reveal>
+
+      <Reveal as="section" className="home-platform-section section-space section-divider">
+        <div className="content-shell space-y-10">
+          <SectionHeading
+            eyebrow="Explore The Platform"
+            title="See the guest experience and the operator view."
+            align="center"
+          />
+          <div className="grid gap-6 lg:grid-cols-2">
+            {[
+              { title: "Website / App Demo", image: "/images/WebAndApp.avif", alt: "Restaurant website and app demo", href: "/demo" },
+              { title: "RMS Dashboard", image: "/images/restaurant-management-dashboard-workspace.avif", alt: "Restaurant management system dashboard", href: "/demo" },
+            ].map((demo) => (
+              <div key={demo.title} className="surface-card flex flex-col p-5">
+                <div className="relative aspect-[16/10] overflow-hidden border border-white/8 bg-zinc-950">
+                  <Image src={demo.image} alt={demo.alt} fill className="object-cover object-top" sizes="(max-width: 1023px) 100vw, 50vw" />
+                </div>
+                <div className="flex items-center justify-between gap-4 pt-5">
+                  <h3 className="text-xl font-semibold text-foreground">{demo.title}</h3>
+                  <Link href={demo.href} className="button-primary min-h-10 px-5 text-sm">Demo</Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Reveal>
+
+      <Reveal as="section" className="home-insights-section section-space section-divider">
+        <div className="content-shell space-y-10">
+          <SectionHeading
+            eyebrow="Insights"
+            title="The outcomes your restaurant can work toward."
+            align="center"
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {[
+              ["2×", "More Orders", "A direct ordering channel gives guests an easier path back to your brand."],
+              ["30 sec", "Faster Ordering", "Clear menus and streamlined checkout reduce friction at busy moments."],
+              ["Higher", "Customer Retention", "Consistent experiences and loyalty touchpoints encourage return visits."],
+              ["Faster", "Delivery Management", "Dispatch visibility helps teams coordinate riders and active orders."],
+              ["More", "Repeat Customers", "Owned customer relationships make follow-up and reordering simpler."],
+              ["Less", "Manual Work", "Centralized tools reduce repetitive updates across menus, orders, and branches."],
+            ].map(([value, label, description]) => (
+              <div key={label} className="surface-card min-h-[180px] p-6">
+                <p className="text-4xl font-bold text-accent">{value}</p>
+                <h3 className="mt-2 text-lg font-semibold text-foreground">{label}</h3>
+                <p className="mt-2 text-sm leading-[1.6] text-foreground-body">{description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </Reveal>
+
+      {/*
+      <Reveal as="section" className="home-faq-section section-space section-divider">
         <div className="content-shell space-y-10">
           <SectionHeading
             eyebrow="Industries We Serve"
             title="Web Experiences Tailored for Growing Brands"
-            description="Custom web design tailored for modern businesses across diverse industries."
             align="center"
           />
           <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4">
@@ -282,7 +389,6 @@ export default function Home() {
           <SectionHeading
             eyebrow="Technologies"
             title="A modern stack grouped by purpose, not just a logo wall."
-            description="Grouping the stack by role keeps the section more useful for business owners while still signaling technical depth."
           />
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {technologyGroups.map((group, index) => (
@@ -306,22 +412,17 @@ export default function Home() {
       */}
 
       <Reveal as="section" className="section-space section-divider">
-        <div className="content-shell grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-          <div className="space-y-6">
-            <SectionHeading
-              eyebrow="FAQ"
-              title="Answers to Common Pre-Launch Questions"
-              description="Answers to common pre-launch questions."
-            />
-            <div className="pt-4">
-              <FaqAccordion items={leftFaqs} />
-            </div>
-          </div>
-          <FaqAccordion items={faqs} />
+        <div className="content-shell space-y-10">
+          <SectionHeading
+            eyebrow="FAQ"
+            title="Answers to Common Pre-Launch Questions"
+            align="center"
+          />
+          <FaqAccordion items={[...leftFaqs, ...faqs]} />
         </div>
       </Reveal>
 
-      <Reveal as="section" className="section-space">
+      <Reveal as="section" className="home-cta-section section-space">
         <div className="content-shell">
           <div className="surface-card relative overflow-hidden px-8 py-12 sm:px-10 sm:py-14 lg:px-14">
             <div className="absolute right-0 top-0 h-64 w-64 rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.18)_0%,_transparent_72%)]" />
@@ -340,13 +441,14 @@ export default function Home() {
                   Request Free Demo
                 </Link>
                 <Link href="/contact" className="button-secondary w-full px-6 text-sm sm:w-auto lg:w-full lg:max-w-xs">
-                  Get Started
+                  Start 14-Day Trial
                 </Link>
               </div>
             </div>
           </div>
         </div>
       </Reveal>
+      </div>
     </>
   );
 }

@@ -70,6 +70,10 @@ export default function QRMenuPage() {
         {/* Hero Visual: Table + Phone */}
         <div className="content-shell relative z-10">
           <Reveal delayMs={100} className="mx-auto w-full max-w-4xl flex justify-center">
+             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl">
+                <Image src="/images/qr-menu.avif" alt="QR menu and self-ordering system" fill className="object-cover object-top" priority sizes="(max-width: 1024px) 100vw, 1024px" />
+             </div>
+             <div className="hidden">
              <div className="relative w-full max-w-3xl aspect-[4/3] sm:aspect-video rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden flex items-end justify-center p-8">
                 {/* Background representation of a table */}
                 <div className="absolute bottom-0 w-full h-[60%] bg-zinc-900 border-t border-zinc-800 rounded-t-[100%] scale-150 transform translate-y-[20%] opacity-50 pointer-events-none"></div>
@@ -139,6 +143,7 @@ export default function QRMenuPage() {
                       <div className="flex justify-between text-xs text-zinc-300"><span>1× Loaded Fries</span><span>PKR 550</span></div>
                    </div>
                 </div>
+             </div>
              </div>
           </Reveal>
         </div>
@@ -426,4 +431,3 @@ export default function QRMenuPage() {
     </>
   );
 }
-

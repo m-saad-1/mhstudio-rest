@@ -30,12 +30,6 @@ export function SiteHeader() {
   return (
     <>
       <header className="fixed inset-x-0 top-0 z-50 overflow-visible">
-        <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[180px] sm:h-[220px]">
-          <div className="absolute left-1/2 top-[-5rem] h-[16rem] w-[min(92vw,52rem)] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.28)_0%,_rgba(245,158,11,0.1)_28%,_transparent_72%)]" />
-          <div className="absolute left-[8%] top-[-2rem] h-36 w-36 rounded-full bg-[radial-gradient(circle,_rgba(251,191,36,0.14)_0%,_transparent_72%)] sm:h-44 sm:w-44" />
-          <div className="absolute right-[10%] top-[-1.5rem] h-32 w-32 rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.12)_0%,_transparent_72%)] sm:h-40 sm:w-40" />
-        </div>
-
         <div className="content-shell relative py-4">
           <div
             className={[

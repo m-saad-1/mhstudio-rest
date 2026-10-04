@@ -187,6 +187,66 @@ p {
   border-color: rgba(255, 255, 255, 0.12);
 }
 
+.logo-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
+}
+
+.home-sections > section {
+  order: 0;
+}
+
+.home-sections > .home-services-section { order: 1; }
+.home-sections > .home-panel-section { order: 2; }
+.home-sections > .home-flow-section { order: 3; }
+.home-sections > .home-ai-section { order: 4; }
+.home-sections > .home-capabilities-section { order: 5; }
+.home-sections > .home-platform-section { order: 6; }
+.home-sections > .home-logos-section { order: 7; }
+.home-sections > .home-insights-section { order: 8; }
+.home-sections > .home-faq-section { order: 9; }
+.home-sections > .home-cta-section { order: 10; }
+
+.home-sections .eyebrow {
+  display: none;
+}
+
+.logo-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: logo-marquee 28s linear infinite;
+}
+
+.logo-marquee-item {
+  display: inline-flex;
+  min-width: 180px;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid var(--border-soft);
+  color: var(--foreground-muted);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@keyframes logo-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .logo-marquee-track {
+    animation: none;
+  }
+}
+
 .button-primary {
   display: inline-flex;
   min-height: 52px;

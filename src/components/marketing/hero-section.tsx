@@ -12,7 +12,7 @@ const trustItems = [
   { label: "Online Ordering", icon: ShoppingBag },
   { label: "POS & KDS", icon: Calculator },
   { label: "AI Receptionist", icon: Bot },
-  { label: "95+ Page Speed", icon: Zap },
+  { label: "Delivery Fleet", icon: Zap },
   { label: "Local SEO & Maps", icon: SearchCheck },
 ];
 
@@ -20,12 +20,10 @@ export function HeroSection() {
   return (
     <div className="relative min-h-0 sm:min-h-[calc(100svh-96px)]">
       <section className="relative isolate overflow-hidden px-4 pt-4 pb-0 sm:px-6 sm:pt-6 sm:pb-0 lg:px-10 lg:pt-8 lg:pb-0">
-        <div className="pointer-events-none absolute bottom-0 left-1/2 -z-10 h-[35rem] w-[min(100vw,70rem)] -translate-x-1/2 bg-[radial-gradient(ellipse_at_bottom,_rgba(245,158,11,1)_0%,_rgba(245,158,11,0.6)_30%,_rgba(245,158,11,0.25)_50%,_transparent_70%)] sm:h-[40rem] sm:w-[min(100vw,80rem)]" />
-
       <div className="mx-auto flex min-h-0 w-full max-w-[1200px] flex-col items-center justify-start pt-4 gap-4 text-center sm:min-h-[calc(100svh-96px)] sm:pt-[clamp(3rem,8vh,6rem)] sm:gap-5 lg:gap-6">
         <span className="eyebrow border-white/10 bg-white/5 text-foreground !text-[9px] !px-2.5 !py-0.5 tracking-tight sm:!text-xs sm:!px-4 sm:!py-1.5 sm:tracking-normal">
           <Sparkles className="h-3 w-3 text-accent sm:h-4 sm:w-4" />
-          Attract more customers through modern Websites
+          Attract more customers through modern System
         </span>
 
         <div className="space-y-3 sm:space-y-4">
@@ -50,7 +48,7 @@ export function HeroSection() {
             Get Free Demo
           </TrackedLink>
           <TrackedLink href="/contact" eventName="click_hero_contact" className="button-secondary flex-1 sm:flex-none sm:w-auto min-h-[44px] px-2 text-xs sm:min-h-[52px] sm:px-7 sm:text-sm">
-            Start Your Project
+            Start 14-Day Trial
           </TrackedLink>
         </div>
 

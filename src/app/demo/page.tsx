@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import CalendarRange from "lucide-react/dist/esm/icons/calendar-range";
 import Cpu from "lucide-react/dist/esm/icons/cpu";
-import HelpCircle from "lucide-react/dist/esm/icons/help-circle";
 import Laptop from "lucide-react/dist/esm/icons/laptop";
 import dynamic from "next/dynamic";
 const DemoForm = dynamic(() => import("@/components/marketing/demo-form").then((mod) => mod.DemoForm));
@@ -58,7 +57,7 @@ export default function DemoPage() {
         description="We design custom interactive menus and homepage mockups so you can test page speed, mobile UX, and layout design before any commitment."
       />
       <section className="section-space">
-        <div className="content-shell grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
+        <div className="content-shell grid min-w-0 gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <Reveal>
             <DemoForm />
           </Reveal>

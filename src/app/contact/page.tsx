@@ -25,7 +25,7 @@ export default function ContactPage() {
         description="Tell us about your project, schedule a direct calendar call, or send us a WhatsApp message."
       />
       <section className="section-space">
-        <div className="content-shell grid gap-6 xl:grid-cols-[1.05fr_0.95fr]">
+        <div className="content-shell grid min-w-0 gap-6 lg:grid-cols-[1.05fr_0.95fr] lg:items-start">
           <Reveal>
             <ContactForm />
           </Reveal>

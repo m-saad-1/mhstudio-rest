@@ -66,6 +66,11 @@ export default function DineInManagementPage() {
 
         {/* Hero Visual: Floor Plan Dashboard */}
         <div className="content-shell relative z-10">
+          <Reveal className="mx-auto mb-8 w-full max-w-5xl">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl">
+              <Image src="/images/modern-restaurant-table-management-dashboard.avif" alt="Restaurant table management platform" fill className="object-cover object-top" priority sizes="(max-width: 1024px) 100vw, 1024px" />
+            </div>
+          </Reveal>
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">
             <div className="relative aspect-[16/10] sm:aspect-[21/9] w-full rounded-xl border border-zinc-800 bg-zinc-950 shadow-2xl overflow-hidden flex">
                
@@ -479,4 +484,3 @@ export default function DineInManagementPage() {
     </>
   );
 }
-

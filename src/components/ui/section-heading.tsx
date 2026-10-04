@@ -3,7 +3,7 @@ import type { ReactNode } from "react";
 type SectionHeadingProps = {
   eyebrow: string;
   title: string;
-  description: string;
+  description?: string;
   align?: "left" | "center";
   action?: ReactNode;
 };
@@ -24,9 +24,11 @@ export function SectionHeading({
         <h2 className="text-[2rem] font-semibold leading-[1.1] text-foreground sm:text-[2.6rem] lg:text-[3rem]">
           {title}
         </h2>
-        <p className="max-w-[700px] text-base leading-[1.7] text-foreground-body sm:text-lg">
-          {description}
-        </p>
+        {description ? (
+          <p className="max-w-[700px] text-sm leading-[1.7] text-foreground-body sm:text-base">
+            {description}
+          </p>
+        ) : null}
       </div>
       {action ? <div className="pt-1">{action}</div> : null}
     </div>
