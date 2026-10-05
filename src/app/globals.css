@@ -214,7 +214,7 @@ p {
 .logo-marquee-track {
   display: flex;
   width: max-content;
-  animation: logo-marquee 28s linear infinite;
+  animation: logo-marquee 50s linear infinite;
 }
 
 .logo-marquee-item {

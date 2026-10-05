@@ -272,7 +272,7 @@ export default function Home() {
             <div className="logo-marquee-track">
               {[...Array.from({ length: 30 }, (_, index) => `/images/client-logo-${String(index + 1).padStart(2, "0")}.avif`), ...Array.from({ length: 30 }, (_, index) => `/images/client-logo-${String(index + 1).padStart(2, "0")}.avif`)].map((src, index) => (
                 <span key={`${src}-${index}`} className="logo-marquee-item">
-                  <Image src={src} alt={`Client logo ${index % 30 + 1}`} width={220} height={110} className="h-20 w-auto max-w-[220px] object-contain grayscale transition-[filter] hover:grayscale-0" sizes="220px" />
+                  <Image src={src} alt={`Client logo ${index % 30 + 1}`} width={220} height={110} className="h-20 w-auto max-w-[220px] object-contain" sizes="220px" />
                 </span>
               ))}
             </div>
@@ -333,7 +333,7 @@ export default function Home() {
       </Reveal>
 
       {/*
-      <Reveal as="section" className="home-faq-section section-space section-divider">
+      <Reveal as="section" className="section-space section-divider">
         <div className="content-shell space-y-10">
           <SectionHeading
             eyebrow="Industries We Serve"
@@ -397,7 +397,7 @@ export default function Home() {
       </Reveal>
       */}
 
-      <Reveal as="section" className="section-space section-divider">
+      <Reveal as="section" className="home-faq-section section-space section-divider">
         <div className="content-shell space-y-10">
           <SectionHeading
             eyebrow="FAQ"
