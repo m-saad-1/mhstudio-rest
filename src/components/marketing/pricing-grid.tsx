@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import Check from "lucide-react/dist/esm/icons/check";
 import X from "lucide-react/dist/esm/icons/x";
 import { Reveal } from "@/components/ui/reveal";
@@ -182,7 +181,7 @@ export function PricingGrid() {
             </div>
             
             {/* Scrollable Content */}
-            <div className="flex-1 overflow-y-auto px-6 py-6 sm:px-8">
+            <div className="flex-1 overflow-y-scroll [scrollbar-gutter:stable] px-6 py-6 sm:px-8">
               <div className="grid gap-8 md:grid-cols-2">
                 {selectedPkg.platforms[platform].modalDetails.map((detailSection) => (
                   <div key={detailSection.category} className="space-y-3">
@@ -213,19 +212,13 @@ export function PricingGrid() {
                   <p className="text-sm font-medium text-foreground">Ready to get started?</p>
                   <p className="text-xs text-foreground-body">Book a free consultation to discuss this package.</p>
                 </div>
-                <div className="flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-                  <Link 
-                    href="/contact" 
+                <div className="flex w-full sm:w-auto">
+                  <a
+                    href="/contact"
                     className="button-primary w-full px-8 text-sm sm:w-auto"
                   >
-                    Start Your Project
-                  </Link>
-                  <Link 
-                    href="/contact#contact-methods" 
-                    className="button-secondary w-full px-8 text-sm sm:w-auto"
-                  >
-                    Contact
-                  </Link>
+                    Start 14-Day Trial
+                  </a>
                 </div>
               </div>
             </div>
