@@ -49,7 +49,7 @@ export default async function CaseStudyPage({ params }: CaseStudyPageProps) {
         <div className="space-y-8">
           <Reveal className="space-y-5">
             <div className="flex flex-wrap items-center gap-3 text-sm text-foreground-muted">
-              <Link href="/work" className="transition-colors duration-300 hover:text-foreground">
+              <Link href="/templates" className="transition-colors duration-300 hover:text-foreground">
                 Work
               </Link>
               <ChevronRight className="h-4 w-4 text-accent" />

@@ -17,7 +17,7 @@ export default function AboutPage() {
         eyebrow="About MhStudio"
         title="A complete digital platform built for modern restaurants."
         description="We provide a centralized digital platform that connects your website, orders, tables, and AI tools—turning visitors into loyal guests seamlessly."
-        primaryCta={{ label: "View Portfolio", href: "/work" }}
+        primaryCta={{ label: "View Portfolio", href: "/templates" }}
         secondaryCta={{ label: "View Pricing", href: "/pricing" }}
       />
       <section className="section-space">

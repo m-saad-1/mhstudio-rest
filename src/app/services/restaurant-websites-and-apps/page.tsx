@@ -51,7 +51,7 @@ export default function RestaurantWebAndAppPage() {
                 Get Your Free Demo
               </Link>
               <Link
-                href="/work"
+                href="/templates"
                 className="inline-flex h-12 items-center justify-center border border-border px-6 font-medium text-foreground transition-colors hover:bg-surface hover:text-amber-500"
               >
                 View Our Work

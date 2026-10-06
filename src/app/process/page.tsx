@@ -31,7 +31,7 @@ export default function ProcessPage() {
         title="A streamlined path to launching your platform."
         description="From digital menus to custom AI receptionists, our setup guarantees clear steps, rapid timelines, and a high-performance system."
         primaryCta={{ label: "View Pricing", href: "/pricing" }}
-        secondaryCta={{ label: "View Our Work", href: "/work" }}
+        secondaryCta={{ label: "View Our Work", href: "/templates" }}
       />
 
       {/* 2. Core Development Process */}

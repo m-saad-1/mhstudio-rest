@@ -6,17 +6,17 @@ import { Reveal } from "@/components/ui/reveal";
 import { portfolioItems } from "@/data/site-content";
 
 export const metadata: Metadata = {
-  title: "Our Work",
-  description: "Explore MhStudio portfolio work for restaurants, salons, gyms, dental clinics, barbers, and local business brands.",
+  title: "Templates",
+  description: "Explore our premium pre-built templates designed for modern restaurant brands.",
 };
 
-export default function WorkPage() {
+export default function TemplatesPage() {
   return (
     <>
       <PageHero
-        eyebrow="Our Work"
-        title="Real websites built for real businesses."
-        description="Each portfolio item is structured as a launch story, with a clear industry angle, feature set, technology stack, and a dedicated case-study path."
+        eyebrow="Our Templates"
+        title="Premium Restaurant Templates."
+        description="Explore our pre-built templates designed for modern restaurant brands."
         primaryCta={{ label: "Start Your Project", href: "/contact" }}
         secondaryCta={{ label: "See Pricing", href: "/pricing" }}
       />
