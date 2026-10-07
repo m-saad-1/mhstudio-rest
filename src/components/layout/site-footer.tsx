@@ -3,17 +3,18 @@ import Link from "next/link";
 
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
 import Sparkles from "lucide-react/dist/esm/icons/sparkles";
-import { navigationItems, serviceCards, siteConfig, socialLinks } from "@/data/site-content";
+import { navigationItems, siteConfig } from "@/data/site-content";
 import { FooterCtaWrapper } from "@/components/layout/footer-cta-wrapper";
 import { TrackedLink } from "@/components/ui/tracked-link";
 
 export function SiteFooter() {
-  const importantServices = [
-    "Restaurant Management System",
-    "POS System",
-    "Online Ordering",
-    "Delivery Management",
-    "AI Assistants",
+  const serviceLinks = [
+    { label: "Restaurant Management System (RMS)", href: "/services/restaurant-management-systems" },
+    { label: "Point of Sale (POS)", href: "/services/point-of-sale-systems" },
+    { label: "Kitchen Display System (KDS)", href: "/services/kitchen-display-systems" },
+    { label: "Online Ordering", href: "/services/online-ordering-systems" },
+    { label: "Delivery Management", href: "/services/delivery-and-fleet-management" },
+    { label: "QR Menu & Self-Ordering", href: "/services/qr-menu-self-ordering" },
   ];
 
   return (
@@ -50,13 +51,13 @@ export function SiteFooter() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-foreground-muted">Services</h3>
             <div className="grid gap-3">
-              {importantServices.map((service) => (
+              {serviceLinks.map((service) => (
                 <Link
-                  key={service}
-                  href="/services"
+                  key={service.href}
+                  href={service.href}
                   className="text-sm text-foreground-body transition-colors duration-300 hover:text-foreground"
                 >
-                  {service}
+                  {service.label}
                 </Link>
               ))}
             </div>

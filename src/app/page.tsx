@@ -19,6 +19,11 @@ import {
   websiteFeatures,
 } from "@/data/site-content";
 
+const clientLogos = Array.from(
+  { length: 30 },
+  (_, index) => `/images/client-logo-${String(index + 1).padStart(2, "0")}.avif`,
+);
+
 export default function Home() {
   const homeServiceTitles = [
     "Restaurant Websites & Mobile Applications",
@@ -265,14 +270,25 @@ export default function Home() {
         <div className="content-shell space-y-10">
           <SectionHeading
             eyebrow="Trusted By Growing Brands"
-            title="Built for ambitious hospitality teams."
+            title="Trusted by restaurants and growing businesses."
             align="center"
           />
           <div className="logo-marquee" aria-label="Client brands">
             <div className="logo-marquee-track">
-              {[...Array.from({ length: 30 }, (_, index) => `/images/client-logo-${String(index + 1).padStart(2, "0")}.avif`), ...Array.from({ length: 30 }, (_, index) => `/images/client-logo-${String(index + 1).padStart(2, "0")}.avif`)].map((src, index) => (
+              {[...clientLogos, ...clientLogos].map((src, index) => (
                 <span key={`${src}-${index}`} className="logo-marquee-item">
-                  <Image src={src} alt={`Client logo ${index % 30 + 1}`} width={220} height={110} className="h-20 w-auto max-w-[220px] object-contain" sizes="220px" />
+                  <Image
+                    src={src}
+                    alt={index < clientLogos.length ? `Client logo ${index + 1}` : ""}
+                    width={180}
+                    height={90}
+                    className="h-16 w-auto max-w-[180px] object-contain"
+                    sizes="180px"
+                    quality={50}
+                    loading="lazy"
+                    fetchPriority="low"
+                    aria-hidden={index >= clientLogos.length}
+                  />
                 </span>
               ))}
             </div>
