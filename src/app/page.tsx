@@ -196,23 +196,27 @@ export default function Home() {
           {/* Right Side: Images */}
           <Reveal delayMs={100} className="relative mx-auto flex w-full max-w-lg flex-col gap-6 lg:mx-0 lg:max-w-none">
             <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.15)_0%,transparent_70%)]" />
-            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-white/10 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-              <Image
-                src="/images/Dashboard-1.avif"
-                alt="Restaurant management dashboard overview"
-                fill
-                className="object-cover object-left-top p-2"
-                sizes="(max-width: 1024px) 90vw, 50vw"
-              />
+            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-white/10 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:border-amber-500/50 transition-colors duration-300">
+              <a href="/images/Dashboard-1.avif" target="_blank" rel="noopener noreferrer" className="block relative w-full h-full cursor-zoom-in">
+                <Image
+                  src="/images/Dashboard-1.avif"
+                  alt="Restaurant management dashboard overview"
+                  fill
+                  className="object-cover object-left-top p-2 transition-transform duration-500 hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 90vw, 50vw"
+                />
+              </a>
             </div>
-            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-white/10 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)]">
-              <Image
-                src="/images/Dashboard-2.avif"
-                alt="Restaurant order management dashboard"
-                fill
-                className="object-cover object-left-top p-2"
-                sizes="(max-width: 1024px) 90vw, 50vw"
-              />
+            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-white/10 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:border-amber-500/50 transition-colors duration-300">
+              <a href="/images/Dashboard-2.avif" target="_blank" rel="noopener noreferrer" className="block relative w-full h-full cursor-zoom-in">
+                <Image
+                  src="/images/Dashboard-2.avif"
+                  alt="Restaurant order management dashboard"
+                  fill
+                  className="object-cover object-left-top p-2 transition-transform duration-500 hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 90vw, 50vw"
+                />
+              </a>
             </div>
           </Reveal>
         </div>
@@ -253,15 +257,17 @@ export default function Home() {
             title="One connected flow from checkout to doorstep."
             align="center"
           />
-          <div className="surface-card overflow-hidden p-4 sm:p-8">
-            <Image
-              src="/images/from-order-to-doorstep-flow.avif"
-              alt="Restaurant order to doorstep delivery flow"
-              width={1200}
-              height={700}
-              className="mx-auto max-h-[520px] w-full object-contain"
-              sizes="(max-width: 768px) 100vw, 1100px"
-            />
+          <div className="surface-card overflow-hidden p-4 sm:p-8 hover:border-amber-500/50 transition-colors duration-300">
+            <a href="/images/from-order-to-doorstep-flow.avif" target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-zoom-in">
+              <Image
+                src="/images/from-order-to-doorstep-flow.avif"
+                alt="Restaurant order to doorstep delivery flow"
+                width={1200}
+                height={700}
+                className="mx-auto max-h-[520px] w-full object-contain transition-transform duration-500 hover:scale-[1.02]"
+                sizes="(max-width: 768px) 100vw, 1100px"
+              />
+            </a>
           </div>
         </div>
       </Reveal>
@@ -305,8 +311,8 @@ export default function Home() {
           />
           <div className="grid gap-6 lg:grid-cols-2">
             {[
-              { title: "Website / App Demo", image: "/images/WebAndApp.avif", alt: "Restaurant website and app demo", href: "/demo" },
-              { title: "RMS Dashboard", image: "/images/restaurant-management-dashboard-workspace.avif", alt: "Restaurant management system dashboard", href: "/demo" },
+              { title: "Website / App Demo", image: "/images/WebAndApp.avif", alt: "Restaurant website and app demo", href: "https://demopk.vercel.app/" },
+              { title: "RMS Dashboard", image: "/images/restaurant-management-dashboard-workspace.avif", alt: "Restaurant management system dashboard", href: "https://demopk.vercel.app/dashboard/index.html" },
             ].map((demo) => (
               <div key={demo.title} className="surface-card flex flex-col p-5">
                 <div className="relative aspect-[16/10] overflow-hidden border border-white/8 bg-zinc-950">
@@ -314,7 +320,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center justify-between gap-4 pt-5">
                   <h3 className="text-xl font-semibold text-foreground">{demo.title}</h3>
-                  <Link href={demo.href} className="button-primary min-h-10 px-5 text-sm">Demo</Link>
+                  <Link href={demo.href} target="_blank" rel="noopener noreferrer" className="button-primary min-h-10 px-5 text-sm">Demo</Link>
                 </div>
               </div>
             ))}
