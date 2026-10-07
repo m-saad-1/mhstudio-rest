@@ -969,7 +969,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     slug: "cs-fire-burgers",
-    title: "CS-Fire Burgers",
+    title: "Template 3",
     category: "Restaurant",
     clientType: "Fast Food",
     shortDescription: "A vibrant burger joint website showcasing mouth-watering burgers, exclusive deals, and a fiery brand identity.",
@@ -989,7 +989,7 @@ export const portfolioItems: PortfolioItem[] = [
   },
   {
     slug: "hambrg",
-    title: "Hambrg",
+    title: "Template 4",
     category: "Restaurant",
     clientType: "Fast Food",
     shortDescription: "A dynamic fast-food restaurant website emphasizing quick service, signature burgers, and a seamless online ordering experience.",
