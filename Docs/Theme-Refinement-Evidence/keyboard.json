@@ -1,0 +1,26 @@
+[
+  {
+    "route": "restaurant-websites-and-apps",
+    "status": "pass"
+  },
+  {
+    "route": "restaurant-management-systems",
+    "status": "pass"
+  },
+  {
+    "route": "point-of-sale-systems",
+    "status": "pass"
+  },
+  {
+    "route": "kitchen-display-systems",
+    "status": "pass"
+  },
+  {
+    "route": "online-ordering-systems",
+    "status": "pass"
+  },
+  {
+    "name": "Header initial and scrolled states",
+    "status": "pass"
+  }
+]

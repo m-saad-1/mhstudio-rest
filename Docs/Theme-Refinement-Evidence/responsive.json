@@ -1,0 +1,1502 @@
+[
+  {
+    "route": "/",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/delivery-and-fleet-management",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/kitchen-display-systems",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/online-ordering-systems",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/point-of-sale-systems",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/restaurant-management-systems",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/restaurant-websites-and-apps",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/supporting-services",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/templates",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/case-study/template-1",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/case-study/template-2",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/case-study/cs-fire-burgers",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/case-study/hambrg",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/about",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/process",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/contact",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/demo",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/privacy",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/terms",
+    "width": 320,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 320,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 320,
+      "height": 96,
+      "top": 0,
+      "right": 320,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 390,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 96,
+      "top": 0,
+      "right": 390,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 390,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 390,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 96,
+      "top": 0,
+      "right": 390,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 390,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 390,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 96,
+      "top": 0,
+      "right": 390,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 390,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 390,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 96,
+      "top": 0,
+      "right": 390,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "34px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 639,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 639,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 639,
+      "height": 96,
+      "top": 0,
+      "right": 639,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "38.38px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 639,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 639,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 639,
+      "height": 96,
+      "top": 0,
+      "right": 639,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "38.38px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 639,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 639,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 639,
+      "height": 96,
+      "top": 0,
+      "right": 639,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "38.38px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 639,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 639,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 639,
+      "height": 96,
+      "top": 0,
+      "right": 639,
+      "bottom": 96,
+      "left": 0
+    },
+    "h1Size": "38.38px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 640,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 640,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 104,
+      "top": 0,
+      "right": 640,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.4px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 640,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 640,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 104,
+      "top": 0,
+      "right": 640,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.4px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 640,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 640,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 104,
+      "top": 0,
+      "right": 640,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.4px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 640,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 640,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 640,
+      "height": 104,
+      "top": 0,
+      "right": 640,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.4px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 767,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 767,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 767,
+      "height": 104,
+      "top": 0,
+      "right": 767,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "40.94px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 767,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 767,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 767,
+      "height": 104,
+      "top": 0,
+      "right": 767,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "40.94px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 767,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 767,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 767,
+      "height": 104,
+      "top": 0,
+      "right": 767,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "40.94px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 767,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 767,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 767,
+      "height": 104,
+      "top": 0,
+      "right": 767,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "40.94px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 768,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 104,
+      "top": 0,
+      "right": 768,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "40.96px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 768,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 768,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 104,
+      "top": 0,
+      "right": 768,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "40.96px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 768,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 768,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 104,
+      "top": 0,
+      "right": 768,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "40.96px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 768,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 768,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 768,
+      "height": 104,
+      "top": 0,
+      "right": 768,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "40.96px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 1023,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1023,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1023,
+      "height": 104,
+      "top": 0,
+      "right": 1023,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "46.06px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 1023,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1023,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1023,
+      "height": 104,
+      "top": 0,
+      "right": 1023,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "46.06px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 1023,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1023,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1023,
+      "height": 104,
+      "top": 0,
+      "right": 1023,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "46.06px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 1023,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1023,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1023,
+      "height": 104,
+      "top": 0,
+      "right": 1023,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "46.06px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 1024,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1024,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 104,
+      "top": 0,
+      "right": 1024,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "46.08px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 1024,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1024,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 104,
+      "top": 0,
+      "right": 1024,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "46.08px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 1024,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1024,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 104,
+      "top": 0,
+      "right": 1024,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "46.08px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 1024,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1024,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1024,
+      "height": 104,
+      "top": 0,
+      "right": 1024,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "46.08px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 1279,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1279,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1279,
+      "height": 104,
+      "top": 0,
+      "right": 1279,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "51.18px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 1279,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1279,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1279,
+      "height": 104,
+      "top": 0,
+      "right": 1279,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "51.18px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 1279,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1279,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1279,
+      "height": 104,
+      "top": 0,
+      "right": 1279,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "51.18px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 1279,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1279,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1279,
+      "height": 104,
+      "top": 0,
+      "right": 1279,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "51.18px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 1280,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1280,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 104,
+      "top": 0,
+      "right": 1280,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "51.2px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 1280,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1280,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 104,
+      "top": 0,
+      "right": 1280,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "51.2px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 1280,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1280,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 104,
+      "top": 0,
+      "right": 1280,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "51.2px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 1280,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1280,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1280,
+      "height": 104,
+      "top": 0,
+      "right": 1280,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "51.2px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 1920,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1920,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 104,
+      "top": 0,
+      "right": 1920,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "56px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 1920,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1920,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 104,
+      "top": 0,
+      "right": 1920,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "56px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 1920,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1920,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 104,
+      "top": 0,
+      "right": 1920,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "56px",
+    "controls": []
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 1920,
+    "height": 900,
+    "text200": false,
+    "pass": true,
+    "viewport": 1920,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 104,
+      "top": 0,
+      "right": 1920,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "56px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 720,
+    "height": 900,
+    "text200": true,
+    "pass": true,
+    "viewport": 720,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 136,
+      "top": 0,
+      "right": 720,
+      "bottom": 136,
+      "left": 0
+    },
+    "h1Size": "68px",
+    "controls": []
+  },
+  {
+    "route": "/",
+    "width": 667,
+    "height": 375,
+    "text200": false,
+    "pass": true,
+    "viewport": 667,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 667,
+      "height": 104,
+      "top": 0,
+      "right": 667,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.94px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 720,
+    "height": 900,
+    "text200": true,
+    "pass": true,
+    "viewport": 720,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 136,
+      "top": 0,
+      "right": 720,
+      "bottom": 136,
+      "left": 0
+    },
+    "h1Size": "68px",
+    "controls": []
+  },
+  {
+    "route": "/pricing",
+    "width": 667,
+    "height": 375,
+    "text200": false,
+    "pass": true,
+    "viewport": 667,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 667,
+      "height": 104,
+      "top": 0,
+      "right": 667,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.94px",
+    "controls": []
+  },
+  {
+    "route": "/contact",
+    "width": 720,
+    "height": 900,
+    "text200": true,
+    "pass": true,
+    "viewport": 720,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 136,
+      "top": 0,
+      "right": 720,
+      "bottom": 136,
+      "left": 0
+    },
+    "h1Size": "68px",
+    "controls": []
+  },
+  {
+    "route": "/contact",
+    "width": 667,
+    "height": 375,
+    "text200": false,
+    "pass": true,
+    "viewport": 667,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 667,
+      "height": 104,
+      "top": 0,
+      "right": 667,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.94px",
+    "controls": []
+  },
+  {
+    "route": "/demo",
+    "width": 720,
+    "height": 900,
+    "text200": true,
+    "pass": true,
+    "viewport": 720,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 136,
+      "top": 0,
+      "right": 720,
+      "bottom": 136,
+      "left": 0
+    },
+    "h1Size": "68px",
+    "controls": []
+  },
+  {
+    "route": "/demo",
+    "width": 667,
+    "height": 375,
+    "text200": false,
+    "pass": true,
+    "viewport": 667,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 667,
+      "height": 104,
+      "top": 0,
+      "right": 667,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.94px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 720,
+    "height": 900,
+    "text200": true,
+    "pass": true,
+    "viewport": 720,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 136,
+      "top": 0,
+      "right": 720,
+      "bottom": 136,
+      "left": 0
+    },
+    "h1Size": "68px",
+    "controls": []
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 667,
+    "height": 375,
+    "text200": false,
+    "pass": true,
+    "viewport": 667,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 667,
+      "height": 104,
+      "top": 0,
+      "right": 667,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.94px",
+    "controls": []
+  },
+  {
+    "route": "/privacy",
+    "width": 720,
+    "height": 900,
+    "text200": true,
+    "pass": true,
+    "viewport": 720,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 720,
+      "height": 136,
+      "top": 0,
+      "right": 720,
+      "bottom": 136,
+      "left": 0
+    },
+    "h1Size": "68px",
+    "controls": []
+  },
+  {
+    "route": "/privacy",
+    "width": 667,
+    "height": 375,
+    "text200": false,
+    "pass": true,
+    "viewport": 667,
+    "header": {
+      "x": 0,
+      "y": 0,
+      "width": 667,
+      "height": 104,
+      "top": 0,
+      "right": 667,
+      "bottom": 104,
+      "left": 0
+    },
+    "h1Size": "38.94px",
+    "controls": []
+  }
+]

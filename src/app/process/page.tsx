@@ -44,26 +44,25 @@ export default function ProcessPage() {
           />
           <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
             {corePhases.map((phase, index) => {
-              const Icon = getIcon(phase.icon);
               return (
                 <Reveal key={phase.step} delayMs={index * 60} className="surface-card flex flex-col p-6">
                   <div className="flex items-center gap-4">
-                    <div className="flex h-12 w-12 items-center justify-center rounded-none bg-amber-400 text-sm font-bold text-zinc-950">
+                    <div className="flex h-12 w-12 items-center justify-center rounded-card bg-accent text-sm font-bold text-foreground">
                       {phase.step}
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-foreground">{phase.title}</h3>
-                      <p className="text-sm font-medium text-amber-500">{phase.tagline}</p>
+                      <p className="text-sm font-medium text-accent-text">{phase.tagline}</p>
                     </div>
                   </div>
                   <p className="mt-5 text-sm leading-[1.7] text-foreground-body flex-grow">
                     {phase.description}
                   </p>
-                  <div className="mt-6 border-t border-white/10 pt-4">
+                  <div className="mt-6 border-t border-border pt-4">
                     <ul className="grid gap-2">
                       {phase.activities.map((activity) => (
                         <li key={activity} className="flex items-center gap-2 text-sm text-foreground-body">
-                          <Check className="h-4 w-4 text-accent shrink-0" />
+                          <Check className="h-4 w-4 text-accent-text shrink-0" />
                           <span>{activity}</span>
                         </li>
                       ))}
@@ -92,7 +91,7 @@ export default function ProcessPage() {
                     <h3 className="text-2xl font-semibold text-foreground">{path.title}</h3>
                     <p className="text-sm leading-[1.7] text-foreground-body">{path.description}</p>
                     {path.timeline && (
-                      <p className="inline-flex items-center rounded-none bg-white/5 px-3 py-1 text-xs font-medium text-foreground-muted">
+                      <p className="inline-flex items-center rounded-card bg-surface-secondary px-3 py-1 text-sm font-medium text-foreground-muted">
                         Typical Timeline: {path.timeline}
                       </p>
                     )}
@@ -100,7 +99,7 @@ export default function ProcessPage() {
                   <div className="flex flex-wrap items-center gap-2">
                     {path.steps.map((step, stepIdx) => (
                       <div key={step} className="flex items-center gap-2">
-                        <span className="rounded-none border border-white/10 bg-white/5 px-3 py-1.5 text-sm text-foreground-body">
+                        <span className="rounded-card border border-border bg-surface-secondary px-3 py-1.5 text-sm text-foreground-body">
                           {step}
                         </span>
                         {stepIdx < path.steps.length - 1 && (
@@ -129,7 +128,7 @@ export default function ProcessPage() {
               const Icon = getIcon(item.icon);
               return (
                 <Reveal key={item.title} delayMs={index * 50} className="surface-card p-6">
-                  <span className="mb-4 inline-flex rounded-none bg-white/5 p-3 text-accent">
+                  <span className="mb-4 inline-flex rounded-card bg-surface-secondary p-3 text-accent-text">
                     <Icon className="h-6 w-6" />
                   </span>
                   <h3 className="text-lg font-semibold text-foreground">{item.title}</h3>
@@ -144,19 +143,19 @@ export default function ProcessPage() {
       {/* 5. Quality Assurance & 6. Tech Timeline side-by-side or stacked */}
       <Reveal as="section" className="section-space section-divider">
         <div className="content-shell grid gap-10 lg:grid-cols-2">
-          
+
           <div className="space-y-8">
             <div>
               <span className="eyebrow">Engineering Standards</span>
-              <h2 className="mt-2 text-3xl font-semibold text-foreground">High Standards</h2>
+              <h2 className="type-section mt-2 text-foreground">High Standards</h2>
               <p className="mt-3 text-foreground-body">Every detail is thoroughly tested prior to launch.</p>
             </div>
             <div className="grid grid-cols-2 gap-4">
               {qualityAssurance.map((qa, i) => {
                 const Icon = getIcon(qa.icon);
                 return (
-                  <Reveal key={qa.title} delayMs={i * 30} className="flex items-center gap-3 rounded-none border border-white/10 bg-white/5 p-4">
-                    <Icon className="h-5 w-5 text-accent shrink-0" />
+                  <Reveal key={qa.title} delayMs={i * 30} className="flex items-center gap-3 rounded-card border border-border bg-surface-secondary p-4">
+                    <Icon className="h-5 w-5 text-accent-text shrink-0" />
                     <span className="text-sm font-medium text-foreground">{qa.title}</span>
                   </Reveal>
                 );
@@ -167,15 +166,15 @@ export default function ProcessPage() {
           <div className="space-y-8">
             <div>
               <span className="eyebrow">The Stack</span>
-              <h2 className="mt-2 text-3xl font-semibold text-foreground">Tech Stack</h2>
+              <h2 className="type-section mt-2 text-foreground">Tech Stack</h2>
               <p className="mt-3 text-foreground-body">Fast, reliable, and secure tools powering your site.</p>
             </div>
-            <div className="relative border-l border-white/10 pl-6 space-y-6">
+            <div className="relative border-l border-border pl-6 space-y-6">
               {techTimeline.map((item, i) => {
                 const Icon = getIcon(item.icon);
                 return (
                   <Reveal key={item.stage} delayMs={i * 40} className="relative">
-                    <div className="absolute -left-[41px] top-1 flex h-8 w-8 items-center justify-center rounded-none border border-white/10 bg-zinc-950 text-accent">
+                    <div className="absolute -left-[41px] top-1 flex h-8 w-8 items-center justify-center rounded-card border border-border bg-surface text-accent-text">
                       <Icon className="h-4 w-4" />
                     </div>
                     <div>
@@ -207,10 +206,10 @@ export default function ProcessPage() {
       <Reveal as="section" className="section-space">
         <div className="content-shell">
           <div className="surface-card relative overflow-hidden px-8 py-12 sm:px-10 sm:py-14 lg:px-14 text-center flex flex-col items-center">
-            <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(245,158,11,0.15)_0%,_transparent_70%)] blur-[100px]" />
+            <div className="absolute inset-0" />
             <div className="relative space-y-5 max-w-3xl">
               <span className="eyebrow mx-auto">Ready to grow?</span>
-              <h2 className="text-[2rem] font-semibold leading-[1.1] text-foreground sm:text-[2.8rem]">
+              <h2 className="type-section text-foreground">
                 Ready to Launch?
               </h2>
               <p className="text-base leading-[1.7] text-foreground-body sm:text-lg">

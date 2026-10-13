@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from '@emailjs/browser';
 import CheckCircle2 from "lucide-react/dist/esm/icons/check-circle-2";
 import { sendGAEvent } from "@next/third-parties/google";
@@ -27,6 +27,10 @@ export function ContactForm() {
   const [formState, setFormState] = useState<FormState>(initialState);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formError, setFormError] = useState("");
+  const successRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => { if (submitted) successRef.current?.focus(); }, [submitted]);
 
   return (
     <div className="surface-card p-6 sm:p-8">
@@ -38,18 +42,18 @@ export function ContactForm() {
       </div>
 
       {submitted ? (
-        <div className="flex flex-col items-center justify-center rounded-none border border-emerald-500/20 bg-emerald-500/10 p-10 text-center animate-in fade-in zoom-in duration-500">
-          <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-none bg-emerald-500/20 text-emerald-400">
+        <div ref={successRef} tabIndex={-1} role="status" className="form-status form-status-success flex flex-col items-center justify-center p-6 text-center sm:p-8">
+          <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-card bg-success-soft text-success">
             <CheckCircle2 className="h-8 w-8" />
           </div>
-          <h3 className="mb-3 text-2xl font-semibold text-emerald-400">Message Sent Successfully!</h3>
-          <p className="text-base leading-relaxed text-emerald-200/80">
+          <h3 className="mb-3 text-2xl font-semibold text-success">Message Sent Successfully!</h3>
+          <p className="text-base leading-relaxed text-success">
             Thank you for reaching out. We have received your project details and will get back to you shortly.
           </p>
           <button
             type="button"
             onClick={() => setSubmitted(false)}
-            className="button-primary mt-8 border border-emerald-500/30 bg-emerald-500/20 px-6 py-2.5 text-sm text-emerald-400 hover:bg-emerald-500/30 hover:text-emerald-300"
+            className="button-secondary mt-6"
           >
             Send Another Message
           </button>
@@ -57,10 +61,14 @@ export function ContactForm() {
       ) : (
       <form
         className="grid gap-4"
+        aria-busy={isSubmitting}
+        aria-describedby={formError ? "contact-form-error" : undefined}
         onSubmit={async (event) => {
           event.preventDefault();
+          if (isSubmitting) return;
+          setFormError("");
           setIsSubmitting(true);
-          
+
           try {
             await emailjs.send(
               "service_tnqdrdd", // Service ID
@@ -76,18 +84,19 @@ export function ContactForm() {
               },
               "C9krtPTiFCls0Vayb" // Public Key
             );
-            
+
             setSubmitted(true);
             setFormState(initialState);
             sendGAEvent({ event: "submit_contact", form_name: "contact_form" });
           } catch (error) {
             console.error("Failed to send email:", error);
-            alert("Something went wrong, please try again.");
+            setFormError("Something went wrong, please try again.");
           } finally {
             setIsSubmitting(false);
           }
         }}
       >
+        {formError && <div id="contact-form-error" role="alert" className="form-status form-status-error">{formError}</div>}
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="grid gap-2 text-sm font-medium text-foreground">
             Name
@@ -97,7 +106,7 @@ export function ContactForm() {
               name="name"
               value={formState.name}
               onChange={(event) => setFormState((current) => ({ ...current, name: event.target.value }))}
-              className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground placeholder:text-foreground-muted"
+              className="form-field"
               placeholder="Your full name"
               disabled={isSubmitting}
             />
@@ -110,7 +119,7 @@ export function ContactForm() {
               name="email"
               value={formState.email}
               onChange={(event) => setFormState((current) => ({ ...current, email: event.target.value }))}
-              className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground placeholder:text-foreground-muted"
+              className="form-field"
               placeholder="you@restaurant.com"
               disabled={isSubmitting}
             />
@@ -126,7 +135,7 @@ export function ContactForm() {
               name="business"
               value={formState.business}
               onChange={(event) => setFormState((current) => ({ ...current, business: event.target.value }))}
-              className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground placeholder:text-foreground-muted"
+              className="form-field"
               placeholder="Restaurant or brand name"
               disabled={isSubmitting}
             />
@@ -138,7 +147,7 @@ export function ContactForm() {
               name="budget"
               value={formState.budget}
               onChange={(event) => setFormState((current) => ({ ...current, budget: event.target.value }))}
-              className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground"
+              className="form-field"
               disabled={isSubmitting}
             >
               <option value="">Select package range</option>
@@ -157,7 +166,7 @@ export function ContactForm() {
             name="timeline"
             value={formState.timeline}
             onChange={(event) => setFormState((current) => ({ ...current, timeline: event.target.value }))}
-            className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground"
+            className="form-field"
             disabled={isSubmitting}
           >
             <option value="">Choose a timeline</option>
@@ -177,13 +186,13 @@ export function ContactForm() {
             value={formState.message}
             onChange={(event) => setFormState((current) => ({ ...current, message: event.target.value }))}
             rows={6}
-            className="rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 py-3 text-foreground placeholder:text-foreground-muted"
+            className="form-field"
             placeholder="Tell us about your restaurant's concept, menu size, reservation platform, and any desired AI features."
             disabled={isSubmitting}
           />
         </label>
 
-        <button type="submit" disabled={isSubmitting} className="button-primary mt-2 w-full px-6 text-sm sm:w-auto disabled:opacity-70 disabled:cursor-not-allowed">
+        <button type="submit" disabled={isSubmitting} className="button-primary mt-2 w-full px-6 text-sm sm:w-auto">
           {isSubmitting ? "Sending..." : "Send Project Brief"}
         </button>
 

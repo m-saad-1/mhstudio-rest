@@ -1,0 +1,94 @@
+[
+  {
+    "name": "Mobile menu: focus, Escape, backdrop, active route, breakpoint resize",
+    "status": "pass"
+  },
+  {
+    "name": "Mobile navigation and skip link",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing 375: website/monthly, all prices and package dialogs",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing 375: website/yearly, all prices and package dialogs",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing 375: website_app/monthly, all prices and package dialogs",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing 375: website_app/yearly, all prices and package dialogs",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing 1440: website/monthly, all prices and package dialogs",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing 1440: website/yearly, all prices and package dialogs",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing 1440: website_app/monthly, all prices and package dialogs",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing 1440: website_app/yearly, all prices and package dialogs",
+    "status": "pass"
+  },
+  {
+    "name": "Pricing dialog: close button, backdrop, short landscape viewport",
+    "status": "pass"
+  },
+  {
+    "name": "contact form: validation, failure/retry, pending, success/reset, preserved EmailJS payload",
+    "status": "pass"
+  },
+  {
+    "name": "demo form: validation, failure/retry, pending, success/reset, preserved EmailJS payload",
+    "status": "pass"
+  },
+  {
+    "name": "FAQ keyboard and expansion /",
+    "status": "pass"
+  },
+  {
+    "name": "FAQ keyboard and expansion /contact",
+    "status": "pass"
+  },
+  {
+    "name": "FAQ keyboard and expansion /demo",
+    "status": "pass"
+  },
+  {
+    "name": "FAQ keyboard and expansion /process",
+    "status": "pass"
+  },
+  {
+    "name": "Image zoom keyboard restaurant-websites-and-apps",
+    "status": "pass"
+  },
+  {
+    "name": "Image zoom keyboard restaurant-management-systems",
+    "status": "pass"
+  },
+  {
+    "name": "Image zoom keyboard point-of-sale-systems",
+    "status": "pass"
+  },
+  {
+    "name": "Image zoom keyboard kitchen-display-systems",
+    "status": "pass"
+  },
+  {
+    "name": "Image zoom keyboard online-ordering-systems",
+    "status": "pass"
+  },
+  {
+    "name": "Reduced motion: immediate hero/cards and stable marquee",
+    "status": "pass"
+  }
+]

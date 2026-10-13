@@ -21,22 +21,22 @@ export default function ServicesPage() {
         primaryCta={{ label: "Start a Project", href: "/contact" }}
         secondaryCta={{ label: "How We Work", href: "/process" }}
       />
-      
+
       {/* Main Services Section */}
       <section className="section-space">
         <div className="content-shell">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Core Products</h2>
+            <h2 className="type-section text-foreground">Core Products</h2>
             <p className="mt-4 text-lg text-foreground-body">Dedicated platforms to power every aspect of your restaurant.</p>
           </div>
-          
+
           <div className="grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
             {mainServices.map((service, index) => {
               const Icon = getIcon(service.icon);
 
               return (
                 <Reveal key={`${service.title}-${index}`} delayMs={index * 60} className="surface-card flex h-full flex-col p-6">
-                  <span className="inline-flex w-fit rounded-none border border-amber-400/15 bg-amber-400/10 p-3 text-accent">
+                  <span className="inline-flex w-fit rounded-card border border-accent-border/40 bg-accent-soft p-3 text-accent-text">
                     <Icon className="h-6 w-6" strokeWidth={2} />
                   </span>
                   <h3 className="mt-6 text-2xl font-semibold text-foreground">{service.title}</h3>
@@ -44,7 +44,7 @@ export default function ServicesPage() {
                   <div className="mt-5 grid gap-2">
                     {service.points.map((point) => (
                       <div key={point} className="flex items-center gap-2 text-sm text-foreground-body">
-                        <Check className="h-4 w-4 text-accent" />
+                        <Check className="h-4 w-4 text-accent-text" />
                         <span>{point}</span>
                       </div>
                     ))}
@@ -59,7 +59,7 @@ export default function ServicesPage() {
                     service.title === "Dine-In & Table Management" ? "dine-in-table-management" :
                     service.title === "QR Menu & Self-Ordering" ? "qr-menu-self-ordering" :
                     service.title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')
-                  }`} className="mt-auto pt-6 inline-flex items-center gap-2 text-sm font-semibold text-amber-500 transition-colors hover:text-amber-400">
+                  }`} className="mt-auto pt-6 inline-flex items-center gap-2 text-sm font-semibold text-accent-text transition-colors hover:text-accent-text">
                     Full details
                   </Link>
                 </Reveal>
@@ -73,23 +73,23 @@ export default function ServicesPage() {
       <section className="section-space bg-background-secondary">
         <div className="content-shell">
           <div className="mb-12 text-center">
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Restaurant Digital Solutions & Supporting Services</h2>
+            <h2 className="type-section text-foreground">Restaurant Digital Solutions & Supporting Services</h2>
             <p className="mt-4 text-lg text-foreground-body">Comprehensive capabilities to support operations, growth, and customer engagement.</p>
           </div>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {supportingServicesCategories.map((category, index) => (
-              <Reveal key={category.title} delayMs={index * 100} className="surface-card flex flex-col p-6 h-full border border-border/50 hover:border-amber-500/30 transition-colors">
+              <Reveal key={category.title} delayMs={index * 100} className="surface-card flex flex-col p-6 h-full border border-border/50 hover:border-accent-border/40 transition-colors">
                 <h3 className="mb-4 text-xl font-semibold text-foreground">{category.title}</h3>
                 <ul className="space-y-3 mb-6">
                   {category.items.map((item) => (
                     <li key={item} className="flex items-start gap-2">
-                      <Check className="h-4 w-4 text-accent shrink-0 mt-0.5" />
+                      <Check className="h-4 w-4 text-accent-text shrink-0 mt-0.5" />
                       <span className="text-sm text-foreground-body leading-relaxed">{item}</span>
                     </li>
                   ))}
                 </ul>
-                <Link href="/services/supporting-services" className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-amber-500 transition-colors hover:text-amber-400">
+                <Link href="/services/supporting-services" className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-accent-text transition-colors hover:text-accent-text">
                   Explore {category.title}
                 </Link>
               </Reveal>

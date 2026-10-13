@@ -8,7 +8,7 @@ const DemoForm = dynamic(() => import("@/components/marketing/demo-form").then((
 const FaqAccordion = dynamic(() => import("@/components/ui/faq-accordion").then((mod) => mod.FaqAccordion));
 import { PageHero } from "@/components/marketing/page-hero";
 import { Reveal } from "@/components/ui/reveal";
-import { contactFaqs, siteConfig } from "@/data/site-content";
+import { siteConfig } from "@/data/site-content";
 
 export const metadata: Metadata = {
   title: "Get Free Demo",
@@ -69,7 +69,7 @@ export default function DemoPage() {
                   const Icon = step.icon;
                   return (
                     <div key={step.title} className="flex gap-4">
-                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-none border border-amber-400/15 bg-amber-400/10 text-accent">
+                      <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-card border border-accent-border/40 bg-accent-soft text-accent-text">
                         <Icon className="h-5 w-5" />
                       </span>
                       <div className="space-y-1">
@@ -81,7 +81,7 @@ export default function DemoPage() {
                 })}
               </div>
 
-              <div className="mt-8 pt-6 border-t border-white/8">
+              <div className="mt-8 pt-6 border-t border-border">
                 <p className="text-sm text-foreground-body mb-4">
                   Prefer a direct, live discussion? Schedule a meeting with us instantly on our calendar.
                 </p>
@@ -91,7 +91,7 @@ export default function DemoPage() {
                   rel="noopener noreferrer"
                   className="button-secondary inline-flex items-center gap-2 text-sm py-2.5 px-4"
                 >
-                  <CalendarRange className="h-4 w-4 text-accent" />
+                  <CalendarRange className="h-4 w-4 text-accent-text" />
                   Book Live Meeting
                 </Link>
               </div>

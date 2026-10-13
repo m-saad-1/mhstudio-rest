@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: 'Premium websites for growing local businesses.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#09090b',
-    theme_color: '#f59e0b',
+    background_color: '#fafaf9',
+    theme_color: '#fafaf9',
     icons: [
       {
         src: '/favicon.ico',

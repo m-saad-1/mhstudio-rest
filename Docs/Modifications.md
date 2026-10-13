@@ -1,81 +1,64 @@
-Implement the following modifications while keeping the existing design style professional, clean, and consistent:
+# MHStudio — Complete Theme & UI/UX Refinement
 
-1. Hero Section
+Perform a complete styling and theme upgrade across the MHStudio website. The current theme is dark, with mostly square 0px corners. Transform it into a **professional, modern light theme** with refined rounded corners, consistent typography, and polished UI components.
 
-* Change “Attract more customers through modern Websites” to “Attract more customers through modern System”.
-* Change the “Start Your Project” button to “Start Free Trial”.
-* Replace the “95 Page Speed” badge with “Delivery Fleet”.
-* Update the hero image using the new asset from the images folder.
-* Convert the required image to AVIF and use the optimized version.
+### 1. Global Theme
+- Switch the entire website to a clean, professional light theme.
+- Preserve the existing orange brand color as the primary accent.
+- Use a balanced palette of white, soft off-white, light neutral gray, dark readable text, and subtle borders.
+- Replace harsh contrasts and inconsistent colors with a cohesive design system.
+- Apply the theme consistently across every page, section, modal, form, navigation element, card, badge, and interactive component.
 
-2. Services Section
+### 2. Rounded Corners & Component Styling
+- Replace the current 0px corners with appropriate, professionally rounded corners.
+- Define consistent corner-radius tokens for buttons, cards, inputs, modals, images, badges, and containers.
+- Use moderate rounding rather than excessive pill shapes or overly bubbly components.
+- Refine borders, shadows, spacing, alignment, padding, and component dimensions.
+- Keep buttons visually clear, clickable, and consistent in size and style.
 
-* Add the provided images from the images folder to each service card.
-* Desktop: 3 cards per row.
-* Mobile: 1 card per row.
-* Add a new service card: “QR Menu”.
-* Keep all cards visually consistent and properly sized.
+### 3. Typography
+Audit and standardize typography across desktop and mobile:
+- **Headings:** Establish a clear hierarchy for H1, H2, H3, and smaller headings.
+- **Body text:** Use comfortable font sizes, line heights, and readable paragraph widths.
+- **Supporting text:** Ensure descriptions, captions, labels, metadata, and helper text remain legible.
+- **Buttons and navigation:** Use consistent font sizes, weights, and spacing.
+- Use responsive typography that scales appropriately without oversized headings, cramped paragraphs, or tiny mobile text.
+- Maintain consistent font families, weights, and line heights throughout the site.
 
-3. “Your Restaurant, One Panel” Section
+### 4. Complete Component Audit
+Inspect and refine every major UI component, including:
+- Header, desktop navigation, mobile navigation, and footer
+- Hero section, calls to action, and promotional banners
+- Service cards, feature cards, pricing cards, and statistics
+- Forms, inputs, dropdowns, search, and interactive controls
+- Modals, dialogs, accordions, and floating elements
+- Icons, badges, buttons, images, and section dividers
+- Responsive layouts, grids, and content containers
 
-* Keep both images the same size.
-* Place the Dashboard image above and the Order image below.
-* Align both images properly with consistent spacing.
-* Prevent any overlap or inconsistent sizing.
+Ensure each component has appropriate dimensions, spacing, alignment, contrast, and visual hierarchy.
 
-4. Online Ordering → Delivery Section
+### 5. Professional & Persuasive Design
+The website should communicate trust, technical expertise, and business value. Make the design clean, premium, modern, and conversion-focused without unnecessary decoration, excessive shadows, gradients, animations, or oversized components.
 
-* Add a new section showing the complete flow from online ordering to delivery.
-* Use the provided image/visual asset where appropriate.
-* Clearly communicate the flow: Order → Preparation → Dispatch → Delivery.
+Use the orange accent strategically for primary actions, highlights, active states, and important information. Maintain sufficient contrast and clear visual emphasis.
 
-5. Digital Capabilities
-   Remove:
+### 6. Responsive Design
+- Optimize layouts for desktop, tablet, and mobile.
+- Prevent text overflow, clipped content, horizontal scrolling, overlapping components, and inconsistent spacing.
+- Ensure touch targets are comfortable on mobile.
+- Adjust typography, padding, card layouts, and section spacing for smaller screens.
 
-* Mobile-First Experience
-* Local SEO Schema
-* Fast Performance
-* Secure Hosting & SSL
+### 7. Implementation Requirements
+- Inspect the existing theme variables, CSS architecture, and reusable components before making changes.
+- Establish a centralized design system for colors, typography, spacing, border radii, shadows, and component states.
+- Reuse shared styles and design tokens instead of introducing arbitrary values or duplicate CSS.
+- Apply changes consistently across all pages, including less frequently visited pages and modal states.
+- Preserve existing content, routes, business logic, integrations, and functionality.
+- Avoid unnecessary rewrites or unrelated feature changes.
 
-Make all remaining capability cards equal in size with consistent spacing and alignment.
+### 8. Final Quality Assurance
+Test every page and major component in desktop and mobile viewports. Verify normal, hover, focus, active, disabled, loading, and error states wherever applicable.
 
-6. Client Logos
+Check text readability, orange-accent contrast, alignment, corner consistency, responsive behavior, and visual regressions.
 
-* Add a new section displaying client logos from the images folder.
-* Logos should continuously move from right to left in an infinite marquee.
-* Keep the animation smooth and seamless with no visible jump/reset.
-* Make it responsive and ensure logos remain properly sized.
-
-7. Website/App Demo + RMS Dashboard
-   Add a new section with two columns on desktop and two stacked rows on mobile:
-
-* Website / App Demo
-* RMS Dashboard
-
-For each:
-
-* Add the corresponding image from the images folder.
-* Add a clear “Demo” button below the image.
-* Keep both cards equal in structure and visually balanced.
-
-8. FAQs
-
-* Reduce the number of FAQ questions to the most relevant ones.
-* Balance the number of questions between both columns.
-* Align the right-side FAQ column consistently with the left.
-* All FAQs should be closed by default.
-* Allow only one FAQ to be open at a time.
-
-9. Insights / Results Section
-   Add a new “Insights” or “Results” section with strong restaurant-focused statistics, such as:
-
-* 2× More Orders
-* 30 sec Faster Ordering
-* Higher Customer Retention
-* Faster Delivery Management
-* More Repeat Customers
-* Reduced Manual Work
-
-Use clean stat cards with large numbers and short supporting descriptions. Keep the claims clearly presented as product/business metrics rather than unsupported guarantees.
-
-Ensure all new sections are responsive, properly spaced, visually consistent with the existing website, and do not introduce horizontal overflow or layout shifts.
+**Acceptance criteria:** The entire MHStudio website uses a cohesive light theme, retains its existing orange brand identity, replaces square corners with appropriate professional rounding, and has consistent typography and polished layouts across desktop and mobile. Do not stop after updating the homepage or a few shared components; verify the complete website.

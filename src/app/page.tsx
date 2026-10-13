@@ -45,7 +45,7 @@ export default function Home() {
     "Point of Sale (POS) Systems": { src: posImage, alt: "Restaurant point of sale dashboard" },
     "Online Ordering Systems": { src: onlineOrderingImage, alt: "Online restaurant ordering experience" },
     "Kitchen Display Systems (KDS)": { src: "/images/modern-kitchen-display-system-showcase.avif", alt: "Kitchen display system" },
-    "Delivery & Fleet Management": { src: "/images/multi-device-restaurant-management-mockup.avif", alt: "Delivery and fleet management tools" },
+    "Delivery & Fleet Management": { src: "/images/device-showcase.avif", alt: "Delivery and fleet management tools" },
     "Dine-In & Table Management": { src: "/images/modern-restaurant-table-management-dashboard.avif", alt: "Restaurant table management dashboard" },
     "QR Menu & Self-Ordering": { src: qrMenuImage, alt: "QR menu and self-ordering menu" },
   };
@@ -69,22 +69,22 @@ export default function Home() {
                 <Reveal
                   key={service.title}
                   delayMs={index * 70}
-                  className="surface-card group flex h-full min-w-0 flex-col justify-between overflow-hidden transition-transform duration-300 hover:-translate-y-1.5"
+                  className="surface-card group flex h-full min-w-0 flex-col justify-between overflow-hidden transition-transform duration-200"
                 >
-                  <div className="relative aspect-[16/9] overflow-hidden border-b border-white/8">
-                    <Image src={image.src} alt={image.alt} fill sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" className="object-cover transition-transform duration-500 group-hover:scale-105" />
+                  <div className="relative aspect-[16/9] overflow-hidden border-b border-border">
+                    <Image src={image.src} alt={image.alt} fill sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" className="object-cover transition-transform duration-200" />
                   </div>
                   <div className="flex flex-1 flex-col justify-between p-4">
                   <div className="space-y-3">
                     <div className="space-y-3">
                       <h3 className="text-xl font-semibold text-foreground">{service.title}</h3>
-                      <p className="line-clamp-2 text-sm leading-[1.5] text-foreground-body">{service.description}</p>
+                      <p className="line-clamp-2 text-sm leading-relaxed text-foreground-body">{service.description}</p>
                     </div>
                   </div>
                   <Link href={"href" in service && service.href ? service.href : "/services"} className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-foreground">
                     Learn More
                     <span className="sr-only"> about {service.title}</span>
-                    <ArrowRight className="h-4 w-4 text-accent transition-transform duration-300 group-hover:translate-x-1" />
+                    <ArrowRight className="h-4 w-4 text-accent-text transition-transform duration-200 group-hover:translate-x-1" />
                   </Link>
                   </div>
                 </Reveal>
@@ -99,13 +99,13 @@ export default function Home() {
           {/* Left Side: Image */}
           <Reveal delayMs={0} className="relative mx-auto w-full max-w-md lg:mx-0 lg:max-w-none flex justify-center lg:h-full">
             {/* Decorative Glow */}
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[300px] w-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.22)_0%,transparent_70%)]" />
+
             <div className="relative w-full aspect-[4/5] lg:aspect-auto lg:h-full z-10 perspective-1000">
               <Image
                 src="/images/chatbot.avif"
                 alt="AI Receptionist Interface"
                 fill
-                className="object-contain object-center drop-shadow-[0_20px_40px_rgba(245,158,11,0.18)] hover:-translate-y-2 transition-transform duration-500 ease-out"
+                className="object-contain object-center transition-transform duration-200 ease-out"
                 sizes="(max-width: 1024px) 45vw, 400px"
               />
             </div>
@@ -114,14 +114,14 @@ export default function Home() {
           {/* Right Side: Content */}
           <Reveal delayMs={100} className="space-y-8">
             <div className="space-y-5">
-              <span className="inline-flex items-center gap-2 rounded-none border border-amber-400/20 bg-amber-400/10 px-4 py-1.5 text-sm font-semibold text-amber-400 backdrop-blur-md shadow-[0_0_15px_rgba(245,158,11,0.15)]">
+              <span className="inline-flex items-center gap-2 rounded-card border border-accent-border/40 bg-accent-soft px-4 py-1.5 text-sm font-semibold text-accent-text shadow-card">
                 AI-Powered Customer Experience
               </span>
-              <h2 className="text-[2rem] font-semibold leading-[1.15] text-foreground sm:text-[2.8rem] tracking-tight">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200 drop-shadow-sm">24/7 AI Receptionist</span>
+              <h2 className="type-section text-foreground">
+                <span className="text-accent-text">24/7 AI Receptionist</span>
               </h2>
               <p className="text-base leading-[1.8] text-foreground-body sm:text-lg">
-                Deliver instant responses and simplify customer interactions around the clock. Help guests book tables, take orders, and answer questions while reducing your team's workload.
+                Deliver instant responses and simplify customer interactions around the clock. Help guests book tables, take orders, and answer questions while reducing your team&apos;s workload.
               </p>
             </div>
 
@@ -134,13 +134,13 @@ export default function Home() {
                 { title: "Business Information", desc: "Hours & location." },
                 { title: "Smart Menu", desc: "Dish recommendations." },
               ].map((feature) => (
-                <div key={feature.title} className="surface-card flex items-start gap-4 p-4 !rounded-none border border-white/5 hover:border-amber-500/30 transition-all duration-300 hover:shadow-[0_4px_20px_rgba(245,158,11,0.08)] bg-white/[0.01] hover:bg-white/[0.03]">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-none bg-amber-400/10 text-amber-400 shadow-[inset_0_0_10px_rgba(245,158,11,0.1)]">
+                <div key={feature.title} className="surface-card flex items-start gap-4 p-4 rounded-card border border-border hover:border-accent-border/40 transition-all duration-200 hover:shadow-soft bg-surface-secondary hover:bg-surface-secondary">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-card bg-accent-soft text-accent-text shadow-card">
                     <Check className="h-4 w-4" strokeWidth={3} />
                   </span>
                   <div>
                     <span className="block text-sm font-semibold text-foreground">{feature.title}</span>
-                    <span className="block text-xs text-foreground-muted mt-1">{feature.desc}</span>
+                    <span className="block text-sm text-foreground-muted mt-1">{feature.desc}</span>
                   </div>
                 </div>
               ))}
@@ -149,9 +149,9 @@ export default function Home() {
 
 
             <div className="pt-2">
-              <Link href="/services" className="button-primary px-8 py-3.5 text-sm w-full sm:w-auto inline-flex items-center justify-center group shadow-[0_0_20px_rgba(245,158,11,0.25)] hover:shadow-[0_0_30px_rgba(245,158,11,0.4)]">
+              <Link href="/services" className="button-primary px-8 py-3.5 text-sm w-full sm:w-auto inline-flex items-center justify-center group shadow-card hover:shadow-soft">
                 Explore AI Features
-                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+                <ArrowRight className="ml-2 h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
               </Link>
             </div>
           </Reveal>
@@ -163,11 +163,11 @@ export default function Home() {
           {/* Left Side: Content */}
           <Reveal delayMs={0} className="space-y-8">
             <div className="space-y-5">
-              <span className="inline-flex items-center gap-2 rounded-none border border-amber-400/20 bg-amber-400/10 px-4 py-1.5 text-sm font-semibold text-amber-400 backdrop-blur-md shadow-[0_0_15px_rgba(245,158,11,0.15)]">
+              <span className="inline-flex items-center gap-2 rounded-card border border-accent-border/40 bg-accent-soft px-4 py-1.5 text-sm font-semibold text-accent-text shadow-card">
                 Your Restaurant, One Panel
               </span>
-              <h2 className="text-[2rem] font-semibold leading-[1.15] text-foreground sm:text-[2.8rem] tracking-tight">
-                Manage your entire restaurant from <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-amber-200 drop-shadow-sm">one screen.</span>
+              <h2 className="type-section text-foreground">
+                Manage your entire restaurant from <span className="text-accent-text">one screen.</span>
               </h2>
             </div>
 
@@ -180,13 +180,13 @@ export default function Home() {
                 { title: "Know your customers", desc: "Track customer profiles, order history, loyalty, and repeat activity." },
                 { title: "See what matters", desc: "Monitor revenue, sales, branch performance, and AI-powered business insights." },
               ].map((feature) => (
-                <div key={feature.title} className="surface-card flex items-start gap-4 p-4 !rounded-none border border-white/5 hover:border-amber-500/30 transition-all duration-300 hover:shadow-[0_4px_20px_rgba(245,158,11,0.08)] bg-white/[0.01] hover:bg-white/[0.03]">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-none bg-amber-400/10 text-amber-400 shadow-[inset_0_0_10px_rgba(245,158,11,0.1)]">
+                <div key={feature.title} className="surface-card flex items-start gap-4 p-4 rounded-card border border-border hover:border-accent-border/40 transition-all duration-200 hover:shadow-soft bg-surface-secondary hover:bg-surface-secondary">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-card bg-accent-soft text-accent-text shadow-card">
                     <Check className="h-4 w-4" strokeWidth={3} />
                   </span>
                   <div>
                     <span className="block text-sm font-semibold text-foreground">{feature.title}</span>
-                    <span className="block text-xs text-foreground-muted mt-1">{feature.desc}</span>
+                    <span className="block text-sm text-foreground-muted mt-1">{feature.desc}</span>
                   </div>
                 </div>
               ))}
@@ -195,25 +195,25 @@ export default function Home() {
 
           {/* Right Side: Images */}
           <Reveal delayMs={100} className="relative mx-auto flex w-full max-w-lg flex-col gap-6 lg:mx-0 lg:max-w-none">
-            <div className="pointer-events-none absolute left-1/2 top-1/2 h-[400px] w-[400px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_center,rgba(245,158,11,0.15)_0%,transparent_70%)]" />
-            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-white/10 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:border-amber-500/50 transition-colors duration-300">
+
+            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-border p-2 shadow-card hover:border-accent-border/40 transition-colors duration-200">
               <a href="/images/Dashboard-1.avif" target="_blank" rel="noopener noreferrer" className="block relative w-full h-full cursor-zoom-in">
                 <Image
                   src="/images/Dashboard-1.avif"
                   alt="Restaurant management dashboard overview"
                   fill
-                  className="object-cover object-left-top p-2 transition-transform duration-500 hover:scale-[1.02]"
+                  className="object-cover object-left-top p-2 transition-transform duration-200 hover:scale-[1.02]"
                   sizes="(max-width: 1024px) 90vw, 50vw"
                 />
               </a>
             </div>
-            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-white/10 p-2 shadow-[0_20px_50px_rgba(0,0,0,0.5)] hover:border-amber-500/50 transition-colors duration-300">
+            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-border p-2 shadow-card hover:border-accent-border/40 transition-colors duration-200">
               <a href="/images/Dashboard-2.avif" target="_blank" rel="noopener noreferrer" className="block relative w-full h-full cursor-zoom-in">
                 <Image
                   src="/images/Dashboard-2.avif"
                   alt="Restaurant order management dashboard"
                   fill
-                  className="object-cover object-left-top p-2 transition-transform duration-500 hover:scale-[1.02]"
+                  className="object-cover object-left-top p-2 transition-transform duration-200 hover:scale-[1.02]"
                   sizes="(max-width: 1024px) 90vw, 50vw"
                 />
               </a>
@@ -238,11 +238,11 @@ export default function Home() {
                   delayMs={index * 35}
                   className="surface-card flex min-h-[220px] flex-col p-5"
                 >
-                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-md border border-amber-400/20 bg-amber-400/10 p-0 text-accent">
+                  <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-control border border-accent-border/40 bg-accent-soft p-0 text-accent-text">
                     <Icon className="h-5 w-5" strokeWidth={2} />
                   </span>
                   <h3 className="mt-5 text-xl font-semibold text-foreground">{feature.title}</h3>
-                  <p className="mt-2 line-clamp-3 text-xs leading-[1.6] text-foreground-body sm:text-sm">{feature.description}</p>
+                  <p className="mt-2 line-clamp-3 text-sm leading-[1.6] text-foreground-body sm:text-sm">{feature.description}</p>
                 </Reveal>
               );
             })}
@@ -257,14 +257,14 @@ export default function Home() {
             title="One connected flow from checkout to doorstep."
             align="center"
           />
-          <div className="surface-card overflow-hidden p-4 sm:p-8 hover:border-amber-500/50 transition-colors duration-300">
+          <div className="surface-card overflow-hidden p-4 sm:p-8 hover:border-accent-border/40 transition-colors duration-200">
             <a href="/images/from-order-to-doorstep-flow.avif" target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-zoom-in">
               <Image
                 src="/images/from-order-to-doorstep-flow.avif"
                 alt="Restaurant order to doorstep delivery flow"
                 width={1200}
                 height={700}
-                className="mx-auto max-h-[520px] w-full object-contain transition-transform duration-500 hover:scale-[1.02]"
+                className="mx-auto max-h-[520px] w-full object-contain transition-transform duration-200 hover:scale-[1.02]"
                 sizes="(max-width: 768px) 100vw, 1100px"
               />
             </a>
@@ -315,12 +315,12 @@ export default function Home() {
               { title: "RMS Dashboard", image: "/images/restaurant-management-dashboard-workspace.avif", alt: "Restaurant management system dashboard", href: "https://demopk.vercel.app/dashboard/index.html" },
             ].map((demo) => (
               <div key={demo.title} className="surface-card flex flex-col p-5">
-                <div className="relative aspect-[16/10] overflow-hidden border border-white/8 bg-zinc-950">
+                <div className="relative aspect-[16/10] overflow-hidden border border-border bg-surface">
                   <Image src={demo.image} alt={demo.alt} fill className="object-cover object-top" sizes="(max-width: 1023px) 100vw, 50vw" />
                 </div>
                 <div className="flex items-center justify-between gap-4 pt-5">
                   <h3 className="text-xl font-semibold text-foreground">{demo.title}</h3>
-                  <Link href={demo.href} target="_blank" rel="noopener noreferrer" className="button-primary min-h-10 px-5 text-sm">Demo</Link>
+                  <Link href={demo.href} target="_blank" rel="noopener noreferrer" className="button-primary min-h-11 px-5 text-sm">Demo</Link>
                 </div>
               </div>
             ))}
@@ -345,7 +345,7 @@ export default function Home() {
               ["Less", "Manual Work", "Centralized tools reduce repetitive updates across menus, orders, and branches."],
             ].map(([value, label, description]) => (
               <div key={label} className="surface-card min-h-[180px] p-6">
-                <p className="text-4xl font-bold text-accent">{value}</p>
+                <p className="text-4xl font-bold text-accent-text">{value}</p>
                 <h3 className="mt-2 text-lg font-semibold text-foreground">{label}</h3>
                 <p className="mt-2 text-sm leading-[1.6] text-foreground-body">{description}</p>
               </div>
@@ -426,18 +426,18 @@ export default function Home() {
             title="Answers to Common Pre-Launch Questions"
             align="center"
           />
-          <FaqAccordion items={[...leftFaqs, ...faqs]} />
+          <FaqAccordion items={[...leftFaqs, ...faqs]} columns={2} />
         </div>
       </Reveal>
 
       <Reveal as="section" className="home-cta-section section-space">
         <div className="content-shell">
           <div className="surface-card relative overflow-hidden px-8 py-12 sm:px-10 sm:py-14 lg:px-14">
-            <div className="absolute right-0 top-0 h-64 w-64 rounded-full bg-[radial-gradient(circle,_rgba(245,158,11,0.18)_0%,_transparent_72%)]" />
+
             <div className="relative grid gap-8 lg:grid-cols-[1.4fr_0.9fr] lg:items-center">
               <div className="space-y-5">
                 <span className="eyebrow">Interactive Demo</span>
-                <h2 className="max-w-[16ch] text-[2rem] font-semibold leading-[1.1] text-foreground sm:text-[2.8rem]">
+                <h2 className="type-section max-w-[16ch] text-foreground">
                   See our solutions in action.
                 </h2>
                 <p className="max-w-2xl text-base leading-[1.7] text-foreground-body sm:text-lg">

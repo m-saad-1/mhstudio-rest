@@ -18,38 +18,38 @@ export default function RestaurantManagementSystemsPage() {
   return (
     <>
       {/* 1. HERO SECTION */}
-      <section className="relative overflow-hidden pt-24 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative overflow-hidden pb-12 pt-8 sm:pt-12 lg:pb-16 lg:pt-16">
         <div className="absolute inset-0 z-0">
-          <div className="absolute top-[10%] left-[10%] h-[40%] w-[40%] rounded-full bg-amber-500/10 blur-[120px]" />
-          <div className="absolute top-[40%] right-[10%] h-[50%] w-[50%] rounded-full bg-amber-400/5 blur-[100px]" />
+
+
         </div>
 
         <div className="content-shell relative z-10 text-center max-w-4xl mx-auto mb-16">
           <Reveal className="flex flex-col items-center">
-            <Link href="/services" className="mb-8 inline-flex w-fit items-center text-sm font-medium text-foreground-muted hover:text-foreground transition-colors">
+            <Link href="/services" className="mb-8 inline-flex min-h-11 w-fit items-center text-sm font-medium text-foreground-muted hover:text-foreground transition-colors">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Services
             </Link>
-            <span className="mb-4 inline-block text-sm font-semibold tracking-wider text-amber-500 uppercase">
+            <span className="mb-4 inline-block text-sm font-semibold tracking-wider text-accent-text uppercase">
               Restaurant Management Systems
             </span>
-            <h1 className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl lg:text-6xl xl:text-[4rem] xl:leading-[1.1]">
+            <h1 className="type-display text-foreground">
               Run Your Restaurant From One Connected System.
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-foreground-body">
               A centralized restaurant management platform built to bring orders, kitchen operations, delivery, inventory, customers, branches, staff, and business performance together in one place.
             </p>
-            
+
             <div className="mt-8 flex flex-wrap justify-center items-center gap-4">
               <Link
                 href="/demo"
-                className="inline-flex h-12 items-center justify-center bg-amber-500 px-6 font-medium text-zinc-950 transition-colors hover:bg-amber-400"
+                className="button-primary"
               >
                 Get Your Free Demo
               </Link>
               <Link
                 href="#dashboard"
-                className="inline-flex h-12 items-center justify-center border border-border px-6 font-medium text-foreground transition-colors hover:bg-surface hover:text-amber-500"
+                className="button-secondary"
               >
                 Explore the Dashboard
               </Link>
@@ -58,7 +58,7 @@ export default function RestaurantManagementSystemsPage() {
             <div className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-3 pt-6 border-t border-border/50">
               {["Centralized Operations", "Real-Time Orders", "Multi-Branch Ready", "POS + KDS Connected", "Business Analytics"].map((feature) => (
                 <div key={feature} className="flex items-center gap-2 text-sm text-foreground-muted">
-                  <Check className="h-4 w-4 text-amber-500" />
+                  <Check className="h-4 w-4 text-accent-text" />
                   <span>{feature}</span>
                 </div>
               ))}
@@ -69,11 +69,11 @@ export default function RestaurantManagementSystemsPage() {
         {/* Hero Dashboard Visual */}
         <div className="content-shell relative z-10" id="dashboard">
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">
-            <div className="relative aspect-[16/9] w-full rounded-xl border border-zinc-800 bg-zinc-900 shadow-2xl overflow-hidden flex flex-col">
+            <div className="relative aspect-[16/9] w-full rounded-card border border-border-strong bg-surface shadow-card overflow-hidden flex flex-col">
                {/* Mockup Header */}
-               <div className="h-12 border-b border-zinc-800 bg-zinc-950 flex items-center px-4 gap-2">
-                 <div className="flex gap-1.5"><div className="w-3 h-3 rounded-full bg-zinc-800"/><div className="w-3 h-3 rounded-full bg-zinc-800"/><div className="w-3 h-3 rounded-full bg-zinc-800"/></div>
-                 <div className="mx-auto text-xs font-semibold text-zinc-500">MhStudio Restaurant Command Center</div>
+               <div className="h-12 border-b border-border-strong bg-surface flex items-center px-4 gap-2">
+                 <div className="flex gap-1.5"><div className="w-3 h-3 rounded-full bg-surface-secondary"/><div className="w-3 h-3 rounded-full bg-surface-secondary"/><div className="w-3 h-3 rounded-full bg-surface-secondary"/></div>
+                 <div className="mx-auto text-sm font-semibold text-foreground-muted">MhStudio Restaurant Command Center</div>
                </div>
                <div className="flex-1 flex items-center justify-center relative overflow-hidden">
                   <Zoom>
@@ -86,7 +86,7 @@ export default function RestaurantManagementSystemsPage() {
       </section>
 
       {/* 2. INTRODUCTION */}
-      <section className="section-space section-divider bg-surface-secondary/30">
+      <section className="section-space section-divider bg-surface-secondary">
         <div className="content-shell">
           <SectionHeading
             eyebrow="The Restaurant Command Center"
@@ -106,33 +106,33 @@ export default function RestaurantManagementSystemsPage() {
               { title: "Business", desc: "Monitor sales, products, branches, and operational performance." }
             ].map((feature, i) => (
               <Reveal key={feature.title} delayMs={i * 100} className="surface-card p-6">
-                <h3 className="text-lg font-bold text-foreground mb-2 text-amber-500">{feature.title}</h3>
+                <h3 className="text-lg font-bold text-foreground mb-2 text-accent-text">{feature.title}</h3>
                 <p className="text-sm text-foreground-body">{feature.desc}</p>
               </Reveal>
             ))}
           </div>
 
           {/* Connected Operations Visual */}
-          <Reveal delayMs={300} className="mt-16 surface-card p-8 sm:p-12 text-center max-w-4xl mx-auto border-amber-500/10">
+          <Reveal delayMs={300} className="mt-16 surface-card p-8 sm:p-12 text-center max-w-4xl mx-auto border-accent-border/40">
              <div className="flex flex-col items-center gap-6">
-                <div className="text-sm font-medium text-zinc-400">ORDERS</div>
+                <div className="text-sm font-medium text-foreground-muted">ORDERS</div>
                 <div className="flex items-center gap-4 w-full justify-center">
-                   <div className="text-sm font-medium text-zinc-400">CUSTOMERS</div>
-                   <div className="px-6 py-4 bg-amber-500/10 border border-amber-500/30 text-amber-500 font-bold tracking-widest rounded-sm shadow-[0_0_20px_rgba(245,158,11,0.15)]">RMS</div>
-                   <div className="text-sm font-medium text-zinc-400">INVENTORY</div>
+                   <div className="text-sm font-medium text-foreground-muted">CUSTOMERS</div>
+                   <div className="px-6 py-4 bg-accent-soft border border-accent-border/40 text-accent-text font-bold tracking-widest rounded-tag shadow-card">RMS</div>
+                   <div className="text-sm font-medium text-foreground-muted">INVENTORY</div>
                 </div>
                 <div className="flex gap-4 w-full max-w-lg justify-between mt-4">
                    <div className="flex flex-col items-center gap-3">
-                      <div className="px-4 py-2 border border-zinc-800 bg-zinc-900/50 text-sm">POS</div>
-                      <div className="text-xs text-zinc-500">STAFF</div>
+                      <div className="px-4 py-2 border border-border-strong bg-surface text-sm">POS</div>
+                      <div className="text-sm text-foreground-muted">STAFF</div>
                    </div>
                    <div className="flex flex-col items-center gap-3">
-                      <div className="px-4 py-2 border border-zinc-800 bg-zinc-900/50 text-sm">KDS</div>
-                      <div className="text-xs text-zinc-500">KITCHEN</div>
+                      <div className="px-4 py-2 border border-border-strong bg-surface text-sm">KDS</div>
+                      <div className="text-sm text-foreground-muted">KITCHEN</div>
                    </div>
                    <div className="flex flex-col items-center gap-3">
-                      <div className="px-4 py-2 border border-zinc-800 bg-zinc-900/50 text-sm">DELIVERY</div>
-                      <div className="text-xs text-zinc-500">RIDERS</div>
+                      <div className="px-4 py-2 border border-border-strong bg-surface text-sm">DELIVERY</div>
+                      <div className="text-sm text-foreground-muted">RIDERS</div>
                    </div>
                 </div>
              </div>
@@ -166,17 +166,17 @@ export default function RestaurantManagementSystemsPage() {
       </section>
 
       {/* 5. CENTRAL ORDER MANAGEMENT */}
-      <section className="section-space section-divider bg-surface-secondary/20">
+      <section className="section-space section-divider bg-surface-secondary">
         <div className="content-shell grid gap-12 lg:grid-cols-2 items-center">
           <Reveal>
-            <span className="mb-4 inline-block text-sm font-semibold tracking-wider text-amber-500 uppercase">
+            <span className="mb-4 inline-block text-sm font-semibold tracking-wider text-accent-text uppercase">
               Order Management
             </span>
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="type-section text-foreground">
               Every Order. One Central Workflow.
             </h2>
             <p className="mt-6 text-lg text-foreground-body">
-              Orders can come from different customer and staff channels, but your restaurant shouldn't have to manage them as completely separate processes.
+              Orders can come from different customer and staff channels, but your restaurant shouldn&apos;t have to manage them as completely separate processes.
             </p>
             <p className="mt-4 text-foreground-body">
               The RMS provides a centralized order view where your team can manage orders from different sources while keeping the fulfillment workflow clear.
@@ -188,8 +188,8 @@ export default function RestaurantManagementSystemsPage() {
                  { title: "Takeaway", desc: "Pickup orders created through online channels or POS." },
                  { title: "Delivery", desc: "Orders that require customer address, dispatch, and fulfillment." }
                ].map(type => (
-                  <div key={type.title} className="p-4 border border-border bg-surface rounded-lg">
-                     <h4 className="font-semibold text-amber-500 mb-1">{type.title}</h4>
+                  <div key={type.title} className="p-4 border border-border bg-surface rounded-control">
+                     <h4 className="font-semibold text-accent-text mb-1">{type.title}</h4>
                      <p className="text-sm text-foreground-body">{type.desc}</p>
                   </div>
                ))}
@@ -200,15 +200,15 @@ export default function RestaurantManagementSystemsPage() {
              <div className="flex flex-col w-full max-w-sm gap-6">
                 <div className="flex flex-wrap justify-center gap-2">
                    {['Website', 'Mobile App', 'POS', 'QR', 'WhatsApp', 'Phone'].map(source => (
-                      <span key={source} className="text-xs bg-zinc-800 text-zinc-300 px-3 py-1.5 rounded">{source}</span>
+                      <span key={source} className="text-sm bg-surface-secondary text-foreground-body px-3 py-1.5 rounded-tag">{source}</span>
                    ))}
                 </div>
-                <div className="flex justify-center text-zinc-500"><ArrowRight className="rotate-90 w-5 h-5"/></div>
-                <div className="bg-amber-500/10 border border-amber-500 text-amber-500 font-bold text-center py-4 rounded shadow-lg shadow-amber-500/10">
+                <div className="flex justify-center text-foreground-muted"><ArrowRight className="rotate-90 w-5 h-5"/></div>
+                <div className="bg-accent-soft border border-accent-border/40 text-accent-text font-bold text-center py-4 rounded-tag shadow-card">
                    CENTRAL ORDERS
                 </div>
-                <div className="flex justify-center text-zinc-500"><ArrowRight className="rotate-90 w-5 h-5"/></div>
-                <div className="bg-zinc-800 border border-zinc-700 text-zinc-200 font-semibold text-center py-3 rounded">
+                <div className="flex justify-center text-foreground-muted"><ArrowRight className="rotate-90 w-5 h-5"/></div>
+                <div className="bg-surface-secondary border border-border-strong text-foreground font-semibold text-center py-3 rounded-tag">
                    KDS & FULFILLMENT
                 </div>
              </div>
@@ -227,14 +227,14 @@ export default function RestaurantManagementSystemsPage() {
           />
 
           <Reveal delayMs={100} className="mt-16 w-full overflow-x-auto pb-6">
-             <div className="flex items-center min-w-[800px] justify-between px-4 gap-2">
+             <div className="workflow-steps">
                 {['New', 'Confirmed', 'Preparing', 'Ready', 'Out for Delivery', 'Delivered'].map((step, index, arr) => (
                    <div key={step} className="flex items-center">
-                      <div className={`px-4 py-3 rounded-full text-sm font-semibold whitespace-nowrap ${index === 3 ? 'bg-amber-500 text-zinc-950 shadow-[0_0_15px_rgba(245,158,11,0.3)]' : 'bg-surface border border-border text-foreground-body'}`}>
+                      <div className={`px-4 py-3 rounded-tag text-sm font-semibold ${index === 3 ? 'bg-accent text-foreground shadow-card' : 'bg-surface border border-border text-foreground-body'}`}>
                          {step}
                       </div>
                       {index < arr.length - 1 && (
-                         <div className={`w-8 h-0.5 mx-2 ${index < 3 ? 'bg-amber-500' : 'bg-border'}`} />
+                         <div className={`w-8 h-0.5 mx-2 ${index < 3 ? 'bg-accent' : 'bg-border'}`} />
                       )}
                    </div>
                 ))}
@@ -244,10 +244,10 @@ export default function RestaurantManagementSystemsPage() {
       </section>
 
       {/* 7. POS + RMS */}
-      <section className="section-space section-divider bg-surface-secondary/20">
+      <section className="section-space section-divider bg-surface-secondary">
         <div className="content-shell grid gap-12 lg:grid-cols-[1fr_1.2fr] items-center">
           <Reveal className="order-2 lg:order-1 relative aspect-[16/11] w-full">
-             <div className="absolute inset-0 bg-surface border border-border rounded-xl shadow-xl flex items-center justify-center overflow-hidden">
+             <div className="absolute inset-0 bg-surface border border-border rounded-card shadow-card flex items-center justify-center overflow-hidden">
                 <div className="w-full h-full relative">
                    <Zoom>
                       <Image src="/images/POStab.avif" alt="POS Interface" fill className="object-cover object-left" />
@@ -255,12 +255,12 @@ export default function RestaurantManagementSystemsPage() {
                 </div>
              </div>
           </Reveal>
-          
+
           <Reveal className="order-1 lg:order-2">
-            <span className="mb-4 inline-block text-sm font-semibold tracking-wider text-amber-500 uppercase">
+            <span className="mb-4 inline-block text-sm font-semibold tracking-wider text-accent-text uppercase">
               Point of Sale
             </span>
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="type-section text-foreground">
               Front-of-House Orders Flow Directly Into Your Operations.
             </h2>
             <p className="mt-6 text-lg text-foreground-body">
@@ -269,7 +269,7 @@ export default function RestaurantManagementSystemsPage() {
             <ul className="mt-6 grid grid-cols-2 gap-3 text-sm text-foreground-body">
               {["Dine-in orders", "Takeaway orders", "Delivery orders", "Tables", "Customers", "Items", "Discounts", "Bills & Payments"].map((item) => (
                 <li key={item} className="flex items-center gap-2">
-                  <Check className="h-4 w-4 text-amber-500" /> {item}
+                  <Check className="h-4 w-4 text-accent-text" /> {item}
                 </li>
               ))}
             </ul>
@@ -281,44 +281,44 @@ export default function RestaurantManagementSystemsPage() {
       <section className="section-space">
         <div className="content-shell grid gap-12 lg:grid-cols-2 items-center">
           <Reveal>
-            <span className="mb-4 inline-block text-sm font-semibold tracking-wider text-amber-500 uppercase">
+            <span className="mb-4 inline-block text-sm font-semibold tracking-wider text-accent-text uppercase">
               Kitchen Management
             </span>
-            <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">
+            <h2 className="type-section text-foreground">
               Keep the Kitchen Connected to Every Order.
             </h2>
             <p className="mt-6 text-lg text-foreground-body">
-              Orders created through your restaurant's digital and in-store channels can flow into the kitchen workflow. The KDS organizes incoming orders and gives kitchen staff a clear view of what needs to be prepared.
+              Orders created through your restaurant&apos;s digital and in-store channels can flow into the kitchen workflow. The KDS organizes incoming orders and gives kitchen staff a clear view of what needs to be prepared.
             </p>
-            
+
             <div className="mt-8 flex gap-3 text-sm">
-               <span className="bg-surface px-3 py-1.5 rounded text-foreground-body border border-border">New</span>
-               <ArrowRight className="w-4 text-zinc-500" />
-               <span className="bg-amber-500/10 px-3 py-1.5 rounded text-amber-500 border border-amber-500/20 font-medium">Preparing</span>
-               <ArrowRight className="w-4 text-zinc-500" />
-               <span className="bg-surface px-3 py-1.5 rounded text-foreground-body border border-border">Ready</span>
+               <span className="bg-surface px-3 py-1.5 rounded-tag text-foreground-body border border-border">New</span>
+               <ArrowRight className="w-4 text-foreground-muted" />
+               <span className="bg-accent-soft px-3 py-1.5 rounded-tag text-accent-text border border-accent-border/40 font-medium">Preparing</span>
+               <ArrowRight className="w-4 text-foreground-muted" />
+               <span className="bg-surface px-3 py-1.5 rounded-tag text-foreground-body border border-border">Ready</span>
             </div>
           </Reveal>
 
           <Reveal delayMs={100} className="relative aspect-[16/10] w-full surface-card overflow-hidden">
              <div className="absolute inset-0 p-6 flex gap-4">
                 {[
-                  { title: "NEW", count: 2, border: "border-blue-500/30" },
-                  { title: "PREPARING", count: 3, border: "border-amber-500/50" },
-                  { title: "READY", count: 1, border: "border-green-500/30" }
+                  { title: "NEW", count: 2, border: "border-info/40" },
+                  { title: "PREPARING", count: 3, border: "border-accent-border/40" },
+                  { title: "READY", count: 1, border: "border-success/40" }
                 ].map(col => (
                    <div key={col.title} className={`flex-1 flex flex-col border-t-2 ${col.border} pt-2`}>
-                      <div className="text-xs font-bold text-zinc-500 mb-4">{col.title} ({col.count})</div>
+                      <div className="text-sm font-bold text-foreground-muted mb-4">{col.title} ({col.count})</div>
                       <div className="space-y-3">
                          {Array.from({ length: col.count }).map((_, i) => (
-                            <div key={i} className="bg-zinc-900 border border-zinc-800 p-3 rounded-lg shadow-md">
+                            <div key={i} className="bg-surface border border-border-strong p-3 rounded-control shadow-card">
                                <div className="flex justify-between items-center mb-2">
-                                  <span className="text-sm font-bold text-zinc-200">#{1048 + i + (col.count*2)}</span>
-                                  <span className="text-[10px] text-zinc-500">4m ago</span>
+                                  <span className="text-sm font-bold text-foreground">#{1048 + i + (col.count*2)}</span>
+                                  <span className="text-sm text-foreground-muted">4m ago</span>
                                </div>
                                <div className="space-y-1">
-                                  <div className="text-xs text-zinc-400">1x Signature Burger</div>
-                                  <div className="text-xs text-zinc-400">2x Loaded Fries</div>
+                                  <div className="text-sm text-foreground-muted">1x Signature Burger</div>
+                                  <div className="text-sm text-foreground-muted">2x Loaded Fries</div>
                                </div>
                             </div>
                          ))}
@@ -331,15 +331,15 @@ export default function RestaurantManagementSystemsPage() {
       </section>
 
       {/* 9 & 10. DELIVERY & INVENTORY GRID */}
-      <section className="section-space section-divider bg-surface-secondary/20">
+      <section className="section-space section-divider bg-surface-secondary">
         <div className="content-shell">
           <div className="grid gap-8 md:grid-cols-2">
              {/* Delivery */}
              <Reveal className="surface-card p-8 flex flex-col">
-               <span className="mb-2 text-xs font-bold tracking-wider text-amber-500 uppercase">Delivery Operations</span>
+               <span className="mb-2 text-sm font-bold tracking-wider text-accent-text uppercase">Delivery Operations</span>
                <h3 className="text-2xl font-bold text-foreground mb-4">From Ready Order to Delivered Customer.</h3>
                <p className="text-sm text-foreground-body mb-8">Manage delivery information, assignments, statuses, zones, riders, and fulfillment from one operational layer.</p>
-               <div className="mt-auto aspect-video bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center relative overflow-hidden">
+               <div className="mt-auto aspect-video bg-surface rounded-control border border-border-strong flex items-center justify-center relative overflow-hidden">
                   <Zoom>
                      <Image src="/images/Orders-tab.avif" alt="Live Map Dashboard" fill className="object-cover" />
                   </Zoom>
@@ -348,10 +348,10 @@ export default function RestaurantManagementSystemsPage() {
 
              {/* Inventory */}
              <Reveal delayMs={100} className="surface-card p-8 flex flex-col">
-               <span className="mb-2 text-xs font-bold tracking-wider text-amber-500 uppercase">Inventory</span>
+               <span className="mb-2 text-sm font-bold tracking-wider text-accent-text uppercase">Inventory</span>
                <h3 className="text-2xl font-bold text-foreground mb-4">Know What You Have Before You Run Out.</h3>
                <p className="text-sm text-foreground-body mb-8">Connect operational activity with inventory management so restaurant teams can keep track of ingredients, stock levels, and purchasing.</p>
-               <div className="mt-auto aspect-video bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center relative overflow-hidden">
+               <div className="mt-auto aspect-video bg-surface rounded-control border border-border-strong flex items-center justify-center relative overflow-hidden">
                   <Zoom>
                      <Image src="/images/Inventory-tab.avif" alt="Inventory Dashboard" fill className="object-cover" />
                   </Zoom>
@@ -366,11 +366,11 @@ export default function RestaurantManagementSystemsPage() {
         <div className="content-shell">
           <div className="grid gap-12 lg:grid-cols-2">
              <Reveal>
-               <span className="mb-2 text-xs font-bold tracking-wider text-amber-500 uppercase">Customer Management</span>
+               <span className="mb-2 text-sm font-bold tracking-wider text-accent-text uppercase">Customer Management</span>
                <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">Turn Orders Into Customer Intelligence.</h3>
                <p className="text-lg text-foreground-body mb-6">The RMS can organize customer profiles and order activity so restaurants can understand who their customers are, what they order, and how much they spend.</p>
-               
-               <div className="aspect-[4/3] bg-zinc-900 rounded-lg border border-zinc-800 flex items-center justify-center relative overflow-hidden">
+
+               <div className="aspect-[4/3] bg-surface rounded-control border border-border-strong flex items-center justify-center relative overflow-hidden">
                   <Zoom>
                      <Image src="/images/Customer-management-tab.avif" alt="Customer Management Dashboard" fill className="object-cover object-left-top" />
                   </Zoom>
@@ -378,20 +378,20 @@ export default function RestaurantManagementSystemsPage() {
              </Reveal>
 
              <Reveal delayMs={100}>
-               <span className="mb-2 text-xs font-bold tracking-wider text-amber-500 uppercase">Multi-Location Operations</span>
+               <span className="mb-2 text-sm font-bold tracking-wider text-accent-text uppercase">Multi-Location Operations</span>
                <h3 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-4">Manage Every Branch From One Place.</h3>
                <p className="text-lg text-foreground-body mb-6">A multi-branch RMS gives management a centralized view while still allowing each branch to operate with its own local information.</p>
-               
+
                <div className="space-y-3">
-                  <div className="bg-surface border border-amber-500/30 rounded-lg p-4 shadow-[0_0_15px_rgba(245,158,11,0.05)]">
+                  <div className="bg-surface border border-accent-border/40 rounded-control p-4 shadow-card">
                      <div className="flex justify-between items-center mb-1">
-                        <span className="font-bold text-amber-500">All Branches</span>
+                        <span className="font-bold text-accent-text">All Branches</span>
                         <span className="text-sm font-semibold text-foreground">PKR 4.8M</span>
                      </div>
-                     <div className="text-xs text-foreground-muted">3,420 Orders</div>
+                     <div className="text-sm text-foreground-muted">3,420 Orders</div>
                   </div>
                   {['Islamabad', 'Lahore', 'Karachi'].map((branch, i) => (
-                     <div key={branch} className="bg-surface border border-border rounded-lg p-4 flex justify-between items-center">
+                     <div key={branch} className="bg-surface border border-border rounded-control p-4 flex justify-between items-center">
                         <span className="font-semibold text-foreground">{branch}</span>
                         <span className="text-sm text-foreground-muted">{1240 - (i * 260)} Orders</span>
                      </div>
@@ -403,7 +403,7 @@ export default function RestaurantManagementSystemsPage() {
       </section>
 
       {/* 14. ANALYTICS & BUSINESS PERFORMANCE */}
-      <section className="section-space section-divider bg-surface-secondary/30">
+      <section className="section-space section-divider bg-surface-secondary">
         <div className="content-shell">
           <SectionHeading
             eyebrow="Business Intelligence"
@@ -425,9 +425,9 @@ export default function RestaurantManagementSystemsPage() {
                 </Reveal>
              ))}
           </div>
-          
+
           <Reveal delayMs={300} className="mt-12 text-center">
-             <Link href="/contact" className="inline-flex h-12 items-center justify-center bg-amber-500 px-8 font-medium text-zinc-950 transition-colors hover:bg-amber-400 rounded-sm">
+             <Link href="/contact" className="button-primary">
                 Discuss Your Restaurant Operations
              </Link>
           </Reveal>

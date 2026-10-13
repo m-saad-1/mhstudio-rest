@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Preserved src/data/site-content.ts",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved src/components/ui/reveal.tsx",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved src/components/ui/animated-counter.tsx",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved src/components/heavy-client-components.tsx",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved src/components/layout/analytics-wrapper.tsx",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved EmailJS contract and event contact",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved EmailJS contract and event demo",
+    "status": "pass"
+  },
+  {
+    "name": "Static priority hero",
+    "status": "pass"
+  },
+  {
+    "name": "Static case-study slugs and routes preserved",
+    "status": "pass"
+  },
+  {
+    "name": "Responsive image sizes syntax preserved",
+    "status": "pass"
+  }
+]

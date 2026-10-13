@@ -1,0 +1,76 @@
+[
+  {
+    "route": "/",
+    "width": 375,
+    "status": "pass"
+  },
+  {
+    "route": "/pricing",
+    "width": 375,
+    "status": "pass"
+  },
+  {
+    "route": "/contact",
+    "width": 375,
+    "status": "pass"
+  },
+  {
+    "route": "/demo",
+    "width": 375,
+    "status": "pass"
+  },
+  {
+    "route": "/templates",
+    "width": 375,
+    "status": "pass"
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 375,
+    "status": "pass"
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 375,
+    "status": "pass"
+  },
+  {
+    "route": "/",
+    "width": 1440,
+    "status": "pass"
+  },
+  {
+    "route": "/pricing",
+    "width": 1440,
+    "status": "pass"
+  },
+  {
+    "route": "/contact",
+    "width": 1440,
+    "status": "pass"
+  },
+  {
+    "route": "/demo",
+    "width": 1440,
+    "status": "pass"
+  },
+  {
+    "route": "/templates",
+    "width": 1440,
+    "status": "pass"
+  },
+  {
+    "route": "/services/dine-in-table-management",
+    "width": 1440,
+    "status": "pass"
+  },
+  {
+    "route": "/services/qr-menu-self-ordering",
+    "width": 1440,
+    "status": "pass"
+  },
+  {
+    "name": "Edge mobile menu and pricing Escape",
+    "status": "pass"
+  }
+]

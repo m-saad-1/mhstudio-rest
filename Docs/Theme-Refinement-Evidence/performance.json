@@ -1,0 +1,3202 @@
+{
+  "conditions": "Chrome headless, production, warm server image caches, cold browser cache, localhost, 40ms RTT, 1.5Mbps downstream, 4x CPU slowdown, 3 samples, analytics blocked; first viewport only",
+  "summary": [
+    {
+      "route": "/",
+      "width": 375,
+      "before": {
+        "lcp": 3448,
+        "fcp": 3448,
+        "cls": 0.0002572953703703704,
+        "load": 6106.0999999940395,
+        "jsBytes": 150898,
+        "scripts": 11
+      },
+      "after": {
+        "lcp": 2796,
+        "fcp": 2728,
+        "cls": 0.0002726458847736625,
+        "load": 5258.300000011921,
+        "jsBytes": 150867,
+        "scripts": 11
+      }
+    },
+    {
+      "route": "/pricing",
+      "width": 375,
+      "before": {
+        "lcp": 2500,
+        "fcp": 2500,
+        "cls": 0,
+        "load": 3948.4000000059605,
+        "jsBytes": 159930,
+        "scripts": 15
+      },
+      "after": {
+        "lcp": 1856,
+        "fcp": 1856,
+        "cls": 0,
+        "load": 3104.5,
+        "jsBytes": 157078,
+        "scripts": 14
+      }
+    },
+    {
+      "route": "/contact",
+      "width": 375,
+      "before": {
+        "lcp": 2304,
+        "fcp": 2304,
+        "cls": 0,
+        "load": 4297.0999999940395,
+        "jsBytes": 157186,
+        "scripts": 14
+      },
+      "after": {
+        "lcp": 2000,
+        "fcp": 2000,
+        "cls": 0,
+        "load": 3747.300000011921,
+        "jsBytes": 154506,
+        "scripts": 12
+      }
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "before": {
+        "lcp": 3512,
+        "fcp": 3380,
+        "cls": 0.0008658607011959876,
+        "load": 6840.79999999702,
+        "jsBytes": 150898,
+        "scripts": 11
+      },
+      "after": {
+        "lcp": 3624,
+        "fcp": 3440,
+        "cls": 0.0024937276204427083,
+        "load": 6908.899999991059,
+        "jsBytes": 150867,
+        "scripts": 11
+      }
+    },
+    {
+      "route": "/pricing",
+      "width": 1440,
+      "before": {
+        "lcp": 2308,
+        "fcp": 2308,
+        "cls": 0,
+        "load": 3693.6000000089407,
+        "jsBytes": 159930,
+        "scripts": 15
+      },
+      "after": {
+        "lcp": 2080,
+        "fcp": 2080,
+        "cls": 0.000012353716563786008,
+        "load": 3790.9000000059605,
+        "jsBytes": 159562,
+        "scripts": 15
+      }
+    },
+    {
+      "route": "/contact",
+      "width": 1440,
+      "before": {
+        "lcp": 2192,
+        "fcp": 2192,
+        "cls": 0,
+        "load": 3277.8999999910593,
+        "jsBytes": 154514,
+        "scripts": 12
+      },
+      "after": {
+        "lcp": 1976,
+        "fcp": 1976,
+        "cls": 0.000012353716563786008,
+        "load": 3531,
+        "jsBytes": 161717,
+        "scripts": 16
+      }
+    }
+  ],
+  "records": [
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/",
+      "sample": 1,
+      "lcp": 3448,
+      "cls": 0.0002572953703703704,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FDevice-showcase.65596bb9.avif&w=384&q=75",
+        "size": 167302
+      },
+      "fcp": 3448,
+      "load": 6106.0999999940395,
+      "jsBytes": 150898,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/528.62d1feec84967c09.js",
+          "bytes": 1234,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/",
+      "sample": 1,
+      "lcp": 2796,
+      "cls": 0.0002726458847736625,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3002/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=384&q=75",
+        "size": 39865
+      },
+      "fcp": 2728,
+      "load": 5258.300000011921,
+      "jsBytes": 150867,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/812.1c08d505f8805186.js",
+          "bytes": 1203,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/",
+      "sample": 2,
+      "lcp": 2652,
+      "cls": 0.0002726458847736625,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3002/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=384&q=75",
+        "size": 39865
+      },
+      "fcp": 2536,
+      "load": 5075.20000000298,
+      "jsBytes": 150867,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/812.1c08d505f8805186.js",
+          "bytes": 1203,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/",
+      "sample": 2,
+      "lcp": 3664,
+      "cls": 0.0002572953703703704,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FDevice-showcase.65596bb9.avif&w=384&q=75",
+        "size": 167302
+      },
+      "fcp": 3564,
+      "load": 6487.5999999940395,
+      "jsBytes": 150898,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/528.62d1feec84967c09.js",
+          "bytes": 1234,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/",
+      "sample": 3,
+      "lcp": 3180,
+      "cls": 0.0002572953703703704,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FDevice-showcase.65596bb9.avif&w=384&q=75",
+        "size": 167302
+      },
+      "fcp": 3144,
+      "load": 6005.5,
+      "jsBytes": 150898,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/528.62d1feec84967c09.js",
+          "bytes": 1234,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/",
+      "sample": 3,
+      "lcp": 5608,
+      "cls": 0.0002726458847736625,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3002/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=384&q=75",
+        "size": 39865
+      },
+      "fcp": 5608,
+      "load": 9031.5,
+      "jsBytes": 150867,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/812.1c08d505f8805186.js",
+          "bytes": 1203,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/pricing",
+      "sample": 1,
+      "lcp": 2500,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Get your restaurant website and digital platform without a large upfront investment. Choose a manage",
+        "url": "",
+        "size": 31232
+      },
+      "fcp": 2500,
+      "load": 3783.300000011921,
+      "jsBytes": 159930,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/pricing/page-c6ba286255b6706a.js",
+          "bytes": 2744,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/services/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/pricing",
+      "sample": 1,
+      "lcp": 1856,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Get your restaurant website and digital platform without a large upfront investment. Choose a manage",
+        "url": "",
+        "size": 31980
+      },
+      "fcp": 1856,
+      "load": 3104.5,
+      "jsBytes": 157078,
+      "scripts": 14,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "bytes": 2370,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/services/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/pricing",
+      "sample": 2,
+      "lcp": 1708,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Get your restaurant website and digital platform without a large upfront investment. Choose a manage",
+        "url": "",
+        "size": 31980
+      },
+      "fcp": 1708,
+      "load": 2697.7000000029802,
+      "jsBytes": 157078,
+      "scripts": 14,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "bytes": 2370,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/services/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/pricing",
+      "sample": 2,
+      "lcp": 2500,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Get your restaurant website and digital platform without a large upfront investment. Choose a manage",
+        "url": "",
+        "size": 31232
+      },
+      "fcp": 2500,
+      "load": 4442.70000000298,
+      "jsBytes": 159930,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/pricing/page-c6ba286255b6706a.js",
+          "bytes": 2744,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/services/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/pricing",
+      "sample": 3,
+      "lcp": 2120,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Get your restaurant website and digital platform without a large upfront investment. Choose a manage",
+        "url": "",
+        "size": 31232
+      },
+      "fcp": 2120,
+      "load": 3948.4000000059605,
+      "jsBytes": 159930,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/pricing/page-c6ba286255b6706a.js",
+          "bytes": 2744,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/services/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/pricing",
+      "sample": 3,
+      "lcp": 2008,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Get your restaurant website and digital platform without a large upfront investment. Choose a manage",
+        "url": "",
+        "size": 31980
+      },
+      "fcp": 2008,
+      "load": 4567.29999999702,
+      "jsBytes": 157078,
+      "scripts": 14,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "bytes": 2370,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/services/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/contact",
+      "sample": 1,
+      "lcp": 3056,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Tell us about your project, schedule a direct calendar call, or send us a WhatsApp message.",
+        "url": "",
+        "size": 19980
+      },
+      "fcp": 3056,
+      "load": 6316.600000008941,
+      "jsBytes": 154514,
+      "scripts": 12,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/contact",
+      "sample": 1,
+      "lcp": 2088,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 27960
+      },
+      "fcp": 2088,
+      "load": 3771.800000011921,
+      "jsBytes": 154506,
+      "scripts": 12,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/contact",
+      "sample": 2,
+      "lcp": 1960,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 27960
+      },
+      "fcp": 1960,
+      "load": 3747.300000011921,
+      "jsBytes": 154506,
+      "scripts": 12,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/contact",
+      "sample": 2,
+      "lcp": 2304,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Tell us about your project, schedule a direct calendar call, or send us a WhatsApp message.",
+        "url": "",
+        "size": 19980
+      },
+      "fcp": 2304,
+      "load": 4297.0999999940395,
+      "jsBytes": 157186,
+      "scripts": 14,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/about/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 375,
+      "route": "/contact",
+      "sample": 3,
+      "lcp": 2224,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "P",
+        "text": "Tell us about your project, schedule a direct calendar call, or send us a WhatsApp message.",
+        "url": "",
+        "size": 19980
+      },
+      "fcp": 2224,
+      "load": 4014.4000000059605,
+      "jsBytes": 157186,
+      "scripts": 14,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/about/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 375,
+      "route": "/contact",
+      "sample": 3,
+      "lcp": 2000,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 27960
+      },
+      "fcp": 2000,
+      "load": 3001.7999999970198,
+      "jsBytes": 154506,
+      "scripts": 12,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/",
+      "sample": 1,
+      "lcp": 3512,
+      "cls": 0.0008658607011959876,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FDevice-showcase.65596bb9.avif&w=1200&q=75",
+        "size": 689760
+      },
+      "fcp": 3380,
+      "load": 6840.79999999702,
+      "jsBytes": 150898,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/528.62d1feec84967c09.js",
+          "bytes": 1234,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/",
+      "sample": 1,
+      "lcp": 3624,
+      "cls": 0.0024937276204427083,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3002/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1200&q=75",
+        "size": 312816
+      },
+      "fcp": 3440,
+      "load": 6908.899999991059,
+      "jsBytes": 150867,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/812.1c08d505f8805186.js",
+          "bytes": 1203,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/",
+      "sample": 2,
+      "lcp": 4760,
+      "cls": 0.0024937276204427083,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3002/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1200&q=75",
+        "size": 312816
+      },
+      "fcp": 4592,
+      "load": 8756.60000000894,
+      "jsBytes": 150867,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/812.1c08d505f8805186.js",
+          "bytes": 1203,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/",
+      "sample": 2,
+      "lcp": 4184,
+      "cls": 0.0008658607011959876,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FDevice-showcase.65596bb9.avif&w=1200&q=75",
+        "size": 689760
+      },
+      "fcp": 4016,
+      "load": 7812.699999988079,
+      "jsBytes": 150898,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/528.62d1feec84967c09.js",
+          "bytes": 1234,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/",
+      "sample": 3,
+      "lcp": 3468,
+      "cls": 0.0008658607011959876,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3003/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FDevice-showcase.65596bb9.avif&w=1200&q=75",
+        "size": 689760
+      },
+      "fcp": 3320,
+      "load": 6647.899999991059,
+      "jsBytes": 150898,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/528.62d1feec84967c09.js",
+          "bytes": 1234,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/",
+      "sample": 3,
+      "lcp": 3008,
+      "cls": 0.0024937276204427083,
+      "lcpElement": {
+        "tag": "IMG",
+        "text": "",
+        "url": "http://localhost:3002/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1200&q=75",
+        "size": 312816
+      },
+      "fcp": 2824,
+      "load": 5737.300000011921,
+      "jsBytes": 150867,
+      "scripts": 11,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/812.1c08d505f8805186.js",
+          "bytes": 1203,
+          "initiator": "link"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/pricing",
+      "sample": 1,
+      "lcp": 2308,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "No Upfront or Development Fees.",
+        "url": "",
+        "size": 86688
+      },
+      "fcp": 2308,
+      "load": 4137.20000000298,
+      "jsBytes": 159930,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/pricing/page-c6ba286255b6706a.js",
+          "bytes": 2744,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/services/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/pricing",
+      "sample": 1,
+      "lcp": 1924,
+      "cls": 0.000012353716563786008,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "No Upfront or Development Fees.",
+        "url": "",
+        "size": 61017
+      },
+      "fcp": 1924,
+      "load": 2876.699999988079,
+      "jsBytes": 159562,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "bytes": 2370,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/services/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "bytes": 2484,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/pricing",
+      "sample": 2,
+      "lcp": 2876,
+      "cls": 0.000012353716563786008,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "No Upfront or Development Fees.",
+        "url": "",
+        "size": 61017
+      },
+      "fcp": 2876,
+      "load": 4437.5,
+      "jsBytes": 159562,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "bytes": 2370,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/services/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "bytes": 2484,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/pricing",
+      "sample": 2,
+      "lcp": 2440,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "No Upfront or Development Fees.",
+        "url": "",
+        "size": 86688
+      },
+      "fcp": 2440,
+      "load": 3693.5999999940395,
+      "jsBytes": 159930,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/pricing/page-c6ba286255b6706a.js",
+          "bytes": 2744,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/services/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/pricing",
+      "sample": 3,
+      "lcp": 2144,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "No Upfront or Development Fees.",
+        "url": "",
+        "size": 86688
+      },
+      "fcp": 2144,
+      "load": 3693.6000000089407,
+      "jsBytes": 159930,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/pricing/page-c6ba286255b6706a.js",
+          "bytes": 2744,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/services/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/pricing",
+      "sample": 3,
+      "lcp": 2080,
+      "cls": 0.000012353716563786008,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "No Upfront or Development Fees.",
+        "url": "",
+        "size": 61017
+      },
+      "fcp": 2080,
+      "load": 3790.9000000059605,
+      "jsBytes": 159562,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "bytes": 2370,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/services/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "bytes": 2484,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/contact",
+      "sample": 1,
+      "lcp": 2324,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 90171
+      },
+      "fcp": 2324,
+      "load": 3508.2999999970198,
+      "jsBytes": 159558,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/demo/page-d4924d6d564e06d9.js",
+          "bytes": 2470,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/about/page-8f5f077b0a5bf303.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/templates/page-b9058773795a5c1a.js",
+          "bytes": 2372,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/contact",
+      "sample": 1,
+      "lcp": 1976,
+      "cls": 0.000012353716563786008,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 58953
+      },
+      "fcp": 1976,
+      "load": 3531,
+      "jsBytes": 161717,
+      "scripts": 16,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "bytes": 2484,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/about/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/templates/page-ffb7b8dd218f3d39.js",
+          "bytes": 2155,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "bytes": 2370,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/contact",
+      "sample": 2,
+      "lcp": 1804,
+      "cls": 0.000012353716563786008,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 58953
+      },
+      "fcp": 1804,
+      "load": 3214.7000000029802,
+      "jsBytes": 159347,
+      "scripts": 15,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "bytes": 2484,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/about/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/templates/page-ffb7b8dd218f3d39.js",
+          "bytes": 2155,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/contact",
+      "sample": 2,
+      "lcp": 2192,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 90171
+      },
+      "fcp": 2192,
+      "load": 3277.8999999910593,
+      "jsBytes": 154514,
+      "scripts": 12,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "before",
+      "width": 1440,
+      "route": "/contact",
+      "sample": 3,
+      "lcp": 2160,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 90171
+      },
+      "fcp": 1292,
+      "load": 0,
+      "jsBytes": 154514,
+      "scripts": 12,
+      "jsResources": [
+        {
+          "url": "http://localhost:3003/_next/static/chunks/webpack-a6a59e92acfd0907.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/0666a9fe-77d9033b4afe10aa.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/434-4c852dc79aa6ad11.js",
+          "bytes": 60917,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/main-app-8348e6e9b0a4c82b.js",
+          "bytes": 513,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/580-1f22ceb909e4a230.js",
+          "bytes": 3530,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/77-511f722b3a8ad60b.js",
+          "bytes": 5432,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/347-95864bf1712d04d4.js",
+          "bytes": 4648,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/55-abb2122c47381d53.js",
+          "bytes": 3599,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/layout-f0edb86c2d2f7365.js",
+          "bytes": 3995,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/425-a6d2d93b7d680e9c.js",
+          "bytes": 2649,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/contact/page-1a4c7ffc56a3210f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3003/_next/static/chunks/app/page-7fc67691573d13aa.js",
+          "bytes": 2340,
+          "initiator": "script"
+        }
+      ]
+    },
+    {
+      "variant": "after",
+      "width": 1440,
+      "route": "/contact",
+      "sample": 3,
+      "lcp": 2204,
+      "cls": 0.000012353716563786008,
+      "lcpElement": {
+        "tag": "H1",
+        "text": "Let's discuss your restaurant website.",
+        "url": "",
+        "size": 58953
+      },
+      "fcp": 2204,
+      "load": 3908.7000000029802,
+      "jsBytes": 161717,
+      "scripts": 16,
+      "jsResources": [
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "bytes": 1814,
+          "initiator": "link"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "bytes": 62876,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "bytes": 60795,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "bytes": 511,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "bytes": 3529,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-0f48636ca52b412c.js",
+          "bytes": 5446,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/619-afba0df287e9b980.js",
+          "bytes": 4629,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "bytes": 4120,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "bytes": 3605,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "bytes": 2641,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "bytes": 2201,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "bytes": 2339,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "bytes": 2484,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/about/page-64d26ad122e6c76c.js",
+          "bytes": 202,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/templates/page-ffb7b8dd218f3d39.js",
+          "bytes": 2155,
+          "initiator": "script"
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "bytes": 2370,
+          "initiator": "script"
+        }
+      ]
+    }
+  ]
+}

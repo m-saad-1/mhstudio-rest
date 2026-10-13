@@ -5,7 +5,7 @@ export default function NotFound() {
     <section className="content-shell flex min-h-[70vh] items-center justify-center section-space">
       <div className="surface-card max-w-2xl p-10 text-center">
         <span className="eyebrow">404</span>
-        <h1 className="mt-5 text-[2.2rem] font-semibold leading-[1.1] text-foreground sm:text-[3rem]">
+        <h1 className="type-display mt-5 text-foreground">
           This page drifted out of the MhStudio route map.
         </h1>
         <p className="mt-4 text-base leading-[1.7] text-foreground-body sm:text-lg">

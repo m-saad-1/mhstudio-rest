@@ -2,10 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
-import Sparkles from "lucide-react/dist/esm/icons/sparkles";
 import { navigationItems, siteConfig } from "@/data/site-content";
-import { FooterCtaWrapper } from "@/components/layout/footer-cta-wrapper";
-import { TrackedLink } from "@/components/ui/tracked-link";
 
 export function SiteFooter() {
   const serviceLinks = [
@@ -18,7 +15,7 @@ export function SiteFooter() {
   ];
 
   return (
-    <footer className="section-divider relative mt-10 overflow-hidden bg-[rgba(9,9,11,0.88)]">
+    <footer className="site-footer section-divider relative mt-10 overflow-hidden bg-surface">
 
       <div className="content-shell py-14">
         <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
@@ -39,10 +36,10 @@ export function SiteFooter() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="group inline-flex items-center gap-2 text-sm text-foreground-body transition-colors duration-300 hover:text-foreground"
+                  className="group inline-flex items-center gap-2 text-sm text-foreground-body transition-colors duration-200 hover:text-foreground"
                 >
                   {item.label}
-                  <ArrowRight className="h-4 w-4 text-accent transition-transform duration-300 group-hover:translate-x-1" />
+                  <ArrowRight className="h-4 w-4 text-accent-text transition-transform duration-200 group-hover:translate-x-1" />
                 </Link>
               ))}
             </div>
@@ -55,7 +52,7 @@ export function SiteFooter() {
                 <Link
                   key={service.href}
                   href={service.href}
-                  className="text-sm text-foreground-body transition-colors duration-300 hover:text-foreground"
+                  className="text-sm text-foreground-body transition-colors duration-200 hover:text-foreground"
                 >
                   {service.label}
                 </Link>
@@ -66,20 +63,20 @@ export function SiteFooter() {
           <div className="space-y-4">
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-foreground-muted">Legal</h3>
             <div className="grid gap-3">
-              <Link href="/privacy" className="text-sm text-foreground-body transition-colors duration-300 hover:text-foreground">
+              <Link href="/privacy" className="text-sm text-foreground-body transition-colors duration-200 hover:text-foreground">
                 Privacy Policy
               </Link>
-              <Link href="/terms" className="text-sm text-foreground-body transition-colors duration-300 hover:text-foreground">
+              <Link href="/terms" className="text-sm text-foreground-body transition-colors duration-200 hover:text-foreground">
                 Terms
               </Link>
-              <Link href="/contact" className="text-sm text-foreground-body transition-colors duration-300 hover:text-foreground">
+              <Link href="/contact" className="text-sm text-foreground-body transition-colors duration-200 hover:text-foreground">
                 Contact
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col gap-3 border-t border-white/6 pt-6 text-sm text-foreground-muted sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-3 border-t border-border pt-6 text-sm text-foreground-muted sm:flex-row sm:items-center sm:justify-between">
           <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
           <p>Delivering premium restaurant technology, management, and digital ordering platforms.</p>
         </div>

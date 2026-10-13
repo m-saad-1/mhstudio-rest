@@ -5,7 +5,7 @@ import { TrackedLink } from "@/components/ui/tracked-link";
 import type { PortfolioItem } from "@/data/site-content";
 
 const blurData =
-  "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTYnIGhlaWdodD0nMTAnIHhtbG5zPSdodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2Zyc+PHJlY3Qgd2lkdGg9JzE2JyBoZWlnaHQ9JzEwJyBmaWxsPScjMTExMTEzJy8+PHJlY3QgY29yPScyJyB4PScxJyB5PScxJyB3aWR0aD0nMTQnIGhlaWdodD0nOCcgZmlsbD0nI0Y1OUUwQicgb3BhY2l0eT0nMC4xNScvPjwvc3ZnPg==";
+  `data:image/svg+xml,${encodeURIComponent('<svg xmlns="http://www.w3.org/2000/svg" width="16" height="10"><rect width="16" height="10" fill="#f5f5f4"/></svg>')}`;
 
 type MockupFrameProps = {
   item: PortfolioItem;
@@ -14,7 +14,7 @@ type MockupFrameProps = {
 
 export function MockupFrame({ item, compact = false }: MockupFrameProps) {
   return (
-    <div className="group relative flex flex-col overflow-hidden rounded-none border border-zinc-800 bg-zinc-900 transition duration-300 hover:-translate-y-1 hover:border-zinc-700 hover:shadow-2xl hover:shadow-amber-500/10">
+    <div className="group relative flex flex-col overflow-hidden rounded-card border border-border-strong bg-surface transition duration-200 hover:border-border-strong hover:shadow-soft">
       {/* Visual Asset (The Hook - Interactive Clickable Image) */}
       <TrackedLink
         href={item.liveHref}
@@ -22,49 +22,48 @@ export function MockupFrame({ item, compact = false }: MockupFrameProps) {
         target="_blank"
         rel="noopener noreferrer"
         aria-label={`Visit website for ${item.title}`}
-        className="relative block aspect-[16/10] w-full overflow-hidden bg-zinc-950 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 focus-visible:ring-inset"
+        className="relative block aspect-[16/10] w-full overflow-hidden bg-surface-secondary cursor-pointer focus-visible:ring-2 focus-visible:ring-focus focus-visible:ring-inset"
       >
         <Image
           src={item.image}
           alt={item.imageAlt}
           fill
-          className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          className="object-cover object-top transition-transform duration-200"
           sizes={compact ? "(max-width: 768px) 100vw, 398px" : "(max-width: 1024px) 100vw, 398px"}
           placeholder="blur"
           blurDataURL={blurData}
         />
-        
-        <div className="absolute inset-0 bg-gradient-to-t from-zinc-950/80 via-zinc-950/20 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+
       </TrackedLink>
 
         {/* Content Hierarchy */}
         <div className="flex flex-1 flex-col p-5">
           <div>
             {/* Category Tag */}
-            <span className="mb-1 block text-xs font-semibold uppercase tracking-wider text-amber-500">
+            <span className="mb-1 block text-sm font-semibold uppercase tracking-wider text-accent-text">
               {item.category}
             </span>
-            
+
             {/* Project Title */}
-            <h3 className="text-xl font-semibold text-zinc-50">
+            <h3 className="text-xl font-semibold text-foreground">
               {item.title}
             </h3>
-            
+
             {/* Short Description */}
-            <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-zinc-400">
+            <p className="mt-1 line-clamp-2 text-sm leading-relaxed text-foreground-muted">
               {item.shortDescription}
             </p>
           </div>
 
           {/* Call-to-Action */}
           <div className="mt-auto pt-4">
-            <div className="flex items-center gap-3 border-t border-zinc-800/50 pt-3">
-              <TrackedLink 
-                href={item.liveHref} 
+            <div className="flex items-center gap-3 border-t border-border-strong pt-3">
+              <TrackedLink
+                href={item.liveHref}
                 eventName="click_portfolio_live"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm font-medium text-amber-500 transition-colors hover:text-amber-400 hover:underline"
+                className="inline-flex min-h-11 items-center text-sm font-medium text-accent-text transition-colors hover:underline"
               >
                 Visit Website
               </TrackedLink>

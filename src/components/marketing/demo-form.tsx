@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import CheckCircle2 from "lucide-react/dist/esm/icons/check-circle-2";
 import { sendGAEvent } from "@next/third-parties/google";
@@ -29,6 +29,10 @@ export function DemoForm() {
   const [formState, setFormState] = useState<FormState>(initialState);
   const [submitted, setSubmitted] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [formError, setFormError] = useState("");
+  const successRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => { if (submitted) successRef.current?.focus(); }, [submitted]);
 
   return (
     <div className="surface-card p-6 sm:p-8">
@@ -40,18 +44,18 @@ export function DemoForm() {
       </div>
 
       {submitted ? (
-        <div className="flex flex-col items-center justify-center rounded-none border border-emerald-500/20 bg-emerald-500/10 p-10 text-center animate-in fade-in zoom-in duration-500">
-          <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-none bg-emerald-500/20 text-emerald-400">
+        <div ref={successRef} tabIndex={-1} role="status" className="form-status form-status-success flex flex-col items-center justify-center p-6 text-center sm:p-8">
+          <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-card bg-success-soft text-success">
             <CheckCircle2 className="h-8 w-8" />
           </div>
-          <h3 className="mb-3 text-2xl font-semibold text-emerald-400">Demo Request Sent!</h3>
-          <p className="text-base leading-relaxed text-emerald-200/80">
+          <h3 className="mb-3 text-2xl font-semibold text-success">Demo Request Sent!</h3>
+          <p className="text-base leading-relaxed text-success">
             We have received your request. Our team will review your business and prepare a free custom demo for you shortly.
           </p>
           <button
             type="button"
             onClick={() => setSubmitted(false)}
-            className="button-primary mt-8 border border-emerald-500/30 bg-emerald-500/20 px-6 py-2.5 text-sm text-emerald-400 hover:bg-emerald-500/30 hover:text-emerald-300"
+            className="button-secondary mt-6"
           >
             Request Another Demo
           </button>
@@ -59,15 +63,19 @@ export function DemoForm() {
       ) : (
         <form
           className="grid gap-4"
+          aria-busy={isSubmitting}
+          aria-describedby={formError ? "demo-form-error" : undefined}
           onSubmit={async (event) => {
             event.preventDefault();
+          if (isSubmitting) return;
+          setFormError("");
             setIsSubmitting(true);
- 
+
             try {
-              const finalSolution = formState.solution === "Other" 
-                ? `Other: ${formState.otherSolution}` 
+              const finalSolution = formState.solution === "Other"
+                ? `Other: ${formState.otherSolution}`
                 : formState.solution;
- 
+
               // Combine additional information into the message to ensure EmailJS template delivers it
               const combinedMessage = `
 Requested Solution: ${finalSolution}
@@ -77,7 +85,7 @@ Company: ${formState.business}
 Use Case Details:
 ${formState.message}
               `.trim();
- 
+
               await emailjs.send(
                 "service_tnqdrdd", // Service ID
                 "template_teb23hr", // Template ID
@@ -92,19 +100,20 @@ ${formState.message}
                 },
                 "C9krtPTiFCls0Vayb" // Public Key
               );
- 
+
               setSubmitted(true);
               setFormState(initialState);
               sendGAEvent({ event: "submit_demo", form_name: "demo_form" });
             } catch (error) {
               console.error("Failed to send demo request:", error);
-              alert("Something went wrong, please try again.");
+              setFormError("Something went wrong, please try again.");
             } finally {
               setIsSubmitting(false);
             }
           }}
         >
-          <div className="grid gap-4 sm:grid-cols-2">
+          {formError && <div id="demo-form-error" role="alert" className="form-status form-status-error">{formError}</div>}
+        <div className="grid gap-4 sm:grid-cols-2">
             <label className="grid gap-2 text-sm font-medium text-foreground">
               Name
               <input
@@ -115,7 +124,7 @@ ${formState.message}
                 onChange={(event) =>
                   setFormState((current) => ({ ...current, name: event.target.value }))
                 }
-                className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground placeholder:text-foreground-muted"
+                className="form-field"
                 placeholder="Your full name"
                 disabled={isSubmitting}
               />
@@ -130,7 +139,7 @@ ${formState.message}
                 onChange={(event) =>
                   setFormState((current) => ({ ...current, email: event.target.value }))
                 }
-                className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground placeholder:text-foreground-muted"
+                className="form-field"
                 placeholder="you@restaurant.com"
                 disabled={isSubmitting}
               />
@@ -148,7 +157,7 @@ ${formState.message}
                 onChange={(event) =>
                   setFormState((current) => ({ ...current, business: event.target.value }))
                 }
-                className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground placeholder:text-foreground-muted"
+                className="form-field"
                 placeholder="Restaurant or brand name"
                 disabled={isSubmitting}
               />
@@ -162,7 +171,7 @@ ${formState.message}
                 onChange={(event) =>
                   setFormState((current) => ({ ...current, website: event.target.value }))
                 }
-                className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground placeholder:text-foreground-muted"
+                className="form-field"
                 placeholder="https://example.com"
                 disabled={isSubmitting}
               />
@@ -178,7 +187,7 @@ ${formState.message}
               onChange={(event) =>
                 setFormState((current) => ({ ...current, solution: event.target.value }))
               }
-              className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground"
+              className="form-field"
               disabled={isSubmitting}
             >
               <option value="">Select a service</option>
@@ -204,7 +213,7 @@ ${formState.message}
                 onChange={(event) =>
                   setFormState((current) => ({ ...current, otherSolution: event.target.value }))
                 }
-                className="min-h-11 rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 text-foreground placeholder:text-foreground-muted"
+                className="form-field"
                 placeholder="What service do you need?"
                 disabled={isSubmitting}
               />
@@ -222,7 +231,7 @@ ${formState.message}
                 setFormState((current) => ({ ...current, message: event.target.value }))
               }
               rows={5}
-              className="rounded-none border border-white/8 bg-[rgba(17,17,19,0.88)] px-4 py-3 text-foreground placeholder:text-foreground-muted"
+              className="form-field"
               placeholder="Tell us what you would like the demo to showcase (e.g., modern layout, digital menu, custom reservation widget, AI assistant)."
               disabled={isSubmitting}
             />
@@ -231,7 +240,7 @@ ${formState.message}
           <button
             type="submit"
             disabled={isSubmitting}
-            className="button-primary mt-2 w-full px-6 text-sm sm:w-auto disabled:opacity-70 disabled:cursor-not-allowed"
+            className="button-primary mt-2 w-full px-6 text-sm sm:w-auto"
           >
             {isSubmitting ? "Submitting Request..." : "Request Free Demo"}
           </button>
