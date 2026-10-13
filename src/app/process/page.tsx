@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import Check from "lucide-react/dist/esm/icons/check";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
 import { PageHero } from "@/components/marketing/page-hero";

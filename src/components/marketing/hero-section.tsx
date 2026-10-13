@@ -1,6 +1,5 @@
-import Image from "next/image";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 import { TrackedLink } from "@/components/ui/tracked-link";
-import deviceShowcase from "../../../public/images/device-showcase.avif";
 import SearchCheck from "lucide-react/dist/esm/icons/search-check";
 import Bot from "lucide-react/dist/esm/icons/bot";
 import Sparkles from "lucide-react/dist/esm/icons/sparkles";
@@ -38,7 +37,7 @@ export function HeroSection() {
           ); })}
         </div>
         <div className="mt-2 w-full max-w-[1200px] sm:mt-4">
-          <Image src={deviceShowcase} alt="Device showcase featuring MhStudio website mockups on laptop, tablet, and phone." priority fetchPriority="high" sizes="(max-width: 768px) 90vw, (max-width: 1024px) 800px, 1200px" className="mx-auto h-auto max-h-[640px] w-full object-contain" />
+          <ResponsiveImage name="device-showcase" alt="Device showcase featuring MhStudio website mockups on laptop, tablet, and phone." priority sizes="(max-width: 768px) 90vw, (max-width: 1024px) 800px, 1200px" className="mx-auto h-auto max-h-[640px] w-full object-contain" />
         </div>
       </div>
     </section>

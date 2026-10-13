@@ -1,5 +1,7 @@
+import { getZoomImage } from "@/lib/zoom-image";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import ArrowLeft from "lucide-react/dist/esm/icons/arrow-left";
 import Check from "lucide-react/dist/esm/icons/check";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
@@ -73,8 +75,8 @@ export default function RestaurantWebAndAppPage() {
           <Reveal delayMs={100} className="relative mx-auto w-full max-w-lg lg:max-w-none">
              <div className="relative aspect-[4/3] w-full rounded-card shadow-card border border-border-strong bg-surface overflow-hidden flex items-center justify-center p-4">
                 <div className="w-full h-full relative">
-                   <Zoom>
-                     <Image src="/images/WebAndApp.avif" alt="Restaurant Web and App Mockup" fill className="object-contain" placeholder="blur" blurDataURL={blurData} />
+                   <Zoom zoomImg={getZoomImage("/images/WebAndApp.avif")}>
+                     <ResponsiveImage name="web-and-app" alt="Restaurant Web and App Mockup" fill className="object-contain"  priority sizes="(max-width: 1023px) calc(100vw - 40px), (max-width: 1279px) calc((100vw - 112px) / 2), 568px" />
                    </Zoom>
                 </div>
              </div>
@@ -187,7 +189,7 @@ export default function RestaurantWebAndAppPage() {
           <Reveal delayMs={100} className="relative h-full w-full">
              {/* Website Visual Representation */}
              <div className="bg-surface-secondary border border-border rounded-card shadow-card p-4 sm:p-6 flex flex-col gap-4 sm:gap-6">
-                <Zoom>
+                <Zoom zoomImg={getZoomImage("/images/home-mockup.avif")}>
                    <div className="relative w-full aspect-[16/10] bg-surface rounded-control shadow-card border border-border-strong overflow-hidden flex flex-col cursor-zoom-in hover:border-accent-border/40 transition-colors">
                       <div className="h-6 sm:h-8 bg-surface border-b border-border-strong flex items-center px-3 gap-1.5 shrink-0">
                          <div className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-surface-secondary"></div>
@@ -195,24 +197,24 @@ export default function RestaurantWebAndAppPage() {
                          <div className="w-2 sm:w-2.5 h-2 sm:h-2.5 rounded-full bg-surface-secondary"></div>
                       </div>
                       <div className="relative flex-1 w-full">
-                         <Image src="/images/home-mockup.avif" alt="Homepage UI Mockup" fill className="object-cover object-top" placeholder="blur" blurDataURL={blurData} />
+                         <Image sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 60px), 576px" fetchPriority="low" src="/images/home-mockup.avif" alt="Homepage UI Mockup" fill className="object-cover object-top" placeholder="blur" blurDataURL={blurData} />
                       </div>
                    </div>
                 </Zoom>
                 <div className="grid grid-cols-3 gap-2 sm:gap-4">
-                   <Zoom>
+                   <Zoom zoomImg={getZoomImage("/images/menu.avif")}>
                       <div className="relative w-full aspect-[9/16] bg-surface rounded-control shadow-card border border-border-strong overflow-hidden cursor-zoom-in hover:border-accent-border/40 transition-colors">
-                         <Image src="/images/menu.avif" alt="Menu" fill className="object-cover object-top" placeholder="blur" blurDataURL={blurData} />
+                         <Image sizes="(max-width: 639px) calc((100vw - 88px) / 3), (max-width: 1023px) calc((100vw - 140px) / 3), 192px" fetchPriority="low" src="/images/menu.avif" alt="Menu" fill className="object-cover object-top" placeholder="blur" blurDataURL={blurData} />
                       </div>
                    </Zoom>
-                   <Zoom>
+                   <Zoom zoomImg={getZoomImage("/images/product.avif")}>
                       <div className="relative w-full aspect-[9/16] bg-surface rounded-control shadow-card border border-border-strong overflow-hidden cursor-zoom-in hover:border-accent-border/40 transition-colors">
-                         <Image src="/images/product.avif" alt="Product" fill className="object-cover object-top" placeholder="blur" blurDataURL={blurData} />
+                         <Image sizes="(max-width: 639px) calc((100vw - 88px) / 3), (max-width: 1023px) calc((100vw - 140px) / 3), 192px" fetchPriority="low" src="/images/product.avif" alt="Product" fill className="object-cover object-top" placeholder="blur" blurDataURL={blurData} />
                       </div>
                    </Zoom>
-                   <Zoom>
+                   <Zoom zoomImg={getZoomImage("/images/checkout.avif")}>
                       <div className="relative w-full aspect-[9/16] bg-surface rounded-control shadow-card border border-border-strong overflow-hidden cursor-zoom-in hover:border-accent-border/40 transition-colors">
-                         <Image src="/images/checkout.avif" alt="Checkout" fill className="object-cover object-top" placeholder="blur" blurDataURL={blurData} />
+                         <Image sizes="(max-width: 639px) calc((100vw - 88px) / 3), (max-width: 1023px) calc((100vw - 140px) / 3), 192px" fetchPriority="low" src="/images/checkout.avif" alt="Checkout" fill className="object-cover object-top" placeholder="blur" blurDataURL={blurData} />
                       </div>
                    </Zoom>
                 </div>

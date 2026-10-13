@@ -1,7 +1,7 @@
 "use client";
 
-import Link from "next/link";
-import { sendGAEvent } from "@next/third-parties/google";
+import { IntentLink as Link } from "@/components/ui/intent-link";
+import { sendGAEvent } from "@/lib/analytics";
 
 type TrackedLinkProps = React.ComponentProps<typeof Link> & {
   eventName: string;

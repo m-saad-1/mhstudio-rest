@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Preserved src/data/site-content.ts",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved src/components/ui/reveal.tsx",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved src/components/ui/animated-counter.tsx",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved src/components/heavy-client-components.tsx",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved EmailJS payload and tracking contact",
+    "status": "pass"
+  },
+  {
+    "name": "Preserved EmailJS payload and tracking demo",
+    "status": "pass"
+  },
+  {
+    "name": "Static priority hero",
+    "status": "pass"
+  },
+  {
+    "name": "Same page routes",
+    "status": "pass"
+  },
+  {
+    "name": "Exact Inter font bytes",
+    "status": "pass"
+  },
+  {
+    "name": "GoogleAnalytics provider preserved; no manual GA script",
+    "status": "pass"
+  },
+  {
+    "name": "Original public assets unchanged",
+    "status": "pass"
+  },
+  {
+    "name": "Responsive sizes valid and fill image sizes provided",
+    "status": "pass"
+  }
+]

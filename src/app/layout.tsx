@@ -1,16 +1,9 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import { Inter } from "next/font/google";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
 import { AnalyticsWrapper } from "@/components/layout/analytics-wrapper";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import "./globals.css";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: {
@@ -46,10 +39,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className={`${inter.variable} h-full scroll-smooth antialiased`}>
+    <html lang="en" suppressHydrationWarning className="h-full scroll-smooth antialiased">
       <head>
-        <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -71,7 +62,10 @@ export default function RootLayout({
           Skip to content
         </a>
         <div className="flex min-h-full flex-col">
-          <SiteHeader />
+          <SiteHeader
+            logo={<ResponsiveImage name="site-logo" alt="MhStudio Logo" sizes="(max-width: 639px) 40px, 48px" priority className="h-[40px] w-auto sm:h-[48px]" />}
+            menuLogo={<ResponsiveImage name="site-logo" alt="MhStudio Logo" sizes="40px" className="h-[40px] w-auto" />}
+          />
           <main id="main-content" tabIndex={-1} className="site-main flex-1">
             {children}
           </main>
@@ -83,7 +77,7 @@ export default function RootLayout({
             aria-label="Chat with us on WhatsApp"
             className="whatsapp-action"
           >
-            <Image src="/images/whatsapp.avif" alt="" width={40} height={40} className="h-10 w-10 object-contain" />
+            <ResponsiveImage name="whatsapp" alt="" sizes="40px" loading="eager" className="h-[40px] w-[40px] object-contain" />
           </a>
         </div>
       </body>

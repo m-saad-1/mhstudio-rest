@@ -1,11 +1,9 @@
 import Image from "next/image";
-import Link from "next/link";
-import type { StaticImageData } from "next/image";
+import { IntentLink as Link } from "@/components/ui/intent-link";
+import { ResponsiveImage } from "@/components/ui/responsive-image";
+import type { ResponsiveImageName } from "@/data/responsive-images";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
 import Check from "lucide-react/dist/esm/icons/check";
-import onlineOrderingImage from "../../public/images/online-ordering.avif";
-import posImage from "../../public/images/restaurant-pos.avif";
-import qrMenuImage from "../../public/images/qr-menu.avif";
 
 import { FaqAccordion } from "@/components/heavy-client-components";
 import { HeroSection } from "@/components/marketing/hero-section";
@@ -39,22 +37,22 @@ export default function Home() {
     .map(title => mainServices.find(service => service.title === title) || serviceCards.find(service => service.title === title))
     .filter((service): service is Exclude<typeof service, undefined> => !!service);
 
-  const serviceImages: Record<string, { src: string | StaticImageData; alt: string }> = {
-    "Restaurant Websites & Mobile Applications": { src: "/images/WebAndApp.avif", alt: "Restaurant website and mobile app showcase" },
-    "Restaurant Management Systems (RMS)": { src: "/images/restaurant-management-dashboard-workspace.avif", alt: "Restaurant management dashboard" },
-    "Point of Sale (POS) Systems": { src: posImage, alt: "Restaurant point of sale dashboard" },
-    "Online Ordering Systems": { src: onlineOrderingImage, alt: "Online restaurant ordering experience" },
-    "Kitchen Display Systems (KDS)": { src: "/images/modern-kitchen-display-system-showcase.avif", alt: "Kitchen display system" },
-    "Delivery & Fleet Management": { src: "/images/device-showcase.avif", alt: "Delivery and fleet management tools" },
-    "Dine-In & Table Management": { src: "/images/modern-restaurant-table-management-dashboard.avif", alt: "Restaurant table management dashboard" },
-    "QR Menu & Self-Ordering": { src: qrMenuImage, alt: "QR menu and self-ordering menu" },
+  const serviceImages: Record<string, { name: ResponsiveImageName; alt: string }> = {
+    "Restaurant Websites & Mobile Applications": { name: "web-and-app", alt: "Restaurant website and mobile app showcase" },
+    "Restaurant Management Systems (RMS)": { name: "rms-dashboard", alt: "Restaurant management dashboard" },
+    "Point of Sale (POS) Systems": { name: "pos", alt: "Restaurant point of sale dashboard" },
+    "Online Ordering Systems": { name: "online-ordering", alt: "Online restaurant ordering experience" },
+    "Kitchen Display Systems (KDS)": { name: "kds", alt: "Kitchen display system" },
+    "Delivery & Fleet Management": { name: "device-showcase", alt: "Delivery and fleet management tools" },
+    "Dine-In & Table Management": { name: "dine-in", alt: "Restaurant table management dashboard" },
+    "QR Menu & Self-Ordering": { name: "qr-menu", alt: "QR menu and self-ordering menu" },
   };
 
   return (
     <>
       <HeroSection />
 
-      <div className="home-sections flex flex-col">
+      <div className="home-sections">
       <Reveal as="section" className="home-services-section section-space section-divider">
         <div className="content-shell space-y-10">
           <SectionHeading
@@ -72,7 +70,7 @@ export default function Home() {
                   className="surface-card group flex h-full min-w-0 flex-col justify-between overflow-hidden transition-transform duration-200"
                 >
                   <div className="relative aspect-[16/9] overflow-hidden border-b border-border">
-                    <Image src={image.src} alt={image.alt} fill sizes="(max-width: 767px) 100vw, (max-width: 1279px) 50vw, 33vw" className="object-cover transition-transform duration-200" />
+                    <ResponsiveImage name={image.name} alt={image.alt} fill sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 767px) calc(100vw - 60px), (max-width: 1023px) calc((100vw - 84px) / 2), (max-width: 1279px) calc((100vw - 128px) / 3), 384px" className="object-cover transition-transform duration-200" />
                   </div>
                   <div className="flex flex-1 flex-col justify-between p-4">
                   <div className="space-y-3">
@@ -90,6 +88,92 @@ export default function Home() {
                 </Reveal>
               );
             })}
+          </div>
+        </div>
+      </Reveal>
+
+      <Reveal as="section" className="home-panel-section section-space section-divider">
+        <div className="content-shell grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
+          {/* Left Side: Content */}
+          <Reveal delayMs={0} className="space-y-8">
+            <div className="space-y-5">
+              <span className="inline-flex items-center gap-2 rounded-card border border-accent-border/40 bg-accent-soft px-4 py-1.5 text-sm font-semibold text-accent-text shadow-card">
+                Your Restaurant, One Panel
+              </span>
+              <h2 className="type-section text-foreground">
+                Manage your entire restaurant from <span className="text-accent-text">one screen.</span>
+              </h2>
+            </div>
+
+            <div className="grid gap-3 sm:grid-cols-1">
+              {[
+                { title: "Manage your website", desc: "Update menus, content, offers, images, and restaurant information anytime." },
+                { title: "Control every order", desc: "View and manage dine-in, takeaway, and delivery orders from one place." },
+                { title: "Run your operations", desc: "Manage POS, tables, kitchen workflows, delivery, and reservations." },
+                { title: "Manage your menu & inventory", desc: "Update products, pricing, availability, ingredients, and stock." },
+                { title: "Know your customers", desc: "Track customer profiles, order history, loyalty, and repeat activity." },
+                { title: "See what matters", desc: "Monitor revenue, sales, branch performance, and AI-powered business insights." },
+              ].map((feature) => (
+                <div key={feature.title} className="surface-card flex items-start gap-4 p-4 rounded-card border border-border hover:border-accent-border/40 transition-all duration-200 hover:shadow-soft bg-surface-secondary hover:bg-surface-secondary">
+                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-card bg-accent-soft text-accent-text shadow-card">
+                    <Check className="h-4 w-4" strokeWidth={3} />
+                  </span>
+                  <div>
+                    <span className="block text-sm font-semibold text-foreground">{feature.title}</span>
+                    <span className="block text-sm text-foreground-muted mt-1">{feature.desc}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+
+          {/* Right Side: Images */}
+          <Reveal delayMs={100} className="relative mx-auto flex w-full max-w-lg flex-col gap-6 lg:mx-0 lg:max-w-none">
+
+            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-border p-2 shadow-card hover:border-accent-border/40 transition-colors duration-200">
+              <a href="/images/Dashboard-1.avif" target="_blank" rel="noopener noreferrer" className="block relative w-full h-full cursor-zoom-in">
+                <Image
+                  src="/images/Dashboard-1.avif"
+                  alt="Restaurant management dashboard overview"
+                  fill
+                  className="object-cover object-left-top p-2 transition-transform duration-200 hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 90vw, 50vw"
+                />
+              </a>
+            </div>
+            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-border p-2 shadow-card hover:border-accent-border/40 transition-colors duration-200">
+              <a href="/images/Dashboard-2.avif" target="_blank" rel="noopener noreferrer" className="block relative w-full h-full cursor-zoom-in">
+                <Image
+                  src="/images/Dashboard-2.avif"
+                  alt="Restaurant order management dashboard"
+                  fill
+                  className="object-cover object-left-top p-2 transition-transform duration-200 hover:scale-[1.02]"
+                  sizes="(max-width: 1024px) 90vw, 50vw"
+                />
+              </a>
+            </div>
+          </Reveal>
+        </div>
+      </Reveal>
+
+      <Reveal as="section" className="home-flow-section section-space section-divider overflow-hidden">
+        <div className="content-shell space-y-10">
+          <SectionHeading
+            eyebrow="Online Ordering To Delivery"
+            title="One connected flow from checkout to doorstep."
+            align="center"
+          />
+          <div className="surface-card overflow-hidden p-4 sm:p-8 hover:border-accent-border/40 transition-colors duration-200">
+            <a href="/images/from-order-to-doorstep-flow.avif" target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-zoom-in">
+              <Image
+                src="/images/from-order-to-doorstep-flow.avif"
+                alt="Restaurant order to doorstep delivery flow"
+                width={1200}
+                height={700}
+                className="mx-auto max-h-[520px] w-full object-contain transition-transform duration-200 hover:scale-[1.02]"
+                sizes="(max-width: 768px) 100vw, 1100px"
+              />
+            </a>
           </div>
         </div>
       </Reveal>
@@ -158,70 +242,6 @@ export default function Home() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="home-panel-section section-space section-divider">
-        <div className="content-shell grid gap-12 lg:grid-cols-[1fr_1.1fr] lg:items-center">
-          {/* Left Side: Content */}
-          <Reveal delayMs={0} className="space-y-8">
-            <div className="space-y-5">
-              <span className="inline-flex items-center gap-2 rounded-card border border-accent-border/40 bg-accent-soft px-4 py-1.5 text-sm font-semibold text-accent-text shadow-card">
-                Your Restaurant, One Panel
-              </span>
-              <h2 className="type-section text-foreground">
-                Manage your entire restaurant from <span className="text-accent-text">one screen.</span>
-              </h2>
-            </div>
-
-            <div className="grid gap-3 sm:grid-cols-1">
-              {[
-                { title: "Manage your website", desc: "Update menus, content, offers, images, and restaurant information anytime." },
-                { title: "Control every order", desc: "View and manage dine-in, takeaway, and delivery orders from one place." },
-                { title: "Run your operations", desc: "Manage POS, tables, kitchen workflows, delivery, and reservations." },
-                { title: "Manage your menu & inventory", desc: "Update products, pricing, availability, ingredients, and stock." },
-                { title: "Know your customers", desc: "Track customer profiles, order history, loyalty, and repeat activity." },
-                { title: "See what matters", desc: "Monitor revenue, sales, branch performance, and AI-powered business insights." },
-              ].map((feature) => (
-                <div key={feature.title} className="surface-card flex items-start gap-4 p-4 rounded-card border border-border hover:border-accent-border/40 transition-all duration-200 hover:shadow-soft bg-surface-secondary hover:bg-surface-secondary">
-                  <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-card bg-accent-soft text-accent-text shadow-card">
-                    <Check className="h-4 w-4" strokeWidth={3} />
-                  </span>
-                  <div>
-                    <span className="block text-sm font-semibold text-foreground">{feature.title}</span>
-                    <span className="block text-sm text-foreground-muted mt-1">{feature.desc}</span>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-
-          {/* Right Side: Images */}
-          <Reveal delayMs={100} className="relative mx-auto flex w-full max-w-lg flex-col gap-6 lg:mx-0 lg:max-w-none">
-
-            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-border p-2 shadow-card hover:border-accent-border/40 transition-colors duration-200">
-              <a href="/images/Dashboard-1.avif" target="_blank" rel="noopener noreferrer" className="block relative w-full h-full cursor-zoom-in">
-                <Image
-                  src="/images/Dashboard-1.avif"
-                  alt="Restaurant management dashboard overview"
-                  fill
-                  className="object-cover object-left-top p-2 transition-transform duration-200 hover:scale-[1.02]"
-                  sizes="(max-width: 1024px) 90vw, 50vw"
-                />
-              </a>
-            </div>
-            <div className="surface-card relative z-10 aspect-[16/10] w-full overflow-hidden border-border p-2 shadow-card hover:border-accent-border/40 transition-colors duration-200">
-              <a href="/images/Dashboard-2.avif" target="_blank" rel="noopener noreferrer" className="block relative w-full h-full cursor-zoom-in">
-                <Image
-                  src="/images/Dashboard-2.avif"
-                  alt="Restaurant order management dashboard"
-                  fill
-                  className="object-cover object-left-top p-2 transition-transform duration-200 hover:scale-[1.02]"
-                  sizes="(max-width: 1024px) 90vw, 50vw"
-                />
-              </a>
-            </div>
-          </Reveal>
-        </div>
-      </Reveal>
-
       <Reveal as="section" className="home-capabilities-section section-space section-divider">
         <div className="content-shell space-y-10">
           <SectionHeading
@@ -250,24 +270,28 @@ export default function Home() {
         </div>
       </Reveal>
 
-      <Reveal as="section" className="home-flow-section section-space section-divider overflow-hidden">
+      <Reveal as="section" className="home-platform-section section-space section-divider">
         <div className="content-shell space-y-10">
           <SectionHeading
-            eyebrow="Online Ordering To Delivery"
-            title="One connected flow from checkout to doorstep."
+            eyebrow="Explore The Platform"
+            title="See the guest experience and the operator view."
             align="center"
           />
-          <div className="surface-card overflow-hidden p-4 sm:p-8 hover:border-accent-border/40 transition-colors duration-200">
-            <a href="/images/from-order-to-doorstep-flow.avif" target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-zoom-in">
-              <Image
-                src="/images/from-order-to-doorstep-flow.avif"
-                alt="Restaurant order to doorstep delivery flow"
-                width={1200}
-                height={700}
-                className="mx-auto max-h-[520px] w-full object-contain transition-transform duration-200 hover:scale-[1.02]"
-                sizes="(max-width: 768px) 100vw, 1100px"
-              />
-            </a>
+          <div className="grid gap-6 lg:grid-cols-2">
+            {[
+              { title: "Website / App Demo", image: "/images/WebAndApp.avif", alt: "Restaurant website and app demo", href: "https://demopk.vercel.app/" },
+              { title: "RMS Dashboard", image: "/images/restaurant-management-dashboard-workspace.avif", alt: "Restaurant management system dashboard", href: "https://demopk.vercel.app/dashboard/index.html" },
+            ].map((demo) => (
+              <div key={demo.title} className="surface-card flex flex-col p-5">
+                <div className="relative aspect-[16/10] overflow-hidden border border-border bg-surface">
+                  <Image src={demo.image} alt={demo.alt} fill className="object-cover object-top" sizes="(max-width: 1023px) 100vw, 50vw" />
+                </div>
+                <div className="flex items-center justify-between gap-4 pt-5">
+                  <h3 className="text-xl font-semibold text-foreground">{demo.title}</h3>
+                  <Link href={demo.href} target="_blank" rel="noopener noreferrer" className="button-primary min-h-11 px-5 text-sm">Demo</Link>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </Reveal>
@@ -298,32 +322,6 @@ export default function Home() {
                 </span>
               ))}
             </div>
-          </div>
-        </div>
-      </Reveal>
-
-      <Reveal as="section" className="home-platform-section section-space section-divider">
-        <div className="content-shell space-y-10">
-          <SectionHeading
-            eyebrow="Explore The Platform"
-            title="See the guest experience and the operator view."
-            align="center"
-          />
-          <div className="grid gap-6 lg:grid-cols-2">
-            {[
-              { title: "Website / App Demo", image: "/images/WebAndApp.avif", alt: "Restaurant website and app demo", href: "https://demopk.vercel.app/" },
-              { title: "RMS Dashboard", image: "/images/restaurant-management-dashboard-workspace.avif", alt: "Restaurant management system dashboard", href: "https://demopk.vercel.app/dashboard/index.html" },
-            ].map((demo) => (
-              <div key={demo.title} className="surface-card flex flex-col p-5">
-                <div className="relative aspect-[16/10] overflow-hidden border border-border bg-surface">
-                  <Image src={demo.image} alt={demo.alt} fill className="object-cover object-top" sizes="(max-width: 1023px) 100vw, 50vw" />
-                </div>
-                <div className="flex items-center justify-between gap-4 pt-5">
-                  <h3 className="text-xl font-semibold text-foreground">{demo.title}</h3>
-                  <Link href={demo.href} target="_blank" rel="noopener noreferrer" className="button-primary min-h-11 px-5 text-sm">Demo</Link>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </Reveal>

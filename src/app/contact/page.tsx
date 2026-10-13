@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import CalendarRange from "lucide-react/dist/esm/icons/calendar-range";
 import Mail from "lucide-react/dist/esm/icons/mail";
 import MessageCircleMore from "lucide-react/dist/esm/icons/message-circle-more";

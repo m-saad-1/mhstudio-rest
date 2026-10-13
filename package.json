@@ -6,7 +6,10 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "predev": "node scripts/generate-responsive-images.mjs",
+    "prebuild": "node scripts/generate-responsive-images.mjs",
+    "images:optimize": "node scripts/generate-responsive-images.mjs"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

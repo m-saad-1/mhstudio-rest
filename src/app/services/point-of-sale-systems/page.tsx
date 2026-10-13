@@ -1,5 +1,7 @@
+import { getZoomImage } from "@/lib/zoom-image";
+import { ResponsiveImage, SERVICE_IMAGE_SIZES } from "@/components/ui/responsive-image";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import ArrowLeft from "lucide-react/dist/esm/icons/arrow-left";
 import Check from "lucide-react/dist/esm/icons/check";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
@@ -69,8 +71,8 @@ export default function PointOfSaleSystemsPage() {
         <div className="content-shell relative z-10">
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">
              <div className="relative aspect-[16/11] w-full rounded-card border border-border-strong bg-surface shadow-card overflow-hidden flex items-center justify-center">
-                <Zoom>
-                  <Image src="/images/restaurant-pos.avif" alt="POS Interface" fill className="object-cover object-left" />
+                <Zoom zoomImg={getZoomImage("/images/restaurant-pos.avif")}>
+                  <ResponsiveImage name="pos" alt="POS Interface" fill className="object-cover object-left"  priority sizes={SERVICE_IMAGE_SIZES} />
                 </Zoom>
              </div>
           </Reveal>
@@ -241,8 +243,8 @@ export default function PointOfSaleSystemsPage() {
                  <p className="text-foreground-body text-sm mb-8">Staff can see table status, open orders, guests, and active checks without losing track of where orders belong.</p>
 
                  <div className="relative aspect-video w-full rounded-card border border-border-strong bg-surface shadow-card overflow-hidden flex items-center justify-center">
-                    <Zoom>
-                      <Image src="/images/Table-management-tab.avif" alt="Table Management" fill className="object-cover" />
+                    <Zoom zoomImg={getZoomImage("/images/Table-management-tab.avif")}>
+                      <Image sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 60px), 576px" fetchPriority="low" src="/images/Table-management-tab.avif" alt="Table Management" fill className="object-cover" />
                     </Zoom>
                  </div>
                </div>

@@ -1,5 +1,7 @@
+import { getZoomImage } from "@/lib/zoom-image";
+import { ResponsiveImage, SERVICE_IMAGE_SIZES } from "@/components/ui/responsive-image";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import ArrowLeft from "lucide-react/dist/esm/icons/arrow-left";
 import Check from "lucide-react/dist/esm/icons/check";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
@@ -69,7 +71,7 @@ export default function OnlineOrderingSystemsPage() {
         <div className="content-shell relative z-10">
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-card border border-border-strong bg-surface shadow-card">
-              <Image src="/images/online-ordering.avif" alt="Online ordering system" fill className="object-cover object-top" priority sizes="(max-width: 1024px) 100vw, 1024px" />
+              <ResponsiveImage name="online-ordering" alt="Online ordering system" fill className="object-cover object-top"  priority sizes={SERVICE_IMAGE_SIZES} />
             </div>
             <div className="hidden">
             <div className="relative w-full rounded-card border border-border-strong bg-surface shadow-card overflow-hidden flex flex-col sm:flex-row min-h-[500px]">
@@ -271,8 +273,8 @@ export default function OnlineOrderingSystemsPage() {
              </Reveal>
              <Reveal delayMs={100} className="order-1 lg:order-2 flex justify-center lg:justify-end">
                 <div className="relative w-full max-w-[320px] aspect-[9/19] rounded-dialog border-[6px] border-border-strong bg-surface overflow-hidden shadow-card cursor-zoom-in hover:border-accent-border/40 transition-colors">
-                   <Zoom>
-                      <Image src="/images/menu.avif" alt="Digital Menu UI Mockup" fill className="object-cover object-top" />
+                   <Zoom zoomImg={getZoomImage("/images/menu.avif")}>
+                      <Image sizes="(max-width: 359px) calc(100vw - 40px), 320px" fetchPriority="low" src="/images/menu.avif" alt="Digital Menu UI Mockup" fill className="object-cover object-top" />
                    </Zoom>
                 </div>
              </Reveal>
@@ -287,8 +289,8 @@ export default function OnlineOrderingSystemsPage() {
              </Reveal>
              <Reveal delayMs={100} className="order-1 lg:order-2 flex justify-center lg:justify-end">
                 <div className="relative w-full max-w-[320px] aspect-[9/19] rounded-dialog border-[6px] border-border-strong bg-surface overflow-hidden shadow-card cursor-zoom-in hover:border-accent-border/40 transition-colors">
-                   <Zoom>
-                      <Image src="/images/product.avif" alt="Product Customization UI Mockup" fill className="object-cover object-top" />
+                   <Zoom zoomImg={getZoomImage("/images/product.avif")}>
+                      <Image sizes="(max-width: 359px) calc(100vw - 40px), 320px" fetchPriority="low" src="/images/product.avif" alt="Product Customization UI Mockup" fill className="object-cover object-top" />
                    </Zoom>
                 </div>
              </Reveal>
@@ -314,8 +316,8 @@ export default function OnlineOrderingSystemsPage() {
              </Reveal>
              <Reveal delayMs={100} className="order-1 lg:order-2 flex justify-center lg:justify-end">
                 <div className="relative w-full max-w-[320px] aspect-[9/19] rounded-dialog border-[6px] border-border-strong bg-surface overflow-hidden shadow-card cursor-zoom-in hover:border-accent-border/40 transition-colors">
-                   <Zoom>
-                      <Image src="/images/checkout.avif" alt="Checkout UI Mockup" fill className="object-cover object-top" />
+                   <Zoom zoomImg={getZoomImage("/images/checkout.avif")}>
+                      <Image sizes="(max-width: 359px) calc(100vw - 40px), 320px" fetchPriority="low" src="/images/checkout.avif" alt="Checkout UI Mockup" fill className="object-cover object-top" />
                    </Zoom>
                 </div>
              </Reveal>

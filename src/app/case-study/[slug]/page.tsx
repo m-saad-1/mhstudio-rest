@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import { notFound } from "next/navigation";
 import Check from "lucide-react/dist/esm/icons/check";
 import ChevronRight from "lucide-react/dist/esm/icons/chevron-right";

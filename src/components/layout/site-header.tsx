@@ -1,15 +1,14 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import { usePathname } from "next/navigation";
 import Menu from "lucide-react/dist/esm/icons/menu";
 import X from "lucide-react/dist/esm/icons/x";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 import { navigationItems } from "@/data/site-content";
 import { Modal } from "@/components/ui/modal";
 
-export function SiteHeader() {
+export function SiteHeader({ logo, menuLogo }: { logo: ReactNode; menuLogo: ReactNode }) {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -36,7 +35,7 @@ export function SiteHeader() {
         <div className="content-shell py-3 sm:py-4">
           <div className={`grid h-[72px] grid-cols-[1fr_auto] items-center rounded-card border border-border bg-navigation-background px-4 transition-shadow duration-200 lg:grid-cols-[1fr_auto_1fr] ${scrolled ? "shadow-soft" : "shadow-card"}`}>
             <Link href="/" aria-label="MhStudio home" className="inline-flex min-h-[44px] w-fit items-center rounded-control">
-              <Image src="/mh_logo.png" alt="MhStudio Logo" width={48} height={48} className="h-[40px] w-auto sm:h-[48px]" priority />
+              {logo}
             </Link>
             <nav className="hidden items-center gap-6 lg:flex" aria-label="Primary">
               {navigationItems.map((item) => (
@@ -56,7 +55,7 @@ export function SiteHeader() {
       <Modal open={menuOpen} onClose={() => setMenuOpen(false)} titleId="mobile-menu-title" className="menu-panel">
         <div className="dialog-heading">
           <Link href="/" onClick={() => setMenuOpen(false)} aria-label="MhStudio home" className="inline-flex min-h-[44px] items-center rounded-control">
-            <Image src="/mh_logo.png" alt="MhStudio Logo" width={48} height={48} className="h-[40px] w-auto" />
+            {menuLogo}
           </Link>
           <h2 id="mobile-menu-title" className="sr-only">Navigation</h2>
           <button type="button" onClick={() => setMenuOpen(false)} className="icon-button" aria-label="Close menu"><X className="h-5 w-5" /></button>

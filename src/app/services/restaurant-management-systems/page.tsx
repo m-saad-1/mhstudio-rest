@@ -1,5 +1,7 @@
+import { getZoomImage } from "@/lib/zoom-image";
+import { ResponsiveImage, SERVICE_IMAGE_SIZES } from "@/components/ui/responsive-image";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import ArrowLeft from "lucide-react/dist/esm/icons/arrow-left";
 import Check from "lucide-react/dist/esm/icons/check";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
@@ -76,8 +78,8 @@ export default function RestaurantManagementSystemsPage() {
                  <div className="mx-auto text-sm font-semibold text-foreground-muted">MhStudio Restaurant Command Center</div>
                </div>
                <div className="flex-1 flex items-center justify-center relative overflow-hidden">
-                  <Zoom>
-                    <Image src="/images/restaurant-management-dashboard-workspace.avif" alt="RMS Dashboard" fill className="object-cover object-top" />
+                  <Zoom zoomImg={getZoomImage("/images/restaurant-management-dashboard-workspace.avif")}>
+                    <ResponsiveImage name="rms-dashboard" alt="RMS Dashboard" fill className="object-cover object-top"  priority sizes={SERVICE_IMAGE_SIZES} />
                   </Zoom>
                </div>
             </div>
@@ -249,8 +251,8 @@ export default function RestaurantManagementSystemsPage() {
           <Reveal className="order-2 lg:order-1 relative aspect-[16/11] w-full">
              <div className="absolute inset-0 bg-surface border border-border rounded-card shadow-card flex items-center justify-center overflow-hidden">
                 <div className="w-full h-full relative">
-                   <Zoom>
-                      <Image src="/images/POStab.avif" alt="POS Interface" fill className="object-cover object-left" />
+                   <Zoom zoomImg={getZoomImage("/images/POStab.avif")}>
+                      <Image sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 60px), 576px" fetchPriority="low" src="/images/POStab.avif" alt="POS Interface" fill className="object-cover object-left" />
                    </Zoom>
                 </div>
              </div>
@@ -340,8 +342,8 @@ export default function RestaurantManagementSystemsPage() {
                <h3 className="text-2xl font-bold text-foreground mb-4">From Ready Order to Delivered Customer.</h3>
                <p className="text-sm text-foreground-body mb-8">Manage delivery information, assignments, statuses, zones, riders, and fulfillment from one operational layer.</p>
                <div className="mt-auto aspect-video bg-surface rounded-control border border-border-strong flex items-center justify-center relative overflow-hidden">
-                  <Zoom>
-                     <Image src="/images/Orders-tab.avif" alt="Live Map Dashboard" fill className="object-cover" />
+                  <Zoom zoomImg={getZoomImage("/images/Orders-tab.avif")}>
+                     <Image sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 60px), 576px" fetchPriority="low" src="/images/Orders-tab.avif" alt="Live Map Dashboard" fill className="object-cover" />
                   </Zoom>
                </div>
              </Reveal>
@@ -352,8 +354,8 @@ export default function RestaurantManagementSystemsPage() {
                <h3 className="text-2xl font-bold text-foreground mb-4">Know What You Have Before You Run Out.</h3>
                <p className="text-sm text-foreground-body mb-8">Connect operational activity with inventory management so restaurant teams can keep track of ingredients, stock levels, and purchasing.</p>
                <div className="mt-auto aspect-video bg-surface rounded-control border border-border-strong flex items-center justify-center relative overflow-hidden">
-                  <Zoom>
-                     <Image src="/images/Inventory-tab.avif" alt="Inventory Dashboard" fill className="object-cover" />
+                  <Zoom zoomImg={getZoomImage("/images/Inventory-tab.avif")}>
+                     <Image sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 60px), 576px" fetchPriority="low" src="/images/Inventory-tab.avif" alt="Inventory Dashboard" fill className="object-cover" />
                   </Zoom>
                </div>
              </Reveal>
@@ -371,8 +373,8 @@ export default function RestaurantManagementSystemsPage() {
                <p className="text-lg text-foreground-body mb-6">The RMS can organize customer profiles and order activity so restaurants can understand who their customers are, what they order, and how much they spend.</p>
 
                <div className="aspect-[4/3] bg-surface rounded-control border border-border-strong flex items-center justify-center relative overflow-hidden">
-                  <Zoom>
-                     <Image src="/images/Customer-management-tab.avif" alt="Customer Management Dashboard" fill className="object-cover object-left-top" />
+                  <Zoom zoomImg={getZoomImage("/images/Customer-management-tab.avif")}>
+                     <Image sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 1023px) calc(100vw - 60px), 576px" fetchPriority="low" src="/images/Customer-management-tab.avif" alt="Customer Management Dashboard" fill className="object-cover object-left-top" />
                   </Zoom>
                </div>
              </Reveal>

@@ -1,0 +1,12 @@
+[
+  {
+    "route": "point-of-sale-systems",
+    "status": "pass",
+    "violations": 0
+  },
+  {
+    "route": "kitchen-display-systems",
+    "status": "pass",
+    "violations": 0
+  }
+]

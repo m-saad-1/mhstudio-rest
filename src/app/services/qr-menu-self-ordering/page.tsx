@@ -1,11 +1,11 @@
+import { ResponsiveImage, SERVICE_IMAGE_SIZES } from "@/components/ui/responsive-image";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import ArrowLeft from "lucide-react/dist/esm/icons/arrow-left";
 import Check from "lucide-react/dist/esm/icons/check";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "QR Menu & Self-Ordering System",
@@ -71,7 +71,7 @@ export default function QRMenuPage() {
         <div className="content-shell relative z-10">
           <Reveal delayMs={100} className="mx-auto w-full max-w-4xl flex justify-center">
              <div className="relative aspect-[16/9] w-full overflow-hidden rounded-card border border-border-strong bg-surface shadow-card">
-                <Image src="/images/qr-menu.avif" alt="QR menu and self-ordering system" fill className="object-cover object-top" priority sizes="(max-width: 1024px) 100vw, 1024px" />
+                <ResponsiveImage name="qr-menu" alt="QR menu and self-ordering system" fill className="object-cover object-top"  priority sizes={SERVICE_IMAGE_SIZES} />
              </div>
              <div className="hidden">
              <div className="relative w-full max-w-3xl aspect-[4/3] sm:aspect-video rounded-card border border-border-strong bg-surface shadow-card overflow-hidden flex items-end justify-center p-8">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import { Reveal } from "@/components/ui/reveal";
 import { PageHero } from "@/components/marketing/page-hero";
 import { aboutValues, processSteps, technologyGroups, whyChooseItems } from "@/data/site-content";

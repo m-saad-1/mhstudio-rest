@@ -1,11 +1,12 @@
+import { getZoomImage } from "@/lib/zoom-image";
+import { ResponsiveImage, SERVICE_IMAGE_SIZES } from "@/components/ui/responsive-image";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import ArrowLeft from "lucide-react/dist/esm/icons/arrow-left";
 import Check from "lucide-react/dist/esm/icons/check";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
-import Image from "next/image";
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 export const metadata: Metadata = {
@@ -69,8 +70,8 @@ export default function KitchenDisplaySystemsPage() {
         <div className="content-shell relative z-10">
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">
             <div className="relative aspect-video w-full rounded-card border border-border-strong bg-surface shadow-card overflow-hidden flex items-center justify-center">
-               <Zoom>
-                 <Image src="/images/modern-kitchen-display-system-showcase.avif" alt="Kitchen Display System" fill className="object-cover" />
+               <Zoom zoomImg={getZoomImage("/images/modern-kitchen-display-system-showcase.avif")}>
+                 <ResponsiveImage name="kds" alt="Kitchen Display System" fill className="object-cover"  priority sizes={SERVICE_IMAGE_SIZES} />
                </Zoom>
             </div>
           </Reveal>

@@ -1,9 +1,9 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import { loadEmailClient } from "@/lib/email-client";
 import CheckCircle2 from "lucide-react/dist/esm/icons/check-circle-2";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/analytics";
 
 type FormState = {
   name: string;
@@ -63,6 +63,7 @@ export function DemoForm() {
       ) : (
         <form
           className="grid gap-4"
+          onFocusCapture={() => { void loadEmailClient().catch(() => {}); }}
           aria-busy={isSubmitting}
           aria-describedby={formError ? "demo-form-error" : undefined}
           onSubmit={async (event) => {
@@ -86,6 +87,7 @@ Use Case Details:
 ${formState.message}
               `.trim();
 
+              const { default: emailjs } = await loadEmailClient();
               await emailjs.send(
                 "service_tnqdrdd", // Service ID
                 "template_teb23hr", // Template ID

@@ -1,0 +1,4016 @@
+{
+  "conditions": {
+    "mobile": {
+      "width": 375,
+      "dpr": 3,
+      "latency": 150,
+      "downloadBytesPerSecond": 200000,
+      "cpu": 4
+    },
+    "desktop": {
+      "width": 1440,
+      "dpr": 1,
+      "latency": 40,
+      "downloadBytesPerSecond": 1250000,
+      "cpu": 1
+    },
+    "cache": "Warm server image cache, disabled browser cache, new context per run",
+    "window": "navigation load + 2 seconds",
+    "thirdParties": "Google/Vercel script requests blocked equally",
+    "metricNote": "longTaskExcess is sum(max(0,duration-50)) over the whole observation window; not Lighthouse TBT"
+  },
+  "records": [
+    {
+      "version": "before",
+      "route": "/",
+      "mobile": true,
+      "run": 1,
+      "fcp": 7640,
+      "lcp": 7856,
+      "cls": 0.0002726458847736625,
+      "tasks": [
+        {
+          "start": 864.6999999880791,
+          "duration": 345
+        },
+        {
+          "start": 1218.4000000059605,
+          "duration": 59
+        },
+        {
+          "start": 8303.699999988079,
+          "duration": 2497
+        },
+        {
+          "start": 10923.799999982119,
+          "duration": 50
+        },
+        {
+          "start": 13051,
+          "duration": 59
+        },
+        {
+          "start": 13394.699999988079,
+          "duration": 71
+        },
+        {
+          "start": 13510.199999988079,
+          "duration": 51
+        },
+        {
+          "start": 13870.299999982119,
+          "duration": 52
+        },
+        {
+          "start": 14076.90000000596,
+          "duration": 93
+        },
+        {
+          "start": 14175.90000000596,
+          "duration": 241
+        },
+        {
+          "start": 14782.799999982119,
+          "duration": 208
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3004/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 13647.40000000596,
+        "navigationId": 5963,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 4,
+        "domainLookupStart": 4,
+        "domainLookupEnd": 4,
+        "connectStart": 4,
+        "secureConnectionStart": 0,
+        "connectEnd": 4,
+        "requestStart": 17.69999998807907,
+        "responseStart": 46.19999998807907,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 46.19999998807907,
+        "responseEnd": 363.90000000596046,
+        "transferSize": 31696,
+        "encodedBodySize": 31396,
+        "decodedBodySize": 296622,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 13618.59999999404,
+        "domContentLoadedEventStart": 13620.199999988079,
+        "domContentLoadedEventEnd": 13627.59999999404,
+        "domComplete": 13644.40000000596,
+        "loadEventStart": 13647.199999988079,
+        "loadEventEnd": 13647.40000000596,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fmh_logo.png&w=96&q=75",
+          "start": 565,
+          "duration": 262.5,
+          "bytes": 2801,
+          "initiator": "link",
+          "ttfb": 14.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1024&q=75",
+          "start": 574,
+          "duration": 1385.199999988079,
+          "bytes": 63866,
+          "initiator": "link",
+          "ttfb": 14.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/static/css/d069c7dc995973d7.css",
+          "start": 578.7999999821186,
+          "duration": 460.90000000596046,
+          "bytes": 11816,
+          "initiator": "link",
+          "ttfb": 14.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "start": 582.2999999821186,
+          "duration": 347.90000000596046,
+          "bytes": 1814,
+          "initiator": "link",
+          "ttfb": 5.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 585.4000000059605,
+          "duration": 1421.2999999821186,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 12.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 588.9000000059605,
+          "duration": 1417,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 12.299999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 592.5999999940395,
+          "duration": 418.69999998807907,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 3.7000000178813934
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 594.5,
+          "duration": 572.4000000059605,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 8.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/437-0f48636ca52b412c.js",
+          "start": 598.9000000059605,
+          "duration": 694,
+          "bytes": 5446,
+          "initiator": "script",
+          "ttfb": 6.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/619-afba0df287e9b980.js",
+          "start": 601.4000000059605,
+          "duration": 738.8999999761581,
+          "bytes": 4629,
+          "initiator": "script",
+          "ttfb": 5.200000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "start": 603.0999999940395,
+          "duration": 800.9000000059605,
+          "bytes": 4120,
+          "initiator": "script",
+          "ttfb": 6.4000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "start": 605.9000000059605,
+          "duration": 940.5999999940395,
+          "bytes": 3605,
+          "initiator": "script",
+          "ttfb": 5.5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "start": 608.5999999940395,
+          "duration": 969.3000000119209,
+          "bytes": 2339,
+          "initiator": "script",
+          "ttfb": 5.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/812.1c08d505f8805186.js",
+          "start": 611.4000000059605,
+          "duration": 1014.6999999880791,
+          "bytes": 1203,
+          "initiator": "link",
+          "ttfb": 5.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "start": 1549.9000000059605,
+          "duration": 7013.199999988079,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 10
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2FWebAndApp.avif&w=1200&q=75",
+          "start": 7397.699999988079,
+          "duration": 1769.800000011921,
+          "bytes": 112210,
+          "initiator": "img",
+          "ttfb": 15
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Frestaurant-management-dashboard-workspace.avif&w=1200&q=75",
+          "start": 7403.199999988079,
+          "duration": 1397.5999999940395,
+          "bytes": 62433,
+          "initiator": "img",
+          "ttfb": 14.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frestaurant-pos.800774d4.avif&w=1200&q=75",
+          "start": 7411.9000000059605,
+          "duration": 1611.5999999940395,
+          "bytes": 84062,
+          "initiator": "img",
+          "ttfb": 10.100000023841858
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fwhatsapp.avif&w=96&q=75",
+          "start": 7418.0999999940395,
+          "duration": 257.5,
+          "bytes": 1814,
+          "initiator": "img",
+          "ttfb": 11.299999982118607
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 13767.199999988079,
+          "duration": 357,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 7.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 14442,
+          "duration": 331,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.199999988079071
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "route": "/",
+      "mobile": true,
+      "run": 1,
+      "fcp": 7388,
+      "lcp": 7388,
+      "cls": 0.0002726458847736625,
+      "tasks": [
+        {
+          "start": 903.5,
+          "duration": 352
+        },
+        {
+          "start": 1264.1000000238419,
+          "duration": 50
+        },
+        {
+          "start": 7497.300000011921,
+          "duration": 2190
+        },
+        {
+          "start": 9839.700000017881,
+          "duration": 61
+        },
+        {
+          "start": 12064.100000023842,
+          "duration": 52
+        },
+        {
+          "start": 12258,
+          "duration": 86
+        },
+        {
+          "start": 12531.100000023842,
+          "duration": 235
+        },
+        {
+          "start": 13126,
+          "duration": 179
+        },
+        {
+          "start": 13772.40000000596,
+          "duration": 68
+        },
+        {
+          "start": 13958.300000011921,
+          "duration": 117
+        },
+        {
+          "start": 14107.800000011921,
+          "duration": 60
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3002/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 12044.600000023842,
+        "navigationId": 4804,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 2.600000023841858,
+        "domainLookupStart": 2.600000023841858,
+        "domainLookupEnd": 2.600000023841858,
+        "connectStart": 2.600000023841858,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.600000023841858,
+        "requestStart": 18.900000005960464,
+        "responseStart": 56.400000005960464,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 56.400000005960464,
+        "responseEnd": 350.7000000178814,
+        "transferSize": 32894,
+        "encodedBodySize": 32594,
+        "decodedBodySize": 319400,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 9809.200000017881,
+        "domContentLoadedEventStart": 9809.90000000596,
+        "domContentLoadedEventEnd": 9821,
+        "domComplete": 12040.700000017881,
+        "loadEventStart": 12044.40000000596,
+        "loadEventEnd": 12044.600000023842,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3002/optimized/site-logo-59f6c9e2d998-144.avif",
+          "start": 585.2000000178814,
+          "duration": 289.2999999821186,
+          "bytes": 2787,
+          "initiator": "link",
+          "ttfb": 5.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/optimized/device-showcase-8b9051539dbe-1024.avif",
+          "start": 600.4000000059605,
+          "duration": 1192.9000000059605,
+          "bytes": 49691,
+          "initiator": "link",
+          "ttfb": 8.900000005960464
+        },
+        {
+          "url": "http://localhost:3002/_next/static/css/b1a3770e89f0e6d8.css",
+          "start": 605.8000000119209,
+          "duration": 444.30000001192093,
+          "bytes": 11352,
+          "initiator": "link",
+          "ttfb": 10.099999994039536
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-6b9a6d6eabca13a6.js",
+          "start": 609.6000000238419,
+          "duration": 330.09999999403954,
+          "bytes": 1853,
+          "initiator": "link",
+          "ttfb": 7
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 614.7000000178814,
+          "duration": 1353.199999988079,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 13.899999976158142
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 616.7000000178814,
+          "duration": 1335.5,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 10.199999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 618.1000000238419,
+          "duration": 436.5,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 4.5
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 621.5,
+          "duration": 555.2000000178814,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 4.399999976158142
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-024261ae67fc8c74.js",
+          "start": 626,
+          "duration": 723.6000000238419,
+          "bytes": 5461,
+          "initiator": "script",
+          "ttfb": 7
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/182-1b96a307bc22a6d4.js",
+          "start": 632.6000000238419,
+          "duration": 719.5,
+          "bytes": 4283,
+          "initiator": "script",
+          "ttfb": 6.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-f7f9d0c1feb33af3.js",
+          "start": 634.5,
+          "duration": 762.5,
+          "bytes": 1873,
+          "initiator": "script",
+          "ttfb": 7.0999999940395355
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-35a8944f5ff5dac2.js",
+          "start": 637.1000000238419,
+          "duration": 918.8999999761581,
+          "bytes": 1670,
+          "initiator": "script",
+          "ttfb": 6.5
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/138.4951da2803fd0a5f.js",
+          "start": 639,
+          "duration": 932.9000000059605,
+          "bytes": 1193,
+          "initiator": "link",
+          "ttfb": 6.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/optimized/whatsapp-03b006021c08-120.avif",
+          "start": 642.5,
+          "duration": 976.8000000119209,
+          "bytes": 1834,
+          "initiator": "img",
+          "ttfb": 31.5
+        },
+        {
+          "url": "http://localhost:3002/fonts/inter-latin-variable-c940764593d0.woff2",
+          "start": 1602.5,
+          "duration": 6674.800000011921,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 8.400000005960464
+        },
+        {
+          "url": "http://localhost:3002/optimized/web-and-app-5d17ad51e4fb-1024.avif",
+          "start": 7107.600000023842,
+          "duration": 1296,
+          "bytes": 63530,
+          "initiator": "img",
+          "ttfb": 36.400000005960464
+        },
+        {
+          "url": "http://localhost:3002/optimized/rms-dashboard-bda5917637e0-1024.avif",
+          "start": 7115.4000000059605,
+          "duration": 1177,
+          "bytes": 47913,
+          "initiator": "img",
+          "ttfb": 34.69999998807907
+        },
+        {
+          "url": "http://localhost:3002/optimized/pos-baa444ebbd1a-1024.avif",
+          "start": 7122.300000011921,
+          "duration": 1235,
+          "bytes": 55612,
+          "initiator": "img",
+          "ttfb": 31
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 12175,
+          "duration": 344.2000000178814,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.4000000059604645
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 12784,
+          "duration": 335.7000000178814,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "route": "/",
+      "mobile": true,
+      "run": 2,
+      "fcp": 7544,
+      "lcp": 7544,
+      "cls": 0.0002726458847736625,
+      "tasks": [
+        {
+          "start": 914.8000000119209,
+          "duration": 360
+        },
+        {
+          "start": 1283.1000000238419,
+          "duration": 54
+        },
+        {
+          "start": 8077.9000000059605,
+          "duration": 2365
+        },
+        {
+          "start": 10580.5,
+          "duration": 54
+        },
+        {
+          "start": 12710.300000011921,
+          "duration": 87
+        },
+        {
+          "start": 13036.600000023842,
+          "duration": 62
+        },
+        {
+          "start": 13827.40000000596,
+          "duration": 202
+        },
+        {
+          "start": 14402.300000011921,
+          "duration": 207
+        },
+        {
+          "start": 15018.40000000596,
+          "duration": 59
+        },
+        {
+          "start": 15202.300000011921,
+          "duration": 107
+        },
+        {
+          "start": 15310.100000023842,
+          "duration": 68
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3002/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 13380.90000000596,
+        "navigationId": 4448,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 2.4000000059604645,
+        "domainLookupStart": 2.4000000059604645,
+        "domainLookupEnd": 2.4000000059604645,
+        "connectStart": 2.4000000059604645,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.4000000059604645,
+        "requestStart": 19.30000001192093,
+        "responseStart": 56.5,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 56.5,
+        "responseEnd": 360.10000002384186,
+        "transferSize": 32894,
+        "encodedBodySize": 32594,
+        "decodedBodySize": 319400,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 13360.200000017881,
+        "domContentLoadedEventStart": 13361.100000023842,
+        "domContentLoadedEventEnd": 13369.5,
+        "domComplete": 13376.700000017881,
+        "loadEventStart": 13380.5,
+        "loadEventEnd": 13380.90000000596,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3002/optimized/site-logo-59f6c9e2d998-144.avif",
+          "start": 543.8000000119209,
+          "duration": 305.30000001192093,
+          "bytes": 2787,
+          "initiator": "link",
+          "ttfb": 5.899999976158142
+        },
+        {
+          "url": "http://localhost:3002/optimized/device-showcase-8b9051539dbe-1024.avif",
+          "start": 558.7000000178814,
+          "duration": 1197.9000000059605,
+          "bytes": 49691,
+          "initiator": "link",
+          "ttfb": 4.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/css/b1a3770e89f0e6d8.css",
+          "start": 566.4000000059605,
+          "duration": 426,
+          "bytes": 11352,
+          "initiator": "link",
+          "ttfb": 8.800000011920929
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-6b9a6d6eabca13a6.js",
+          "start": 572.3000000119209,
+          "duration": 372.59999999403954,
+          "bytes": 1853,
+          "initiator": "link",
+          "ttfb": 8.599999994039536
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 577.8000000119209,
+          "duration": 1369.4000000059605,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 13.099999994039536
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 581.2000000178814,
+          "duration": 1334.2999999821186,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 11.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 583.4000000059605,
+          "duration": 440.5,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 3.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 585.9000000059605,
+          "duration": 593.9000000059605,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 4.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-024261ae67fc8c74.js",
+          "start": 592.6000000238419,
+          "duration": 712.5,
+          "bytes": 5461,
+          "initiator": "script",
+          "ttfb": 9.100000023841858
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/182-1b96a307bc22a6d4.js",
+          "start": 597.3000000119209,
+          "duration": 738.6999999880791,
+          "bytes": 4283,
+          "initiator": "script",
+          "ttfb": 5.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-f7f9d0c1feb33af3.js",
+          "start": 600.9000000059605,
+          "duration": 799.3000000119209,
+          "bytes": 1873,
+          "initiator": "script",
+          "ttfb": 5.299999982118607
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-35a8944f5ff5dac2.js",
+          "start": 603.7000000178814,
+          "duration": 935.2999999821186,
+          "bytes": 1670,
+          "initiator": "script",
+          "ttfb": 4.700000017881393
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/138.4951da2803fd0a5f.js",
+          "start": 607.3000000119209,
+          "duration": 946.6999999880791,
+          "bytes": 1193,
+          "initiator": "link",
+          "ttfb": 4.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/optimized/whatsapp-03b006021c08-120.avif",
+          "start": 613.1000000238419,
+          "duration": 1002.8999999761581,
+          "bytes": 1834,
+          "initiator": "img",
+          "ttfb": 3.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/fonts/inter-latin-variable-c940764593d0.woff2",
+          "start": 1614.2000000178814,
+          "duration": 6784.699999988079,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 6.300000011920929
+        },
+        {
+          "url": "http://localhost:3002/optimized/web-and-app-5d17ad51e4fb-1024.avif",
+          "start": 7252.600000023842,
+          "duration": 1288.699999988079,
+          "bytes": 63530,
+          "initiator": "img",
+          "ttfb": 7.300000011920929
+        },
+        {
+          "url": "http://localhost:3002/optimized/rms-dashboard-bda5917637e0-1024.avif",
+          "start": 7259.5,
+          "duration": 1155.2000000178814,
+          "bytes": 47913,
+          "initiator": "img",
+          "ttfb": 7.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/optimized/pos-baa444ebbd1a-1024.avif",
+          "start": 7268.600000023842,
+          "duration": 1240.5999999940395,
+          "bytes": 55612,
+          "initiator": "img",
+          "ttfb": 5.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 13469.100000023842,
+          "duration": 352,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 14045.100000023842,
+          "duration": 355.5,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.800000011920929
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "route": "/",
+      "mobile": true,
+      "run": 2,
+      "fcp": 7436,
+      "lcp": 7612,
+      "cls": 0.0002726458847736625,
+      "tasks": [
+        {
+          "start": 644.7000000178814,
+          "duration": 52
+        },
+        {
+          "start": 895.9000000059605,
+          "duration": 354
+        },
+        {
+          "start": 7977.4000000059605,
+          "duration": 1071
+        },
+        {
+          "start": 11240.59999999404,
+          "duration": 68
+        },
+        {
+          "start": 12028.700000017881,
+          "duration": 216
+        },
+        {
+          "start": 12597.5,
+          "duration": 198
+        },
+        {
+          "start": 13152.59999999404,
+          "duration": 56
+        },
+        {
+          "start": 13363.40000000596,
+          "duration": 169
+        },
+        {
+          "start": 13553.700000017881,
+          "duration": 86
+        },
+        {
+          "start": 13649.5,
+          "duration": 170
+        },
+        {
+          "start": 13908.09999999404,
+          "duration": 58
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3004/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 11538.90000000596,
+        "navigationId": 3072,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 1.5999999940395355,
+        "domainLookupStart": 1.5999999940395355,
+        "domainLookupEnd": 1.5999999940395355,
+        "connectStart": 1.5999999940395355,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.5999999940395355,
+        "requestStart": 16.700000017881393,
+        "responseStart": 48,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 48,
+        "responseEnd": 351.80000001192093,
+        "transferSize": 31696,
+        "encodedBodySize": 31396,
+        "decodedBodySize": 296622,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 11515.40000000596,
+        "domContentLoadedEventStart": 11517.09999999404,
+        "domContentLoadedEventEnd": 11524.5,
+        "domComplete": 11534.59999999404,
+        "loadEventStart": 11538.59999999404,
+        "loadEventEnd": 11538.90000000596,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fmh_logo.png&w=96&q=75",
+          "start": 532.9000000059605,
+          "duration": 274.19999998807907,
+          "bytes": 2801,
+          "initiator": "link",
+          "ttfb": 13.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1024&q=75",
+          "start": 545,
+          "duration": 1358.7000000178814,
+          "bytes": 63866,
+          "initiator": "link",
+          "ttfb": 11.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/static/css/d069c7dc995973d7.css",
+          "start": 553,
+          "duration": 459.7000000178814,
+          "bytes": 11816,
+          "initiator": "link",
+          "ttfb": 11.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "start": 558.0999999940395,
+          "duration": 349.40000000596046,
+          "bytes": 1814,
+          "initiator": "link",
+          "ttfb": 7.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 561.7000000178814,
+          "duration": 1422,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 13.200000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 564.2000000178814,
+          "duration": 1403.5999999940395,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 10.600000023841858
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 566.0999999940395,
+          "duration": 436.5,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 3.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 567.8000000119209,
+          "duration": 577.5,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 5.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/437-0f48636ca52b412c.js",
+          "start": 569.7000000178814,
+          "duration": 731.3999999761581,
+          "bytes": 5446,
+          "initiator": "script",
+          "ttfb": 7
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/619-afba0df287e9b980.js",
+          "start": 570.8000000119209,
+          "duration": 735.4000000059605,
+          "bytes": 4629,
+          "initiator": "script",
+          "ttfb": 5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "start": 572.2000000178814,
+          "duration": 826.0999999940395,
+          "bytes": 4120,
+          "initiator": "script",
+          "ttfb": 5.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "start": 575.5,
+          "duration": 980.8000000119209,
+          "bytes": 3605,
+          "initiator": "script",
+          "ttfb": 4.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "start": 580.3000000119209,
+          "duration": 944.1999999880791,
+          "bytes": 2339,
+          "initiator": "script",
+          "ttfb": 5.4000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/812.1c08d505f8805186.js",
+          "start": 584.0999999940395,
+          "duration": 1035.6000000238419,
+          "bytes": 1203,
+          "initiator": "link",
+          "ttfb": 4.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "start": 1584.0999999940395,
+          "duration": 6748.5,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 8.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2FWebAndApp.avif&w=1200&q=75",
+          "start": 7165.9000000059605,
+          "duration": 1785.699999988079,
+          "bytes": 112210,
+          "initiator": "img",
+          "ttfb": 17.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Frestaurant-management-dashboard-workspace.avif&w=1200&q=75",
+          "start": 7170.0999999940395,
+          "duration": 1385.5,
+          "bytes": 62433,
+          "initiator": "img",
+          "ttfb": 16.69999998807907
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frestaurant-pos.800774d4.avif&w=1200&q=75",
+          "start": 7173.300000011921,
+          "duration": 1620.5999999940395,
+          "bytes": 84062,
+          "initiator": "img",
+          "ttfb": 14.200000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fwhatsapp.avif&w=96&q=75",
+          "start": 7177.4000000059605,
+          "duration": 256.69999998807907,
+          "bytes": 1814,
+          "initiator": "img",
+          "ttfb": 14.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 11658.700000017881,
+          "duration": 363.2999999821186,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.5
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 12258.59999999404,
+          "duration": 335.30000001192093,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.4000000059604645
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "route": "/",
+      "mobile": true,
+      "run": 3,
+      "fcp": 6984,
+      "lcp": 7000,
+      "cls": 0.0002726458847736625,
+      "tasks": [
+        {
+          "start": 852.4000000059605,
+          "duration": 311
+        },
+        {
+          "start": 7365.9000000059605,
+          "duration": 2222
+        },
+        {
+          "start": 9781.800000011921,
+          "duration": 60
+        },
+        {
+          "start": 12070.40000000596,
+          "duration": 53
+        },
+        {
+          "start": 12376.200000017881,
+          "duration": 56
+        },
+        {
+          "start": 12868.59999999404,
+          "duration": 251
+        },
+        {
+          "start": 13481.59999999404,
+          "duration": 206
+        },
+        {
+          "start": 14112.200000017881,
+          "duration": 56
+        },
+        {
+          "start": 14310.700000017881,
+          "duration": 135
+        },
+        {
+          "start": 14490.5,
+          "duration": 65
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3004/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 12399.800000011921,
+        "navigationId": 9061,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 3.2000000178813934,
+        "domainLookupStart": 3.2000000178813934,
+        "domainLookupEnd": 3.2000000178813934,
+        "connectStart": 3.2000000178813934,
+        "secureConnectionStart": 0,
+        "connectEnd": 3.2000000178813934,
+        "requestStart": 15.099999994039536,
+        "responseStart": 40.400000005960464,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 40.400000005960464,
+        "responseEnd": 339.5,
+        "transferSize": 31696,
+        "encodedBodySize": 31396,
+        "decodedBodySize": 296622,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 12376.40000000596,
+        "domContentLoadedEventStart": 12377.300000011921,
+        "domContentLoadedEventEnd": 12384.800000011921,
+        "domComplete": 12391.90000000596,
+        "loadEventStart": 12399.09999999404,
+        "loadEventEnd": 12399.800000011921,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fmh_logo.png&w=96&q=75",
+          "start": 531.8000000119209,
+          "duration": 265.09999999403954,
+          "bytes": 2801,
+          "initiator": "link",
+          "ttfb": 11.299999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1024&q=75",
+          "start": 543,
+          "duration": 1388.300000011921,
+          "bytes": 63866,
+          "initiator": "link",
+          "ttfb": 10.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/static/css/d069c7dc995973d7.css",
+          "start": 547.7000000178814,
+          "duration": 466.69999998807907,
+          "bytes": 11816,
+          "initiator": "link",
+          "ttfb": 10.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "start": 552.0999999940395,
+          "duration": 336.80000001192093,
+          "bytes": 1814,
+          "initiator": "link",
+          "ttfb": 5.5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 554.8000000119209,
+          "duration": 1439,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 10.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 558.3000000119209,
+          "duration": 1419.7999999821186,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 12.5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 562.4000000059605,
+          "duration": 422.09999999403954,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 3.5999999940395355
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 565.5999999940395,
+          "duration": 559.3000000119209,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 4.700000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/437-0f48636ca52b412c.js",
+          "start": 567.9000000059605,
+          "duration": 715.1999999880791,
+          "bytes": 5446,
+          "initiator": "script",
+          "ttfb": 5.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/619-afba0df287e9b980.js",
+          "start": 570.4000000059605,
+          "duration": 744.1999999880791,
+          "bytes": 4629,
+          "initiator": "script",
+          "ttfb": 6.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "start": 573.7000000178814,
+          "duration": 805.5999999940395,
+          "bytes": 4120,
+          "initiator": "script",
+          "ttfb": 6.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "start": 578.4000000059605,
+          "duration": 958,
+          "bytes": 3605,
+          "initiator": "script",
+          "ttfb": 4.200000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "start": 581.3000000119209,
+          "duration": 955.5,
+          "bytes": 2339,
+          "initiator": "script",
+          "ttfb": 5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/812.1c08d505f8805186.js",
+          "start": 584,
+          "duration": 1014.7000000178814,
+          "bytes": 1203,
+          "initiator": "link",
+          "ttfb": 4.5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "start": 1492.5,
+          "duration": 6360.5999999940395,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 17.30000001192093
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2FWebAndApp.avif&w=1200&q=75",
+          "start": 6696,
+          "duration": 1772.5,
+          "bytes": 112210,
+          "initiator": "img",
+          "ttfb": 19.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Frestaurant-management-dashboard-workspace.avif&w=1200&q=75",
+          "start": 6702,
+          "duration": 1372.0999999940395,
+          "bytes": 62433,
+          "initiator": "img",
+          "ttfb": 19.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frestaurant-pos.800774d4.avif&w=1200&q=75",
+          "start": 6705.700000017881,
+          "duration": 1605.5999999940395,
+          "bytes": 84062,
+          "initiator": "img",
+          "ttfb": 19.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fwhatsapp.avif&w=96&q=75",
+          "start": 6710.0999999940395,
+          "duration": 238.40000000596046,
+          "bytes": 1814,
+          "initiator": "img",
+          "ttfb": 20.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 12529.700000017881,
+          "duration": 337.69999998807907,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 13138.59999999404,
+          "duration": 338.2000000178814,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.699999988079071
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "route": "/",
+      "mobile": true,
+      "run": 3,
+      "fcp": 7152,
+      "lcp": 7168,
+      "cls": 0.0002726458847736625,
+      "tasks": [
+        {
+          "start": 881.7000000178814,
+          "duration": 352
+        },
+        {
+          "start": 7651.5,
+          "duration": 2621
+        },
+        {
+          "start": 12775.90000000596,
+          "duration": 66
+        },
+        {
+          "start": 12862.90000000596,
+          "duration": 51
+        },
+        {
+          "start": 13571.200000017881,
+          "duration": 255
+        },
+        {
+          "start": 14181.200000017881,
+          "duration": 232
+        },
+        {
+          "start": 15091.90000000596,
+          "duration": 92
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3002/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 13119.90000000596,
+        "navigationId": 7813,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 1.7000000178813934,
+        "domainLookupStart": 1.7000000178813934,
+        "domainLookupEnd": 1.7000000178813934,
+        "connectStart": 1.7000000178813934,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.7000000178813934,
+        "requestStart": 18.700000017881393,
+        "responseStart": 49.80000001192093,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 49.80000001192093,
+        "responseEnd": 352,
+        "transferSize": 32894,
+        "encodedBodySize": 32594,
+        "decodedBodySize": 319400,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 13096.800000011921,
+        "domContentLoadedEventStart": 13097.5,
+        "domContentLoadedEventEnd": 13104.09999999404,
+        "domComplete": 13117,
+        "loadEventStart": 13119.700000017881,
+        "loadEventEnd": 13119.90000000596,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3002/optimized/site-logo-59f6c9e2d998-144.avif",
+          "start": 566.7000000178814,
+          "duration": 290.59999999403954,
+          "bytes": 2787,
+          "initiator": "link",
+          "ttfb": 4.299999982118607
+        },
+        {
+          "url": "http://localhost:3002/optimized/device-showcase-8b9051539dbe-1024.avif",
+          "start": 578.4000000059605,
+          "duration": 1198.5,
+          "bytes": 49691,
+          "initiator": "link",
+          "ttfb": 7.199999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/css/b1a3770e89f0e6d8.css",
+          "start": 584.8000000119209,
+          "duration": 446.59999999403954,
+          "bytes": 11352,
+          "initiator": "link",
+          "ttfb": 8
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-6b9a6d6eabca13a6.js",
+          "start": 589.7000000178814,
+          "duration": 332,
+          "bytes": 1853,
+          "initiator": "link",
+          "ttfb": 5.700000017881393
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 592.8000000119209,
+          "duration": 1357.699999988079,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 14
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 594.8000000119209,
+          "duration": 1339.9000000059605,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 14.099999994039536
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 596.7000000178814,
+          "duration": 443.39999997615814,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 3.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 600.7000000178814,
+          "duration": 558.5,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 4.800000011920929
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-024261ae67fc8c74.js",
+          "start": 604.8000000119209,
+          "duration": 711.0999999940395,
+          "bytes": 5461,
+          "initiator": "script",
+          "ttfb": 4.799999982118607
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/182-1b96a307bc22a6d4.js",
+          "start": 607.0999999940395,
+          "duration": 755.9000000059605,
+          "bytes": 4283,
+          "initiator": "script",
+          "ttfb": 5.5
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-f7f9d0c1feb33af3.js",
+          "start": 610.2000000178814,
+          "duration": 784.8999999761581,
+          "bytes": 1873,
+          "initiator": "script",
+          "ttfb": 4.4000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-35a8944f5ff5dac2.js",
+          "start": 614.0999999940395,
+          "duration": 908.6000000238419,
+          "bytes": 1670,
+          "initiator": "script",
+          "ttfb": 4.4000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/138.4951da2803fd0a5f.js",
+          "start": 618.7000000178814,
+          "duration": 952.1999999880791,
+          "bytes": 1193,
+          "initiator": "link",
+          "ttfb": 4.5
+        },
+        {
+          "url": "http://localhost:3002/optimized/whatsapp-03b006021c08-120.avif",
+          "start": 622.5999999940395,
+          "duration": 994.7000000178814,
+          "bytes": 1834,
+          "initiator": "img",
+          "ttfb": 5.700000017881393
+        },
+        {
+          "url": "http://localhost:3002/fonts/inter-latin-variable-c940764593d0.woff2",
+          "start": 1557,
+          "duration": 6431.4000000059605,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 6.700000017881393
+        },
+        {
+          "url": "http://localhost:3002/optimized/web-and-app-5d17ad51e4fb-1024.avif",
+          "start": 6865.300000011921,
+          "duration": 1281.4000000059605,
+          "bytes": 63530,
+          "initiator": "img",
+          "ttfb": 6.199999988079071
+        },
+        {
+          "url": "http://localhost:3002/optimized/rms-dashboard-bda5917637e0-1024.avif",
+          "start": 6873.800000011921,
+          "duration": 1146.5,
+          "bytes": 47913,
+          "initiator": "img",
+          "ttfb": 6.5
+        },
+        {
+          "url": "http://localhost:3002/optimized/pos-baa444ebbd1a-1024.avif",
+          "start": 6879.700000017881,
+          "duration": 1235.199999988079,
+          "bytes": 55612,
+          "initiator": "img",
+          "ttfb": 6.4000000059604645
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 13227.90000000596,
+          "duration": 336.80000001192093,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 13841.200000017881,
+          "duration": 336.5,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.0999999940395355
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "route": "/",
+      "mobile": false,
+      "run": 1,
+      "fcp": 1072,
+      "lcp": 1108,
+      "cls": 0.0024937276204427083,
+      "tasks": [
+        {
+          "start": 260.09999999403954,
+          "duration": 114
+        },
+        {
+          "start": 806.7999999821186,
+          "duration": 185
+        },
+        {
+          "start": 992.2999999821186,
+          "duration": 127
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3004/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 994.0999999940395,
+        "navigationId": 8307,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 1.5999999940395355,
+        "domainLookupStart": 1.5999999940395355,
+        "domainLookupEnd": 1.5999999940395355,
+        "connectStart": 1.5999999940395355,
+        "secureConnectionStart": 0,
+        "connectEnd": 1.5999999940395355,
+        "requestStart": 14.799999982118607,
+        "responseStart": 43.900000005960464,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 43.900000005960464,
+        "responseEnd": 93.40000000596046,
+        "transferSize": 31696,
+        "encodedBodySize": 31396,
+        "decodedBodySize": 296622,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 260.09999999403954,
+        "domContentLoadedEventStart": 260.09999999403954,
+        "domContentLoadedEventEnd": 260.59999999403954,
+        "domComplete": 993.7999999821186,
+        "loadEventStart": 994.0999999940395,
+        "loadEventEnd": 994.0999999940395,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fmh_logo.png&w=48&q=75",
+          "start": 91.40000000596046,
+          "duration": 98.09999999403954,
+          "bytes": 1659,
+          "initiator": "link",
+          "ttfb": 14.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1200&q=75",
+          "start": 92.69999998807907,
+          "duration": 317.90000000596046,
+          "bytes": 78682,
+          "initiator": "link",
+          "ttfb": 15.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/static/css/d069c7dc995973d7.css",
+          "start": 93.2999999821186,
+          "duration": 142,
+          "bytes": 11816,
+          "initiator": "link",
+          "ttfb": 16.700000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "start": 94,
+          "duration": 104.69999998807907,
+          "bytes": 1814,
+          "initiator": "link",
+          "ttfb": 15
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 94.59999999403954,
+          "duration": 294.19999998807907,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 17.600000023841858
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 94.90000000596046,
+          "duration": 282.2999999821186,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 16.19999998807907
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 95.09999999403954,
+          "duration": 145.5,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 6
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 95.40000000596046,
+          "duration": 163.69999998807907,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 7
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/437-0f48636ca52b412c.js",
+          "start": 95.59999999403954,
+          "duration": 219.40000000596046,
+          "bytes": 5446,
+          "initiator": "script",
+          "ttfb": 7.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/619-afba0df287e9b980.js",
+          "start": 95.90000000596046,
+          "duration": 220,
+          "bytes": 4629,
+          "initiator": "script",
+          "ttfb": 10.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "start": 96.19999998807907,
+          "duration": 250.80000001192093,
+          "bytes": 4120,
+          "initiator": "script",
+          "ttfb": 6.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "start": 96.2999999821186,
+          "duration": 293.40000000596046,
+          "bytes": 3605,
+          "initiator": "script",
+          "ttfb": 6.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "start": 96.59999999403954,
+          "duration": 292.90000000596046,
+          "bytes": 2339,
+          "initiator": "script",
+          "ttfb": 6.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/812.1c08d505f8805186.js",
+          "start": 96.7999999821186,
+          "duration": 312.90000000596046,
+          "bytes": 1203,
+          "initiator": "link",
+          "ttfb": 4.5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "start": 292,
+          "duration": 181.90000000596046,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 3.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2FWebAndApp.avif&w=640&q=75",
+          "start": 778.0999999940395,
+          "duration": 262.40000000596046,
+          "bytes": 50692,
+          "initiator": "img",
+          "ttfb": 19.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Frestaurant-management-dashboard-workspace.avif&w=640&q=75",
+          "start": 778.4000000059605,
+          "duration": 166.7999999821186,
+          "bytes": 28031,
+          "initiator": "img",
+          "ttfb": 15.200000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frestaurant-pos.800774d4.avif&w=640&q=75",
+          "start": 778.5,
+          "duration": 246.2999999821186,
+          "bytes": 38294,
+          "initiator": "img",
+          "ttfb": 19.100000023841858
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fonline-ordering.e76f6eb8.avif&w=640&q=75",
+          "start": 779,
+          "duration": 262.40000000596046,
+          "bytes": 46414,
+          "initiator": "img",
+          "ttfb": 19.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fmodern-kitchen-display-system-showcase.avif&w=640&q=75",
+          "start": 779.6999999880791,
+          "duration": 245.40000000596046,
+          "bytes": 37410,
+          "initiator": "img",
+          "ttfb": 20.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fmodern-restaurant-table-management-dashboard.avif&w=640&q=75",
+          "start": 780,
+          "duration": 213.2999999821186,
+          "bytes": 27026,
+          "initiator": "img",
+          "ttfb": 15.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fwhatsapp.avif&w=48&q=75",
+          "start": 780.2999999821186,
+          "duration": 228.30000001192093,
+          "bytes": 1080,
+          "initiator": "img",
+          "ttfb": 5.4000000059604645
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 1194,
+          "duration": 80,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 1318.2999999821186,
+          "duration": 77.30000001192093,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.899999976158142
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=5CB68i4pnAekjehf",
+          "start": 1356.5,
+          "duration": 62.099999994039536,
+          "bytes": 204,
+          "initiator": "fetch",
+          "ttfb": 8.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=5CB68i4pnAekjehf",
+          "start": 1357.199999988079,
+          "duration": 59.599999994039536,
+          "bytes": 199,
+          "initiator": "fetch",
+          "ttfb": 13.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=5CB68i4pnAekjehf",
+          "start": 1357.5999999940395,
+          "duration": 60.099999994039536,
+          "bytes": 200,
+          "initiator": "fetch",
+          "ttfb": 18.19999998807907
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=5CB68i4pnAekjehf",
+          "start": 1358.0999999940395,
+          "duration": 62.400000005960464,
+          "bytes": 206,
+          "initiator": "fetch",
+          "ttfb": 24.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=5CB68i4pnAekjehf",
+          "start": 1441.5,
+          "duration": 71.19999998807907,
+          "bytes": 205,
+          "initiator": "fetch",
+          "ttfb": 6.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=5CB68i4pnAekjehf",
+          "start": 1444.7999999821186,
+          "duration": 66.5,
+          "bytes": 205,
+          "initiator": "fetch",
+          "ttfb": 7.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1450,
+          "duration": 64.7999999821186,
+          "bytes": 807,
+          "initiator": "fetch",
+          "ttfb": 7.399999976158142
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=yIp22O3xgPPxC28X",
+          "start": 1450.5,
+          "duration": 68.09999999403954,
+          "bytes": 2636,
+          "initiator": "fetch",
+          "ttfb": 10.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=JFWGu_dmBAb9P0LW",
+          "start": 1519.5999999940395,
+          "duration": 71.30000001192093,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 7.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=BiuOixuigeBXVJn7",
+          "start": 1525.2999999821186,
+          "duration": 64.7000000178814,
+          "bytes": 2267,
+          "initiator": "fetch",
+          "ttfb": 11.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1528.4000000059605,
+          "duration": 64.7999999821186,
+          "bytes": 829,
+          "initiator": "fetch",
+          "ttfb": 12.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "start": 1532.5,
+          "duration": 67.5,
+          "bytes": 2641,
+          "initiator": "script",
+          "ttfb": 21.19999998807907
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "start": 1533.7999999821186,
+          "duration": 66.80000001192093,
+          "bytes": 2201,
+          "initiator": "script",
+          "ttfb": 20.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=OP8qK4c2lrXB8GsS",
+          "start": 1536.4000000059605,
+          "duration": 59.19999998807907,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 10.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=zOOH2C0uRU9NjV9y",
+          "start": 1599.9000000059605,
+          "duration": 68.89999997615814,
+          "bytes": 2399,
+          "initiator": "fetch",
+          "ttfb": 7.4000000059604645
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1605.5,
+          "duration": 66.19999998807907,
+          "bytes": 826,
+          "initiator": "fetch",
+          "ttfb": 8.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=n4tDNspjD4yS_Xnd",
+          "start": 1607.9000000059605,
+          "duration": 64.2999999821186,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 10.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=hzcUC6YqarYE9pKE",
+          "start": 1610.5,
+          "duration": 65,
+          "bytes": 3517,
+          "initiator": "fetch",
+          "ttfb": 12.700000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "start": 1675.9000000059605,
+          "duration": 71.59999999403954,
+          "bytes": 2484,
+          "initiator": "script",
+          "ttfb": 24.5
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1678,
+          "duration": 70.5,
+          "bytes": 807,
+          "initiator": "fetch",
+          "ttfb": 7.5999999940395355
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=Plq0fmILVj3mN0Hr",
+          "start": 1683.2999999821186,
+          "duration": 67.30000001192093,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 11.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=RVeZbm5m_IuW6pP8",
+          "start": 1687.0999999940395,
+          "duration": 66.69999998807907,
+          "bytes": 2024,
+          "initiator": "fetch",
+          "ttfb": 12.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/about/page-64d26ad122e6c76c.js",
+          "start": 1690.2999999821186,
+          "duration": 65.60000002384186,
+          "bytes": 202,
+          "initiator": "script",
+          "ttfb": 22.299999982118607
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1692.4000000059605,
+          "duration": 60.79999998211861,
+          "bytes": 829,
+          "initiator": "fetch",
+          "ttfb": 15.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=upn3sbfmfDc1hg8-",
+          "start": 1760.5999999940395,
+          "duration": 65.90000000596046,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 6.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=e-TVHDPN8vGDTXUP",
+          "start": 1763.699999988079,
+          "duration": 68.90000000596046,
+          "bytes": 1192,
+          "initiator": "fetch",
+          "ttfb": 10.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/templates/page-ffb7b8dd218f3d39.js",
+          "start": 1767.9000000059605,
+          "duration": 67.09999999403954,
+          "bytes": 2155,
+          "initiator": "script",
+          "ttfb": 24
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1769.5999999940395,
+          "duration": 61.099999994039536,
+          "bytes": 828,
+          "initiator": "fetch",
+          "ttfb": 12.5
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=sqRjqjppYnUgeCLZ",
+          "start": 1772.7999999821186,
+          "duration": 58.5,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 13.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=sf1YpdcMRkAgPkSR",
+          "start": 1834,
+          "duration": 73.5,
+          "bytes": 4555,
+          "initiator": "fetch",
+          "ttfb": 7.399999976158142
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "start": 1841.199999988079,
+          "duration": 72.40000000596046,
+          "bytes": 2370,
+          "initiator": "script",
+          "ttfb": 16.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1842.9000000059605,
+          "duration": 67.7999999821186,
+          "bytes": 782,
+          "initiator": "fetch",
+          "ttfb": 5.5999999940395355
+        },
+        {
+          "url": "http://localhost:3004/?_rsc=8nTjltbQWvg6NcbE",
+          "start": 1845.5,
+          "duration": 76.90000000596046,
+          "bytes": 11806,
+          "initiator": "fetch",
+          "ttfb": 10.5
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "route": "/",
+      "mobile": false,
+      "run": 1,
+      "fcp": 1080,
+      "lcp": 1100,
+      "cls": 0.0024937276204427083,
+      "tasks": [
+        {
+          "start": 808,
+          "duration": 202
+        },
+        {
+          "start": 1049.199999988079,
+          "duration": 121
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3002/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1050.9000000059605,
+        "navigationId": 3613,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 2.9000000059604645,
+        "domainLookupStart": 2.9000000059604645,
+        "domainLookupEnd": 2.9000000059604645,
+        "connectStart": 2.9000000059604645,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.9000000059604645,
+        "requestStart": 13.699999988079071,
+        "responseStart": 44.400000005960464,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 44.400000005960464,
+        "responseEnd": 90.09999999403954,
+        "transferSize": 32894,
+        "encodedBodySize": 32594,
+        "decodedBodySize": 319400,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 778.0999999940395,
+        "domContentLoadedEventStart": 778.1999999880791,
+        "domContentLoadedEventEnd": 778.5,
+        "domComplete": 1050.699999988079,
+        "loadEventStart": 1050.800000011921,
+        "loadEventEnd": 1050.9000000059605,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3002/optimized/site-logo-59f6c9e2d998-48.avif",
+          "start": 92,
+          "duration": 79.59999999403954,
+          "bytes": 1339,
+          "initiator": "link",
+          "ttfb": 5.0999999940395355
+        },
+        {
+          "url": "http://localhost:3002/optimized/device-showcase-8b9051539dbe-1200.avif",
+          "start": 93.19999998807907,
+          "duration": 259.2000000178814,
+          "bytes": 63306,
+          "initiator": "link",
+          "ttfb": 9
+        },
+        {
+          "url": "http://localhost:3002/_next/static/css/b1a3770e89f0e6d8.css",
+          "start": 93.59999999403954,
+          "duration": 104,
+          "bytes": 11352,
+          "initiator": "link",
+          "ttfb": 12
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-6b9a6d6eabca13a6.js",
+          "start": 94.30000001192093,
+          "duration": 108.09999999403954,
+          "bytes": 1853,
+          "initiator": "link",
+          "ttfb": 6
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 94.69999998807907,
+          "duration": 277.7000000178814,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 12.700000017881393
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 94.90000000596046,
+          "duration": 274.2999999821186,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 9.099999994039536
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 95,
+          "duration": 125.80000001192093,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 8.5
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 95.30000001192093,
+          "duration": 163.7999999821186,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 5.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-024261ae67fc8c74.js",
+          "start": 95.40000000596046,
+          "duration": 173.40000000596046,
+          "bytes": 5461,
+          "initiator": "script",
+          "ttfb": 9.599999994039536
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/182-1b96a307bc22a6d4.js",
+          "start": 95.59999999403954,
+          "duration": 195,
+          "bytes": 4283,
+          "initiator": "script",
+          "ttfb": 7.200000017881393
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-f7f9d0c1feb33af3.js",
+          "start": 95.80000001192093,
+          "duration": 226.39999997615814,
+          "bytes": 1873,
+          "initiator": "script",
+          "ttfb": 6.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-35a8944f5ff5dac2.js",
+          "start": 96.09999999403954,
+          "duration": 233.90000000596046,
+          "bytes": 1670,
+          "initiator": "script",
+          "ttfb": 5.4000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/138.4951da2803fd0a5f.js",
+          "start": 96.30000001192093,
+          "duration": 259.69999998807907,
+          "bytes": 1193,
+          "initiator": "link",
+          "ttfb": 4.799999982118607
+        },
+        {
+          "url": "http://localhost:3002/optimized/whatsapp-03b006021c08-40.avif",
+          "start": 96.59999999403954,
+          "duration": 274.7000000178814,
+          "bytes": 845,
+          "initiator": "img",
+          "ttfb": 8.400000005960464
+        },
+        {
+          "url": "http://localhost:3002/fonts/inter-latin-variable-c940764593d0.woff2",
+          "start": 248.80000001192093,
+          "duration": 705.0999999940395,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 6.200000017881393
+        },
+        {
+          "url": "http://localhost:3002/optimized/web-and-app-5d17ad51e4fb-384.avif",
+          "start": 770.5,
+          "duration": 136.80000001192093,
+          "bytes": 14423,
+          "initiator": "img",
+          "ttfb": 10.5
+        },
+        {
+          "url": "http://localhost:3002/optimized/rms-dashboard-bda5917637e0-384.avif",
+          "start": 770.9000000059605,
+          "duration": 120,
+          "bytes": 10193,
+          "initiator": "img",
+          "ttfb": 10.400000005960464
+        },
+        {
+          "url": "http://localhost:3002/optimized/pos-baa444ebbd1a-384.avif",
+          "start": 771.0999999940395,
+          "duration": 134.80000001192093,
+          "bytes": 12817,
+          "initiator": "img",
+          "ttfb": 10.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/optimized/online-ordering-4cda4ba00e5a-384.avif",
+          "start": 771.6999999880791,
+          "duration": 150,
+          "bytes": 14472,
+          "initiator": "img",
+          "ttfb": 11.200000017881393
+        },
+        {
+          "url": "http://localhost:3002/optimized/kds-a91bcfed4e0e-384.avif",
+          "start": 772.4000000059605,
+          "duration": 134.09999999403954,
+          "bytes": 12875,
+          "initiator": "img",
+          "ttfb": 11.399999976158142
+        },
+        {
+          "url": "http://localhost:3002/optimized/dine-in-45498c17eec5-384.avif",
+          "start": 772.5999999940395,
+          "duration": 182,
+          "bytes": 10162,
+          "initiator": "img",
+          "ttfb": 4
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 1227.4000000059605,
+          "duration": 91.59999999403954,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.4000000059604645
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 1366.0999999940395,
+          "duration": 92.5,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 3.5999999940395355
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "route": "/",
+      "mobile": false,
+      "run": 2,
+      "fcp": 1136,
+      "lcp": 1168,
+      "cls": 0.0024937276204427083,
+      "tasks": [
+        {
+          "start": 850.4000000059605,
+          "duration": 220
+        },
+        {
+          "start": 1137.5,
+          "duration": 119
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3002/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1140.300000011921,
+        "navigationId": 1672,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 3.7000000178813934,
+        "domainLookupStart": 3.7000000178813934,
+        "domainLookupEnd": 3.7000000178813934,
+        "connectStart": 3.7000000178813934,
+        "secureConnectionStart": 0,
+        "connectEnd": 3.7000000178813934,
+        "requestStart": 18.80000001192093,
+        "responseStart": 49.80000001192093,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 49.80000001192093,
+        "responseEnd": 93.59999999403954,
+        "transferSize": 32894,
+        "encodedBodySize": 32594,
+        "decodedBodySize": 319400,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 1083.4000000059605,
+        "domContentLoadedEventStart": 1083.5999999940395,
+        "domContentLoadedEventEnd": 1084.7000000178814,
+        "domComplete": 1139.7000000178814,
+        "loadEventStart": 1140.300000011921,
+        "loadEventEnd": 1140.300000011921,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3002/optimized/site-logo-59f6c9e2d998-48.avif",
+          "start": 120.40000000596046,
+          "duration": 103,
+          "bytes": 1339,
+          "initiator": "link",
+          "ttfb": 6.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/optimized/device-showcase-8b9051539dbe-1200.avif",
+          "start": 121.80000001192093,
+          "duration": 273.7999999821186,
+          "bytes": 63306,
+          "initiator": "link",
+          "ttfb": 7.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/_next/static/css/b1a3770e89f0e6d8.css",
+          "start": 122.2000000178814,
+          "duration": 117.89999997615814,
+          "bytes": 11352,
+          "initiator": "link",
+          "ttfb": 11.299999982118607
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-6b9a6d6eabca13a6.js",
+          "start": 122.5,
+          "duration": 106.90000000596046,
+          "bytes": 1853,
+          "initiator": "link",
+          "ttfb": 9.399999976158142
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 122.7000000178814,
+          "duration": 289.89999997615814,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 18.899999976158142
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 122.80000001192093,
+          "duration": 287.69999998807907,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 15.199999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 122.90000000596046,
+          "duration": 148.90000000596046,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 10.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 123,
+          "duration": 177.90000000596046,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 8.300000011920929
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-024261ae67fc8c74.js",
+          "start": 123.09999999403954,
+          "duration": 192.80000001192093,
+          "bytes": 5461,
+          "initiator": "script",
+          "ttfb": 5.700000017881393
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/182-1b96a307bc22a6d4.js",
+          "start": 123.2000000178814,
+          "duration": 224.39999997615814,
+          "bytes": 4283,
+          "initiator": "script",
+          "ttfb": 5.199999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-f7f9d0c1feb33af3.js",
+          "start": 123.30000001192093,
+          "duration": 234.59999999403954,
+          "bytes": 1873,
+          "initiator": "script",
+          "ttfb": 10.099999994039536
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-35a8944f5ff5dac2.js",
+          "start": 123.5,
+          "duration": 256.5,
+          "bytes": 1670,
+          "initiator": "script",
+          "ttfb": 5.4000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/138.4951da2803fd0a5f.js",
+          "start": 123.5,
+          "duration": 277.7000000178814,
+          "bytes": 1193,
+          "initiator": "link",
+          "ttfb": 6.5
+        },
+        {
+          "url": "http://localhost:3002/optimized/whatsapp-03b006021c08-40.avif",
+          "start": 123.7000000178814,
+          "duration": 289.39999997615814,
+          "bytes": 845,
+          "initiator": "img",
+          "ttfb": 4.4000000059604645
+        },
+        {
+          "url": "http://localhost:3002/fonts/inter-latin-variable-c940764593d0.woff2",
+          "start": 276.90000000596046,
+          "duration": 699.9000000059605,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 10.099999994039536
+        },
+        {
+          "url": "http://localhost:3002/optimized/web-and-app-5d17ad51e4fb-384.avif",
+          "start": 807.9000000059605,
+          "duration": 139.59999999403954,
+          "bytes": 14423,
+          "initiator": "img",
+          "ttfb": 7.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/optimized/rms-dashboard-bda5917637e0-384.avif",
+          "start": 808.3000000119209,
+          "duration": 121,
+          "bytes": 10193,
+          "initiator": "img",
+          "ttfb": 9.700000017881393
+        },
+        {
+          "url": "http://localhost:3002/optimized/pos-baa444ebbd1a-384.avif",
+          "start": 809.2000000178814,
+          "duration": 135.7999999821186,
+          "bytes": 12817,
+          "initiator": "img",
+          "ttfb": 9.5
+        },
+        {
+          "url": "http://localhost:3002/optimized/online-ordering-4cda4ba00e5a-384.avif",
+          "start": 809.5,
+          "duration": 139.7000000178814,
+          "bytes": 14472,
+          "initiator": "img",
+          "ttfb": 10.5
+        },
+        {
+          "url": "http://localhost:3002/optimized/kds-a91bcfed4e0e-384.avif",
+          "start": 809.9000000059605,
+          "duration": 136,
+          "bytes": 12875,
+          "initiator": "img",
+          "ttfb": 10.900000005960464
+        },
+        {
+          "url": "http://localhost:3002/optimized/dine-in-45498c17eec5-384.avif",
+          "start": 810.2000000178814,
+          "duration": 182.2999999821186,
+          "bytes": 10162,
+          "initiator": "img",
+          "ttfb": 4.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 1285.800000011921,
+          "duration": 86.5,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 1411,
+          "duration": 86.90000000596046,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 3.5
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "route": "/",
+      "mobile": false,
+      "run": 2,
+      "fcp": 1160,
+      "lcp": 1176,
+      "cls": 0.0024937276204427083,
+      "tasks": [
+        {
+          "start": 903.8000000119209,
+          "duration": 196
+        },
+        {
+          "start": 1196.1000000238419,
+          "duration": 119
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3004/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1198,
+        "navigationId": 3251,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 2.2000000178813934,
+        "domainLookupStart": 2.2000000178813934,
+        "domainLookupEnd": 2.2000000178813934,
+        "connectStart": 2.2000000178813934,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.2000000178813934,
+        "requestStart": 21.900000005960464,
+        "responseStart": 52.60000002384186,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 52.60000002384186,
+        "responseEnd": 104.40000000596046,
+        "transferSize": 31696,
+        "encodedBodySize": 31396,
+        "decodedBodySize": 296622,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 1114.6000000238419,
+        "domContentLoadedEventStart": 1114.7000000178814,
+        "domContentLoadedEventEnd": 1116.1000000238419,
+        "domComplete": 1197.9000000059605,
+        "loadEventStart": 1198,
+        "loadEventEnd": 1198,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fmh_logo.png&w=48&q=75",
+          "start": 116.7000000178814,
+          "duration": 90.19999998807907,
+          "bytes": 1659,
+          "initiator": "link",
+          "ttfb": 7.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1200&q=75",
+          "start": 117.80000001192093,
+          "duration": 300,
+          "bytes": 78682,
+          "initiator": "link",
+          "ttfb": 11.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/css/d069c7dc995973d7.css",
+          "start": 118.2000000178814,
+          "duration": 126.90000000596046,
+          "bytes": 11816,
+          "initiator": "link",
+          "ttfb": 9.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "start": 118.5,
+          "duration": 96.7000000178814,
+          "bytes": 1814,
+          "initiator": "link",
+          "ttfb": 11.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 118.90000000596046,
+          "duration": 288,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 17.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 119.10000002384186,
+          "duration": 279.7999999821186,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 13.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 119.40000000596046,
+          "duration": 144.30000001192093,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 10.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 119.90000000596046,
+          "duration": 172.7000000178814,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 20.80000001192093
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/437-0f48636ca52b412c.js",
+          "start": 120.30000001192093,
+          "duration": 220.19999998807907,
+          "bytes": 5446,
+          "initiator": "script",
+          "ttfb": 44.19999998807907
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/619-afba0df287e9b980.js",
+          "start": 120.7000000178814,
+          "duration": 219.40000000596046,
+          "bytes": 4629,
+          "initiator": "script",
+          "ttfb": 36.39999997615814
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "start": 121.7000000178814,
+          "duration": 231.69999998807907,
+          "bytes": 4120,
+          "initiator": "script",
+          "ttfb": 15.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "start": 122.2000000178814,
+          "duration": 279.2999999821186,
+          "bytes": 3605,
+          "initiator": "script",
+          "ttfb": 9
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "start": 122.40000000596046,
+          "duration": 274.90000000596046,
+          "bytes": 2339,
+          "initiator": "script",
+          "ttfb": 9.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/812.1c08d505f8805186.js",
+          "start": 122.60000002384186,
+          "duration": 286.19999998807907,
+          "bytes": 1203,
+          "initiator": "link",
+          "ttfb": 3.7999999821186066
+        },
+        {
+          "url": "http://localhost:3004/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "start": 302.90000000596046,
+          "duration": 816.2000000178814,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 4.5999999940395355
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2FWebAndApp.avif&w=640&q=75",
+          "start": 862.3000000119209,
+          "duration": 265.69999998807907,
+          "bytes": 50692,
+          "initiator": "img",
+          "ttfb": 19.19999998807907
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Frestaurant-management-dashboard-workspace.avif&w=640&q=75",
+          "start": 862.7000000178814,
+          "duration": 217.59999999403954,
+          "bytes": 28031,
+          "initiator": "img",
+          "ttfb": 15.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frestaurant-pos.800774d4.avif&w=640&q=75",
+          "start": 863.8000000119209,
+          "duration": 247.80000001192093,
+          "bytes": 38294,
+          "initiator": "img",
+          "ttfb": 18.5
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fonline-ordering.e76f6eb8.avif&w=640&q=75",
+          "start": 864.2000000178814,
+          "duration": 279.19999998807907,
+          "bytes": 46414,
+          "initiator": "img",
+          "ttfb": 16.30000001192093
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fmodern-kitchen-display-system-showcase.avif&w=640&q=75",
+          "start": 864.7000000178814,
+          "duration": 262.19999998807907,
+          "bytes": 37410,
+          "initiator": "img",
+          "ttfb": 12.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fmodern-restaurant-table-management-dashboard.avif&w=640&q=75",
+          "start": 865.7000000178814,
+          "duration": 295,
+          "bytes": 27026,
+          "initiator": "img",
+          "ttfb": 6.299999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fwhatsapp.avif&w=48&q=75",
+          "start": 866.4000000059605,
+          "duration": 292.59999999403954,
+          "bytes": 1080,
+          "initiator": "img",
+          "ttfb": 6.4000000059604645
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 1344.7000000178814,
+          "duration": 86,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 5.100000023841858
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=5CB68i4pnAekjehf",
+          "start": 1460.9000000059605,
+          "duration": 57.099999994039536,
+          "bytes": 204,
+          "initiator": "fetch",
+          "ttfb": 8.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=5CB68i4pnAekjehf",
+          "start": 1461.7000000178814,
+          "duration": 60.400000005960464,
+          "bytes": 199,
+          "initiator": "fetch",
+          "ttfb": 12.299999982118607
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=5CB68i4pnAekjehf",
+          "start": 1462.6000000238419,
+          "duration": 59.099999994039536,
+          "bytes": 200,
+          "initiator": "fetch",
+          "ttfb": 17
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=5CB68i4pnAekjehf",
+          "start": 1463.4000000059605,
+          "duration": 60.400000005960464,
+          "bytes": 206,
+          "initiator": "fetch",
+          "ttfb": 24.600000023841858
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 1506,
+          "duration": 83.2000000178814,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=5CB68i4pnAekjehf",
+          "start": 1529.2000000178814,
+          "duration": 48.400000005960464,
+          "bytes": 205,
+          "initiator": "fetch",
+          "ttfb": 7.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=5CB68i4pnAekjehf",
+          "start": 1535.1000000238419,
+          "duration": 51.5,
+          "bytes": 205,
+          "initiator": "fetch",
+          "ttfb": 7.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1540.5,
+          "duration": 52.400000005960464,
+          "bytes": 807,
+          "initiator": "fetch",
+          "ttfb": 9.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=yIp22O3xgPPxC28X",
+          "start": 1541.300000011921,
+          "duration": 56.69999998807907,
+          "bytes": 2636,
+          "initiator": "fetch",
+          "ttfb": 14.700000017881393
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=JFWGu_dmBAb9P0LW",
+          "start": 1583.2000000178814,
+          "duration": 53,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 7.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=BiuOixuigeBXVJn7",
+          "start": 1594.6000000238419,
+          "duration": 52.39999997615814,
+          "bytes": 2267,
+          "initiator": "fetch",
+          "ttfb": 9.600000023841858
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1626.9000000059605,
+          "duration": 70.5,
+          "bytes": 829,
+          "initiator": "fetch",
+          "ttfb": 8.600000023841858
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "start": 1631.2000000178814,
+          "duration": 74.59999999403954,
+          "bytes": 2641,
+          "initiator": "script",
+          "ttfb": 16.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "start": 1632.300000011921,
+          "duration": 75,
+          "bytes": 2201,
+          "initiator": "script",
+          "ttfb": 22.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=OP8qK4c2lrXB8GsS",
+          "start": 1635.6000000238419,
+          "duration": 64.39999997615814,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 5.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=zOOH2C0uRU9NjV9y",
+          "start": 1642.2000000178814,
+          "duration": 60.900000005960464,
+          "bytes": 2399,
+          "initiator": "fetch",
+          "ttfb": 7.4000000059604645
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1652.300000011921,
+          "duration": 53.80000001192093,
+          "bytes": 826,
+          "initiator": "fetch",
+          "ttfb": 7.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=n4tDNspjD4yS_Xnd",
+          "start": 1703.1000000238419,
+          "duration": 73.19999998807907,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 6.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=hzcUC6YqarYE9pKE",
+          "start": 1708.2000000178814,
+          "duration": 66.90000000596046,
+          "bytes": 3517,
+          "initiator": "fetch",
+          "ttfb": 9.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "start": 1712,
+          "duration": 69,
+          "bytes": 2484,
+          "initiator": "script",
+          "ttfb": 27.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1713.9000000059605,
+          "duration": 62.70000001788139,
+          "bytes": 807,
+          "initiator": "fetch",
+          "ttfb": 13.5
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=Plq0fmILVj3mN0Hr",
+          "start": 1719.6000000238419,
+          "duration": 58.79999998211861,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 15.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/about/page-64d26ad122e6c76c.js",
+          "start": 1785.4000000059605,
+          "duration": 66.59999999403954,
+          "bytes": 202,
+          "initiator": "script",
+          "ttfb": 11.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=RVeZbm5m_IuW6pP8",
+          "start": 1787.9000000059605,
+          "duration": 70.59999999403954,
+          "bytes": 2024,
+          "initiator": "fetch",
+          "ttfb": 6.399999976158142
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1794,
+          "duration": 61.400000005960464,
+          "bytes": 829,
+          "initiator": "fetch",
+          "ttfb": 5.5
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=upn3sbfmfDc1hg8-",
+          "start": 1796.300000011921,
+          "duration": 61.69999998807907,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 8.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=e-TVHDPN8vGDTXUP",
+          "start": 1799.1000000238419,
+          "duration": 62.19999998807907,
+          "bytes": 1192,
+          "initiator": "fetch",
+          "ttfb": 12.5
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1863.6000000238419,
+          "duration": 68.09999999403954,
+          "bytes": 828,
+          "initiator": "fetch",
+          "ttfb": 6.5999999940395355
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/templates/page-ffb7b8dd218f3d39.js",
+          "start": 1866.2000000178814,
+          "duration": 75.69999998807907,
+          "bytes": 2155,
+          "initiator": "script",
+          "ttfb": 23.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=sqRjqjppYnUgeCLZ",
+          "start": 1868.1000000238419,
+          "duration": 66.19999998807907,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 5.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=sf1YpdcMRkAgPkSR",
+          "start": 1871.9000000059605,
+          "duration": 67.7000000178814,
+          "bytes": 4555,
+          "initiator": "fetch",
+          "ttfb": 8.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "start": 1873.800000011921,
+          "duration": 69.5,
+          "bytes": 2370,
+          "initiator": "script",
+          "ttfb": 21.5
+        },
+        {
+          "url": "http://localhost:3004/?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1875.2000000178814,
+          "duration": 61.900000005960464,
+          "bytes": 782,
+          "initiator": "fetch",
+          "ttfb": 12.5
+        },
+        {
+          "url": "http://localhost:3004/?_rsc=8nTjltbQWvg6NcbE",
+          "start": 1938.1000000238419,
+          "duration": 72.59999999403954,
+          "bytes": 11806,
+          "initiator": "fetch",
+          "ttfb": 6.5
+        }
+      ]
+    },
+    {
+      "version": "before",
+      "route": "/",
+      "mobile": false,
+      "run": 3,
+      "fcp": 1144,
+      "lcp": 1180,
+      "cls": 0.0024937276204427083,
+      "tasks": [
+        {
+          "start": 865.9000000059605,
+          "duration": 189
+        },
+        {
+          "start": 1194.699999988079,
+          "duration": 117
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3004/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1197.300000011921,
+        "navigationId": 7184,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 3.0999999940395355,
+        "domainLookupStart": 3.0999999940395355,
+        "domainLookupEnd": 3.0999999940395355,
+        "connectStart": 3.0999999940395355,
+        "secureConnectionStart": 0,
+        "connectEnd": 3.0999999940395355,
+        "requestStart": 18,
+        "responseStart": 54.400000005960464,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 54.400000005960464,
+        "responseEnd": 102.19999998807907,
+        "transferSize": 31696,
+        "encodedBodySize": 31396,
+        "decodedBodySize": 296622,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 1105.199999988079,
+        "domContentLoadedEventStart": 1105.300000011921,
+        "domContentLoadedEventEnd": 1107.199999988079,
+        "domComplete": 1196.800000011921,
+        "loadEventStart": 1197.199999988079,
+        "loadEventEnd": 1197.300000011921,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "high"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fmh_logo.png&w=48&q=75",
+          "start": 127.19999998807907,
+          "duration": 89.2000000178814,
+          "bytes": 1659,
+          "initiator": "link",
+          "ttfb": 11
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdevice-showcase.65596bb9.avif&w=1200&q=75",
+          "start": 128.80000001192093,
+          "duration": 307.59999999403954,
+          "bytes": 78682,
+          "initiator": "link",
+          "ttfb": 10.5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/css/d069c7dc995973d7.css",
+          "start": 129.30000001192093,
+          "duration": 132.89999997615814,
+          "bytes": 11816,
+          "initiator": "link",
+          "ttfb": 12.099999994039536
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/webpack-259527018b17a8d9.js",
+          "start": 129.59999999403954,
+          "duration": 94.5,
+          "bytes": 1814,
+          "initiator": "link",
+          "ttfb": 8.5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 130,
+          "duration": 287,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 16
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 130.19999998807907,
+          "duration": 277.90000000596046,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 12.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 130.30000001192093,
+          "duration": 136.19999998807907,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 4.5999999940395355
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 130.5,
+          "duration": 163.5,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 7
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/437-0f48636ca52b412c.js",
+          "start": 130.59999999403954,
+          "duration": 214.7000000178814,
+          "bytes": 5446,
+          "initiator": "script",
+          "ttfb": 13.699999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/619-afba0df287e9b980.js",
+          "start": 130.69999998807907,
+          "duration": 216.10000002384186,
+          "bytes": 4629,
+          "initiator": "script",
+          "ttfb": 8.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/973-b78b658b7d6d204c.js",
+          "start": 130.90000000596046,
+          "duration": 229.19999998807907,
+          "bytes": 4120,
+          "initiator": "script",
+          "ttfb": 5.299999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/layout-5549770b1aac2309.js",
+          "start": 131.09999999403954,
+          "duration": 287.59999999403954,
+          "bytes": 3605,
+          "initiator": "script",
+          "ttfb": 15
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/page-b9ba5ce2873b0121.js",
+          "start": 131.19999998807907,
+          "duration": 283,
+          "bytes": 2339,
+          "initiator": "script",
+          "ttfb": 15.100000023841858
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/812.1c08d505f8805186.js",
+          "start": 131.30000001192093,
+          "duration": 287,
+          "bytes": 1203,
+          "initiator": "link",
+          "ttfb": 8.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/static/media/e4af272ccee01ff0-s.p.woff2",
+          "start": 307,
+          "duration": 809.1999999880791,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 8.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2FWebAndApp.avif&w=640&q=75",
+          "start": 828.6999999880791,
+          "duration": 288.60000002384186,
+          "bytes": 50692,
+          "initiator": "img",
+          "ttfb": 7.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Frestaurant-management-dashboard-workspace.avif&w=640&q=75",
+          "start": 829,
+          "duration": 193.69999998807907,
+          "bytes": 28031,
+          "initiator": "img",
+          "ttfb": 8.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frestaurant-pos.800774d4.avif&w=640&q=75",
+          "start": 829.1999999880791,
+          "duration": 237.7000000178814,
+          "bytes": 38294,
+          "initiator": "img",
+          "ttfb": 8.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fonline-ordering.e76f6eb8.avif&w=640&q=75",
+          "start": 829.5999999940395,
+          "duration": 288.40000000596046,
+          "bytes": 46414,
+          "initiator": "img",
+          "ttfb": 11.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fmodern-kitchen-display-system-showcase.avif&w=640&q=75",
+          "start": 830.1999999880791,
+          "duration": 265.10000002384186,
+          "bytes": 37410,
+          "initiator": "img",
+          "ttfb": 12.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fmodern-restaurant-table-management-dashboard.avif&w=640&q=75",
+          "start": 830.4000000059605,
+          "duration": 316.2999999821186,
+          "bytes": 27026,
+          "initiator": "img",
+          "ttfb": 6.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/_next/image?url=%2Fimages%2Fwhatsapp.avif&w=48&q=75",
+          "start": 830.5999999940395,
+          "duration": 291.09999999403954,
+          "bytes": 1080,
+          "initiator": "img",
+          "ttfb": 11
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 1336.5999999940395,
+          "duration": 77.2000000178814,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 4.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=5CB68i4pnAekjehf",
+          "start": 1473.199999988079,
+          "duration": 86,
+          "bytes": 204,
+          "initiator": "fetch",
+          "ttfb": 7.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=5CB68i4pnAekjehf",
+          "start": 1473.9000000059605,
+          "duration": 85.59999999403954,
+          "bytes": 199,
+          "initiator": "fetch",
+          "ttfb": 12.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=5CB68i4pnAekjehf",
+          "start": 1474.699999988079,
+          "duration": 85,
+          "bytes": 200,
+          "initiator": "fetch",
+          "ttfb": 18.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=5CB68i4pnAekjehf",
+          "start": 1475.5,
+          "duration": 81.59999999403954,
+          "bytes": 206,
+          "initiator": "fetch",
+          "ttfb": 23.400000005960464
+        },
+        {
+          "url": "http://localhost:3004/mh_logo.png",
+          "start": 1489.0999999940395,
+          "duration": 98.59999999403954,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 22.30000001192093
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=5CB68i4pnAekjehf",
+          "start": 1574.9000000059605,
+          "duration": 77.09999999403954,
+          "bytes": 205,
+          "initiator": "fetch",
+          "ttfb": 7.4000000059604645
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=5CB68i4pnAekjehf",
+          "start": 1578.5,
+          "duration": 72.19999998807907,
+          "bytes": 205,
+          "initiator": "fetch",
+          "ttfb": 8.299999982118607
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1585.199999988079,
+          "duration": 69.10000002384186,
+          "bytes": 807,
+          "initiator": "fetch",
+          "ttfb": 6.200000017881393
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=yIp22O3xgPPxC28X",
+          "start": 1586.4000000059605,
+          "duration": 72.2999999821186,
+          "bytes": 2636,
+          "initiator": "fetch",
+          "ttfb": 9.5
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=JFWGu_dmBAb9P0LW",
+          "start": 1659.300000011921,
+          "duration": 70.2999999821186,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 6.600000023841858
+        },
+        {
+          "url": "http://localhost:3004/contact?_rsc=BiuOixuigeBXVJn7",
+          "start": 1664.800000011921,
+          "duration": 65.7999999821186,
+          "bytes": 2267,
+          "initiator": "fetch",
+          "ttfb": 6.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1667.800000011921,
+          "duration": 65.09999999403954,
+          "bytes": 829,
+          "initiator": "fetch",
+          "ttfb": 5.5999999940395355
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/769-3bc06aa48fdcc546.js",
+          "start": 1670.800000011921,
+          "duration": 66.69999998807907,
+          "bytes": 2641,
+          "initiator": "script",
+          "ttfb": 15.900000005960464
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/contact/page-f0968167f1923d2f.js",
+          "start": 1671.800000011921,
+          "duration": 67.59999999403954,
+          "bytes": 2201,
+          "initiator": "script",
+          "ttfb": 15.799999982118607
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=OP8qK4c2lrXB8GsS",
+          "start": 1673.800000011921,
+          "duration": 60.79999998211861,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 8.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/demo?_rsc=zOOH2C0uRU9NjV9y",
+          "start": 1739.0999999940395,
+          "duration": 70.40000000596046,
+          "bytes": 2399,
+          "initiator": "fetch",
+          "ttfb": 6.5
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1744.0999999940395,
+          "duration": 67.90000000596046,
+          "bytes": 826,
+          "initiator": "fetch",
+          "ttfb": 7.0999999940395355
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=n4tDNspjD4yS_Xnd",
+          "start": 1748,
+          "duration": 64.59999999403954,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 8
+        },
+        {
+          "url": "http://localhost:3004/about?_rsc=hzcUC6YqarYE9pKE",
+          "start": 1753.199999988079,
+          "duration": 64.90000000596046,
+          "bytes": 3517,
+          "initiator": "fetch",
+          "ttfb": 10.700000017881393
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/demo/page-1c33ccbe0c47723e.js",
+          "start": 1815.699999988079,
+          "duration": 72.30000001192093,
+          "bytes": 2484,
+          "initiator": "script",
+          "ttfb": 22.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1818,
+          "duration": 71.09999999403954,
+          "bytes": 807,
+          "initiator": "fetch",
+          "ttfb": 9.199999988079071
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=Plq0fmILVj3mN0Hr",
+          "start": 1823.5999999940395,
+          "duration": 67.80000001192093,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 10.300000011920929
+        },
+        {
+          "url": "http://localhost:3004/templates?_rsc=RVeZbm5m_IuW6pP8",
+          "start": 1826.0999999940395,
+          "duration": 68.09999999403954,
+          "bytes": 2024,
+          "initiator": "fetch",
+          "ttfb": 13.5
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/about/page-64d26ad122e6c76c.js",
+          "start": 1828.5999999940395,
+          "duration": 67.5,
+          "bytes": 202,
+          "initiator": "script",
+          "ttfb": 22
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1831.199999988079,
+          "duration": 62.5,
+          "bytes": 829,
+          "initiator": "fetch",
+          "ttfb": 14.599999994039536
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=upn3sbfmfDc1hg8-",
+          "start": 1902.5,
+          "duration": 65,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 6.800000011920929
+        },
+        {
+          "url": "http://localhost:3004/pricing?_rsc=e-TVHDPN8vGDTXUP",
+          "start": 1906.699999988079,
+          "duration": 64.90000000596046,
+          "bytes": 1192,
+          "initiator": "fetch",
+          "ttfb": 11
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/templates/page-ffb7b8dd218f3d39.js",
+          "start": 1909.699999988079,
+          "duration": 66.7000000178814,
+          "bytes": 2155,
+          "initiator": "script",
+          "ttfb": 24.30000001192093
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1911.300000011921,
+          "duration": 59.19999998807907,
+          "bytes": 828,
+          "initiator": "fetch",
+          "ttfb": 11.200000017881393
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=sqRjqjppYnUgeCLZ",
+          "start": 1914.5999999940395,
+          "duration": 57.5,
+          "bytes": 220,
+          "initiator": "fetch",
+          "ttfb": 12.399999976158142
+        },
+        {
+          "url": "http://localhost:3004/services?_rsc=sf1YpdcMRkAgPkSR",
+          "start": 1972.5999999940395,
+          "duration": 77.40000000596046,
+          "bytes": 4555,
+          "initiator": "fetch",
+          "ttfb": 7
+        },
+        {
+          "url": "http://localhost:3004/_next/static/chunks/app/pricing/page-a4e034467bcb8a01.js",
+          "start": 1977.4000000059605,
+          "duration": 72,
+          "bytes": 2370,
+          "initiator": "script",
+          "ttfb": 21.5
+        },
+        {
+          "url": "http://localhost:3004/?_rsc=7h4NYy5eoyMcNlUN",
+          "start": 1979.5,
+          "duration": 68,
+          "bytes": 782,
+          "initiator": "fetch",
+          "ttfb": 6.9000000059604645
+        },
+        {
+          "url": "http://localhost:3004/?_rsc=8nTjltbQWvg6NcbE",
+          "start": 1984.0999999940395,
+          "duration": 80.5,
+          "bytes": 11806,
+          "initiator": "fetch",
+          "ttfb": 8.699999988079071
+        }
+      ]
+    },
+    {
+      "version": "after",
+      "route": "/",
+      "mobile": false,
+      "run": 3,
+      "fcp": 1604,
+      "lcp": 1692,
+      "cls": 0.0024937276204427083,
+      "tasks": [
+        {
+          "start": 835.6999999880791,
+          "duration": 163
+        },
+        {
+          "start": 1029.4000000059605,
+          "duration": 95
+        }
+      ],
+      "navigation": {
+        "name": "http://localhost:3002/",
+        "entryType": "navigation",
+        "startTime": 0,
+        "duration": 1030.800000011921,
+        "navigationId": 9273,
+        "initiatorType": "navigation",
+        "deliveryType": "",
+        "nextHopProtocol": "http/1.1",
+        "renderBlockingStatus": "non-blocking",
+        "contentType": "text/html",
+        "contentEncoding": "gzip",
+        "workerStart": 0,
+        "workerRouterEvaluationStart": 0,
+        "workerCacheLookupStart": 0,
+        "workerMatchedSourceType": "",
+        "workerFinalSourceType": "",
+        "redirectStart": 0,
+        "redirectEnd": 0,
+        "fetchStart": 2.800000011920929,
+        "domainLookupStart": 2.800000011920929,
+        "domainLookupEnd": 2.800000011920929,
+        "connectStart": 2.800000011920929,
+        "secureConnectionStart": 0,
+        "connectEnd": 2.800000011920929,
+        "requestStart": 23.19999998807907,
+        "responseStart": 56.19999998807907,
+        "firstInterimResponseStart": 0,
+        "finalResponseHeadersStart": 56.19999998807907,
+        "responseEnd": 105,
+        "transferSize": 32894,
+        "encodedBodySize": 32594,
+        "decodedBodySize": 319400,
+        "responseStatus": 200,
+        "serverTiming": [],
+        "unloadEventStart": 0,
+        "unloadEventEnd": 0,
+        "domInteractive": 1008.5,
+        "domContentLoadedEventStart": 1008.5999999940395,
+        "domContentLoadedEventEnd": 1009.3000000119209,
+        "domComplete": 1030.800000011921,
+        "loadEventStart": 1030.800000011921,
+        "loadEventEnd": 1030.800000011921,
+        "type": "navigate",
+        "redirectCount": 0,
+        "activationStart": 0,
+        "criticalCHRestart": 0,
+        "notRestoredReasons": null,
+        "confidence": {
+          "randomizedTriggerRate": 0.4994798,
+          "value": "low"
+        }
+      },
+      "resources": [
+        {
+          "url": "http://localhost:3002/optimized/site-logo-59f6c9e2d998-48.avif",
+          "start": 108.19999998807907,
+          "duration": 108.80000001192093,
+          "bytes": 1339,
+          "initiator": "link",
+          "ttfb": 4.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/optimized/device-showcase-8b9051539dbe-1200.avif",
+          "start": 109.19999998807907,
+          "duration": 278.5,
+          "bytes": 63306,
+          "initiator": "link",
+          "ttfb": 8.300000011920929
+        },
+        {
+          "url": "http://localhost:3002/_next/static/css/b1a3770e89f0e6d8.css",
+          "start": 109.40000000596046,
+          "duration": 120.69999998807907,
+          "bytes": 11352,
+          "initiator": "link",
+          "ttfb": 10.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/webpack-6b9a6d6eabca13a6.js",
+          "start": 109.69999998807907,
+          "duration": 114,
+          "bytes": 1853,
+          "initiator": "link",
+          "ttfb": 8.800000011920929
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/4bd1b696-215e5051988c3dde.js",
+          "start": 109.90000000596046,
+          "duration": 285,
+          "bytes": 62876,
+          "initiator": "script",
+          "ttfb": 14.900000005960464
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/794-c9f1c83907e70838.js",
+          "start": 110.09999999403954,
+          "duration": 283,
+          "bytes": 60795,
+          "initiator": "script",
+          "ttfb": 11.299999982118607
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/main-app-15f57c19d678e302.js",
+          "start": 110.40000000596046,
+          "duration": 161.40000000596046,
+          "bytes": 511,
+          "initiator": "script",
+          "ttfb": 10.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/500-6a8cbb636335852a.js",
+          "start": 110.69999998807907,
+          "duration": 183.60000002384186,
+          "bytes": 3529,
+          "initiator": "script",
+          "ttfb": 7.100000023841858
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/437-024261ae67fc8c74.js",
+          "start": 111.30000001192093,
+          "duration": 190.39999997615814,
+          "bytes": 5461,
+          "initiator": "script",
+          "ttfb": 7.9000000059604645
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/182-1b96a307bc22a6d4.js",
+          "start": 111.5,
+          "duration": 232.40000000596046,
+          "bytes": 4283,
+          "initiator": "script",
+          "ttfb": 6.100000023841858
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/layout-f7f9d0c1feb33af3.js",
+          "start": 111.80000001192093,
+          "duration": 240,
+          "bytes": 1873,
+          "initiator": "script",
+          "ttfb": 6
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/app/page-35a8944f5ff5dac2.js",
+          "start": 112,
+          "duration": 247.59999999403954,
+          "bytes": 1670,
+          "initiator": "script",
+          "ttfb": 5.300000011920929
+        },
+        {
+          "url": "http://localhost:3002/_next/static/chunks/138.4951da2803fd0a5f.js",
+          "start": 112.19999998807907,
+          "duration": 279.7000000178814,
+          "bytes": 1193,
+          "initiator": "link",
+          "ttfb": 5.300000011920929
+        },
+        {
+          "url": "http://localhost:3002/optimized/whatsapp-03b006021c08-40.avif",
+          "start": 112.90000000596046,
+          "duration": 284.59999999403954,
+          "bytes": 845,
+          "initiator": "img",
+          "ttfb": 4.600000023841858
+        },
+        {
+          "url": "http://localhost:3002/fonts/inter-latin-variable-c940764593d0.woff2",
+          "start": 268.80000001192093,
+          "duration": 684.3999999761581,
+          "bytes": 48432,
+          "initiator": "css",
+          "ttfb": 9.099999994039536
+        },
+        {
+          "url": "http://localhost:3002/optimized/web-and-app-5d17ad51e4fb-384.avif",
+          "start": 790.9000000059605,
+          "duration": 107.09999999403954,
+          "bytes": 14423,
+          "initiator": "img",
+          "ttfb": 8.699999988079071
+        },
+        {
+          "url": "http://localhost:3002/optimized/rms-dashboard-bda5917637e0-384.avif",
+          "start": 791.5,
+          "duration": 99.19999998807907,
+          "bytes": 10193,
+          "initiator": "img",
+          "ttfb": 10.5
+        },
+        {
+          "url": "http://localhost:3002/optimized/pos-baa444ebbd1a-384.avif",
+          "start": 792.1999999880791,
+          "duration": 130,
+          "bytes": 12817,
+          "initiator": "img",
+          "ttfb": 8.799999982118607
+        },
+        {
+          "url": "http://localhost:3002/optimized/online-ordering-4cda4ba00e5a-384.avif",
+          "start": 792.6999999880791,
+          "duration": 130.2000000178814,
+          "bytes": 14472,
+          "initiator": "img",
+          "ttfb": 12.400000005960464
+        },
+        {
+          "url": "http://localhost:3002/optimized/kds-a91bcfed4e0e-384.avif",
+          "start": 793.0999999940395,
+          "duration": 130.40000000596046,
+          "bytes": 12875,
+          "initiator": "img",
+          "ttfb": 9.200000017881393
+        },
+        {
+          "url": "http://localhost:3002/optimized/dine-in-45498c17eec5-384.avif",
+          "start": 793.5,
+          "duration": 160.30000001192093,
+          "bytes": 10162,
+          "initiator": "img",
+          "ttfb": 3.5999999940395355
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 1617.300000011921,
+          "duration": 80.59999999403954,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 5
+        },
+        {
+          "url": "http://localhost:3002/mh_logo.png",
+          "start": 1757.199999988079,
+          "duration": 81.60000002384186,
+          "bytes": 33786,
+          "initiator": "other",
+          "ttfb": 3.9000000059604645
+        }
+      ]
+    }
+  ]
+}

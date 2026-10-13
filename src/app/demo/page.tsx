@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import CalendarRange from "lucide-react/dist/esm/icons/calendar-range";
 import Cpu from "lucide-react/dist/esm/icons/cpu";
 import Laptop from "lucide-react/dist/esm/icons/laptop";

@@ -1,0 +1,50 @@
+[
+  {
+    "mobile": true,
+    "version": "before",
+    "samples": 3,
+    "fcp": 7436,
+    "lcp": 7612,
+    "cls": 0.0002726458847736625,
+    "resourceRequests": 21,
+    "resourceBytes": 605873,
+    "documentAndResourceBytes": 637269,
+    "longTaskExcess": 2915
+  },
+  {
+    "mobile": true,
+    "version": "after",
+    "samples": 3,
+    "fcp": 7388,
+    "lcp": 7388,
+    "cls": 0.0002726458847736625,
+    "resourceRequests": 20,
+    "resourceBytes": 492767,
+    "documentAndResourceBytes": 525361,
+    "longTaskExcess": 3075
+  },
+  {
+    "mobile": false,
+    "version": "before",
+    "samples": 3,
+    "fcp": 1144,
+    "lcp": 1176,
+    "cls": 0.0024937276204427083,
+    "resourceRequests": 57,
+    "resourceBytes": 638671,
+    "documentAndResourceBytes": 670067,
+    "longTaskExcess": 215
+  },
+  {
+    "mobile": false,
+    "version": "after",
+    "samples": 3,
+    "fcp": 1136,
+    "lcp": 1168,
+    "cls": 0.0024937276204427083,
+    "resourceRequests": 23,
+    "resourceBytes": 411832,
+    "documentAndResourceBytes": 444426,
+    "longTaskExcess": 223
+  }
+]

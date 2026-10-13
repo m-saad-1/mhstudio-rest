@@ -1,11 +1,11 @@
+import { ResponsiveImage, SERVICE_IMAGE_SIZES } from "@/components/ui/responsive-image";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 import ArrowLeft from "lucide-react/dist/esm/icons/arrow-left";
 import Check from "lucide-react/dist/esm/icons/check";
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
 import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Dine-In & Table Management System",
@@ -68,7 +68,7 @@ export default function DineInManagementPage() {
         <div className="content-shell relative z-10">
           <Reveal className="mx-auto mb-8 w-full max-w-5xl">
             <div className="relative aspect-[16/9] overflow-hidden rounded-card border border-border-strong bg-surface shadow-card">
-              <Image src="/images/modern-restaurant-table-management-dashboard.avif" alt="Restaurant table management platform" fill className="object-cover object-top" priority sizes="(max-width: 1024px) 100vw, 1024px" />
+              <ResponsiveImage name="dine-in" alt="Restaurant table management platform" fill className="object-cover object-top"  priority sizes={SERVICE_IMAGE_SIZES} />
             </div>
           </Reveal>
           <Reveal delayMs={100} className="mx-auto w-full max-w-5xl">

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import { IntentLink as Link } from "@/components/ui/intent-link";
 
 import ArrowRight from "lucide-react/dist/esm/icons/arrow-right";
 import { navigationItems, siteConfig } from "@/data/site-content";

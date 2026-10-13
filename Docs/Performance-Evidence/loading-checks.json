@@ -1,0 +1,42 @@
+[
+  {
+    "name": "No speculative route downloads; hover, focus and touch prefetch work",
+    "status": "pass"
+  },
+  {
+    "name": "Early CTA event survives deferred analytics and navigation",
+    "status": "pass"
+  },
+  {
+    "name": "EmailJS chunk loads on form focus",
+    "status": "pass"
+  },
+  {
+    "name": "Critical images preload once, local Inter loads, and variants are immutable",
+    "status": "pass"
+  },
+  {
+    "name": "WebP fallback image decodes",
+    "status": "pass"
+  },
+  {
+    "name": "Full resolution zoom downloads only when opened",
+    "status": "pass"
+  },
+  {
+    "name": "Homepage visual heading order is preserved",
+    "status": "pass"
+  },
+  {
+    "name": "All 23 pages render headings without JavaScript; FAQ content is in HTML",
+    "status": "pass"
+  },
+  {
+    "name": "Final mobile and desktop screenshots",
+    "status": "pass"
+  },
+  {
+    "name": "No browser exceptions during performance checks",
+    "status": "pass"
+  }
+]

@@ -1,0 +1,481 @@
+{
+  "base": "http://localhost:3002",
+  "records": [
+    {
+      "route": "/",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 26058,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Websites For Restaurants\n- That Fill Tables.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 12158,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Services built to drive growth and elevate your brand.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/delivery-and-fleet-management",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 20358,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Take Control of Every Delivery From Dispatch to Doorstep.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/dine-in-table-management",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 16077,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Manage Every Table, Order, and Guest From One Place.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/kitchen-display-systems",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 13434,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Keep Your Kitchen Moving With Every Order in View.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/online-ordering-systems",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 17507,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Turn Your Restaurant Website Into a Direct Ordering Channel.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/point-of-sale-systems",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 16912,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "A Faster, Smarter POS Built for Modern Restaurants.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/qr-menu-self-ordering",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 13203,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Let Guests Browse, Order, and Customize From Their Own Phones.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/restaurant-management-systems",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 17991,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Run Your Restaurant From One Connected System.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/restaurant-websites-and-apps",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 14689,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Turn Your Restaurant Into a Digital Experience Customers Love.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/services/supporting-services",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 18611,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Everything Your Restaurant Needs to Grow, Connected in One Ecosystem.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/templates",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 8312,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Premium Restaurant Templates.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/case-study/template-1",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 10792,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Template 1",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/case-study/template-2",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 9325,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Template 2",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/case-study/cs-fire-burgers",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 13731,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Template 3",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/case-study/hambrg",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 17323,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Template 4",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/pricing",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 17397,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "No Upfront or Development Fees.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/about",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 14684,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "A complete digital platform built for modern restaurants.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/process",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 17730,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "A streamlined path to launching your platform.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/contact",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 9591,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Let's discuss your restaurant website.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/demo",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 7330,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Preview your new digital dining experience.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/privacy",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 7531,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Privacy information for MhStudio visitors.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/terms",
+      "width": 375,
+      "status": 200,
+      "elapsedMs": 8604,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "Terms of use for the MhStudio marketing site.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/qa-missing-page",
+      "width": 375,
+      "status": 404,
+      "elapsedMs": 7572,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "This page drifted out of the MhStudio route map.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    },
+    {
+      "route": "/case-study/qa-missing-case",
+      "width": 375,
+      "status": 404,
+      "elapsedMs": 8041,
+      "background": "rgb(250, 250, 249)",
+      "pageWidth": 375,
+      "overflow": false,
+      "offenders": [],
+      "headings": [
+        {
+          "text": "This page drifted out of the MhStudio route map.",
+          "size": "34px"
+        }
+      ],
+      "brokenImages": [],
+      "unloadedImages": [],
+      "violations": []
+    }
+  ],
+  "failures": []
+}
