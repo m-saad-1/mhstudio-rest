@@ -9,7 +9,8 @@ const output = path.join(root, "public/optimized");
 const manifestFile = path.join(root, "src/data/responsive-images.ts");
 const settings = { widths: [384, 640, 768, 1024, 1200, 1536], avif: { quality: 55, effort: 5 }, webp: { quality: 75, effort: 5 } };
 const sources = {
-  "device-showcase": "device-showcase.avif",
+  // Keep source filename casing exact: Vercel builds on Linux, where paths are case-sensitive.
+  "device-showcase": "Device-showcase.avif",
   "web-and-app": "WebAndApp.avif",
   "rms-dashboard": "restaurant-management-dashboard-workspace.avif",
   pos: "restaurant-pos.avif",
