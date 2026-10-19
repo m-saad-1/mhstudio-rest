@@ -70,7 +70,7 @@ export default function Home() {
                   delayMs={index * 70}
                   className="surface-card group flex h-full min-w-0 flex-col justify-between overflow-hidden transition-transform duration-200"
                 >
-                  <div className="relative aspect-[16/9] overflow-hidden border-b border-border">
+                  <div className="relative aspect-[4/3] overflow-hidden border-b border-border">
                     <ResponsiveImage name={image.name} alt={image.alt} fill sizes="(max-width: 639px) calc(100vw - 40px), (max-width: 767px) calc(100vw - 60px), (max-width: 1023px) calc((100vw - 84px) / 2), (max-width: 1279px) calc((100vw - 128px) / 3), 384px" className="object-cover transition-transform duration-200" />
                   </div>
                   <div className="flex flex-1 flex-col justify-between p-4">
@@ -302,22 +302,25 @@ export default function Home() {
             description="Take a look at brands built with MhStudio."
             align="center"
           />
-          <div className="grid grid-cols-2 items-center gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5" aria-label="Client brands">
-              {clientLogos.map((src, index) => (
-                <span key={src} className="flex min-h-24 items-center justify-center rounded-card border border-border bg-surface px-4 py-5">
+          <div className="logo-marquee" aria-label="Client brands">
+            <div className="logo-marquee-track">
+              {[...clientLogos, ...clientLogos].map((src, index) => (
+                <span key={`${src}-${index}`} className="logo-marquee-item">
                   <Image
                     src={src}
-                    alt={`Client logo ${index + 1}`}
+                    alt={index < clientLogos.length ? `Client logo ${index + 1}` : ""}
                     width={180}
                     height={90}
-                    className="h-12 w-auto max-w-full object-contain sm:h-14"
+                    className="h-16 w-auto max-w-[180px] object-contain"
                     sizes="180px"
                     quality={50}
                     loading="eager"
                     fetchPriority="low"
+                    aria-hidden={index >= clientLogos.length}
                   />
                 </span>
               ))}
+            </div>
           </div>
         </div>
       </Reveal>

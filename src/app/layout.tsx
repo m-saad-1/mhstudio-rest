@@ -77,7 +77,7 @@ export default function RootLayout({
             aria-label="Chat with us on WhatsApp"
             className="whatsapp-action"
           >
-            <ResponsiveImage name="whatsapp" alt="" sizes="40px" loading="eager" className="h-[40px] w-[40px] object-contain" />
+            <ResponsiveImage name="whatsapp" alt="" sizes="64px" loading="eager" className="h-16 w-16 object-contain" />
           </a>
         </div>
       </body>

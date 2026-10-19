@@ -29,9 +29,9 @@ export function SiteFooter() {
             </p>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-foreground-muted">Quick Links</h3>
-            <div className="grid gap-3">
+            <div className="grid gap-2">
               {navigationItems.map((item) => (
                 <Link
                   key={item.href}
@@ -45,9 +45,9 @@ export function SiteFooter() {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-foreground-muted">Services</h3>
-            <div className="grid gap-3">
+            <div className="grid gap-2">
               {serviceLinks.map((service) => (
                 <Link
                   key={service.href}
@@ -60,9 +60,9 @@ export function SiteFooter() {
             </div>
           </div>
 
-          <div className="space-y-4">
+          <div className="space-y-3">
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-foreground-muted">Legal</h3>
-            <div className="grid gap-3">
+            <div className="grid gap-2">
               <Link href="/privacy" className="text-sm text-foreground-body transition-colors duration-200 hover:text-foreground">
                 Privacy Policy
               </Link>
