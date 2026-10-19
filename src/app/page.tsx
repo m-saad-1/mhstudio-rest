@@ -58,6 +58,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Services Snapshot"
             title="High-Performance Digital & Web Solutions"
+            description="Explore the tools that help restaurants attract guests and run smoothly."
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {homeServiceCards.map((service, index) => {
@@ -158,11 +159,6 @@ export default function Home() {
 
       <Reveal as="section" className="home-flow-section section-space section-divider overflow-hidden">
         <div className="content-shell space-y-10">
-          <SectionHeading
-            eyebrow="Online Ordering To Delivery"
-            title="One connected flow from checkout to doorstep."
-            align="center"
-          />
           <div className="surface-card overflow-hidden p-4 sm:p-8 hover:border-accent-border/40 transition-colors duration-200">
             <a href="/images/from-order-to-doorstep-flow.avif" target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-zoom-in">
               <Image
@@ -205,7 +201,7 @@ export default function Home() {
                 <span className="text-accent-text">24/7 AI Receptionist</span>
               </h2>
               <p className="text-base leading-[1.8] text-foreground-body sm:text-lg">
-                Deliver instant responses and simplify customer interactions around the clock. Help guests book tables, take orders, and answer questions while reducing your team&apos;s workload.
+                Answer questions, take orders, and book tables around the clock.
               </p>
             </div>
 
@@ -247,6 +243,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Digital Capabilities"
             title="Everything Your Restaurant Needs to Operate & Grow"
+            description="Practical tools for every step of the guest experience."
           />
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {websiteFeatures.map((feature, index) => {
@@ -275,6 +272,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Explore The Platform"
             title="See the guest experience and the operator view."
+            description="Explore the customer-facing experience alongside the tools your team uses."
             align="center"
           />
           <div className="grid gap-6 lg:grid-cols-2">
@@ -301,27 +299,25 @@ export default function Home() {
           <SectionHeading
             eyebrow="Trusted By Growing Brands"
             title="Trusted by restaurants and growing businesses."
+            description="Take a look at brands built with MhStudio."
             align="center"
           />
-          <div className="logo-marquee" aria-label="Client brands">
-            <div className="logo-marquee-track">
-              {[...clientLogos, ...clientLogos].map((src, index) => (
-                <span key={`${src}-${index}`} className="logo-marquee-item">
+          <div className="grid grid-cols-2 items-center gap-3 sm:grid-cols-3 sm:gap-4 lg:grid-cols-5" aria-label="Client brands">
+              {clientLogos.map((src, index) => (
+                <span key={src} className="flex min-h-24 items-center justify-center rounded-card border border-border bg-surface px-4 py-5">
                   <Image
                     src={src}
-                    alt={index < clientLogos.length ? `Client logo ${index + 1}` : ""}
+                    alt={`Client logo ${index + 1}`}
                     width={180}
                     height={90}
-                    className="h-16 w-auto max-w-[180px] object-contain"
+                    className="h-12 w-auto max-w-full object-contain sm:h-14"
                     sizes="180px"
                     quality={50}
-                    loading="lazy"
+                    loading="eager"
                     fetchPriority="low"
-                    aria-hidden={index >= clientLogos.length}
                   />
                 </span>
               ))}
-            </div>
           </div>
         </div>
       </Reveal>
@@ -331,6 +327,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="Insights"
             title="The outcomes your restaurant can work toward."
+            description="See how connected digital tools can support smoother service and stronger guest relationships."
             align="center"
           />
           <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
@@ -422,6 +419,7 @@ export default function Home() {
           <SectionHeading
             eyebrow="FAQ"
             title="Answers to Common Pre-Launch Questions"
+            description="Quick answers to help you plan your next steps."
             align="center"
           />
           <FaqAccordion items={[...leftFaqs, ...faqs]} columns={2} />
@@ -439,7 +437,7 @@ export default function Home() {
                   See our solutions in action.
                 </h2>
                 <p className="max-w-2xl text-base leading-[1.7] text-foreground-body sm:text-lg">
-                  Request a free, custom interactive demo built specifically for your business goals and workflows.
+                  Get a custom walkthrough shaped around your goals and workflows.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row lg:flex-col lg:items-end">

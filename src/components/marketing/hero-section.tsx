@@ -17,9 +17,9 @@ const trustItems = [
 
 export function HeroSection() {
   return (
-    <section className="content-shell pb-8 pt-8 sm:pb-12 sm:pt-12 lg:pt-16">
+    <section className="hero-section content-shell pb-8 pt-8 sm:pb-12 sm:pt-12 lg:pt-16">
       <div className="flex flex-col items-center gap-6 text-center">
-        <span className="eyebrow"><Sparkles className="h-4 w-4 shrink-0" />Attract more customers through modern System</span>
+        <span className="eyebrow hero-eyebrow"><Sparkles className="h-4 w-4 shrink-0" />Attract more customers through modern System</span>
         <div className="max-w-4xl space-y-5">
           <h1 className="type-display">
             <span className="block sm:hidden"><span className="block">Websites For Restaurants</span><span className="mt-1 block text-accent-text">- That Fill Tables.</span></span>
@@ -33,7 +33,7 @@ export function HeroSection() {
         </div>
         <div className="flex flex-wrap justify-center gap-2">
           {trustItems.map((item) => { const Icon = item.icon; return (
-            <div key={item.label} className="inline-flex items-center gap-2 rounded-tag border border-border bg-surface px-3 py-2 text-sm text-foreground-body"><Icon className="h-4 w-4 shrink-0 text-accent-text" strokeWidth={2} /><span>{item.label}</span></div>
+            <div key={item.label} className="hero-trust-item inline-flex items-center gap-2 rounded-tag border border-border bg-surface px-3 py-2 text-sm text-foreground-body"><Icon className="h-4 w-4 shrink-0 text-accent-text" strokeWidth={2} /><span>{item.label}</span></div>
           ); })}
         </div>
         <div className="mt-2 w-full max-w-[1200px] sm:mt-4">
