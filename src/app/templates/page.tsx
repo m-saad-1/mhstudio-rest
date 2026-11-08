@@ -21,8 +21,19 @@ export default function TemplatesPage() {
         secondaryCta={{ label: "See Pricing", href: "/pricing" }}
       />
       <Reveal as="section" className="section-space">
-        <div className="content-shell">
-          <PortfolioFilterGrid items={portfolioItems} />
+        <div className="content-shell space-y-16">
+          <section aria-labelledby="web-app-templates" className="space-y-8">
+            <h2 id="web-app-templates" className="text-3xl font-semibold tracking-[-0.03em] text-foreground sm:text-4xl">
+              Web App
+            </h2>
+            <PortfolioFilterGrid items={portfolioItems} />
+          </section>
+
+          <section aria-labelledby="admin-panel-templates">
+            <h2 id="admin-panel-templates" className="text-3xl font-semibold tracking-[-0.03em] text-foreground sm:text-4xl">
+              Admin Panel
+            </h2>
+          </section>
         </div>
       </Reveal>
     </>

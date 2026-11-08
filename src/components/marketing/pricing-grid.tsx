@@ -25,8 +25,8 @@ export function PricingGrid() {
           <button type="button" aria-pressed={platform === "website_app"} onClick={() => setPlatform("website_app")}>Website + Mobile App</button>
         </div>
         <div className="segmented-control" role="group" aria-label="Billing cycle">
-          <button type="button" aria-pressed={billingCycle === "monthly"} onClick={() => setBillingCycle("monthly")}>Monthly</button>
-          <button type="button" aria-pressed={billingCycle === "yearly"} onClick={() => setBillingCycle("yearly")}>Yearly</button>
+          <button type="button" className="whitespace-nowrap" aria-pressed={billingCycle === "monthly"} onClick={() => setBillingCycle("monthly")}>Monthly</button>
+          <button type="button" className="whitespace-nowrap" aria-pressed={billingCycle === "yearly"} onClick={() => setBillingCycle("yearly")}>Yearly</button>
         </div>
       </div>
 

@@ -31,12 +31,12 @@ export function SiteFooter() {
 
           <div className="space-y-3">
             <h3 className="text-sm font-semibold uppercase tracking-[0.18em] text-foreground-muted">Quick Links</h3>
-            <div className="grid gap-2">
+            <div className="grid gap-0">
               {navigationItems.map((item) => (
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="group inline-flex items-center gap-2 text-sm text-foreground-body transition-colors duration-200 hover:text-foreground"
+                  className="group inline-flex !min-h-9 items-center gap-2 text-sm text-foreground-body transition-colors duration-200 hover:text-foreground"
                 >
                   {item.label}
                   <ArrowRight className="h-4 w-4 text-accent-text transition-transform duration-200 group-hover:translate-x-1" />
